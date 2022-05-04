@@ -1,0 +1,71 @@
+EXERCICE 2.1 TRI DE NOMBRE 
+
+entier a, b 
+écrire "Veuillez saisir votre premier nombre entier : " 
+lire a 
+écrire "Veuillez saisir votre deuxième nombre entier : " 
+lire b 
+si a>b 
+|	écrire "les nombres entiers dans l'ordre croissant sont :", b, " puis ", a
+|	sinon écrire "les nombres entiers dans l'ordre croissant sont :", a, " puis ", b
+finsi
+	
+EXERCICE 2.2 ES-TU MAJEUR ?
+
+réel a
+écrire "Veuillez saisir votre âge : "
+lire a
+si a<0 alors
+|    écrire "Vous n'êtes pas encore né"
+sinon si a<18 alors
+|    écrire "Vous êtes mineur"
+sinon     
+     écrire "Vous êtes majeur" 
+finsi
+
+EXERCICE 2.3 MA RETRAITE
+
+réel a,x
+écrire "Veuillez saisir votre âge : "
+lire a
+si (a<0) 
+|    écrire "La valeur fournie n'est pas un âge valide"
+|    sinon si (a<60) 
+|          |    x<--(60-a)
+|	   |    écrire "Il vous reste ", x,"années avant la retraite"
+|	   |    sinon si (a=60)
+|          |          |   écrire "C'est le moment de prendre sa retraite"
+|          |          |   sinon 
+|          |          |         |   x<--(a-60)
+|          |          |         |   écrire "Vous êtes à la retraite depuis", x, "années"
+|          |          |         
+|          |          finsi
+|	   finsi
+finsi
+
+EXERCICE 2.4 TRI DE NOMBRES ++
+
+entier a,b,c,d
+écrire "Veuillez saisir votre premier nombre entier : " 
+lire a 
+écrire "Veuillez saisir votre deuxième nombre entier : " 
+lire b
+écrire "Veuillez saisir votre troisième nombre entier : " 
+lire c
+si (a<b)
+|  d<--a
+|  a<--b
+|  b<--d
+|  sinon si (a<c)
+|           d<--c
+|           c<--b
+|           b<--a
+|           a<--d
+|        finsi
+finsi
+
+écrire "Le tri des nombres par ordre décroissant donne : "
+écrire a
+écrire b
+écrire c
+

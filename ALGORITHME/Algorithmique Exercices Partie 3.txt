@@ -1,0 +1,89 @@
+EXERCICE 3.1 CONTROLER LA SAISIE
+
+chaine prenom
+entier l
+faire
+  écrire "Veuillez saisir votre prénom : "
+  lire prenom
+  l<--|prenom|
+tant que 
+  (l<3)
+écrire "Bonjour ", prenom
+  
+EXERCICE 3.2 CONTROLER LA SAISIE AVEC LIMITE
+
+chaine mdp, motdepasse
+entier i
+i<--1
+motdepasse<--"formation"
+tant que (i<4)
+    écrire "Veuillez saisir votre mot de passe : "
+    lire mdp
+    si (mdp=motdepasse)
+       écrire "Vous êtes connecté"
+       sinon
+         i<--i + 1
+    finsi
+fintantque
+écrire "Votre compte est bloqué"
+
+EXERCICE 3.3 INTERVALLE ENTRE DEUX NOMBRES
+
+entier a, b, c
+écrire "Veuillez saisir le premier nombre entier : "
+lire a
+écrire "Veuillez saisir le deuxième nombre entier : "
+lire b
+écrire "Résultat = "
+si a<b
+   c<--a
+   pour (i=a+1) à (b-1)
+      faire c<--c+1
+            écrire c
+   finpour
+finsi
+si a>b
+   c<--b
+   pour (i=a-1) à (b+1)
+       faire c<--c-1
+             écrire c
+   finpour
+finsi
+
+EXERCICE 3.4 RECHERCHE DES DIVISEURS D'UN NOMBRE
+
+entier n, i
+écrire "Veuillez saisir le nombre entier : "
+lire n
+pour (i=n-1) à (2)
+   faire si (n mod i = 0)
+            écrire i
+         finsi
+fin pour
+
+EXERCICE 3.5 NOMBRE PREMIER
+
+entier n
+écrire "Veuillez saisir le nombre entier : "
+lire n
+pour i=2 à n-1 
+   faire si (n mod i = 0)
+            écrire "Le nombre n'est pas premier"
+         finsi
+   écrire "Le nombre est premier"
+fin pour
+
+EXERCICE 3.6 JEU DE LA FOURCHETTE
+
+entier n, x, y
+n<--random(0,100)
+
+écrire "Veuillez saisir votre nombre entier : "
+lire x
+si x<n alors
+  écrire "Le nombre mystère est compris entre ", 0, "et ", x
+si x>n alors
+  écrire "Le nombre mystère est compris entre ", x, "et ", 100
+
+
+ 
