@@ -69,3 +69,26 @@ finsi
 écrire b
 écrire c
 
+EXERCICE 2.5 MA BICYCLETTE
+
+booléen temps, bicyclette, livre-salon, libre-biblio, réparation
+
+si temps vrai alors
+   si bicyclette faux alors 
+      écrire "Je vais chez le garagiste"
+   sinon si réparation faux alors
+            écrire "Je vais marcher"
+         finsi
+   finsi
+   écrire "Je vais faire de la bicyclette"
+sinon
+   si livre-salon faux alors
+      écrire "je vais à la bibliothèque"
+      si livre-biblio faux alors
+         écrire "j'emprunte un roman policier"
+         écrire "Je rentre à la maison"
+         écrire "Je m'installe dans le fauteuil"
+      finsi
+   finsi
+finsi
+      
