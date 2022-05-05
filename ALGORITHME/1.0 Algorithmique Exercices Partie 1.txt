@@ -1,0 +1,57 @@
+EXERCICE 1.1 HELLO WORLD
+
+écrire "Hello World !"
+
+EXERCICE 1.2 HELLO YOU
+
+chaine prenom
+écrire "Veuillez saisir votre prénom : "
+lire prenom
+écrire "Bonjour ", prenom
+
+EXERCICE 1.3 CALCUL DE LA MOYENNE DE 2 NOMBRES
+
+réel nombre1, nombre2, moyenne
+écrire "Veuillez saisir un premier nombre : "
+lire nombre1
+écrire "Veuillez saisir un second nombre : "
+lire nombre2
+moyenne<--(nombre1+nombre2)/2
+écrire "La moyenne de ", nombre1, " et ", nombre2, " est ", moyenne
+
+EXERCICE 1.4 CALCUL DE L'AIRE ET DU VOLUME D'UNE SPHERE
+
+réel rayon, Pi, aire, volume
+Pi<--3.15159
+écrire "Veuillez saisir le rayon de la sphère : "
+lire rayon
+aire<--4*Pi*pow(rayon,2)
+écrire "L'aire de la sphère est : ", aire
+volume<--4/3*Pi*pow(rayon,3)
+écrire "Le volume de la sphère est : ", volume
+
+EXERCICE 1.5 CALCUL DE LA SURFACE D'UN SECTEUR CIRCULAIRE
+
+réel rayon, angle, aire
+Pi<--3.14159
+écrire "Veuillez saisir le rayon : "
+lire rayon
+écrire "Veuillez saisir l'angle : "
+lire angle
+aire<--Pi*pow(rayon,2)*angle/360
+écrire "L'aire du secteur circulaire est : ", aire
+
+EXERCICE 1.6 INVERSION DE 2 VALEURS
+
+réel valeur1, valeur2, temporaire
+écrire "Veuillez saisir la valeur de la première valeur : "
+lire valeur1
+écrire "Veuillez saisir la valeur de la deuxième valeur : "
+lire valeur2
+écrire "La première valeur est : ", valeur1
+écrire "La deuxième valeur est : ", valeur2
+temporaire<--valeur2
+valeur2<--valeur1
+valeur1<--temporaire
+écrire "La nouvelle première valeur est : ", valeur1
+écrire "La nouvelle deuxième valeur est : ", valeur2
