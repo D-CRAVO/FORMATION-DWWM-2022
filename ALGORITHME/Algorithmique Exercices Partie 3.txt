@@ -9,7 +9,7 @@ faire
 tant que 
   (l<3)
 écrire "Bonjour ", prenom
-  
+
 EXERCICE 3.2 CONTROLER LA SAISIE AVEC LIMITE
 
 chaine mdp, motdepasse
