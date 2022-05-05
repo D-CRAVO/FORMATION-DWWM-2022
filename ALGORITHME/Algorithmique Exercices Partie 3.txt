@@ -103,6 +103,17 @@ fin tant que
   
 EXERCICE 3.7 BARNABE FAIT SES COURSES
 
+réel somme
+entier compteur
 
+écrire "Veuillez saisir le montant de départ : "
+lire somme
+
+tant que (somme>=1) faire
+   somme<--somme/2-1
+   compteur<--compteur+1
+fin tant que
+
+écrire "Barnabé a visité ", compteur, " magasins."
 
  
