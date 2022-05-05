@@ -71,16 +71,17 @@ finsi
 
 EXERCICE 2.5 MA BICYCLETTE
 
-booléen temps, bicyclette, livre-salon, libre-biblio, réparation
+booléen il-fait-beau, bicyclette-reparation, livre-salon, livre-biblio, reparation-non-immediate
 
-si temps vrai alors
-   si bicyclette faux alors 
+si il-fait-beau alors
+   si bicyclette-reparation alors 
       écrire "Je vais chez le garagiste"
-   sinon si réparation faux alors
+   sinon si reparation-non-immediate alors
             écrire "Je vais marcher"
+         sinon
+            écrire "Je vais faire de la bicyclette"
          finsi
    finsi
-   écrire "Je vais faire de la bicyclette"
 sinon
    si livre-salon faux alors
       écrire "je vais à la bibliothèque"
@@ -89,6 +90,8 @@ sinon
          écrire "Je rentre à la maison"
          écrire "Je m'installe dans le fauteuil"
       finsi
+   sinon
+      écrire "Je relis le 1er tome de Game of Thrones"
    finsi
 finsi
       

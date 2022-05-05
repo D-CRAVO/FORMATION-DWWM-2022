@@ -12,17 +12,17 @@ tant que
 
 EXERCICE 3.2 CONTROLER LA SAISIE AVEC LIMITE
 
-chaine mdp, motdepasse
-entier i
+chaine motdepasse-saisi, motdepasse
+entier compteur
 i<--0
 motdepasse<--"formation"
-tant que (i<3)
+tant que (compteur<3)
     écrire "Veuillez saisir votre mot de passe : "
-    lire mdp
-    si (mdp=motdepasse)
+    lire motdepasse-saisi
+    si (motdepasse-saisi = motdepasse)
        écrire "Vous êtes connecté"
-       sinon
-         i<--i + 1
+    sinon
+       compteur<--compteur+1
     finsi
 fintantque
 écrire "Votre compte est bloqué"
@@ -52,12 +52,12 @@ finsi
 
 EXERCICE 3.4 RECHERCHE DES DIVISEURS D'UN NOMBRE
 
-entier n, i
+entier nombre, i
 écrire "Veuillez saisir le nombre entier : "
-lire n
-pour (i=n-1) à (2)
+lire nombre
+pour (i=nombre-1) à (2)
    faire 
-     si (n % i = 0)
+     si (nombre % i =0)
        écrire i
      finsi
 fin pour
@@ -67,10 +67,10 @@ EXERCICE 3.5 NOMBRE PREMIER
 entier n
 écrire "Veuillez saisir le nombre entier : "
 lire n
-pour i=2 à n-1 
-   faire si (n mod i = 0)
-            écrire "Le nombre n'est pas premier"
-         finsi
+pour i=2 à n-1 faire
+   si (n mod i = 0)
+      écrire "Le nombre n'est pas premier"
+   finsi
    écrire "Le nombre est premier"
 fin pour
 
@@ -83,8 +83,6 @@ cpt<--0
 y<--0
 z<--100
 X<--0
-
-
 tant que x!=n faire
   écrire "Veuillez saisir votre nombre entier : "
   lire x
@@ -93,10 +91,8 @@ tant que x!=n faire
   sinon
     z<--x
   finsi
-
   écrire "Le nombre mystère est compris entre ", y, "et ", z
   cpt<--cpt+1
-
 fin tant que
 
 écrire "Bravo vous avez trouvé en ", cpt, " essais"
@@ -105,15 +101,12 @@ EXERCICE 3.7 BARNABE FAIT SES COURSES
 
 réel somme
 entier compteur
-
 écrire "Veuillez saisir le montant de départ : "
 lire somme
-
 tant que (somme>=1) faire
    somme<--somme/2-1
    compteur<--compteur+1
 fin tant que
-
-écrire "Barnabé a visité ", compteur, " magasins."
+écrire "Barnabé a visité ", compteur+1, " magasins."
 
  

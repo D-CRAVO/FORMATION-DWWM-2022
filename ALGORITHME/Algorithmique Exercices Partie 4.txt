@@ -1,0 +1,36 @@
+EXERCICE 4.1 RECHERCHER UN NOMBRE DANS UN TABLEAU
+
+entier i, nombre, nbtab, nbmintab, nbmaxtab, aleatoirex, aleatoirey
+tableau tab
+
+nbmintab<--1
+nbmaxtab<--99
+aleatoirex<--1
+aleatoirey<--99
+
+écrire "Veuillez saisir le nombre d'éléments du tableau : "
+lire nbtab
+écrire "Veuillez saisir un nombre compris entre ", nbmintab," et "nbmaxtab : "
+lire nombre
+
+
+
+<-- Remplissage aléatoire du tableau -->
+
+pour i allant de 0 à nbtab faire
+   tab[i]<--tab[i]+random(aleatoirex, aleatoirey)
+finpour
+
+<-- Ordonner le tableau -->
+
+(déjà ordonné ci-dessus)
+
+<-- Comparaison des nombres -->
+
+pour i allant de 0 à nombre faire
+   si tab[i]=nombre alors
+      écrire "La valeur de l'indice du tableau est : ", i
+   sinon
+      écrire "Nombre non trouvé"
+   finsi
+fin pour
