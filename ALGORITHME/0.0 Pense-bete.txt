@@ -1,0 +1,33 @@
+a+0=a 
+a+1=1 
+a+a=a 
+a+/a=1 
+a·1=a
+a·0=0
+a·a=a
+a·/a=0
+a+(a·b)=a 
+a·(a+b)=a
+//a= a 
+/(a + b)=/a·/b 
+/(a·b)=/a+/b
+(a+b)=(b+a) 
+(a·b)=(b·a)
+(a+b)+c=a+(b+c)
+(a·b)·c=a·(b·c)
+a+(b·c)=(a+b)·(a+c)
+a·(b+c)=(a·b)+(a·c)
+
+<-- ALGORITHMIQUE -->
+
+TYPE DE VARIABLE
+entier = 3
+réel = 0.0
+booléen = false
+caractère
+chaine = "salut"
+tableau = [5,2,9,3]
+matrice 
+
+VALEUR DE CONSTANTES
+Pi = 3.14159

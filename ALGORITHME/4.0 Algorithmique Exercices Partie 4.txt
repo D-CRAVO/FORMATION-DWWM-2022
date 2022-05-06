@@ -1,50 +1,34 @@
 EXERCICE 4.1 RECHERCHER UN NOMBRE DANS UN TABLEAU
 
-entier i, nombre1, nbtab, nbmintab, nbmaxtab, aleatoirex, aleatoirey
-tableau tab
-
-nbmintab<--1
-nbmaxtab<--9
-aleatoirex<--1
-aleatoirey<--9
-
-écrire "Veuillez saisir le nombre d'éléments du tableau : "
-lire nbtab
-écrire "Veuillez saisir un nombre compris entre ", nbmintab," et ", nbmaxtab, " : "
-lire nombre1
-
-
-
-<-- Remplissage aléatoire du tableau -->
-
-pour i allant de 0 à nbtab faire
-   tab[i+1]<--tab[i]+random(aleatoirex, aleatoirey)
-finpour
-
-<-- Ordonner le tableau -->
-
-(déjà ordonné ci-dessus)
-
-<-- Comparaison des nombres -->
-
-pour i allant de 0 à nombre1 faire
-   si tab[i]=nombre1 alors
-      écrire "La valeur de l'indice du tableau est : ", i
-   sinon
-      écrire "Nombre non trouvé"
-   finsi
-fin pour
-
------------------------------------------------------------------------------
-entier i, nombre
+entier i, nombre, longueurtab
 tableau tab
 tab<--[8,16,32,64,128,256,512]
+longueurtab<--longueur_tableau(tab)
 écrire "Veuillez saisir un nombre entier : "
 lire nombre
-pour i allant de 0 à 6 faire
+pour i allant de 0 à longueurtab faire
    si tab[i]=nombre alors
       écrire "La valeur de l'indice du tableau est : ", i
    sinon
       écrire "Nombre non trouvé"
    finsi
 fin pour
+
+EXERCICE 4.2 RECHERCHER UNE PHRASE DANS UNE PHRASE
+
+entier longueur_chaine
+chaîne chaine, 
+
+chaine<--"."
+longueur_chaine<--|chaine|
+
+écrire "Veuillez saisir un caractère :"
+lire caractere
+
+si chaine="" ou chaine="." alors
+   écrire "La chaine est vide"
+sinon
+   pour i allant de 0 à longueur_chaine faire
+        si 
+
+
