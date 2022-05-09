@@ -1,98 +1,168 @@
-EXERCICE 2.1 TRI DE NOMBRE 
+EXERCICE 2.1 TRI DE NOMBRE
 
-entier nombre1, nombre2 
-écrire "Veuillez saisir votre premier nombre entier : " 
-lire nombre1 
-écrire "Veuillez saisir votre deuxième nombre entier : " 
-lire nombre2 
-si nombre1>nombre2 
-   écrire "les nombres entiers dans l'ordre croissant sont :", nombre2, " puis ", nombre1
-sinon 
-   écrire "les nombres entiers dans l'ordre croissant sont :", nombre1, " puis ", nombre2
-finsi
+# VARIABLES
+
+Entier nombre1
+Entier nombre2 
+
+# PROGRAMME
+
+DEBUT
+
+ECRIRE "Veuillez saisir votre premier nombre entier : " 
+LIRE nombre1 
+ECRIRE "Veuillez saisir votre deuxième nombre entier : " 
+LIRE nombre2 
+SI nombre1>nombre2 
+ALORS
+    ECRIRE "les nombres entiers dans l'ordre croissant sont :", nombre2, " puis ", nombre1
+SINON 
+    ECRIRE "les nombres entiers dans l'ordre croissant sont :", nombre1, " puis ", nombre2
+FIN SI
+
+FIN
 	
 EXERCICE 2.2 ES-TU MAJEUR ?
 
-réel age, majorite
+# VARIABLES
+
+Réel age
+Réel majorite
+
+# PROGRAMME
+
+DEBUT
+
 majorite<--18
-écrire "Veuillez saisir votre âge : "
-lire age
-si age<0 alors
-   écrire "Vous n'êtes pas encore né"
-sinon si age<majorite alors
-         écrire "Vous êtes mineur"
-      sinon     
-         écrire "Vous êtes majeur"
-      finsi 
-finsi
+ECRIRE "Veuillez saisir votre âge : "
+LIRE age
+SI age<0 
+ALORS
+    ECRIRE "Vous n'êtes pas encore né"
+SINON SI age<majorite 
+      ALORS
+         ECRIRE "Vous êtes mineur"
+      SINON     
+         ECRIRE "Vous êtes majeur"
+      FIN SI 
+FIN SI
+
+FIN
 
 EXERCICE 2.3 MA RETRAITE
 
-réel age, age_retraite, difference
+# VARIABLES
+
+Réel age, 
+Réel age_retraite
+Réel difference
+
+# PROGRAMMES
+
+DEBUT
+
 age_retraite<--60
-écrire "Veuillez saisir votre âge : "
-lire age
-si age<0 
-    écrire "La valeur fournie n'est pas un âge valide"
-sinon si age<age_retraite 
+ECRIRE "Veuillez saisir votre âge : "
+LIRE age
+SI age<0 
+ALORS
+    ECRIRE "La valeur fournie n'est pas un âge valide"
+SINON SI age<age_retraite 
+      ALORS
          difference<--age_retraite-age
-	   écrire "Il vous reste ", difference,"années avant la retraite"
-	sinon si (age=age-retraite)
-               écrire "C'est le moment de prendre sa retraite"
-            sinon 
+	 ECRIRE "Il vous reste ", difference,"années avant la retraite"
+      SINON SI (age=age-retraite)
+            ALORS
+               ECRIRE "C'est le moment de prendre sa retraite"
+            SINON 
                difference<--age-age_retraite
-               écrire "Vous êtes à la retraite depuis", difference, "années"      
-            finsi
-	finsi
-finsi
+               ECRIRE "Vous êtes à la retraite depuis", difference, "années"      
+            FIN SI
+      FIN SI
+FIN SI
+
+FIN
 
 EXERCICE 2.4 TRI DE NOMBRES ++
 
-entier nombre0, nombre1, nombre2, nombre3
-écrire "Veuillez saisir votre premier nombre entier : " 
-lire nombre1 
-écrire "Veuillez saisir votre deuxième nombre entier : " 
-lire nombre2
-écrire "Veuillez saisir votre troisième nombre entier : " 
-lire nombre3
-si nombre1<nombre2
+# VARIABLES
+
+Entier nombre0
+Entier nombre1
+Entier nombre2
+Entier nombre3
+
+# PROGRAMME
+
+DEBUT
+
+ECRIRE "Veuillez saisir votre premier nombre entier : " 
+LIRE nombre1 
+ECRIRE "Veuillez saisir votre deuxième nombre entier : " 
+LIRE nombre2
+ECRIRE "Veuillez saisir votre troisième nombre entier : " 
+LIRE nombre3
+SI nombre1<nombre2
+ALORS
    nombre0<--nombre1
    nombre1<--nombre2
    nombre2<--nombre0
-sinon si nombre1<nombre3
+SINON SI nombre1<nombre3
+      ALORS
          nombre0<--nombre3
          nombre3<--nombre2
          nombre2<--nombre1
          nombre1<--nombre0
-      finsi
-finsi
-écrire "Le tri des nombres par ordre décroissant donne : "
-écrire nombre1
-écrire nombre2
-écrire nombre3
+      FIN SI
+FIN SI
+ECRIRE "Le tri des nombres par ordre décroissant donne : "
+ECRIRE nombre1
+ECRIRE nombre2
+ECRIRE nombre3
+
+FIN
 
 EXERCICE 2.5 MA BICYCLETTE
 
-booléen il_fait_beau, bicyclette_reparation, livre_salon, livre_biblio, reparation_non_immediate
-si il_fait_beau alors
-   si bicyclette_reparation alors 
-      écrire "Je vais chez le garagiste"
-   sinon si reparation_non_immediate alors
-            écrire "Je vais marcher"
-         sinon
-            écrire "Je vais faire de la bicyclette"
-         finsi
-   finsi
-sinon
-   si livre_salon faux alors
-      écrire "je vais à la bibliothèque"
-      si livre_biblio faux alors
-         écrire "j'emprunte un roman policier"
-         écrire "Je rentre à la maison"
-         écrire "Je m'installe dans le fauteuil"
-      finsi
-   sinon
-      écrire "Je relis le 1er tome de Game of Thrones"
-   finsi
-finsi
+# VARIABLES
+
+Booléen il_fait_beau
+Booléen bicyclette_reparation
+Booléen livre_salon
+Booléen livre_biblio
+Booléen reparation_non_immediate
+
+# PROGRAMME
+
+DEBUT
+
+SI il_fait_beau 
+ALORS
+    SI bicyclette_reparation
+    ALORS
+      ECRIRE "Je vais chez le garagiste"
+    SINON SI reparation_non_immediate 
+          ALORS
+            ECRIRE "Je vais marcher"
+          SINON
+            ECRIRE "Je vais faire de la bicyclette"
+          FIN SI
+    FIN SI
+SINON
+    SI livre_salon faux 
+    ALORS
+       ECRIRE "je vais à la bibliothèque"
+       SI livre_biblio faux 
+       ALORS
+          ECRIRE "j'emprunte un roman policier"
+          ECRIRE "Je rentre à la maison"
+          ECRIRE "Je m'installe dans le fauteuil"
+       FIN SI
+    SINON
+       ECRIRE "Je relis le 1er tome de Game of Thrones"
+    FIN SI
+FIN SI
       
+FIN
+
+# FONCTIONS

@@ -1,54 +1,83 @@
 EXERCICE 3.1 CONTROLER LA SAISIE
 
+# VARIABLES
+
 chaine prenom
 entier l
-faire
-  écrire "Veuillez saisir votre prénom : "
-  lire prenom
-  l<--|prenom|
-tant que 
-  (l<3)
-écrire "Bonjour ", prenom
+
+# PROGRAMMES
+
+FAIRE
+   écrire "Veuillez saisir votre prénom : "
+   lire prenom
+   l<--|prenom|
+TANT QUE 
+   (l<3)
+ECRIRE "Bonjour ", prenom
 
 EXERCICE 3.2 CONTROLER LA SAISIE AVEC LIMITE
 
-chaine motdepasse-saisi, motdepasse
+# VARIABLES
+
+Chaine motdepasse_saisi
+Chaine motdepasse
 entier compteur
+
+# PROGRAMME
+
+DEBUT
+
 i<--0
 motdepasse<--"formation"
-tant que (compteur<3)
-    écrire "Veuillez saisir votre mot de passe : "
-    lire motdepasse-saisi
-    si (motdepasse-saisi = motdepasse)
+TANT QUE (compteur<3)
+    ECRIRE "Veuillez saisir votre mot de passe : "
+    LIRE motdepasse_saisi
+    SI (motdepasse_saisi = motdepasse)
+    ALORS
        écrire "Vous êtes connecté"
-    sinon
+    SINON
        compteur<--compteur+1
-    finsi
-fintantque
-écrire "Votre compte est bloqué"
+    FIN SI
+FIN TANT QUE
+ECRIRE "Votre compte est bloqué"
+
+FIN
 
 EXERCICE 3.3 INTERVALLE ENTRE DEUX NOMBRES
 
-entier a, b, c
-écrire "Veuillez saisir le premier nombre entier : "
-lire a
-écrire "Veuillez saisir le deuxième nombre entier : "
-lire b
-écrire "Résultat = "
-si a<b
-   c<--a
-   pour (i=a+1) à (b-1)
-      faire c<--c+1
+# VARIABLES
+
+Entier a
+Entier b
+Entier c
+
+# PROGRAMME
+
+DEBUT
+
+ECRIRE "Veuillez saisir le premier nombre entier : "
+LIRE a
+ECRIRE "Veuillez saisir le deuxième nombre entier : "
+LIRE b
+ECRIRE "Résultat = "
+SI a<b
+ALORS
+    c<--a
+    POUR (i=a+1) à (b-1)
+       faire c<--c+1
             écrire c
-   finpour
-finsi
-si a>b
+    FIN POUR
+FIN SI
+SI a>b
+ALORS
    c<--b
-   pour (i=a-1) à (b+1) faire
+   POUR (i=a-1) à (b+1) faire
         c<--c-1
         écrire c
-   finpour
-finsi
+   FIN POUR
+FINSI
+
+FIN
 
 EXERCICE 3.4 RECHERCHE DES DIVISEURS D'UN NOMBRE
 
