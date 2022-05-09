@@ -1,60 +1,97 @@
 EXERCICE 4.1 RECHERCHER UN NOMBRE DANS UN TABLEAU
 
-VARIABLES
-entier i, nombre, longueurtab
-tableau tab
+# VARIABLES
 
-DEBUT
-tab<--[8,16,32,64,128,256,512]
-longueurtab<--longueur_tableau(tab)
-écrire "Veuillez saisir un nombre entier : "
-lire nombre
-pour i allant de 0 à longueurtab faire
-   si tab[i]=nombre alors
-      écrire "La valeur de l'indice du tableau est : ", i
-   sinon
-      écrire "Nombre non trouvé"
-   finsi
-fin pour
-FIN
+ENTIER i
+ENTIER nombre
+ENTIER longueur_tableau
+TABLEAU tableau
+
+# DEBUT PROGRAMME
+
+tableau <-- [8,16,32,64,128,256,512]
+longueur_tableau <-- LONGUEUR TABLEAU (tableau)
+ECRIRE "Veuillez saisir un nombre entier : "
+LIRE nombre
+POUR 
+    i ALLANT DE 0 A longueur_tableau
+FAIRE
+    SI tableau[i] = nombre 
+    ALORS
+        ECRIRE "La valeur de l'indice du tableau est : ", i
+    SINON
+        ECRIRE "Nombre non trouvé"
+    FIN SI
+FIN POUR
+
+# FIN PROGRAMME
 
 EXERCICE 4.2 RECHERCHER UNE LETTRE DANS UNE PHRASE
 
-VARIABLES
-entier longueur_chaine
-chaîne chaine, 
+# VARIABLES
 
-DEBUT
-chaine<--"."
-longueur_chaine<--|chaine|
+ENTIER longueur_chaine
+CHAINE chaine 
 
-écrire "Veuillez saisir un caractère :"
-lire caractere
+# DEBUT PROGRAMME
 
-si chaine="" ou chaine="." alors
-   écrire "La chaine est vide"
-sinon
-   pour i allant de 0 à longueur_chaine faire
-        si 
+chaine <-- "."
+longueur_chaine <-- |chaine|
+ECRIRE "Veuillez saisir un caractère :"
+LIRE caractere
+SI chaine = "" OU chaine = "." 
+ALORS
+   ECRIRE "La chaine est vide"
+SINON
+   POUR 
+       i ALLANT DE 0 A longueur_chaine
+   FAIRE
+       SI
+       ALORS
+       SINON
+       FIN SI
+   FIN POUR
+FINSI
+
+# FIN PROGRAMME 
+
 
 EXERCICE 4.3 DENOMBRER LES LETTRES DE L'ALPHABET DANS UN TABLEAU
 
+# VARIABLES
+
+# DEBUT PROGRAMME
+
+#FIN PROGRAMME
+
+
 EXERCICE 4.4 TRI D'UN TABLEAU
 
-VARIABLES
-entier i, j, longueurtab, temporaire
-tableau tab
+# VARIABLES
 
-DEBUT
-tab<--[128, 64, 8, 512, 16, 32, 256]
-longeurtab<--longueur_tableau(tab)
-pour i allant de 0 à longueurtab faire
-   pour j allant de 1 à longueurtab faire   
-     si tab[j]<tab[i] alors
-        temporaire<--tab[i]
-        tab[i]<--tab[j]
-        tab[j]<--temporaire
-     finsi
-   finpour
-finpour
-FIN        
+ENTIER i
+ENTIER j
+ENTIER longueur_tableau
+ENTIER temporaire
+TABLEAU tableau
+
+# DEBUT PROGRAMME
+
+tableau <-- [128, 64, 8, 512, 16, 32, 256]
+longeur_tableau <-- LONGUEUR TABLEAU (tableau)
+POUR 
+   i ALLANT DE 0 A longueur_tableau
+FAIRE
+   POUR 
+       j ALLANT DE 1 A longueur_tableau 
+   FAIRE   
+      SI tableau[j] < tableau[i] 
+      ALORS
+          temporaire <-- tableau[i]
+          tableau[i] <-- tableau[j]
+          tableau[j] <-- temporaire
+      FIN SI
+   FIN POUR
+FIN POUR
+
+# FIN PROGRAMME

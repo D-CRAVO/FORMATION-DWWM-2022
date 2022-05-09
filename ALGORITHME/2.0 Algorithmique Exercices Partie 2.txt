@@ -2,44 +2,41 @@ EXERCICE 2.1 TRI DE NOMBRE
 
 # VARIABLES
 
-Entier nombre1
-Entier nombre2 
+ENTIER nombre_1
+ENTIER nombre_2 
 
-# PROGRAMME
-
-DEBUT
+# DEBUT PROGRAMME
 
 ECRIRE "Veuillez saisir votre premier nombre entier : " 
-LIRE nombre1 
+LIRE nombre_1 
 ECRIRE "Veuillez saisir votre deuxième nombre entier : " 
-LIRE nombre2 
-SI nombre1>nombre2 
+LIRE nombre_2 
+SI nombre_1 > nombre_2 
 ALORS
-    ECRIRE "les nombres entiers dans l'ordre croissant sont :", nombre2, " puis ", nombre1
+    ECRIRE "les nombres entiers dans l'ordre croissant sont :", nombre_2, " puis ", nombre_1
 SINON 
-    ECRIRE "les nombres entiers dans l'ordre croissant sont :", nombre1, " puis ", nombre2
+    ECRIRE "les nombres entiers dans l'ordre croissant sont :", nombre_1, " puis ", nombre_2
 FIN SI
 
-FIN
+# FIN PROGRAMME
+
 	
 EXERCICE 2.2 ES-TU MAJEUR ?
 
 # VARIABLES
 
-Réel age
-Réel majorite
+REEL age
+REEL majorite
 
-# PROGRAMME
+# DEBUT PROGRAMME
 
-DEBUT
-
-majorite<--18
+majorite <-- 18
 ECRIRE "Veuillez saisir votre âge : "
 LIRE age
-SI age<0 
+SI age < 0 
 ALORS
     ECRIRE "Vous n'êtes pas encore né"
-SINON SI age<majorite 
+SINON SI age < majorite 
       ALORS
          ECRIRE "Vous êtes mineur"
       SINON     
@@ -47,94 +44,91 @@ SINON SI age<majorite
       FIN SI 
 FIN SI
 
-FIN
+# FIN PROGRAMME
+
 
 EXERCICE 2.3 MA RETRAITE
 
 # VARIABLES
 
-Réel age, 
-Réel age_retraite
-Réel difference
+REEL age
+REEL age_retraite
+REEL difference
 
-# PROGRAMMES
+# DEBUT PROGRAMME
 
-DEBUT
-
-age_retraite<--60
+age_retraite <-- 60
 ECRIRE "Veuillez saisir votre âge : "
 LIRE age
-SI age<0 
+SI age < 0 
 ALORS
     ECRIRE "La valeur fournie n'est pas un âge valide"
-SINON SI age<age_retraite 
+SINON SI age < age_retraite 
       ALORS
-         difference<--age_retraite-age
-	 ECRIRE "Il vous reste ", difference,"années avant la retraite"
-      SINON SI (age=age-retraite)
+         difference <-- age_retraite - age
+	   ECRIRE "Il vous reste ", difference, " années avant la retraite"
+      SINON SI age = age_retraite
             ALORS
                ECRIRE "C'est le moment de prendre sa retraite"
             SINON 
-               difference<--age-age_retraite
-               ECRIRE "Vous êtes à la retraite depuis", difference, "années"      
+               difference <-- age - age_retraite
+               ECRIRE "Vous êtes à la retraite depuis", difference, " années"      
             FIN SI
       FIN SI
 FIN SI
 
-FIN
+# FIN PROGRAMME
+
 
 EXERCICE 2.4 TRI DE NOMBRES ++
 
 # VARIABLES
 
-Entier nombre0
-Entier nombre1
-Entier nombre2
-Entier nombre3
+ENTIER temporaire
+ENTIER nombre_1
+ENTIER nombre_2
+ENTIER nombre_3
 
-# PROGRAMME
-
-DEBUT
+# DEBUT PROGRAMME
 
 ECRIRE "Veuillez saisir votre premier nombre entier : " 
-LIRE nombre1 
+LIRE nombre_1 
 ECRIRE "Veuillez saisir votre deuxième nombre entier : " 
-LIRE nombre2
+LIRE nombre_2
 ECRIRE "Veuillez saisir votre troisième nombre entier : " 
-LIRE nombre3
-SI nombre1<nombre2
+LIRE nombre_3
+SI nombre_1 < nombre_2
 ALORS
-   nombre0<--nombre1
-   nombre1<--nombre2
-   nombre2<--nombre0
-SINON SI nombre1<nombre3
+   temporaire <-- nombre_1
+   nombre_1 <-- nombre_2
+   nombre_2 <-- temporaire
+SINON SI nombre_1 < nombre_3
       ALORS
-         nombre0<--nombre3
-         nombre3<--nombre2
-         nombre2<--nombre1
-         nombre1<--nombre0
+         temporaire <-- nombre_3
+         nombre_3 <-- nombre_2
+         nombre_2 <-- nombre_1
+         nombre_1 <-- temporaire
       FIN SI
 FIN SI
 ECRIRE "Le tri des nombres par ordre décroissant donne : "
-ECRIRE nombre1
-ECRIRE nombre2
-ECRIRE nombre3
+ECRIRE nombre_1
+ECRIRE nombre_2
+ECRIRE nombre_3
 
-FIN
+# FIN PROGRAMME
+
 
 EXERCICE 2.5 MA BICYCLETTE
 
 # VARIABLES
 
-Booléen il_fait_beau
-Booléen bicyclette_reparation
-Booléen livre_salon
-Booléen livre_biblio
-Booléen reparation_non_immediate
+BOOLEEN il_fait_beau
+BOOLEEN bicyclette_reparation
+BOOLEEN livre_salon
+BOOLEEN livre_biblio
+BOOLEEN reparation_non_immediate
 
-# PROGRAMME
-
-DEBUT
+# DEBUT PROGRAMME
 
 SI il_fait_beau 
 ALORS
@@ -152,7 +146,7 @@ SINON
     SI livre_salon faux 
     ALORS
        ECRIRE "je vais à la bibliothèque"
-       SI livre_biblio faux 
+       SI livre_biblio FAUX 
        ALORS
           ECRIRE "j'emprunte un roman policier"
           ECRIRE "Je rentre à la maison"
@@ -163,6 +157,4 @@ SINON
     FIN SI
 FIN SI
       
-FIN
-
-# FONCTIONS
+# FIN PROGRAMME

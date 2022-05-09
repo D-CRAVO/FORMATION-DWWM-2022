@@ -1,57 +1,110 @@
 EXERCICE 1.1 HELLO WORLD
 
-écrire "Hello World !"
+# DEBUT PROGRAMME
+
+ECRIRE "Hello World !"
+
+# FIN PROGRAMME
+
 
 EXERCICE 1.2 HELLO YOU
 
-chaine prenom
-écrire "Veuillez saisir votre prénom : "
-lire prenom
-écrire "Bonjour ", prenom
+# VARIABLES
+
+CHAINE prenom
+
+# DEBUT PROGRAMME
+
+ECRIRE "Veuillez saisir votre prénom : "
+LIRE prenom
+ECRIRE "Bonjour ", prenom
+
+# FIN PROGRAMME
+
 
 EXERCICE 1.3 CALCUL DE LA MOYENNE DE 2 NOMBRES
 
-réel nombre1, nombre2, moyenne
-écrire "Veuillez saisir un premier nombre : "
-lire nombre1
-écrire "Veuillez saisir un second nombre : "
-lire nombre2
-moyenne<--(nombre1+nombre2)/2
-écrire "La moyenne de ", nombre1, " et ", nombre2, " est ", moyenne
+# VARIABLES
+
+REEL nombre_1
+REEL nombre_2
+REEL moyenne
+
+# DEBUT PROGRAMME
+
+ECRIRE "Veuillez saisir un premier nombre : "
+LIRE nombre_1
+ECRIRE "Veuillez saisir un second nombre : "
+LIRE nombre_2
+moyenne <-- (nombre_1 + nombre_2) / 2
+ECRIRE "La moyenne de ", nombre_1, " et ", nombre_2, " est ", moyenne
+
+# FIN PROGRAMME
+
 
 EXERCICE 1.4 CALCUL DE L'AIRE ET DU VOLUME D'UNE SPHERE
 
-réel rayon, Pi, aire, volume
-Pi<--3.15159
-écrire "Veuillez saisir le rayon de la sphère : "
-lire rayon
-aire<--4*Pi*pow(rayon,2)
-écrire "L'aire de la sphère est : ", aire
-volume<--4/3*Pi*pow(rayon,3)
-écrire "Le volume de la sphère est : ", volume
+# VARIABLES
+
+REEL rayon
+REEL pi
+REEL aire
+REEL volume
+
+# DEBUT PROGRAMME
+
+pi <-- 3.14
+ECRIRE "Veuillez saisir le rayon de la sphère : "
+LIRE rayon
+aire <-- 4 * pi * pow(rayon,2)
+ECRIRE "L'aire de la sphère est : ", aire
+volume <-- 4/3 * pi * pow(rayon,3)
+ECRIRE "Le volume de la sphère est : ", volume
+
+# FIN PROGRAMME
+
 
 EXERCICE 1.5 CALCUL DE LA SURFACE D'UN SECTEUR CIRCULAIRE
 
-réel rayon, angle, aire
-Pi<--3.14159
-écrire "Veuillez saisir le rayon : "
-lire rayon
-écrire "Veuillez saisir l'angle : "
-lire angle
-aire<--Pi*pow(rayon,2)*angle/360
-écrire "L'aire du secteur circulaire est : ", aire
+# VARIABLES
+
+REEL rayon
+REEL angle
+REEL aire
+
+# DEBUT PROGRAMME
+
+pi <-- 3.14
+ECRIRE "Veuillez saisir le rayon : "
+LIRE rayon
+ECRIRE "Veuillez saisir l'angle : "
+LIRE angle
+aire <-- pi * pow(rayon,2) * angle / 360
+ECRIRE "L'aire du secteur circulaire est : ", aire
+
+# FIN PROGRAMME
+
 
 EXERCICE 1.6 INVERSION DE 2 VALEURS
 
-réel valeur1, valeur2, temporaire
-écrire "Veuillez saisir la valeur de la première valeur : "
-lire valeur1
-écrire "Veuillez saisir la valeur de la deuxième valeur : "
-lire valeur2
-écrire "La première valeur est : ", valeur1
-écrire "La deuxième valeur est : ", valeur2
-temporaire<--valeur2
-valeur2<--valeur1
-valeur1<--temporaire
-écrire "La nouvelle première valeur est : ", valeur1
-écrire "La nouvelle deuxième valeur est : ", valeur2
+# VARIABLES
+
+REEL valeur_1
+REEL valeur_2
+REEL temporaire
+
+# DEBUT PROGRAMME
+
+ECRIRE "Veuillez saisir la valeur de la première valeur : "
+LIRE valeur_1
+ECRIRE "Veuillez saisir la valeur de la deuxième valeur : "
+LIRE valeur_2
+ECRIRE "La première valeur est : ", valeur_1
+ECRIRE "La deuxième valeur est : ", valeur_2
+temporaire <-- valeur_2
+valeur_2 <-- valeur_1
+valeur_1 <-- temporaire
+ECRIRE "La nouvelle première valeur est : ", valeur_1
+ECRIRE "La nouvelle deuxième valeur est : ", valeur_2
+
+# FIN PROGRAMME

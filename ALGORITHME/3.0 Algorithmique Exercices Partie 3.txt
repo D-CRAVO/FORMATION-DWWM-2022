@@ -2,140 +2,182 @@ EXERCICE 3.1 CONTROLER LA SAISIE
 
 # VARIABLES
 
-chaine prenom
-entier l
+CHAINE prenom
+ENTIER longueur_chaine
 
-# PROGRAMMES
+# DEBUT PROGRAMME
 
-FAIRE
-   écrire "Veuillez saisir votre prénom : "
-   lire prenom
-   l<--|prenom|
-TANT QUE 
-   (l<3)
+TANT QUE longueur_chaine < 3
+   ECRIRE "Veuillez saisir votre prénom : "
+   LIRE prenom
+   longueur_chaine <-- |prenom|
+FIN TANT QUE
 ECRIRE "Bonjour ", prenom
+
+# FIN PROGRAMME
+
 
 EXERCICE 3.2 CONTROLER LA SAISIE AVEC LIMITE
 
 # VARIABLES
 
-Chaine motdepasse_saisi
-Chaine motdepasse
-entier compteur
+CHAINE mot_de_passe_saisi
+CHAINE mot_de_passe
+ENTIER compteur
 
-# PROGRAMME
+# DEBUT PROGRAMME
 
-DEBUT
-
-i<--0
-motdepasse<--"formation"
-TANT QUE (compteur<3)
+i <-- 0
+mot_de_passe <-- "formation"
+TANT QUE compteur < 3
     ECRIRE "Veuillez saisir votre mot de passe : "
-    LIRE motdepasse_saisi
-    SI (motdepasse_saisi = motdepasse)
+    LIRE mot_de_passe_saisi
+    SI mot_de_passe_saisi = mot_de_passe
     ALORS
-       écrire "Vous êtes connecté"
+       ECRIRE "Vous êtes connecté"
     SINON
-       compteur<--compteur+1
+       compteur <-- compteur + 1
     FIN SI
 FIN TANT QUE
 ECRIRE "Votre compte est bloqué"
 
-FIN
+# FIN PROGRAMME
+
 
 EXERCICE 3.3 INTERVALLE ENTRE DEUX NOMBRES
 
 # VARIABLES
 
-Entier a
-Entier b
-Entier c
+ENTIER nombre_1
+ENTIER nombre_2
+ENTIER resultat
 
-# PROGRAMME
-
-DEBUT
+# DEBUT PROGRAMME
 
 ECRIRE "Veuillez saisir le premier nombre entier : "
-LIRE a
+LIRE nombre_1
 ECRIRE "Veuillez saisir le deuxième nombre entier : "
-LIRE b
+LIRE nombre_2
 ECRIRE "Résultat = "
-SI a<b
+SI nombre_1 < nombre_2
 ALORS
-    c<--a
-    POUR (i=a+1) à (b-1)
-       faire c<--c+1
-            écrire c
+    resultat <-- nombre_1
+    POUR 
+       i ALLANT DE nombre_1 + 1 A nombre_2 - 1
+    FAIRE 
+       resultat <-- resultat + 1
+       ECRIRE resultat
     FIN POUR
 FIN SI
-SI a>b
+SI nombre_1 > nombre_2
 ALORS
-   c<--b
-   POUR (i=a-1) à (b+1) faire
-        c<--c-1
-        écrire c
+   resultat <-- nombre_2
+   POUR 
+       i ALLANT DE nombre_1 - 1 A nombre_2 + 1 
+   FAIRE
+       resultat <-- resultat - 1
+       ECRIRE resultat
    FIN POUR
 FINSI
 
-FIN
+# FIN PROGRAMME
+
 
 EXERCICE 3.4 RECHERCHE DES DIVISEURS D'UN NOMBRE
 
-entier nombre, i
-écrire "Veuillez saisir le nombre entier : "
-lire nombre
-pour (i=nombre-1) à (2)
-   faire 
-     si (nombre % i =0)
-       écrire i
-     finsi
-fin pour
+# VARIABLES
+
+ENTIER nombre
+ENTIER i
+
+# DEBUT PROGRAMME
+
+ECRIRE "Veuillez saisir le nombre entier : "
+LIRE nombre
+POUR 
+    i ALLANT DE nombre - 1 A 2
+FAIRE 
+    SI nombre % i = 0
+    ALORS
+        ECRIRE i
+    FIN SI
+FIN POUR
+
+# FIN PROGRAMME
+
 
 EXERCICE 3.5 NOMBRE PREMIER
 
-entier n
-écrire "Veuillez saisir le nombre entier : "
-lire n
-pour i=2 à n-1 faire
-   si (n mod i = 0)
-      écrire "Le nombre n'est pas premier"
-   finsi
-   écrire "Le nombre est premier"
-fin pour
+# VARIABLES
+
+ENTIER nombre
+
+# DEBUT PROGRAMME
+
+ECRIRE "Veuillez saisir le nombre entier : "
+LIRE nombre
+POUR 
+   i ALLANT DE 2 A n-1 
+FAIRE
+   SI nombre mod i = 0
+   ALORS
+      ECRIRE "Le nombre n'est pas premier"
+   FIN SI
+   ECRIRE "Le nombre est premier"
+FIN POUR
+
+# FIN PROGRAMME
+
 
 EXERCICE 3.6 JEU DE LA FOURCHETTE
 
-entier n, x, y, z, cpt
+# VARIABLES
 
-n<--random(0,100)
-cpt<--0
-y<--0
-z<--100
-X<--0
-tant que x!=n faire
-  écrire "Veuillez saisir votre nombre entier : "
-  lire x
-  si x<n alors
-    y<--x
-  sinon
-    z<--x
-  finsi
-  écrire "Le nombre mystère est compris entre ", y, "et ", z
-  cpt<--cpt+1
-fin tant que
+ENTIER n
+ENTIER x
+ENTIER y
+ENTIER z
+ENTIER compteur
 
-écrire "Bravo vous avez trouvé en ", cpt, " essais"
+# DEBUT PROGRAMME
+
+n <-- random(0,100)
+compteur <-- 0
+y <-- 0
+z <-- 100
+X <-- 0
+TANT QUE (x!=n)
+   ECRIRE "Veuillez saisir votre nombre entier : "
+   LIRE x
+   SI x<n 
+   ALORS
+      y<--x
+   SINON
+      z<--x
+   FIN SI
+   ECRIRE "Le nombre mystère est compris entre ", y, "et ", z
+   compteur <-- compteur + 1
+FIN TANT QUE
+ECRIRE "Bravo vous avez trouvé en ", compteur, " essais"
+
+# FIN PROGRAMME
+
   
 EXERCICE 3.7 BARNABE FAIT SES COURSES
 
-réel somme
-entier compteur
-écrire "Veuillez saisir le montant de départ : "
-lire somme
-tant que (somme>=1) faire
-   somme<--somme/2-1
-   compteur<--compteur+1
-fin tant que
-écrire "Barnabé a visité ", compteur+1, " magasins."
+# VARIABLES
 
- 
+REEL montant
+ENTIER compteur
+
+# DEBUT PROGRAMME
+
+ECRIRE "Veuillez saisir le montant de départ : "
+LIRE montant
+TANT QUE (montant >= 1)
+   montant <-- montant/2 - 1
+   compteur <-- compteur + 1
+FIN TANT QUE
+ECRIRE "Barnabé a visité ", compteur + 1, " magasins."
+
+# FIN PROGRAMME 
