@@ -16,7 +16,7 @@ LIRE nombre
 POUR 
     i ALLANT DE 0 A longueur_tableau
 FAIRE
-    SI tableau[i] = nombre 
+    SI (tableau[i] = nombre) 
     ALORS
         ECRIRE "La valeur de l'indice du tableau est : ", i
     SINON
@@ -26,32 +26,46 @@ FIN POUR
 
 # FIN PROGRAMME
 
+
 EXERCICE 4.2 RECHERCHER UNE LETTRE DANS UNE PHRASE
 
 # VARIABLES
 
 ENTIER longueur_chaine
-CHAINE chaine 
+ENTIER compteur
+ENTIER i
+CHAINE chaine
+CHAINE caractere 
+TABLEAU tableau
 
 # DEBUT PROGRAMME
 
-chaine <-- "."
+compteur <-- 0
 longueur_chaine <-- |chaine|
-ECRIRE "Veuillez saisir un caractère :"
+ECRIRE "Veuillez saisir votre phrase : "
+LIRE chaine
+ECRIRE "Veuillez saisir un caractère : "
 LIRE caractere
+tableau <-- chaine
 SI chaine = "" OU chaine = "." 
 ALORS
-   ECRIRE "La chaine est vide"
+    ECRIRE "La chaine est vide"
 SINON
-   POUR 
-       i ALLANT DE 0 A longueur_chaine
-   FAIRE
-       SI
-       ALORS
-       SINON
-       FIN SI
-   FIN POUR
-FINSI
+    POUR 
+        i ALLANT DE 0 A longueur_chaine - 1
+    FAIRE
+        SI (tableau[i] = caractere)
+        ALORS
+	 	compteur <-- compteur + 1
+        FIN SI
+    FIN POUR
+FIN SI
+SI compteur = 0
+ALORS
+    ECRIRE "La lettre n'est pas présente."
+SINON
+    ECRIRE "Le caractère ", caractere, " apparait ", compteur, " fois dans la chaîne de caractères saisie."
+FIN SI
 
 # FIN PROGRAMME 
 
@@ -60,9 +74,41 @@ EXERCICE 4.3 DENOMBRER LES LETTRES DE L'ALPHABET DANS UN TABLEAU
 
 # VARIABLES
 
+TABLEAU tableau_alphabet
+TABLEAU tableau_chaine
+CHAINE chaine
+ENTIER compteur
+ENTIER i
+ENTIER j
+ENTIER longueur_chaine
+
 # DEBUT PROGRAMME
 
-#FIN PROGRAMME
+TANT QUE (longueur_chaine < 120)
+   ECRIRE "Veuillez saisir votre phrase : "
+   LIRE chaine
+   longueur_chaine <-- |chaine|
+FIN TANT QUE
+
+tableau_chaine <-- chaine
+tableau_alphabet <-- alphabet
+
+POUR
+    i ALLANT DE 0 A (longueur_chaine - 1)
+FAIRE
+    compteur <-- 0
+    POUR
+        j ALLANT DE 0 A 25 
+    FAIRE      
+        SI tableau_chaine[i] = tableau_alphabet[j]
+        ALORS
+            compteur <-- compteur + 1 
+        FIN SI     
+    FIN POUR
+    ECRIRE "La lettre ", tableau_alphabet[j], "apparait ", compteur, " fois."
+FIN POUR
+
+# FIN PROGRAMME
 
 
 EXERCICE 4.4 TRI D'UN TABLEAU
