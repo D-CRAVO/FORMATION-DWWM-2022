@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Algo>
-    <description courant="AFFICHER B" texte=""/>
+    <description courant="temporaire EST_DU_TYPE NOMBRE" texte=""/>
     <extension extnom="inactif"/>
-    <fonction fctetat="inactif" fctcode=""/>
-    <F2 F2etat="inactif" F2defaut="" F2lignes="" F2para=""/>
+    <fonction fctcode="" fctetat="inactif"/>
+    <F2 F2defaut="" F2etat="inactif" F2para="" F2lignes=""/>
     <repere repetat="inactif" repcode="-10#10#-10#10#2#2"/>
-    <param totalBoucles="5000000" arrondiAuto="vrai" epaisseurPoint="2" totalAffichages="1000" nbDecimales="8" epaisseurLigne="2" maxBoucle="500000"/>
-    <item algoitem="FONCTIONS_UTILISEES" code="200#declarationfonctions"/>
-    <item algoitem="VARIABLES" code="100#declarationsvariables">
-        <item algoitem="A EST_DU_TYPE NOMBRE" code="1#NOMBRE#A"/>
-        <item algoitem="B EST_DU_TYPE NOMBRE" code="1#NOMBRE#B"/>
-        <item algoitem="C EST_DU_TYPE NOMBRE" code="1#NOMBRE#C"/>
+    <param maxBoucle="500000" epaisseurPoint="2" nbDecimales="8" epaisseurLigne="2" totalAffichages="1000" arrondiAuto="vrai" totalBoucles="5000000"/>
+    <item code="200#declarationfonctions" algoitem="FONCTIONS_UTILISEES"/>
+    <item code="100#declarationsvariables" algoitem="VARIABLES">
+        <item code="1#NOMBRE#temporaire" algoitem="temporaire EST_DU_TYPE NOMBRE"/>
+        <item code="1#NOMBRE#valeur1" algoitem="valeur1 EST_DU_TYPE NOMBRE"/>
+        <item code="1#NOMBRE#valeur2" algoitem="valeur2 EST_DU_TYPE NOMBRE"/>
     </item>
-    <item algoitem="DEBUT_ALGORITHME" code="101#debutalgo">
-        <item algoitem="AFFICHER &quot;Veuillez saisir un premier nombre : &quot;" code="4#Veuillez saisir un premier nombre : #0"/>
-        <item algoitem="LIRE A" code="2#A#pasliste"/>
-        <item algoitem="AFFICHER &quot;Veuillez saisir un deuxième nombre : &quot;" code="4#Veuillez saisir un deuxième nombre : #0"/>
-        <item algoitem="LIRE B" code="2#B#pasliste"/>
-        <item algoitem="AFFICHER &quot;La première valeur est : &quot;" code="4#La première valeur est : #0"/>
-        <item algoitem="AFFICHER A" code="3#A#1#pasliste"/>
-        <item algoitem="AFFICHER &quot;La deuxième valeur est : &quot;" code="4#La deuxième valeur est : #0"/>
-        <item algoitem="AFFICHER B" code="3#B#1#pasliste"/>
-        <item algoitem="C PREND_LA_VALEUR B" code="5#C#B#pasliste"/>
-        <item algoitem="B PREND_LA_VALEUR A" code="5#B#A#pasliste"/>
-        <item algoitem="A PREND_LA_VALEUR C" code="5#A#C#pasliste"/>
-        <item algoitem="AFFICHER &quot;La nouvelle première valeur est : &quot;" code="4#La nouvelle première valeur est : #0"/>
-        <item algoitem="AFFICHER A" code="3#A#1#pasliste"/>
-        <item algoitem="AFFICHER &quot;La nouvelle deuxième valeur est : &quot;" code="4#La nouvelle deuxième valeur est : #0"/>
-        <item algoitem="AFFICHER B" code="3#B#0#pasliste"/>
+    <item code="101#debutalgo" algoitem="DEBUT_ALGORITHME">
+        <item code="4#Veuillez saisir un premier nombre : #0" algoitem="AFFICHER &quot;Veuillez saisir un premier nombre : &quot;"/>
+        <item code="2#valeur1#pasliste" algoitem="LIRE valeur1"/>
+        <item code="4#Veuillez saisir un deuxième nombre : #0" algoitem="AFFICHER &quot;Veuillez saisir un deuxième nombre : &quot;"/>
+        <item code="2#valeur2#pasliste" algoitem="LIRE valeur2"/>
+        <item code="4#La première valeur est : #0" algoitem="AFFICHER &quot;La première valeur est : &quot;"/>
+        <item code="3#valeur1#1#pasliste" algoitem="AFFICHER valeur1"/>
+        <item code="4#La deuxième valeur est : #0" algoitem="AFFICHER &quot;La deuxième valeur est : &quot;"/>
+        <item code="3#valeur2#1#pasliste" algoitem="AFFICHER valeur2"/>
+        <item code="5#temporaire#valeur2#pasliste" algoitem="temporaire PREND_LA_VALEUR valeur2"/>
+        <item code="5#valeur2#valeur1#pasliste" algoitem="valeur2 PREND_LA_VALEUR valeur1"/>
+        <item code="5#valeur1#temporaire#pasliste" algoitem="valeur1 PREND_LA_VALEUR temporaire"/>
+        <item code="4#La nouvelle première valeur est : #0" algoitem="AFFICHER &quot;La nouvelle première valeur est : &quot;"/>
+        <item code="3#valeur1#1#pasliste" algoitem="AFFICHER valeur1"/>
+        <item code="4#La nouvelle deuxième valeur est : #0" algoitem="AFFICHER &quot;La nouvelle deuxième valeur est : &quot;"/>
+        <item code="3#valeur2#0#pasliste" algoitem="AFFICHER valeur2"/>
     </item>
-    <item algoitem="FIN_ALGORITHME" code="102#finalgo"/>
+    <item code="102#finalgo" algoitem="FIN_ALGORITHME"/>
 </Algo>
