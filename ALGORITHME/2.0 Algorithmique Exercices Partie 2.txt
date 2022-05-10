@@ -49,6 +49,7 @@ FIN SI
 
 EXERCICE 2.3 MA RETRAITE
 
+<<<<<<< Updated upstream
 # VARIABLES
 
 REEL age
@@ -156,5 +157,72 @@ SINON
        ECRIRE "Je relis le 1er tome de Game of Thrones"
     FIN SI
 FIN SI
+=======
+réel age, age_retraite, difference
+age_retraite<--60
+écrire "Veuillez saisir votre âge : "
+lire age
+si age<0 
+    écrire "La valeur fournie n'est pas un âge valide"
+sinon si age<age_retraite 
+         difference<--age_retraite-age
+	   écrire "Il vous reste ", difference,"années avant la retraite"
+	sinon si (age>age-retraite) 
+               difference<--age-age_retraite
+               écrire "Vous êtes à la retraite depuis", difference, "années" 
+            sinon 
+                écrire "C'est le moment de prendre sa retraite"    
+            finsi
+	finsi
+finsi
+
+EXERCICE 2.4 TRI DE NOMBRES ++
+
+entier temporaire, nombre1, nombre2, nombre3
+écrire "Veuillez saisir votre premier nombre entier : " 
+lire nombre1 
+écrire "Veuillez saisir votre deuxième nombre entier : " 
+lire nombre2
+écrire "Veuillez saisir votre troisième nombre entier : " 
+lire nombre3
+si nombre1<nombre2
+   nombre0<--nombre1
+   nombre1<--nombre2
+   nombre2<--nombre0
+sinon si nombre1<nombre3
+         temporaire<--nombre3
+         nombre3<--nombre2
+         nombre2<--nombre1
+         nombre1<--temporaire
+      finsi
+finsi
+écrire "Le tri des nombres par ordre décroissant donne : "
+écrire nombre1
+écrire nombre2
+écrire nombre3
+
+EXERCICE 2.5 MA BICYCLETTE
+
+booléen il_fait_beau, bicyclette_reparation, livre_salon, livre_biblio, reparation_non_immediate
+si il_fait_beau alors
+   si bicyclette_reparation alors 
+      écrire "Je vais chez le garagiste"
+   sinon si reparation_non_immediate alors
+            écrire "Je vais marcher"
+         sinon
+            écrire "Je vais faire de la bicyclette"
+         finsi
+   finsi
+sinon
+   si livre_salon faux alors
+      écrire "je vais à la bibliothèque"
+      si livre_biblio faux alors
+         écrire "j'emprunte un roman policier"
+      finsi
+   sinon
+      écrire "Je relis le 1er tome de Game of Thrones"
+   finsi
+finsi
+>>>>>>> Stashed changes
       
 # FIN PROGRAMME
