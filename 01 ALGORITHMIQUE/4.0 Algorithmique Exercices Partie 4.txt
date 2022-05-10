@@ -141,3 +141,35 @@ FAIRE
 FIN POUR
 
 # FIN PROGRAMME
+
+
+4.5 PALINDROME
+
+# VARIABLES
+
+TABLEAU tableau_chaine
+CHAINE chaine
+ENTIER i
+ENTIER longueur_chaine
+
+
+# DEBUT PROGRAMME
+
+TANT QUE (tableau[longueur_chaine - 1] != ".") ET (longueur_chaine <= 1) 
+    ECRIRE "Veuillez saisir votre phrase : "
+    LIRE chaine
+    longueur_chaine <-- |chaine|
+FIN TANT QUE
+
+tableau_chaine <-- chaine
+POUR i ALLANT DE 0 A (longueur_chaine-1)/2
+FAIRE
+    SI tableau_chaine[i] != tableau_chaine[longueur_chaine - 1 - i]
+    ALORS
+        ECRIRE "La chaîne de caractères n'est pas un palindrome."
+    SINON
+        ECRIRE "La chaîne de caractères est un palindrome."
+    FINSI
+FIN POUR
+
+# FIN PROGRAMME
