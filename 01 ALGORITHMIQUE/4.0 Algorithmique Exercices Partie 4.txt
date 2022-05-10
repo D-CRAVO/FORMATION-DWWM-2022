@@ -161,7 +161,7 @@ TANT QUE (tableau[longueur_chaine - 1] != ".") ET (longueur_chaine <= 1)
     longueur_chaine <-- |chaine|
 FIN TANT QUE
 
-tableau_chaine <-- chaine
+tableau_chaine <-- chaine en supprimant les espaces
 
 POUR i ALLANT DE 0 A (longueur_chaine-1)/2
 FAIRE
