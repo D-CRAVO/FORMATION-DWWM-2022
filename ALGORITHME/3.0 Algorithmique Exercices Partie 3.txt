@@ -68,17 +68,16 @@ ALORS
        resultat <-- resultat + 1
        ECRIRE resultat
     FIN POUR
-FIN SI
-SI nombre_1 > nombre_2
-ALORS
-   resultat <-- nombre_2
+SINON 
+       resultat <-- nombre_2
    POUR 
        i ALLANT DE nombre_1 - 1 A nombre_2 + 1 
    FAIRE
        resultat <-- resultat - 1
        ECRIRE resultat
    FIN POUR
-FINSI
+FIN SI
+
 
 # FIN PROGRAMME
 
