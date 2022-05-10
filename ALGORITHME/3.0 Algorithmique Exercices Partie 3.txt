@@ -116,7 +116,7 @@ ENTIER nombre
 ECRIRE "Veuillez saisir le nombre entier : "
 LIRE nombre
 POUR 
-   i ALLANT DE 2 A n-1 
+   i ALLANT DE 2 A n - 1 
 FAIRE
    SI nombre mod i = 0
    ALORS
