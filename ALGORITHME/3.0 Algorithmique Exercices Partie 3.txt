@@ -29,7 +29,7 @@ ENTIER compteur
 
 i <-- 0
 mot_de_passe <-- "formation"
-TANT QUE compteur < 3
+FAIRE
     ECRIRE "Veuillez saisir votre mot de passe : "
     LIRE mot_de_passe_saisi
     SI mot_de_passe_saisi = mot_de_passe
@@ -38,7 +38,7 @@ TANT QUE compteur < 3
     SINON
        compteur <-- compteur + 1
     FIN SI
-FIN TANT QUE
+TANT QUE compteur < 2
 ECRIRE "Votre compte est bloqué"
 
 # FIN PROGRAMME
@@ -63,22 +63,21 @@ SI nombre_1 < nombre_2
 ALORS
     resultat <-- nombre_1
     POUR 
-       i ALLANT DE nombre_1 + 1 A nombre_2 - 1
+       i ALLANT DE (nombre_1 + 1) A (nombre_2 - 1)
     FAIRE 
        resultat <-- resultat + 1
        ECRIRE resultat
     FIN POUR
-FIN SI
-SI nombre_1 > nombre_2
-ALORS
-   resultat <-- nombre_2
+SINON 
+       resultat <-- nombre_2
    POUR 
-       i ALLANT DE nombre_1 - 1 A nombre_2 + 1 
+       i ALLANT DE (nombre_1 - 1) A (nombre_2 + 1) 
    FAIRE
        resultat <-- resultat - 1
        ECRIRE resultat
    FIN POUR
-FINSI
+FIN SI
+
 
 # FIN PROGRAMME
 
@@ -117,7 +116,7 @@ ENTIER nombre
 ECRIRE "Veuillez saisir le nombre entier : "
 LIRE nombre
 POUR 
-   i ALLANT DE 2 A n-1 
+   i ALLANT DE 2 A n - 1 
 FAIRE
    SI nombre mod i = 0
    ALORS
@@ -133,27 +132,27 @@ EXERCICE 3.6 JEU DE LA FOURCHETTE
 
 # VARIABLES
 
-ENTIER n
-ENTIER x
+ENTIER n // Choix de l'ordinateur
+ENTIER x // Proposition de l'utilisateur
 ENTIER y
 ENTIER z
 ENTIER compteur
 
 # DEBUT PROGRAMME
 
-n <-- random(0,100)
+n <-- random(0,100) 
 compteur <-- 0
 y <-- 0
 z <-- 100
 X <-- 0
-TANT QUE (x!=n)
+TANT QUE (x != n)
    ECRIRE "Veuillez saisir votre nombre entier : "
    LIRE x
-   SI x<n 
+   SI x < n 
    ALORS
-      y<--x
+      y <-- x
    SINON
-      z<--x
+      z <-- x
    FIN SI
    ECRIRE "Le nombre mystère est compris entre ", y, "et ", z
    compteur <-- compteur + 1
@@ -174,7 +173,7 @@ ENTIER compteur
 
 ECRIRE "Veuillez saisir le montant de départ : "
 LIRE montant
-TANT QUE (montant >= 1)
+TANT QUE (montant > 1)
    montant <-- montant/2 - 1
    compteur <-- compteur + 1
 FIN TANT QUE
