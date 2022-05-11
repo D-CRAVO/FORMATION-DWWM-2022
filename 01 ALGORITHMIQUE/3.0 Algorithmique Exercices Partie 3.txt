@@ -50,6 +50,7 @@ EXERCICE 3.3 INTERVALLE ENTRE DEUX NOMBRES
 
 ENTIER nombre_1
 ENTIER nombre_2
+ENTIER temporaire
 ENTIER resultat
 
 # DEBUT PROGRAMME
@@ -59,6 +60,9 @@ LIRE nombre_1
 ECRIRE "Veuillez saisir le deuxième nombre entier : "
 LIRE nombre_2
 ECRIRE "Résultat = "
+
+# SOLUTION 1
+
 SI nombre_1 < nombre_2
 ALORS
     resultat <-- nombre_1
@@ -78,6 +82,22 @@ SINON
    FIN POUR
 FIN SI
 
+# SOLUTION 2
+
+SI nombre_1 > nombre_2
+ALORS
+    temporaire <-- nombre_2
+    nombre_2 <-- nombre_1
+    nombre_1 <-- temporaire
+FIN SI
+
+resultat <-- nombre_1
+POUR 
+    i ALLANT DE (nombre_1 + 1) A (nombre_2 - 1)
+FAIRE 
+    resultat <-- resultat + 1
+FIN POUR
+ECRIRE resultat
 
 # FIN PROGRAMME
 
