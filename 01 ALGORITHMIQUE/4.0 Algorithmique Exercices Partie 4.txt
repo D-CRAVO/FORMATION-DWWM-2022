@@ -14,7 +14,7 @@ longueur_tableau <-- LONGUEUR TABLEAU (tableau)
 ECRIRE "Veuillez saisir un nombre entier : "
 LIRE nombre
 POUR 
-    i ALLANT DE 0 A longueur_tableau
+    i ALLANT DE 0 A longueur_tableau - 1
 FAIRE
     SI (tableau[i] = nombre) 
     ALORS
@@ -83,13 +83,15 @@ ENTIER j
 ENTIER longueur_chaine
 
 # DEBUT PROGRAMME
+ 
+do while
 
-TANT QUE (longueur_chaine < 120)
+FAIRE 
    ECRIRE "Veuillez saisir votre phrase : "
    LIRE chaine
    longueur_chaine <-- |chaine|
-FIN TANT QUE
-
+TANT QUE (longueur_chaine < 120)
+   
 tableau_chaine <-- chaine
 tableau_alphabet <-- alphabet
 
@@ -98,7 +100,7 @@ POUR
 FAIRE
     compteur <-- 0
     POUR
-        j ALLANT DE 0 A 25 
+        j ALLANT DE 0 A longueur(tableau_alphabet) - 1 
     FAIRE      
         SI tableau_chaine[i] = tableau_alphabet[j]
         ALORS
@@ -117,19 +119,18 @@ EXERCICE 4.4 TRI D'UN TABLEAU
 
 ENTIER i
 ENTIER j
-ENTIER longueur_tableau
 ENTIER temporaire
 TABLEAU tableau
 
 # DEBUT PROGRAMME
 
 tableau <-- [128, 64, 8, 512, 16, 32, 256]
-longeur_tableau <-- LONGUEUR TABLEAU (tableau)
+
 POUR 
-   i ALLANT DE 0 A longueur_tableau
+   i ALLANT DE 0 A longueur(tableau)
 FAIRE
    POUR 
-       j ALLANT DE 1 A longueur_tableau 
+       j ALLANT DE 1 A longueur(tableau) 
    FAIRE   
       SI tableau[j] < tableau[i] 
       ALORS
@@ -155,11 +156,11 @@ ENTIER longueur_chaine
 
 # DEBUT PROGRAMME
 
-TANT QUE (tableau[longueur_chaine - 1] != ".") ET (longueur_chaine <= 1) 
+FAIRE
     ECRIRE "Veuillez saisir votre phrase : "
     LIRE chaine
     longueur_chaine <-- |chaine|
-FIN TANT QUE
+TANT QUE (tableau[longueur_chaine - 1] != ".") ET (longueur_chaine <= 1) 
 
 tableau_chaine <-- chaine en supprimant les espaces et le point
 
