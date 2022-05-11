@@ -27,7 +27,7 @@ ENTIER compteur
 
 # DEBUT PROGRAMME
 
-i <-- 0
+i <-- 1
 mot_de_passe <-- "formation"
 FAIRE
     ECRIRE "Veuillez saisir votre mot de passe : "
@@ -38,7 +38,7 @@ FAIRE
     SINON
        compteur <-- compteur + 1
     FIN SI
-TANT QUE compteur < 2
+TANT QUE compteur <= 3
 ECRIRE "Votre compte est bloqué"
 
 # FIN PROGRAMME
