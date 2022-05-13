@@ -16,7 +16,7 @@ ALORS
     Quitter le programme
 SINON
     TANT QUE 
-        (valeur_kilometres > 0) OU (valeur_kilometres <= 1 000 000)
+        (valeur_kilometres > 0) ET (valeur_kilometres <= 1 000 000)
     FAIRE
         valeur_miles = valeur_kilometres * 1.609
         ECRIRE valeur_kilometres, " kilometres équivalent à ", valeur_miles, " miles."
@@ -25,7 +25,7 @@ FIN SI
 
 # FIN PROGRAMME
 
-VERSION 5.2.2
+# VERSION 5.2.2
 
 # VARIABLES
 
@@ -42,8 +42,6 @@ SI valeur = "q"
 ALORS
     Quitter le programme
 SINON
-    TANT QUE
-        valeur > 0 OU valeur <= 1 000 000
     FAIRE
         longueur_valeur = |valeur|
         SI valeur[longueur_valeur - 2] = "m" ET valeur[longueur - 1] = "i"
@@ -54,6 +52,8 @@ SINON
             valeur_miles = valeur * 1.609
             ECRIRE valeur, " kilometres équivalent à ", valeur_miles, " miles."
         FIN SI
+    TANT QUE
+        valeur > 0 ET valeur <= 1 000 000
     FIN TANT QUE
 FIN SI
 
