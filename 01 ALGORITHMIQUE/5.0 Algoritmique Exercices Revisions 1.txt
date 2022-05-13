@@ -37,5 +37,3 @@ FIN TANT QUE
 
 # FONCTIONS
 
-FONCTION nombre_parfait
-
