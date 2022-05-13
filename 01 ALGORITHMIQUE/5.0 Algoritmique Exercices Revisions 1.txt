@@ -1,0 +1,41 @@
+EXERCICE 5.1 CALCUL DE NOMBRES PARFAITS
+
+# VARIABLES
+
+ENTIER compteur_1
+ENTIER compteur_2
+ENTIER nombre
+ENTIER somme
+
+# DEBUT PROGRAMME
+
+somme <-- 0
+compteur_1 <-- 1
+compteur_2 <-- 1
+nombre <-- 6
+
+TANT QUE 
+    compteur_1 <= 4
+FAIRE
+    TANT QUE
+         compteur_2 < nombre
+     FAIRE
+          SI (nombre % compteur_2 = 0)
+          ALORS
+              somme <-- somme + compteur_2
+          FIN SI
+          compteur_2 <-- compteur_2 + 1
+      FIN TANT QUE
+      SI somme = nombre
+      ALORS 
+          ECRIRE nombre, " est un nombre parfait."
+      FIN SI
+      compteur_1 <-- compteur_1 + 1
+FIN TANT QUE
+
+# FIN PROGRAMME
+
+# FONCTIONS
+
+FONCTION nombre_parfait
+
