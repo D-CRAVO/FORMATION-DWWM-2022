@@ -4,7 +4,27 @@
 
 # VARIABLES
 
+CHAINE temperature
+DOUBLE temperature_2
+DOUBLE temperature_celsius
+DOUBLE temperature_farenheit
+
 # DEBUT PROGRAMME
 
+ECRIRE "Veuillez saisir une temperature comprise entre -459.67 et 5 000 000 : "
+LIRE temperature
+longueur_temperature = |temperature|
+SI (temperature[longueur_temperature - 2] = "C")
+ALORS
+    //On supprime l'espace et la lettre C de temperature, 
+    //On convertit cette chaine en réel double que l'on stocke dans temperature_2
+    temperature_celcius = (temperature_2 * 9/5) + 32
+    ECRIRE "La température en degrés Celsius est : ", temperature_celsius
+SINON
+    //On supprime l'espace et la lettre C de temperature, 
+    //On convertit cette chaine en réel double que l'on stocke dans temperature_2
+    temperature_farenheit = (temperature_2 -32) * 5/9
+    ECRIRE "La température en degrés Farenheit est : ", temperature_farenheit
+FIN SI
 
 # FIN PROGRAMME
