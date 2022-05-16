@@ -1,0 +1,20 @@
+EXERCICE 1.4 CALCUL DE L'AIRE ET DU VOLUME D'UNE SPHERE
+
+# VARIABLES
+
+REEL rayon
+REEL pi
+REEL aire
+REEL volume
+
+# DEBUT PROGRAMME
+
+pi <-- 3.14
+ECRIRE "Veuillez saisir le rayon de la sphère : "
+LIRE rayon
+aire <-- 4 * pi * pow(rayon,2)
+ECRIRE "L'aire de la sphère est : ", aire
+volume <-- 4/3 * pi * pow(rayon,3)
+ECRIRE "Le volume de la sphère est : ", volume
+
+# FIN PROGRAMME
