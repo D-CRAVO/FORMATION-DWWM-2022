@@ -1,0 +1,24 @@
+EXERCICE 2.2 ES-TU MAJEUR ?
+
+# VARIABLES
+
+REEL age
+REEL majorite
+
+# DEBUT PROGRAMME
+
+majorite <-- 18
+ECRIRE "Veuillez saisir votre âge : "
+LIRE age
+SI age < 0 
+ALORS
+    ECRIRE "Vous n'êtes pas encore né"
+SINON SI age < majorite 
+      ALORS
+         ECRIRE "Vous êtes mineur"
+      SINON     
+         ECRIRE "Vous êtes majeur"
+      FIN SI 
+FIN SI
+
+# FIN PROGRAMME
