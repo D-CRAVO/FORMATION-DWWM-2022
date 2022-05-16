@@ -1,0 +1,36 @@
+EXERCICE 2.4 TRI DE NOMBRES ++
+
+# VARIABLES
+
+ENTIER temporaire
+ENTIER nombre_1
+ENTIER nombre_2
+ENTIER nombre_3
+
+# DEBUT PROGRAMME
+
+ECRIRE "Veuillez saisir votre premier nombre entier : " 
+LIRE nombre_1 
+ECRIRE "Veuillez saisir votre deuxième nombre entier : " 
+LIRE nombre_2
+ECRIRE "Veuillez saisir votre troisième nombre entier : " 
+LIRE nombre_3
+SI nombre_1 < nombre_2
+ALORS
+   temporaire <-- nombre_1
+   nombre_1 <-- nombre_2
+   nombre_2 <-- temporaire
+SINON SI nombre_1 < nombre_3
+      ALORS
+         temporaire <-- nombre_3
+         nombre_3 <-- nombre_2
+         nombre_2 <-- nombre_1
+         nombre_1 <-- temporaire
+      FIN SI
+FIN SI
+ECRIRE "Le tri des nombres par ordre décroissant donne : "
+ECRIRE nombre_1
+ECRIRE nombre_2
+ECRIRE nombre_3
+
+# FIN PROGRAMME
