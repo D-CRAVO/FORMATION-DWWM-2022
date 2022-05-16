@@ -1,0 +1,32 @@
+EXERCICE 3.6 JEU DE LA FOURCHETTE
+
+# VARIABLES
+
+ENTIER n // Choix de l'ordinateur
+ENTIER x // Proposition de l'utilisateur
+ENTIER y
+ENTIER z
+ENTIER compteur
+
+# DEBUT PROGRAMME
+
+n <-- random(0,100) 
+compteur <-- 0
+y <-- 0
+z <-- 100
+X <-- 0
+TANT QUE (x != n)
+   ECRIRE "Veuillez saisir votre nombre entier : "
+   LIRE x
+   SI x < n 
+   ALORS
+      y <-- x
+   SINON
+      z <-- x
+   FIN SI
+   ECRIRE "Le nombre mystère est compris entre ", y, "et ", z
+   compteur <-- compteur + 1
+FIN TANT QUE
+ECRIRE "Bravo vous avez trouvé en ", compteur, " essais"
+
+# FIN PROGRAMME
