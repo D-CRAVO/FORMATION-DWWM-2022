@@ -1,0 +1,25 @@
+EXERCICE 3.2 CONTROLER LA SAISIE AVEC LIMITE
+
+# VARIABLES
+
+CHAINE mot_de_passe_saisi
+CHAINE mot_de_passe
+ENTIER compteur
+
+# DEBUT PROGRAMME
+
+i <-- 1
+mot_de_passe <-- "formation"
+FAIRE
+    ECRIRE "Veuillez saisir votre mot de passe : "
+    LIRE mot_de_passe_saisi
+    SI mot_de_passe_saisi = mot_de_passe
+    ALORS
+       ECRIRE "Vous êtes connecté"
+    SINON
+       compteur <-- compteur + 1
+    FIN SI
+TANT QUE compteur <= 3
+ECRIRE "Votre compte est bloqué"
+
+# FIN PROGRAMME
