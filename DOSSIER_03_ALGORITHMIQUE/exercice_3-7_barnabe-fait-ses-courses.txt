@@ -1,0 +1,18 @@
+EXERCICE 3.7 BARNABE FAIT SES COURSES
+
+# VARIABLES
+
+REEL montant
+ENTIER compteur
+
+# DEBUT PROGRAMME
+
+ECRIRE "Veuillez saisir le montant de départ : "
+LIRE montant
+TANT QUE (montant > 1)
+   montant <-- montant/2 - 1
+   compteur <-- compteur + 1
+FIN TANT QUE
+ECRIRE "Barnabé a visité ", compteur + 1, " magasins."
+
+# FIN PROGRAMME
