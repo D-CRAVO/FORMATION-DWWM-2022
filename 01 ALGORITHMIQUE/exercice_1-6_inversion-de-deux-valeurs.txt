@@ -1,0 +1,23 @@
+EXERCICE 1.6 INVERSION DE 2 VALEURS
+
+# VARIABLES
+
+REEL valeur_1
+REEL valeur_2
+REEL temporaire
+
+# DEBUT PROGRAMME
+
+ECRIRE "Veuillez saisir la valeur de la première valeur : "
+LIRE valeur_1
+ECRIRE "Veuillez saisir la valeur de la deuxième valeur : "
+LIRE valeur_2
+ECRIRE "La première valeur est : ", valeur_1
+ECRIRE "La deuxième valeur est : ", valeur_2
+temporaire <-- valeur_2
+valeur_2 <-- valeur_1
+valeur_1 <-- temporaire
+ECRIRE "La nouvelle première valeur est : ", valeur_1
+ECRIRE "La nouvelle deuxième valeur est : ", valeur_2
+
+# FIN PROGRAMME
