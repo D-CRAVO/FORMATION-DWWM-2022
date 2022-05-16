@@ -1,0 +1,22 @@
+EXERCICE 3.4 RECHERCHE DES DIVISEURS D'UN NOMBRE
+
+# VARIABLES
+
+ENTIER nombre
+ENTIER i
+
+# DEBUT PROGRAMME
+
+ECRIRE "Veuillez saisir le nombre entier : "
+LIRE nombre
+POUR 
+    i ALLANT DE nombre - 1 A 2
+FAIRE 
+    SI nombre % i = 0
+    ALORS
+        ECRIRE i
+    FIN SI
+FIN POUR
+
+# FIN PROGRAMME
+
