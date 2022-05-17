@@ -1,21 +1,18 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\CRAVO David\\Documents\\GitHub\\FORMATION-DWWM-2022\\exo_algo_dc\\convertisseur_celsius\\convertisseur_celsius\\convertisseur_celsius.csproj": {}
+    "C:\\Users\\CRAVO David\\OneDrive\\Documents\\GitHub\\FORMATION-DWWM-2022\\exo_algo_dc\\convertisseur_celsius\\convertisseur_celsius\\convertisseur_celsius.csproj": {}
   },
   "projects": {
-    "C:\\Users\\CRAVO David\\Documents\\GitHub\\FORMATION-DWWM-2022\\exo_algo_dc\\convertisseur_celsius\\convertisseur_celsius\\convertisseur_celsius.csproj": {
+    "C:\\Users\\CRAVO David\\OneDrive\\Documents\\GitHub\\FORMATION-DWWM-2022\\exo_algo_dc\\convertisseur_celsius\\convertisseur_celsius\\convertisseur_celsius.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CRAVO David\\Documents\\GitHub\\FORMATION-DWWM-2022\\exo_algo_dc\\convertisseur_celsius\\convertisseur_celsius\\convertisseur_celsius.csproj",
+        "projectUniqueName": "C:\\Users\\CRAVO David\\OneDrive\\Documents\\GitHub\\FORMATION-DWWM-2022\\exo_algo_dc\\convertisseur_celsius\\convertisseur_celsius\\convertisseur_celsius.csproj",
         "projectName": "convertisseur_celsius",
-        "projectPath": "C:\\Users\\CRAVO David\\Documents\\GitHub\\FORMATION-DWWM-2022\\exo_algo_dc\\convertisseur_celsius\\convertisseur_celsius\\convertisseur_celsius.csproj",
+        "projectPath": "C:\\Users\\CRAVO David\\OneDrive\\Documents\\GitHub\\FORMATION-DWWM-2022\\exo_algo_dc\\convertisseur_celsius\\convertisseur_celsius\\convertisseur_celsius.csproj",
         "packagesPath": "C:\\Users\\CRAVO David\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CRAVO David\\Documents\\GitHub\\FORMATION-DWWM-2022\\exo_algo_dc\\convertisseur_celsius\\convertisseur_celsius\\obj\\",
+        "outputPath": "C:\\Users\\CRAVO David\\OneDrive\\Documents\\GitHub\\FORMATION-DWWM-2022\\exo_algo_dc\\convertisseur_celsius\\convertisseur_celsius\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\CRAVO David\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"

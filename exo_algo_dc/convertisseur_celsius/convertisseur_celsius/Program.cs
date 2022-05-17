@@ -6,7 +6,7 @@ namespace convertisseur_celsius
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Veuillez saisir une tempchaineérature à convertir avec l'unité C/F : ");
+            Console.WriteLine("Veuillez saisir une température à convertir avec l'unité C/F : ");
 
             string tempchaine = Console.ReadLine();
             string unite = tempchaine.Substring(tempchaine.Length - 1, 1); //tempchaine[^2..]
@@ -26,11 +26,10 @@ namespace convertisseur_celsius
 
                 temp = (temp - 32) * 5 / 9;
                 temp = Math.Round(temp, 2);
+
+                tempchaine = temp + " C";
                 Console.WriteLine("Celsius : " + tempchaine);            
             }
-
-           
-            Console.ReadLine();
         }
     }
 }
