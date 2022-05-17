@@ -1,0 +1,16 @@
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_2-3_ma-retraite\exercice_2-3_ma-retraite\bin\Debug\net5.0\exercice_2-3_ma-retraite.exe
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_2-3_ma-retraite\exercice_2-3_ma-retraite\bin\Debug\net5.0\exercice_2-3_ma-retraite.deps.json
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_2-3_ma-retraite\exercice_2-3_ma-retraite\bin\Debug\net5.0\exercice_2-3_ma-retraite.runtimeconfig.json
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_2-3_ma-retraite\exercice_2-3_ma-retraite\bin\Debug\net5.0\exercice_2-3_ma-retraite.runtimeconfig.dev.json
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_2-3_ma-retraite\exercice_2-3_ma-retraite\bin\Debug\net5.0\exercice_2-3_ma-retraite.dll
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_2-3_ma-retraite\exercice_2-3_ma-retraite\bin\Debug\net5.0\exercice_2-3_ma-retraite.pdb
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_2-3_ma-retraite\exercice_2-3_ma-retraite\obj\Debug\net5.0\exercice_2-3_ma-retraite.csproj.AssemblyReference.cache
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_2-3_ma-retraite\exercice_2-3_ma-retraite\obj\Debug\net5.0\exercice_2-3_ma-retraite.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_2-3_ma-retraite\exercice_2-3_ma-retraite\obj\Debug\net5.0\exercice_2-3_ma-retraite.AssemblyInfoInputs.cache
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_2-3_ma-retraite\exercice_2-3_ma-retraite\obj\Debug\net5.0\exercice_2-3_ma-retraite.AssemblyInfo.cs
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_2-3_ma-retraite\exercice_2-3_ma-retraite\obj\Debug\net5.0\exercice_2-3_ma-retraite.csproj.CoreCompileInputs.cache
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_2-3_ma-retraite\exercice_2-3_ma-retraite\obj\Debug\net5.0\exercice_2-3_ma-retraite.dll
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_2-3_ma-retraite\exercice_2-3_ma-retraite\obj\Debug\net5.0\refint\exercice_2-3_ma-retraite.dll
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_2-3_ma-retraite\exercice_2-3_ma-retraite\obj\Debug\net5.0\exercice_2-3_ma-retraite.pdb
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_2-3_ma-retraite\exercice_2-3_ma-retraite\obj\Debug\net5.0\exercice_2-3_ma-retraite.genruntimeconfig.cache
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_2-3_ma-retraite\exercice_2-3_ma-retraite\obj\Debug\net5.0\ref\exercice_2-3_ma-retraite.dll
