@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.2.32505.173
+VisualStudioVersion = 17.2.32516.85
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exercice_1-5_surface-secteur-circulaire", "exercice_1-5_surface-secteur-circulaire\exercice_1-5_surface-secteur-circulaire.csproj", "{564B70A0-94C1-466E-A190-C8921A549EC8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exercice_1-5_surface-secteur-circulaire", "exercice_1-5_surface-secteur-circulaire\exercice_1-5_surface-secteur-circulaire.csproj", "{C149800C-721F-46DF-BE9A-F1A8F91A5AB3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{564B70A0-94C1-466E-A190-C8921A549EC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{564B70A0-94C1-466E-A190-C8921A549EC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{564B70A0-94C1-466E-A190-C8921A549EC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{564B70A0-94C1-466E-A190-C8921A549EC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C149800C-721F-46DF-BE9A-F1A8F91A5AB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C149800C-721F-46DF-BE9A-F1A8F91A5AB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C149800C-721F-46DF-BE9A-F1A8F91A5AB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C149800C-721F-46DF-BE9A-F1A8F91A5AB3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {FE91EA6C-52F8-4B72-AD27-27AD53538E74}
+		SolutionGuid = {DE7EC654-9DA6-4320-A184-C780BEFF5073}
 	EndGlobalSection
 EndGlobal
