@@ -1,0 +1,27 @@
+EXERCICE 4.1 RECHERCHER UN NOMBRE DANS UN TABLEAU
+
+# VARIABLES
+
+ENTIER i
+ENTIER nombre
+ENTIER longueur_tableau
+TABLEAU tableau
+
+# DEBUT PROGRAMME
+
+tableau <-- [8,16,32,64,128,256,512]
+longueur_tableau <-- LONGUEUR TABLEAU (tableau)
+ECRIRE "Veuillez saisir un nombre entier : "
+LIRE nombre
+POUR 
+    i ALLANT DE 0 A longueur_tableau - 1
+FAIRE
+    SI (tableau[i] = nombre) 
+    ALORS
+        ECRIRE "La valeur de l'indice du tableau est : ", i
+    SINON
+        ECRIRE "Nombre non trouvé"
+    FIN SI
+FIN POUR
+
+# FIN PROGRAMME
