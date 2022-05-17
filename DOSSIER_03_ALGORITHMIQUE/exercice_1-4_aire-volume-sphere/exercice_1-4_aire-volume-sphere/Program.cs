@@ -7,7 +7,7 @@ namespace exercice_1_4_aire_volume_sphere
         static void Main(string[] args)
         {
             Console.Write("Veuillez saisir le rayon de la sphère : ");
-            double rayon = Console.Read();
+            double rayon = double.Parse(Console.ReadLine());
             Console.WriteLine(rayon);
             double aire = Math.Round((4 * Math.Pow(rayon, 2) * Math.PI),2);
             Console.WriteLine("L'aire de la sphère est de " + aire);
