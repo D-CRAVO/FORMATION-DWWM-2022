@@ -9,12 +9,12 @@ namespace exercice_4_1_nombre_dans_tableau
             int compteur;
             int nombre;
 
-            int[] tableau = new int[] { 8, 16, 32, 64, 128, 256, 512 };
+            int[] tableau = { 8, 16, 32, 64, 128, 256, 512 };
             compteur = 0;
 
             Console.WriteLine("Veuillez saisir un nombre entier : ");
             nombre = int.Parse(Console.ReadLine());
-            while (compteur < tableau.Length)
+            do
             {
                 if (tableau[compteur] == nombre)
                 {
@@ -25,7 +25,7 @@ namespace exercice_4_1_nombre_dans_tableau
                 {
                     compteur++;
                 }
-            }
+            } while (compteur < tableau.Length);
             Console.WriteLine("Nombre non trouvé.");
 
         }
