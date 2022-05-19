@@ -10,9 +10,11 @@ namespace exercice_4_1_nombre_dans_tableau
             int nombre;
 
             int[] tableau = { 8, 16, 32, 64, 128, 256, 512 };
+            string end = "Nombre non trouvé.";
+            
             compteur = 0;
 
-            Console.WriteLine("Veuillez saisir un nombre entier : ");
+            Console.Write("Veuillez saisir un nombre entier : ");
             nombre = int.Parse(Console.ReadLine());
             do
             {
@@ -20,13 +22,15 @@ namespace exercice_4_1_nombre_dans_tableau
                 {
                     Console.WriteLine("L'indice du nombre " + nombre + " dans le tableau est : " + (compteur + 1));
                     compteur = tableau.Length;
+                    end = "Le traitement est terminé.";
                 }
                 else
                 {
                     compteur++;
+                    
                 }
             } while (compteur < tableau.Length);
-            Console.WriteLine("Nombre non trouvé.");
+            Console.WriteLine(end);
 
         }
     }
