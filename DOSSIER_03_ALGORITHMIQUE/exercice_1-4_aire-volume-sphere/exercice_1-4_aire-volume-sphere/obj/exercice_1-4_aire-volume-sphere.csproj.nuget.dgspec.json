@@ -1,21 +1,18 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\CRAVO David\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\exercice_1-4_aire-volume-sphere\\exercice_1-4_aire-volume-sphere\\exercice_1-4_aire-volume-sphere.csproj": {}
+    "C:\\Users\\CRAVO David\\OneDrive\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\exercice_1-4_aire-volume-sphere\\exercice_1-4_aire-volume-sphere\\exercice_1-4_aire-volume-sphere.csproj": {}
   },
   "projects": {
-    "C:\\Users\\CRAVO David\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\exercice_1-4_aire-volume-sphere\\exercice_1-4_aire-volume-sphere\\exercice_1-4_aire-volume-sphere.csproj": {
+    "C:\\Users\\CRAVO David\\OneDrive\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\exercice_1-4_aire-volume-sphere\\exercice_1-4_aire-volume-sphere\\exercice_1-4_aire-volume-sphere.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CRAVO David\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\exercice_1-4_aire-volume-sphere\\exercice_1-4_aire-volume-sphere\\exercice_1-4_aire-volume-sphere.csproj",
+        "projectUniqueName": "C:\\Users\\CRAVO David\\OneDrive\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\exercice_1-4_aire-volume-sphere\\exercice_1-4_aire-volume-sphere\\exercice_1-4_aire-volume-sphere.csproj",
         "projectName": "exercice_1-4_aire-volume-sphere",
-        "projectPath": "C:\\Users\\CRAVO David\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\exercice_1-4_aire-volume-sphere\\exercice_1-4_aire-volume-sphere\\exercice_1-4_aire-volume-sphere.csproj",
+        "projectPath": "C:\\Users\\CRAVO David\\OneDrive\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\exercice_1-4_aire-volume-sphere\\exercice_1-4_aire-volume-sphere\\exercice_1-4_aire-volume-sphere.csproj",
         "packagesPath": "C:\\Users\\CRAVO David\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CRAVO David\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\exercice_1-4_aire-volume-sphere\\exercice_1-4_aire-volume-sphere\\obj\\",
+        "outputPath": "C:\\Users\\CRAVO David\\OneDrive\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\exercice_1-4_aire-volume-sphere\\exercice_1-4_aire-volume-sphere\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\CRAVO David\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
