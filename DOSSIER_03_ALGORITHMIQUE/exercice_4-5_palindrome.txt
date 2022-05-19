@@ -28,3 +28,29 @@ FIN POUR
 ECRIRE "La chaîne de caractères est un palindrome."
 
 # FIN PROGRAMME
+
+# ----- VERSION 2 -----
+
+# DEBUT PROGRAMME
+
+FAIRE
+    ECRIRE "Veuillez saisir votre phrase : "
+    LIRE chaine
+    longueur_chaine <-- |chaine|
+TANT QUE (tableau[longueur_chaine - 1] != ".") ET (longueur_chaine <= 1) 
+
+tableau_chaine <-- chaine en supprimant les espaces et le point
+
+TANT QUE
+	i < (longueur_chaine - 1 - i)
+FAIRE
+    SI tableau_chaine[i] != tableau_chaine[longueur_chaine - 1 - i]
+    ALORS
+        ECRIRE "La chaîne de caractères n'est pas un palindrome."
+    FIN SI
+    i = i + 1
+FIN TANT QUE
+ECRIRE "La chaîne de caractères est un palindrome."
+
+
+# FIN PROGRAMME
