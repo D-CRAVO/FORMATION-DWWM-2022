@@ -1,0 +1,16 @@
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_4-3_lettre-alphabet\exercice_4-3_lettre-alphabet\bin\Debug\net5.0\exercice_4-3_lettre-alphabet.exe
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_4-3_lettre-alphabet\exercice_4-3_lettre-alphabet\bin\Debug\net5.0\exercice_4-3_lettre-alphabet.deps.json
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_4-3_lettre-alphabet\exercice_4-3_lettre-alphabet\bin\Debug\net5.0\exercice_4-3_lettre-alphabet.runtimeconfig.json
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_4-3_lettre-alphabet\exercice_4-3_lettre-alphabet\bin\Debug\net5.0\exercice_4-3_lettre-alphabet.runtimeconfig.dev.json
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_4-3_lettre-alphabet\exercice_4-3_lettre-alphabet\bin\Debug\net5.0\exercice_4-3_lettre-alphabet.dll
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_4-3_lettre-alphabet\exercice_4-3_lettre-alphabet\bin\Debug\net5.0\exercice_4-3_lettre-alphabet.pdb
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_4-3_lettre-alphabet\exercice_4-3_lettre-alphabet\obj\Debug\net5.0\exercice_4-3_lettre-alphabet.csproj.AssemblyReference.cache
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_4-3_lettre-alphabet\exercice_4-3_lettre-alphabet\obj\Debug\net5.0\exercice_4-3_lettre-alphabet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_4-3_lettre-alphabet\exercice_4-3_lettre-alphabet\obj\Debug\net5.0\exercice_4-3_lettre-alphabet.AssemblyInfoInputs.cache
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_4-3_lettre-alphabet\exercice_4-3_lettre-alphabet\obj\Debug\net5.0\exercice_4-3_lettre-alphabet.AssemblyInfo.cs
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_4-3_lettre-alphabet\exercice_4-3_lettre-alphabet\obj\Debug\net5.0\exercice_4-3_lettre-alphabet.csproj.CoreCompileInputs.cache
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_4-3_lettre-alphabet\exercice_4-3_lettre-alphabet\obj\Debug\net5.0\exercice_4-3_lettre-alphabet.dll
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_4-3_lettre-alphabet\exercice_4-3_lettre-alphabet\obj\Debug\net5.0\refint\exercice_4-3_lettre-alphabet.dll
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_4-3_lettre-alphabet\exercice_4-3_lettre-alphabet\obj\Debug\net5.0\exercice_4-3_lettre-alphabet.pdb
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_4-3_lettre-alphabet\exercice_4-3_lettre-alphabet\obj\Debug\net5.0\exercice_4-3_lettre-alphabet.genruntimeconfig.cache
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_4-3_lettre-alphabet\exercice_4-3_lettre-alphabet\obj\Debug\net5.0\ref\exercice_4-3_lettre-alphabet.dll
