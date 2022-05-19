@@ -21,7 +21,7 @@ namespace exercice_3_2_controle_saisie_limite
                 if (mot_de_passe_saisi == mot_de_passe)
                 {
                     Console.WriteLine("Vous êtes connecté.");
-                    compteur = 28;
+                    compteur = 3;
                     end = "Vous êtes deconneté, au revoir";
                 }
                 else
