@@ -4,7 +4,7 @@
 
 TABLEAU tableau_chaine
 CHAINE chaine
-ENTIER i
+ENTIER compteur
 ENTIER longueur_chaine
 
 
@@ -18,9 +18,9 @@ TANT QUE (tableau[longueur_chaine - 1] != ".") ET (longueur_chaine <= 1)
 
 tableau_chaine <-- chaine en supprimant les espaces et le point
 
-POUR i ALLANT DE 0 A (longueur_chaine-1)/2
+POUR compteur ALLANT DE 0 A (longueur_chaine-1)/2
 FAIRE
-    SI tableau_chaine[i] != tableau_chaine[longueur_chaine - 1 - i]
+    SI tableau_chaine[compteur] != tableau_chaine[longueur_chaine - 1 - compteur]
     ALORS
         ECRIRE "La chaîne de caractères n'est pas un palindrome."
     FIN SI
@@ -35,22 +35,31 @@ ECRIRE "La chaîne de caractères est un palindrome."
 
 FAIRE
     ECRIRE "Veuillez saisir votre phrase : "
-    LIRE chaine
-    longueur_chaine <-- |chaine|
-TANT QUE (tableau[longueur_chaine - 1] != ".") ET (longueur_chaine <= 1) 
+    LIRE phrase
+    longueur_phrase <-- |phrase|
+TANT QUE (tableau[longueur_phrase - 1] != ".") ET (longueur_phrase <= 1) 
 
-tableau_chaine <-- chaine en supprimant les espaces et le point
+compteur <-- 0
+POUR 
+    compteur < longueur_phrase
+FAIRE
+    SI (tableau_phrase[compteur] = " ") OU (tableau_phrase[compteur] = ".")
+    ALORS 
+        On supprime les caractères " " et "."
+    FIN SI
+    compteur <-- compteur + 1
+FIN POUR
 
 TANT QUE
-	i < (longueur_chaine - 1 - i)
+	compteur < (longueur_phrase - 1 - compteur)
 FAIRE
-    SI tableau_chaine[i] != tableau_chaine[longueur_chaine - 1 - i]
+    SI tableau_phrase[compteur] != tableau_phrase[longueur_phrase - 1 - compteur]
     ALORS
         ECRIRE "La chaîne de caractères n'est pas un palindrome."
     FIN SI
-    i = i + 1
+    compteur = compteur + 1
 FIN TANT QUE
-ECRIRE "La chaîne de caractères est un palindrome."
+ECRIRE "La phrase est un palindrome."
 
 
 # FIN PROGRAMME
