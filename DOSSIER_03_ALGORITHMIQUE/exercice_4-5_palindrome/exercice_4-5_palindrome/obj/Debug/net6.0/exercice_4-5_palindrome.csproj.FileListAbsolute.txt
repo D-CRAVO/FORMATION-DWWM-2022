@@ -18,3 +18,13 @@ C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_AL
 C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_4-5_palindrome\exercice_4-5_palindrome\obj\Debug\net6.0\exercice_4-5_palindrome.pdb
 C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_4-5_palindrome\exercice_4-5_palindrome\obj\Debug\net6.0\exercice_4-5_palindrome.genruntimeconfig.cache
 C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_4-5_palindrome\exercice_4-5_palindrome\obj\Debug\net6.0\ref\exercice_4-5_palindrome.dll
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_4-5_palindrome\exercice_4-5_palindrome\bin\Debug\net6.0\exercice_4-5_palindrome.exe
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_4-5_palindrome\exercice_4-5_palindrome\bin\Debug\net6.0\exercice_4-5_palindrome.deps.json
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_4-5_palindrome\exercice_4-5_palindrome\bin\Debug\net6.0\exercice_4-5_palindrome.runtimeconfig.json
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_4-5_palindrome\exercice_4-5_palindrome\bin\Debug\net6.0\exercice_4-5_palindrome.dll
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_4-5_palindrome\exercice_4-5_palindrome\bin\Debug\net6.0\exercice_4-5_palindrome.pdb
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_4-5_palindrome\exercice_4-5_palindrome\obj\Debug\net6.0\exercice_4-5_palindrome.dll
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_4-5_palindrome\exercice_4-5_palindrome\obj\Debug\net6.0\refint\exercice_4-5_palindrome.dll
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_4-5_palindrome\exercice_4-5_palindrome\obj\Debug\net6.0\exercice_4-5_palindrome.pdb
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_4-5_palindrome\exercice_4-5_palindrome\obj\Debug\net6.0\exercice_4-5_palindrome.genruntimeconfig.cache
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_4-5_palindrome\exercice_4-5_palindrome\obj\Debug\net6.0\ref\exercice_4-5_palindrome.dll
