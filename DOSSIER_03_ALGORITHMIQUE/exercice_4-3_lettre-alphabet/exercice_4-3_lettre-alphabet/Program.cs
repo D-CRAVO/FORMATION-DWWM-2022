@@ -6,9 +6,11 @@ namespace exercice_4_3_lettre_alphabet
     {
         static void Main(string[] args)
         {
+
+            // DECLARATION VARIABLES
             string texte;
-            string alphabet;
-            string end;
+            string alphabet = "";
+            string end = "Traitement terminé.";
 
             int compteur_occurence;
             int compteur_texte;
@@ -17,24 +19,33 @@ namespace exercice_4_3_lettre_alphabet
             char[] tableau_texte;
             char[] tableau_alphabet;
 
-            alphabet = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz";
+            char a = 'a';
 
-            end = "Traitement terminé.";
-                        
+            // DEBUT PROGRAMME
+
+            // On charge l'alphabet dans le tableau alphabet.
+            for (compteur_alphabet = 0; compteur_alphabet < 26; compteur_alphabet++)
+            {
+                alphabet += a++;
+            }
             tableau_alphabet = alphabet.ToCharArray();
 
+            // alphabet = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz";
+
+            // On demande à l'utilisateur de saisir un texte de 120 caractères minimum.
+            // On boucle tant que ce n'est pas le cas.
             do
             {
-                Console.WriteLine("Veuillez saisir votre texte : ");
-                texte = Console.ReadLine(); //texte = Console.ReadLine().ToLower();
+                Console.WriteLine("Veuillez saisir votre texte de 120 caractères minimum: ");
+                texte = Console.ReadLine().ToLower();
             } while (texte.Length < 120);
-
             tableau_texte = texte.ToCharArray();
-                        
-            for (compteur_alphabet = 0; compteur_alphabet < tableau_alphabet.Length-1; compteur_alphabet++)
+                  
+            // On recherche le nombre d'occurences de chaque lettre de l'alphabet.
+            for (compteur_alphabet = 0; compteur_alphabet < tableau_alphabet.Length; compteur_alphabet++)
             {
                 compteur_occurence = 0;
-                for (compteur_texte = 0; compteur_texte < texte.Length-1; compteur_texte++)
+                for (compteur_texte = 0; compteur_texte < texte.Length; compteur_texte++)
                 {
                     if (tableau_alphabet[compteur_alphabet] == tableau_texte[compteur_texte])
                     {
