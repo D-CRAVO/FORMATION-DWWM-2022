@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "exercice_5-2-1_kilometres-miles/1.0.0": {
+        "runtime": {
+          "exercice_5-2-1_kilometres-miles.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "exercice_5-2-1_kilometres-miles/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
