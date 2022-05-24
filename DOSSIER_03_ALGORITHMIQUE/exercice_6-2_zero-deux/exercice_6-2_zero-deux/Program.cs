@@ -54,7 +54,7 @@ do
             compteur_ordinateur++;
         }
     }
-} while ((nombre_joueur > 0) || (compteur_joueur != nombre_points) || (compteur_ordinateur != nombre_points));
+} while ((nombre_joueur > 0) || (compteur_joueur <= nombre_points) || (compteur_ordinateur <= nombre_points));
 
 // On regarde lequel du joueur ou de l'ordinateur gagne.
 if (compteur_joueur == nombre_points)
