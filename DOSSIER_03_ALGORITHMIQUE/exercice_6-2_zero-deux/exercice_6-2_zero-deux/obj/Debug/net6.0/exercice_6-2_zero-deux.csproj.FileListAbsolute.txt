@@ -1,0 +1,15 @@
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_6-2_zero-deux\exercice_6-2_zero-deux\bin\Debug\net6.0\exercice_6-2_zero-deux.exe
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_6-2_zero-deux\exercice_6-2_zero-deux\bin\Debug\net6.0\exercice_6-2_zero-deux.deps.json
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_6-2_zero-deux\exercice_6-2_zero-deux\bin\Debug\net6.0\exercice_6-2_zero-deux.runtimeconfig.json
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_6-2_zero-deux\exercice_6-2_zero-deux\bin\Debug\net6.0\exercice_6-2_zero-deux.dll
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_6-2_zero-deux\exercice_6-2_zero-deux\bin\Debug\net6.0\exercice_6-2_zero-deux.pdb
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_6-2_zero-deux\exercice_6-2_zero-deux\obj\Debug\net6.0\exercice_6-2_zero-deux.csproj.AssemblyReference.cache
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_6-2_zero-deux\exercice_6-2_zero-deux\obj\Debug\net6.0\exercice_6-2_zero-deux.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_6-2_zero-deux\exercice_6-2_zero-deux\obj\Debug\net6.0\exercice_6-2_zero-deux.AssemblyInfoInputs.cache
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_6-2_zero-deux\exercice_6-2_zero-deux\obj\Debug\net6.0\exercice_6-2_zero-deux.AssemblyInfo.cs
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_6-2_zero-deux\exercice_6-2_zero-deux\obj\Debug\net6.0\exercice_6-2_zero-deux.csproj.CoreCompileInputs.cache
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_6-2_zero-deux\exercice_6-2_zero-deux\obj\Debug\net6.0\exercice_6-2_zero-deux.dll
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_6-2_zero-deux\exercice_6-2_zero-deux\obj\Debug\net6.0\refint\exercice_6-2_zero-deux.dll
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_6-2_zero-deux\exercice_6-2_zero-deux\obj\Debug\net6.0\exercice_6-2_zero-deux.pdb
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_6-2_zero-deux\exercice_6-2_zero-deux\obj\Debug\net6.0\exercice_6-2_zero-deux.genruntimeconfig.cache
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_6-2_zero-deux\exercice_6-2_zero-deux\obj\Debug\net6.0\ref\exercice_6-2_zero-deux.dll
