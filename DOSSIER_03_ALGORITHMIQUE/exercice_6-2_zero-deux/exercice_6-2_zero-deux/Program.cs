@@ -54,7 +54,7 @@ do
             compteur_ordinateur++;
         }
     }
-} while ((nombre_joueur > 0) || (compteur_joueur <= nombre_points) || (compteur_ordinateur <= nombre_points));
+} while ((nombre_joueur < 0) || (compteur_joueur < nombre_points) && (compteur_ordinateur < nombre_points));
 
 // On regarde lequel du joueur ou de l'ordinateur gagne.
 if (compteur_joueur == nombre_points)
@@ -70,3 +70,4 @@ else
         Console.WriteLine("Le score est de " + nombre_points + " à " + compteur_joueur);
     }
 }
+Console.WriteLine(end);
