@@ -1,0 +1,57 @@
+# VARIABLES
+
+ENTIER nombre_personnes
+ENTIER age_jeune
+ENTIER moins_age_jeune
+ENTIER egal_age_jeune
+ENTIER plus_age_jeune
+ENTIER compteur
+TABLEAU age_personne
+
+# DEBUT PROGRAMME
+
+# On détermine le nombre de personnes de l'échantillon.
+nombre_personnes <-- 20 
+
+# On détermine l'age en dessous duquel la personne est jeune.    
+age_jeune <-- 20  
+
+moins_age_jeune <-- 0
+egal_age_jeune <-- 0
+plus_age_jeune <-- 0
+compteur <-- 0
+
+POUR compteur ALLANT DE 0 A (nombre_personnes - 1)
+FAIRE
+    # On affiche (compteur + 1) pour ne pas perturber l'utilisateur.
+    ECRIRE "Veuillez saisir l'âge de la personne", compteur + 1, " : "
+    LIRE age_personne[compteur]
+    # On contrôle l'age de la personne
+    SI (age_personne[compteur] < age_jeune)
+    ALORS
+        moins_age_jeune <-- moins_age_jeune + 1
+    SINON
+        SI (age_personne > age_jeune)
+        ALORS
+            plus_age_jeune <-- plus_age_jeune + 1
+        SINON
+            egal_age_jeune <-- egal_age_jeune + 1
+        FIN SI
+    FIN SI
+    compteur <-- compteur + 1
+FIN POUR
+
+SI (moins_age_jeune = nombre_personnes)
+ALORS
+    ECRIRE "Toutes les personnes ont moins de ", age_jeune, " ans"
+SINON
+    SI (plus_age_jeune = nombre_personnes)
+    ALORS
+        ECRIRE "Toutes les personnes ont plus de ", age_jeune, " ans"
+    SINON
+        ECRIRE "moins_age_jeune, " personnes ont moins de ", age_jeune, "ans."
+        ECRIRE "egal_age_jeune, " personnes ont moins de ", age_jeune, "ans."
+        ECRIRE "plus_age_jeune, " personnes ont moins de ", age_jeune, "ans."
+    FIN SI
+FIN SI
+# FIN PROGRAMME
