@@ -1,0 +1,36 @@
+# VARIABLES
+
+ENTIER nombre_personnes
+ENTIER age_jeune
+ENTIER compteur
+ENTIER nombre_jeunes
+TABLEAU age_personne
+
+# DEBUT PROGRAMME
+
+# On détermine le nombre de personnes de l'échantillon.
+nombre_personnes <-- 20  
+
+# On détermine l'âge en dessous duquel la personne est jeune.   
+age_jeune <-- 20   
+         
+nombre_jeunes <-- 0
+compteur <-- 0
+
+# On récupère les saisies utilisateur
+POUR compteur ALLANT DE 0 A (nombre_personnes - 1)
+FAIRE
+    # On affiche (compteur + 1) pour ne pas perturber l'utilisateur.
+    ECRIRE "Veuillez saisir l'âge de la personne", compteur + 1, " : "  
+    LIRE age_personne[compteur]
+    # On vérifie avec l'âge de la personne si elle est jeune.
+    SI (age_personne[compteur] <= age_jeune)
+    ALORS
+        nombre_jeunes <-- nombre_jeunes + 1
+    FIN SI
+    compteur <-- compteur + 1
+FIN POUR
+
+ECRIRE "Il y a ", nombre_jeunes, " jeunes dans votre échantillon."
+
+# FIN PROGRAMME
