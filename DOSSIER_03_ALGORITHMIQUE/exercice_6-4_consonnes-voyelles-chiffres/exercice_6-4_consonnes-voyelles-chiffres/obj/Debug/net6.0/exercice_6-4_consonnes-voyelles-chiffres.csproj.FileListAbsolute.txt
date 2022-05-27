@@ -1,0 +1,2 @@
+C:\Users\CRAVO David.000\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_6-4_consonnes-voyelles-chiffres\exercice_6-4_consonnes-voyelles-chiffres\obj\Debug\net6.0\exercice_6-4_consonnes-voyelles-chiffres.csproj.AssemblyReference.cache
+C:\Users\CRAVO David.000\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_6-4_consonnes-voyelles-chiffres\exercice_6-4_consonnes-voyelles-chiffres\obj\Debug\net6.0\exercice_6-4_consonnes-voyelles-chiffres.GeneratedMSBuildEditorConfig.editorconfig
