@@ -1,0 +1,80 @@
+# EXERCICE 6.4 DENOMBRER LES LETTRES DE L'ALPHABET
+
+# VARIABLES
+
+CHAINE tableau_consonnes
+CHAINE tableau_voyelles
+CHAINE tableau_chiffres
+CHAINE phrase
+
+ENTIER compteur_1
+ENTIER compteur_2
+ENTIER compteur_consonnes
+ENTIER compteur_voyelles
+ENTIER compteur_chiffres
+ENTIER somme_chiffres
+
+REEL moyenne_chiffres
+
+# AFFECTATIONS
+
+tableau_consonnes <-- [b,c,d,f,g,h,j,k,l,m,n,p,q,r,s,t,v,w,x,z]
+tableau_voyelles <-- [a,e,i,o,u,y]
+tableau_chiffres <-- [0,1,2,3,4,5,6,7,8,9]
+somme_chiffres <-- 0
+
+# DEBUT PROGRAMME
+
+FAIRE
+    ECRIRE "Veuillez saisir votre phrase (100 caractères minimum) : "
+    LIRE phrase
+JUSQU'A longueur(phrase) >= 100
+
+
+POUR compteur_1 ALLANT DE 0 A longueur(phrase)
+FAIRE
+    # On compte le nombre de consonnes dans la phrase.
+    POUR compteur_2 ALLANT DE 0 A longueur(tableau_consonnes)
+    FAIRE
+        SI (phrase[compteur_1] = tableau_consonnes[compteur_2])
+        ALORS
+            compteur_consonnes <-- compteur_consonnes + 1
+        FIN SI
+        compteur_2 <-- compteur_2 + 1
+    FIN POUR
+
+    # On compte le nombre de voyelles dans la phrase.
+    POUR compteur_2 ALLANT DE 0 A longueur(tableau_voyelles)
+    FAIRE
+        SI (phrase[compteur_1] = tableau_voyelles[compteur_2])
+        ALORS
+            compteur_voyelles <-- compteur_voyelles + 1
+        FIN SI
+        compteur_2 <-- compteur_2 + 1
+    FIN POUR
+
+    # On compte le nombre de chiffres dans la phrase.
+    POUR compteur_2 ALLANT DE 0 A longueur(tableau_chiffres)
+    FAIRE
+        SI (phrase[compteur_1] = tableau_chiffres[compteur_2])
+        ALORS
+            compteur_chiffres <-- compteur_chiffres + 1
+            somme_chiffres <-- somme_chiffres + tableau_chiffres[compteur_2]
+        FIN SI
+        compteur_2 <-- compteur_2 + 1
+    FIN POUR
+FIN POUR
+
+ECRIRE "Il y a ", compteur_consonnes, " consonnes dans votre phrase."
+ECRIRE "Il y a ", compteur_voyelles, " voyelles dans votre phrase."
+ECRIRE "Il y a ", compteur_chiffres, " chiffres dans votre phrase."
+
+# On calcule la moyenne des chiffres dans la phrase.
+SI compteur_chiffres = 0
+ALORS
+    compteur_chiffres <-- 1
+FIN SI
+moyenne_chiffres <-- somme_chiffres / compteur_chiffres
+ECRIRE "La moyenne des chiffres est de : ", moyenne_chiffres
+
+# FIN PROGRAMME
