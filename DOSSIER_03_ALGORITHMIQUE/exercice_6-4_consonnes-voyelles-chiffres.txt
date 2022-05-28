@@ -25,6 +25,7 @@ somme_chiffres <-- 0
 
 # DEBUT PROGRAMME
 
+# On récupère la phrase saisi par l'utilisateur et on vérifie la condition.
 FAIRE
     ECRIRE "Veuillez saisir votre phrase (100 caractères minimum) : "
     LIRE phrase
