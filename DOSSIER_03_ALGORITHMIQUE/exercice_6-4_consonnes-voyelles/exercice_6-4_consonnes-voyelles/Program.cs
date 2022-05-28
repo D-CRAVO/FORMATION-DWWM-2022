@@ -9,13 +9,15 @@ char[] tableau_phrase = new char[] { };
 
 string phrase;
 
+int longueur_phrase = 10;
 int compteur_1;
 int compteur_2;
 int compteur_consonnes = 0;
 int compteur_voyelles = 0;
 int compteur_chiffres = 0;
-int somme_chiffres = 0;
 
+double somme_chiffres = 0;
+double valeur_numerique;
 double moyenne_chiffres;
 
 // DEBUT PROGRAMME
@@ -24,7 +26,7 @@ do
 {
     Console.WriteLine("Veuillez saisir votre phrase (100 caractères minimum) : ");
     phrase = Console.ReadLine();
-} while (phrase.Length < 10);
+} while (phrase.Length < longueur_phrase);
 
 for (compteur_1 = 0; compteur_1 < phrase.Length; compteur_1++)
 {
@@ -54,7 +56,15 @@ for (compteur_1 = 0; compteur_1 < phrase.Length; compteur_1++)
         if (tableau_phrase[compteur_1] == tableau_chiffres[compteur_2])
         {
             compteur_chiffres++;
-            somme_chiffres = somme_chiffres + int.Parse(tableau_chiffres[compteur_2]);
+            // Source : https://stackoverflow.com/questions/239103/convert-char-to-int-in-c-sharp
+            /* This will convert it to an int:
+            char foo = '2';
+            int bar = foo - '0';
+            This works because each character is internally represented by a number.The characters '0' to '9' 
+            are represented by consecutive numbers, so finding the difference between the characters '0' and '2' 
+            results in the number 2.*/
+            valeur_numerique = tableau_chiffres[compteur_2] - '0';
+            somme_chiffres = somme_chiffres + valeur_numerique;
         }
     }
 }
