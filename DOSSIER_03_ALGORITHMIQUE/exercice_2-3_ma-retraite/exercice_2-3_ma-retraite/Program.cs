@@ -6,34 +6,36 @@ namespace exercice_2_3_ma_retraite
     {
         static void Main(string[] args)
         {
+            // EXERCICE 2.3 MA RETRAITE
+
             float age_retraite = 60;
-            Console.Write("Veuillez saisir votre âge : ");
-            float age = float.Parse(Console.ReadLine());
-            if (age<0)
+            float age;
+
+            // On récupère la saisie utilisateur.
+            do
             {
-                Console.WriteLine("La valeur fournie n'est pas un âge valide");
-            }
-            else
-            {
-                if (age < age_retraite)
+                Console.Write("Veuillez saisir votre âge : ");
+                age = float.Parse(Console.ReadLine().Replace(".", ","));
+            } while (age < 0);
+
+             // On effectue les comparaisons.
+             if (age < age_retraite)
+             {
+                float difference = age_retraite - age;
+                Console.WriteLine("Il vous reste " + difference + " années avant la retraite.");
+             }
+             else
+             {
+                if (age > age_retraite)
                 {
-                    float difference = age_retraite - age;
-                    Console.WriteLine("Il vous reste " + difference + " années avant la retraite.");
+                    float difference = age - age_retraite;
+                    Console.WriteLine("Vous êtes à la retraite depuis " + difference + " années.");
                 }
                 else
                 {
-                    if (age > age_retraite)
-                    {
-                        float difference = age - age_retraite;
-                        Console.WriteLine("Vous êtes à la retraite depuis " + difference + " années.");
-                    }
-                    else
-                    {
-                        Console.WriteLine("C'est le moment de prendre votre retraite.");
-                    }
-                    
+                    Console.WriteLine("C'est le moment de prendre votre retraite.");
                 }
-            }
+             }
         }
     }
 }
