@@ -22,16 +22,18 @@ double moyenne_chiffres;
 
 // DEBUT PROGRAMME
 
+// On demande à l'utilisateur de saisir une phrase de 100 caractères minimum.
+// On boucle tant que ce n'est pas le cas.
 do
 {
     Console.WriteLine("Veuillez saisir votre phrase (100 caractères minimum) : ");
-    phrase = Console.ReadLine();
+    phrase = Console.ReadLine().ToLower();
 } while (phrase.Length < longueur_phrase);
+tableau_phrase = phrase.ToCharArray();
 
+// On effectue la comparaison
 for (compteur_1 = 0; compteur_1 < phrase.Length; compteur_1++)
 {
-    tableau_phrase = phrase.ToCharArray();
-
     // On compte le nombre de consonnes dans la phrase.
     for (compteur_2 = 0; compteur_2 < tableau_consonnes.Length; compteur_2++)
     {
