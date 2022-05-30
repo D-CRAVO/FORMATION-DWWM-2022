@@ -1,3 +1,7 @@
+# EXERCICE 6.3 CALCUL DU NOMBRE DE PERSONNES
+
+# Exercice 6.3.2 Afficher le nombre de personnes de chaque catégorie.
+
 # VARIABLES
 
 ENTIER nombre_personnes
