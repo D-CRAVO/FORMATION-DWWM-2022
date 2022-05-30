@@ -1,0 +1,69 @@
+# EXERCICE 6.2 JEU DU ZERO DEUX
+
+# VARIABLES
+
+ENTIER nombre_joueur
+ENTIER nombre_ordinateur
+ENTIER difference
+ENTIER compteur_joueur
+ENTIER compteur_ordinateur
+ENTIER nombre_points
+
+# AFFECTATIONS
+
+difference <-- 0
+compteur_joueur <-- 0
+compteur_ordinateur <-- 0
+nombre_points <-- 0
+
+# DEBUT PROGRAMME
+
+FAIRE
+    # On récupère la valeur aléatoire de l'ordinateur
+    nombre_ordinateur <-- RANDOM (0,2)
+
+    # On récupère la saisie de l'utilisateur
+    ECRIRE "Veuillez saisir votre choix(0, 1, 2) ou - 1 pour quitter: "
+    LIRE nombre_joueur
+
+    # On vérifie si l'utilisateur veut sortir en saisissant un nombre négatif.
+    SI (nombre_joueur >=0)
+    ALORS
+        difference <-- Math.Abs(nombre_joueur - nombre_ordinateur)
+    FIN SI
+
+    # On compare les deux nombres pour savoir qui marque ou non un point. 
+    SI (difference = 2)
+    ALORS
+        SI (nombre_joueur > nombre_ordinateur)
+        ALORS
+            compteur_joueur <-- compteur_joueur + 1
+        SINON
+            compteur_ordinateur <-- compteur_ordinateur + 1
+        FIN SI
+    FIN SI
+    SI (difference = 1)
+    ALORS
+        SI (nombre_joueur < nombre_ordinateur)
+        ALORS
+            compteur_joueur <-- compteur_joueur + 1
+        SINON
+            compteur_ordinateur <-- compteur_ordinateur + 1
+        FIN SI
+    FIN SI
+TANT QUE ((nombre_joueur < 0) OU (compteur_joueur < nombre_points) ET (compteur_ordinateur < nombre_points))
+
+# On regarde lequel du joueur ou de l'ordinateur gagne.
+SI (compteur_joueur = nombre_points)
+ALORS
+    ECRIRE "Le joueur gagne !"
+    ECRIRE "Le score est de ", nombre_points, " à ", compteur_ordinateur
+SINON
+    SI
+    ALORS
+        ECRIRE "L'ordinateur gagne !"
+        ECRIRE "Le score est de ", nombre_points, " à ", compteur_joueur
+    FIN SI
+FIN SI
+
+# FIN PROGRAMME
