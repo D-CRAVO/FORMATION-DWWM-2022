@@ -6,6 +6,7 @@ namespace exercice_4_3_lettre_alphabet
     {
         static void Main(string[] args)
         {
+            // EXERCICE 4.3 DENOMBRER LES LETTRES DE L'ALPHABET DANS UN TABLEAU
 
             // DECLARATION VARIABLES
             string texte;
