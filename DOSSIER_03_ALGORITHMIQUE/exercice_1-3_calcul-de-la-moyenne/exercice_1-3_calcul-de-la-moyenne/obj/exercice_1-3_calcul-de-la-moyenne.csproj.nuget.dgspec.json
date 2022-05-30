@@ -1,18 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\CRAVO David\\OneDrive\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\exercice_1-3_calcul-de-la-moyenne\\exercice_1-3_calcul-de-la-moyenne\\exercice_1-3_calcul-de-la-moyenne.csproj": {}
+    "C:\\Users\\CRAVO David\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\exercice_1-3_calcul-de-la-moyenne\\exercice_1-3_calcul-de-la-moyenne\\exercice_1-3_calcul-de-la-moyenne.csproj": {}
   },
   "projects": {
-    "C:\\Users\\CRAVO David\\OneDrive\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\exercice_1-3_calcul-de-la-moyenne\\exercice_1-3_calcul-de-la-moyenne\\exercice_1-3_calcul-de-la-moyenne.csproj": {
+    "C:\\Users\\CRAVO David\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\exercice_1-3_calcul-de-la-moyenne\\exercice_1-3_calcul-de-la-moyenne\\exercice_1-3_calcul-de-la-moyenne.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CRAVO David\\OneDrive\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\exercice_1-3_calcul-de-la-moyenne\\exercice_1-3_calcul-de-la-moyenne\\exercice_1-3_calcul-de-la-moyenne.csproj",
+        "projectUniqueName": "C:\\Users\\CRAVO David\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\exercice_1-3_calcul-de-la-moyenne\\exercice_1-3_calcul-de-la-moyenne\\exercice_1-3_calcul-de-la-moyenne.csproj",
         "projectName": "exercice_1-3_calcul-de-la-moyenne",
-        "projectPath": "C:\\Users\\CRAVO David\\OneDrive\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\exercice_1-3_calcul-de-la-moyenne\\exercice_1-3_calcul-de-la-moyenne\\exercice_1-3_calcul-de-la-moyenne.csproj",
+        "projectPath": "C:\\Users\\CRAVO David\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\exercice_1-3_calcul-de-la-moyenne\\exercice_1-3_calcul-de-la-moyenne\\exercice_1-3_calcul-de-la-moyenne.csproj",
         "packagesPath": "C:\\Users\\CRAVO David\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CRAVO David\\OneDrive\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\exercice_1-3_calcul-de-la-moyenne\\exercice_1-3_calcul-de-la-moyenne\\obj\\",
+        "outputPath": "C:\\Users\\CRAVO David\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\exercice_1-3_calcul-de-la-moyenne\\exercice_1-3_calcul-de-la-moyenne\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\CRAVO David\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
