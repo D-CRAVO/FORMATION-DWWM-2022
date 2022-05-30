@@ -6,19 +6,30 @@ namespace exercice_2_4_tri_nombres
     {
         static void Main(string[] args)
         {
+            // EXERCICE 2.4 TRI DE NOMBRES++
+
             // Trier 3 nombres dans l'ordre décroissant
 
+            float nombre_A;
+            float nombre_B;
+            float nombre_C;
             float nombre_1;
             float nombre_2;
             float nombre_3;
             float temporaire;
             
             Console.Write("Veuillez saisir votre premier nombre : ");
-            nombre_1 = float.Parse(Console.ReadLine());
+            nombre_A = float.Parse(Console.ReadLine());
+            nombre_1 = nombre_A;
+
             Console.Write("Veuillez saisir votre premier nombre : ");
-            nombre_2 = float.Parse(Console.ReadLine());
+            nombre_B = float.Parse(Console.ReadLine());
+            nombre_2 = nombre_B;
+
             Console.Write("Veuillez saisir votre premier nombre : ");
-            nombre_3 = float.Parse(Console.ReadLine());
+            nombre_C = float.Parse(Console.ReadLine());
+            nombre_3 = nombre_C;
+
             if (nombre_2 > nombre_1)
             {
                 temporaire = nombre_1;
@@ -32,7 +43,7 @@ namespace exercice_2_4_tri_nombres
                 nombre_1 = nombre_3;
                 nombre_3 = temporaire;
             }        
-            Console.WriteLine("Le tri des trois nombres dans l'ordre décroissant donne : " + nombre_1 + ", " + nombre_2 + ", " + nombre_3 + ".");
+            Console.WriteLine("Le tri des nombres " + nombre_A + " , " + nombre_B + " , " + nombre_C + " dans l'ordre décroissant donne : " + nombre_1 + ", " + nombre_2 + ", " + nombre_3 + ".");
         }
     }
 }
