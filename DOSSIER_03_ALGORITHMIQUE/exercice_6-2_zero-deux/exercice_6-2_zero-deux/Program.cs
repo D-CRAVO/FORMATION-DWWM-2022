@@ -1,10 +1,12 @@
-﻿// VARIABLES
+﻿// EXERCICE 6.2 JEU DU ZERO DEUX
+
+// VARIABLES
 int nombre_joueur;
 int nombre_ordinateur;
 int difference = 0;
 int compteur_joueur = 0;
 int compteur_ordinateur = 0;
-int nombre_points = 5;
+int nombre_points = 10;
 
 string end = "Traitement terminé";
 
