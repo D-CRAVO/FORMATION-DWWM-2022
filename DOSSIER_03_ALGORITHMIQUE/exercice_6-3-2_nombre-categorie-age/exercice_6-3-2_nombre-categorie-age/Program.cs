@@ -1,4 +1,8 @@
-﻿// VARIABLES
+﻿// EXERCICE 6.3 CALCUL DU NOMBRE DE PERSONNES
+
+// Exercice 6.3.2 Afficher le nombre de personnes de chaque catégorie.
+
+// VARIABLES
 
 int nombre_personnes;
 int age_jeune;
