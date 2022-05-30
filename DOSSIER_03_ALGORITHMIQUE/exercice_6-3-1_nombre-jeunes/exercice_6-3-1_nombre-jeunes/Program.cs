@@ -1,4 +1,9 @@
-﻿// VARIABLES
+﻿// EXERCICE 6.3 CALCUL DU NOMBRE DE PERSONNES
+
+// Exercice 6.3.1 Calculer le nombre de jeunes
+
+// VARIABLES
+
 // On détermine le nombre de personnes de l'échantillon pour pouvoir tester plus rapidement.
 int nombre_personnes = 5;
 
