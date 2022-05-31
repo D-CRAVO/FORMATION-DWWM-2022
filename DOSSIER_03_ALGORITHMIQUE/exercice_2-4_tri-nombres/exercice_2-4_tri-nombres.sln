@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32516.85
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exercice_2-4_tri-nombres", "exercice_2-4_tri-nombres\exercice_2-4_tri-nombres.csproj", "{B2B17987-70AB-475F-94AF-47CE18824D92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "exercice_2-4_tri-nombres", "exercice_2-4_tri-nombres\exercice_2-4_tri-nombres.csproj", "{B2B17987-70AB-475F-94AF-47CE18824D92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exercice_2-4_tri-nombres_version-2", "exercice_2-4_tri-nombres_version-2\exercice_2-4_tri-nombres_version-2.csproj", "{A10C72E1-26C4-4FE5-BE3D-26C98DDD9D12}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{B2B17987-70AB-475F-94AF-47CE18824D92}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2B17987-70AB-475F-94AF-47CE18824D92}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2B17987-70AB-475F-94AF-47CE18824D92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A10C72E1-26C4-4FE5-BE3D-26C98DDD9D12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A10C72E1-26C4-4FE5-BE3D-26C98DDD9D12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A10C72E1-26C4-4FE5-BE3D-26C98DDD9D12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A10C72E1-26C4-4FE5-BE3D-26C98DDD9D12}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
