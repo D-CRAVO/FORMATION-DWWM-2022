@@ -18,24 +18,41 @@ namespace exercice_2_3_ma_retraite
                 age = float.Parse(Console.ReadLine().Replace(".", ","));
             } while (age < 0);
 
-             // On effectue les comparaisons.
-             if (age < age_retraite)
-             {
+            // On effectue les comparaisons.
+
+            //if (age < age_retraite)
+            //{
+            //   float difference = age_retraite - age;
+            //   Console.WriteLine("Il vous reste " + difference + " années avant la retraite.");
+            //}
+            //else
+            //{
+            //   if (age > age_retraite)
+            //   {
+            //       float difference = age - age_retraite;
+            //       Console.WriteLine("Vous êtes à la retraite depuis " + difference + " années.");
+            //   }
+            //   else
+            //   {
+            //       Console.WriteLine("C'est le moment de prendre votre retraite.");
+            //   }
+            //}
+
+            if (age < age_retraite)
+            {
                 float difference = age_retraite - age;
                 Console.WriteLine("Il vous reste " + difference + " années avant la retraite.");
-             }
-             else
-             {
-                if (age > age_retraite)
-                {
-                    float difference = age - age_retraite;
-                    Console.WriteLine("Vous êtes à la retraite depuis " + difference + " années.");
-                }
-                else
-                {
-                    Console.WriteLine("C'est le moment de prendre votre retraite.");
-                }
-             }
+            }
+            else if (age > age_retraite)
+            {
+                float difference = age - age_retraite;
+                Console.WriteLine("Vous êtes à la retraite depuis " + difference + " années.");
+            }
+            else
+            {
+                Console.WriteLine("C'est le moment de prendre votre retraite.");
+            }
         }
     }
+}
 }
