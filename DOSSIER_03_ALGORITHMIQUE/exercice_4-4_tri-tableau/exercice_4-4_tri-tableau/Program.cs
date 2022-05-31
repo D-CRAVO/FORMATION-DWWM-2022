@@ -1,59 +1,46 @@
 ﻿// VARIABLES
 
-string longueur_tableau_string;
+bool ok = false;
 
-int longueur_tableau;
+uint longueur_tableau;
+
 int compteur_tableau;
 int compteur_1;
 int compteur_2;
-int temporaire;
+
+float temporaire;
 
 // DEBUT PROGRAMME
 
 // On demande à l'utilisateur la longueur du tableau à remplir.
 
-/*
-Source : https://www.developpez.net/forums/d1483985/dotnet/langages/csharp/test-nombre-entier-reel/
-Console.WriteLine("Entrez votre saisie : ");
-string saisie = Console.ReadLine();
-int monInt;
-while (true)
-{
-    int.TryParse(saisie, out monInt);
-    if (saisie == "0" || monInt != 0)
-        break;
-
-    Console.WriteLine("Vous n'avez pas saisi de numérique, veuillez recommencer");
-    saisie = Console.ReadLine();
-}
-
-Console.WriteLine("Vous avez saisi : " + saisie);
-*/
-
-
-do
-{
-    longueur_tableau_string = Console.ReadLine();
-
-    int.TryParse(longueur_tableau_string, out longueur_tableau);
-} while (true);
-
-
 do
 {
     Console.Write("Veuillez saisir la longueur du tableau (nombre entier >0) : ");
-    longueur_tableau = int.Parse(Console.ReadLine());
-} while (longueur_tableau < 1);
+    ok = uint.TryParse(Console.ReadLine(), out longueur_tableau);
+    if (!ok)
+    {
+        Console.WriteLine("Le nombre saisi n'est pas correct");
+    }
+} while (!ok);
 
 
-int[] tableau_origine = new int[longueur_tableau];
-int[] tableau_trie = tableau_origine;
+float[] tableau_origine = new float[longueur_tableau];
+float[] tableau_trie = tableau_origine;
 
 // On demande à l'utilisateur de remplir le tableau.
 for (compteur_tableau = 0; compteur_tableau < longueur_tableau; compteur_tableau++)
 {
-    Console.Write("Veuillez entrer la valeur " + (compteur_tableau + 1 )+ " du tableau (nombre entier) : ");
-    tableau_origine[compteur_tableau] = int.Parse(Console.ReadLine());
+    do
+    {
+        Console.Write("Veuillez entrer la valeur " + (compteur_tableau + 1) + " du tableau (nombre entier) : ");
+        ok = float.TryParse(Console.ReadLine().Replace(".", ","), out tableau_origine[compteur_tableau]);
+        if (!ok)
+        {
+            //TryCatch
+            Console.WriteLine("Le nombre saisi n'est pas correct");
+        }
+    } while (!ok);
 }
 
 // On affiche le tableau rempli par l'utilisateur.
