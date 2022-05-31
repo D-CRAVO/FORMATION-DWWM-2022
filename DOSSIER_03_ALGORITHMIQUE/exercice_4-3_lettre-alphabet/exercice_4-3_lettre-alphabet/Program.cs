@@ -39,7 +39,7 @@ namespace exercice_4_3_lettre_alphabet
             {
                 Console.WriteLine("Veuillez saisir votre texte de 120 caractères minimum: ");
                 texte = Console.ReadLine().ToLower();
-            } while (texte.Length < 120);
+            } while (texte.Length < 5);
             tableau_texte = texte.ToCharArray();
                   
             // On recherche le nombre d'occurences de chaque lettre de l'alphabet.
