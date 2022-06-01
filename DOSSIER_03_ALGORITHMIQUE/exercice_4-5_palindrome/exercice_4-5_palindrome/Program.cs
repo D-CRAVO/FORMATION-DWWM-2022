@@ -40,8 +40,6 @@ do
             }
         }
     }
-
-
 } while ((tableau_phrase[tableau_phrase.Length-1] != '.') || (tableau_phrase.Length <2));
 
 // On supprime les caractères indésirables.
