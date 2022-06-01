@@ -13,7 +13,6 @@ float temporaire;
 // DEBUT PROGRAMME
 
 // On demande à l'utilisateur la longueur du tableau à remplir.
-
 do
 {
     Console.Write("Veuillez saisir la longueur du tableau (nombre entier >0) : ");
@@ -23,8 +22,6 @@ do
         Console.WriteLine("Le nombre saisi n'est pas correct");
     }
 } while (!ok);
-
-
 float[] tableau_origine = new float[longueur_tableau];
 float[] tableau_trie = tableau_origine;
 
