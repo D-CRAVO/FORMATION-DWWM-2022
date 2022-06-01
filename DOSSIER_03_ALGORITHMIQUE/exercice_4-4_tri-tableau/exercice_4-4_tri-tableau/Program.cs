@@ -30,7 +30,7 @@ for (compteur_tableau = 0; compteur_tableau < longueur_tableau; compteur_tableau
 {
     do
     {
-        Console.Write("Veuillez entrer la valeur " + (compteur_tableau + 1) + " du tableau (nombre entier) : ");
+        Console.Write("Veuillez entrer la valeur " + (compteur_tableau + 1) + " du tableau : ");
         ok = float.TryParse(Console.ReadLine().Replace(".", ","), out tableau_origine[compteur_tableau]);
         if (!ok)
         {
