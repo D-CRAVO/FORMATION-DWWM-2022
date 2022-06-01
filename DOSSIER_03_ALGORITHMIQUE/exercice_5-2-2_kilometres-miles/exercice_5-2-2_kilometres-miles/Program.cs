@@ -43,7 +43,7 @@ do
                 {
                     // On converti les miles en kilomètre par défaut.
                     valeur_kilometres = valeur_miles / 1.609;
-                    Console.WriteLine("La conversion de " + valeur_miles + " miles en kilomètres donne : " + valeur_kilometres + " kms");
+                    Console.WriteLine("La conversion de " + valeur_miles + " miles en kilomètres donne : {0:#,###0.000} kms.", valeur_kilometres);
                 }
             }
         }
@@ -59,7 +59,7 @@ do
             }
             // On convertit les kilomètres en miles.
             valeur_miles = 1.609 * valeur_kilometres;
-            Console.WriteLine("La conversion de " + valeur_kilometres + " kilomètres en miles donne : " + valeur_miles + " miles");
+            Console.WriteLine("La conversion de " + valeur_kilometres + " kilomètres en miles donne : {0:#,###0.000} miles", valeur_miles);
         }
     }
 } while (valeur_saisie != "q" || valeur_kilometres <= valeur_minimale || valeur_kilometres >= valeur_maximale);
