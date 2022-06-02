@@ -22,6 +22,8 @@ namespace exercice_3_7_barnabe
                 argent = argent - (argent/2 + 1);
                 magasins_visites++;
             }
+            // On affiche magasins_visites + 1 pour tenir compte du
+            // dernier magasin où il dépense le solde.
             Console.WriteLine("Barbabé a visité " + (magasins_visites + 1) + " magasins.");
 
             // FIN PROGRAMME
