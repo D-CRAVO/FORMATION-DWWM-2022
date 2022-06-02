@@ -7,18 +7,17 @@ namespace exercice_3_4_diviseurs
         static void Main(string[] args)
         {
             int nombre;
-            int compteur;
+            int diviseur;
 
             Console.Write("Veuillez saisir votre premier nombre entier : ");
             nombre = int.Parse(Console.ReadLine());
-            compteur = nombre - 1;
-            while (compteur >= 2)
+            diviseur = nombre - 1;
+            for (diviseur = nombre-1; diviseur >3; diviseur--)
             {
-                if ((nombre % compteur) == 0)
+                if ((nombre % diviseur) == 0)
                 {
-                    Console.Write(compteur + " ");
+                    Console.Write(diviseur + " ");
                 }
-                compteur--;
             }
         }
     }
