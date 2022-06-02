@@ -3,39 +3,39 @@ EXERCICE 4.2 RECHERCHER UNE LETTRE DANS UNE PHRASE
 # VARIABLES
 
 ENTIER longueur_chaine
-ENTIER compteur
-ENTIER i
+ENTIER compteur_boucle
+ENTIER compteur_occurence
 CHAINE chaine
-CHAINE caractere 
+CHAINE lettre_donnee 
 TABLEAU tableau
 
 # DEBUT PROGRAMME
 
-compteur <-- 0
+compteur_boucle <-- 0
 longueur_chaine <-- |chaine|
-ECRIRE "Veuillez saisir votre phrase : "
+ECRIRE "Veuillez saisir votre phrase terminée par un point : "
 LIRE chaine
-ECRIRE "Veuillez saisir un caractère : "
-LIRE caractere
-tableau <-- chaine
+
 SI chaine = "" OU chaine = "." 
 ALORS
     ECRIRE "La chaine est vide"
 SINON
+    ECRIRE "Veuillez saisir au moins un caractère avant le point : "
+    LIRE lettre_donnee
     POUR 
-        i ALLANT DE 0 A longueur_chaine - 1
+        compteur_boucle ALLANT DE 0 A longueur_chaine - 1
     FAIRE
-        SI (tableau[i] = caractere)
+        SI (tableau[compteur_boucle] = lettre_donnee)
         ALORS
-	 	compteur <-- compteur + 1
+	 	compteur_occurence <-- compteur_occurence + 1
         FIN SI
     FIN POUR
 FIN SI
-SI compteur = 0
+SI compteur_boucle = 0
 ALORS
     ECRIRE "La lettre n'est pas présente."
 SINON
-    ECRIRE "Le caractère ", caractere, " apparait ", compteur, " fois dans la chaîne de caractères saisie."
+    ECRIRE "Le caractère ", lettre_donnee, " apparait ", compteur_occurence, " fois dans la chaîne de caractères saisie."
 FIN SI
 
 # FIN PROGRAMME
