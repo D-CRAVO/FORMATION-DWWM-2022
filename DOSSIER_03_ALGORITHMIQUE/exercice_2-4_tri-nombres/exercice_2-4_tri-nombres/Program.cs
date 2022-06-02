@@ -22,11 +22,11 @@ namespace exercice_2_4_tri_nombres
             nombre_A = float.Parse(Console.ReadLine());
             nombre_1 = nombre_A;
 
-            Console.Write("Veuillez saisir votre premier nombre : ");
+            Console.Write("Veuillez saisir votre deuxième nombre : ");
             nombre_B = float.Parse(Console.ReadLine());
             nombre_2 = nombre_B;
 
-            Console.Write("Veuillez saisir votre premier nombre : ");
+            Console.Write("Veuillez saisir votre troisième nombre : ");
             nombre_C = float.Parse(Console.ReadLine());
             nombre_3 = nombre_C;
 
