@@ -2,17 +2,17 @@ EXERCICE 3.7 BARNABE FAIT SES COURSES
 
 # VARIABLES
 
-REEL montant
-ENTIER compteur
+REEL argent
+ENTIER magasins_visites
 
 # DEBUT PROGRAMME
 
-ECRIRE "Veuillez saisir le montant de départ : "
-LIRE montant
-TANT QUE (montant > 1)
-   montant <-- montant/2 - 1
-   compteur <-- compteur + 1
+ECRIRE "Veuillez saisir le argent de départ : "
+LIRE argent
+TANT QUE (argent > 1)
+   argent <-- argent/2 - 1
+   magasins_visites <-- magasins_visites + 1
 FIN TANT QUE
-ECRIRE "Barnabé a visité ", compteur + 1, " magasins."
+ECRIRE "Barnabé a visité ", magasins_visites + 1, " magasins."
 
 # FIN PROGRAMME
