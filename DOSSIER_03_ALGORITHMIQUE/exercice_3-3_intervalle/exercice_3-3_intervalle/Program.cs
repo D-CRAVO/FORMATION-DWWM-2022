@@ -16,21 +16,16 @@ namespace exercice_3_3_intervalle
             nombre_2 = int.Parse(Console.ReadLine());
             if (nombre_1 < nombre_2)
             {
-                compteur = nombre_1 + 1;
-                while (compteur < nombre_2)
+                for (compteur = nombre_1 + 1; compteur < nombre_2; compteur++)
                 {
                     Console.Write(compteur + " ");
-                    compteur++;
                 }
             }
             else
             {
-                compteur = nombre_1 - 1;
-                while (compteur > nombre_2)
+                for (compteur = nombre_1 - 1; compteur > nombre_2; compteur--)
                 {
                     Console.Write(compteur + " ");
-                    compteur--;
-                    
                 }
             }
         }
