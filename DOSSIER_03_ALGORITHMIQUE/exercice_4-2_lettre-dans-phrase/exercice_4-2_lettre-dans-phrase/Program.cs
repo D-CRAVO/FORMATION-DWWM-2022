@@ -6,47 +6,52 @@ namespace exercice_4_2_lettre_dans_phrase
     {
         static void Main(string[] args)
         {
+            // EXERCICE 4.2 RECHERCHER UNE LETTRE DANS UNE PHRASE
 
-            
-            string phrase;
-            char caractere;
-            char[] tableau;
+            // VARIABLES
+
+            string chaine;
+            char lettre_donnee;
+            char[] tableau_chaine;
             int compteur_boucle;
-            int compteur_occurence;
+            int compteur_occurence = 0;
 
-            compteur_boucle = 0;
-            compteur_occurence = 0;
+            // DEBUT PROGRAMME
 
-            //It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-
-            Console.WriteLine("Veuillez saisir une phrase : ");
-            phrase = Console.ReadLine();
-            Console.Write("Veuillez saisir un caractère : ");
-            caractere = char.Parse(Console.ReadLine());
-            if ((phrase == "") || (phrase == "."))
+            Console.WriteLine("Veuillez saisir une phrase terminée par un point : ");
+            chaine = Console.ReadLine();
+            
+            if ((chaine == "") || (chaine == "."))
             {
                 Console.WriteLine("La chaine est vide.");
             }
             else
             {
-                do
+                tableau_chaine = chaine.ToCharArray();
+                Console.Write("Veuillez saisir un caractère : ");
+                lettre_donnee = char.Parse(Console.ReadLine());
+
+                // On parcourt toute la chaine pour compter le nombre de fois où la lettre donnée apparaît.
+                for (compteur_boucle = 0; compteur_boucle < tableau_chaine.Length - 1; compteur_boucle++)
                 {
-                    tableau = phrase.ToCharArray();
-                    if (tableau[compteur_boucle] == caractere)
+                    if (tableau_chaine[compteur_boucle] == lettre_donnee)
                     {
                         compteur_occurence++;
                     }
-                    compteur_boucle++;
-                } while (compteur_boucle < tableau.Length);
+                }
+
+                // On vérifie si la lettre donnée est présente ou non.
                 if (compteur_occurence == 0)
                 {
                     Console.WriteLine("La lettre n'est pas présente.");
                 }
                 else
                 {
-                    Console.WriteLine("La lettre " + caractere + " est présente " + compteur_occurence + " fois.");
+                    Console.WriteLine("La lettre " + lettre_donnee + " est présente " + compteur_occurence + " fois.");
                 }
             }
+
+            // FIN PROGRAMME
             
         }
     }
