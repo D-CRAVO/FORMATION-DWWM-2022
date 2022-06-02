@@ -22,6 +22,7 @@ do
         Console.WriteLine("Le nombre saisi n'est pas correct");
     }
 } while (!ok);
+
 float[] tableau_origine = new float[longueur_tableau];
 float[] tableau_trie = tableau_origine;
 
