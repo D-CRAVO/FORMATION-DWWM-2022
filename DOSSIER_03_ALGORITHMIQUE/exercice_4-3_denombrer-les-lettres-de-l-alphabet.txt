@@ -3,12 +3,12 @@ EXERCICE 4.3 DENOMBRER LES LETTRES DE L'ALPHABET DANS UN TABLEAU
 # VARIABLES
 
 TABLEAU tableau_alphabet
-TABLEAU tableau_chaine
-CHAINE chaine
-ENTIER compteur
-ENTIER i
-ENTIER j
-ENTIER longueur_chaine
+TABLEAU tableau_texte
+CHAINE texte
+ENTIER compteur_occurence
+ENTIER compteur_texte
+ENTIER compteur_alphabet
+ENTIER longueur_texte
 
 # DEBUT PROGRAMME
  
@@ -16,26 +16,26 @@ do while
 
 FAIRE 
    ECRIRE "Veuillez saisir votre phrase : "
-   LIRE chaine
-   longueur_chaine <-- |chaine|
-TANT QUE (longueur_chaine < 120)
+   LIRE texte
+   longueur_texte <-- |texte|
+TANT QUE (longueur_texte < 120)
    
-tableau_chaine <-- chaine
+tableau_texte <-- texte
 tableau_alphabet <-- alphabet
 
 POUR
-    i ALLANT DE 0 A (longueur_chaine - 1)
+    compteur_texte ALLANT DE 0 A (longueur_texte - 1)
 FAIRE
-    compteur <-- 0
+    compteur_occurence <-- 0
     POUR
-        j ALLANT DE 0 A longueur(tableau_alphabet) - 1 
+        compteur_alphabet ALLANT DE 0 A longueur(tableau_alphabet) - 1 
     FAIRE      
-        SI tableau_chaine[i] = tableau_alphabet[j]
+        SI tableau_texte[compteur_texte] = tableau_alphabet[compteur_alphabet]
         ALORS
-            compteur <-- compteur + 1 
+            compteur_occurence <-- compteur_occurence + 1 
         FIN SI     
     FIN POUR
-    ECRIRE "La lettre ", tableau_alphabet[j], "apparait ", compteur, " fois."
+    ECRIRE "La lettre ", tableau_alphabet[compteur_alphabet], "apparait ", compteur_occurence, " fois."
 FIN POUR
 
 # FIN PROGRAMME
