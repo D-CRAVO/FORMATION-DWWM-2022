@@ -6,20 +6,25 @@ namespace exercice_3_7_barnabe
     {
         static void Main(string[] args)
         {
-            float somme;
-            int compteur;
+            // EXERCICE 3.7 BARNABE FAIT SES COURSES
 
-            compteur = 0;
-            somme = 0;
+            // VARIABLES
+
+            float argent = 0;
+            int magasins_visites = 0;
+            
+            // DEBUT PROGRAMME
 
             Console.Write("Veuillez entrer la somme de départ : ");
-            somme = float.Parse(Console.ReadLine());
-            while (somme > 1)
+            argent = float.Parse(Console.ReadLine());
+            while (argent > 1)
             {
-                somme = somme - (somme/2 + 1);
-                compteur++;
+                argent = argent - (argent/2 + 1);
+                magasins_visites++;
             }
-            Console.WriteLine("Barbabé a visité " + (compteur + 1) + " magasins.");
+            Console.WriteLine("Barbabé a visité " + (magasins_visites + 1) + " magasins.");
+
+            // FIN PROGRAMME
         }
     }
 }
