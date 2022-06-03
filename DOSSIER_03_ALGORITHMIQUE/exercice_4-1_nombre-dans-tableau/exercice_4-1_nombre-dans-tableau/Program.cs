@@ -13,7 +13,7 @@ namespace exercice_4_1_nombre_dans_tableau
             int indice = 0;
             float nombre_saisi;
 
-            float[] tableau = { 8, 16, 32, 64, 128, 256, 512 };
+            float[] tableau = { 12 };
             string end = "Nombre non trouvé.";
 
             // DEBUT PROGRAMME
@@ -22,22 +22,30 @@ namespace exercice_4_1_nombre_dans_tableau
             Console.Write("Veuillez saisir un nombre entier : ");
             nombre_saisi = float.Parse(Console.ReadLine());
 
-            // On fait un DO WHILE et non un FOR pour s'arrêter dès que l'on a trouvé le nombre saisi.
-            do
+            if (tableau.Length == 0)
             {
-                if (tableau[indice] == nombre_saisi)
+                Console.WriteLine("Le tableau est vide !");
+            }
+            else
+            {
+                // On fait un DO WHILE et non un FOR pour s'arrêter dès que l'on a trouvé le nombre saisi.
+                while (indice < tableau.Length)
                 {
-                    Console.WriteLine("L'indice du nombre " + nombre_saisi + " dans le tableau est : " + (indice + 1));
-                    indice = tableau.Length;
-                    end = "Le traitement est terminé.";
+                    if (tableau[indice] == nombre_saisi)
+                    {
+                        Console.WriteLine("L'indice du nombre " + nombre_saisi + " dans le tableau est : " + (indice + 1));
+                        indice = tableau.Length;
+                        end = "Le traitement est terminé.";
+                    }
+                    else
+                    {
+                        indice++;
+                    }
                 }
-                else
-                {
-                    indice++;
-                    
-                }
-            } while (indice < tableau.Length);
-            Console.WriteLine(end);
+                Console.WriteLine(end);
+            }
+
+
 
             // FIN PROGRAMME
 
