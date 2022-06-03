@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\CRAVO David\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\exercice_4-4_tri-tableau\\exercice_4-4_tri-tableau\\exercice_4-4_tri-tableau.csproj",
-      "projectName": "exercice_4-4_tri-tableau",
-      "projectPath": "C:\\Users\\CRAVO David\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\exercice_4-4_tri-tableau\\exercice_4-4_tri-tableau\\exercice_4-4_tri-tableau.csproj",
+      "projectUniqueName": "C:\\Users\\CRAVO David\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\exercice_4-4_tri-tableau\\exercice_4-4_tri-tableau_v2\\exercice_4-4_tri-tableau_v2.csproj",
+      "projectName": "exercice_4-4_tri-tableau_v2",
+      "projectPath": "C:\\Users\\CRAVO David\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\exercice_4-4_tri-tableau\\exercice_4-4_tri-tableau_v2\\exercice_4-4_tri-tableau_v2.csproj",
       "packagesPath": "C:\\Users\\CRAVO David\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\CRAVO David\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\exercice_4-4_tri-tableau\\exercice_4-4_tri-tableau\\obj\\",
+      "outputPath": "C:\\Users\\CRAVO David\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\exercice_4-4_tri-tableau\\exercice_4-4_tri-tableau_v2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
