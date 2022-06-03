@@ -6,7 +6,7 @@ uint longueur_tableau;
 
 int compteur_tableau;
 int compteur_1;
-int compteur_2;
+int compteur_2 = 0;
 
 float temporaire;
 
@@ -50,9 +50,9 @@ for (compteur_tableau = 0; compteur_tableau < longueur_tableau; compteur_tableau
 }
 
 // Tri du tableau.
-for (compteur_1 = 0; compteur_1 < (longueur_tableau); compteur_1++)
+for (compteur_1 = 0; compteur_1 < (tableau_trie.Length - 1); compteur_1++)
 {
-    for (compteur_2 = 0; compteur_2 < longueur_tableau; compteur_2++)
+    for (compteur_2 = compteur_1; compteur_2 < tableau_trie.Length; compteur_2++)
     {
         if (tableau_trie[compteur_1] < tableau_trie[compteur_2])
         {
