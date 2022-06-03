@@ -37,7 +37,7 @@ FAIRE
     ECRIRE "Veuillez saisir votre phrase : "
     LIRE phrase
     longueur_phrase <-- |phrase|
-TANT QUE (tableau[longueur_phrase - 1] != ".") ET (longueur_phrase <= 1) 
+TANT QUE (tableau[longueur_phrase - 1] != ".") OU (longueur_phrase <= 1) 
 
 compteur <-- 0
 POUR 
