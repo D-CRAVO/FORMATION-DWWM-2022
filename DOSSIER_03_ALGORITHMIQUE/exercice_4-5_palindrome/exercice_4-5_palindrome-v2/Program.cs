@@ -1,16 +1,12 @@
 ﻿// VARIABLES
 
-string end;
 string phrase;
-int compteur;
+string phrase_comparaison;
+int compteur = 0;
+bool est_palindrome = true;
 
 char[] tableau_phrase = new char[] { };
 string[] tableau_caractere_indesirable = new string[] { "@", ",", ".", ";", "'", " " };
-
-
-// ASSIGNATIONS
-end = "Traitement terminé";
-compteur = 0;
 
 // DEBUT PROGRAMME
 
@@ -32,45 +28,47 @@ do
         {
             Console.WriteLine("Votre phrase doit contenir au moins un caractère.");
         }
-        else if (tableau_phrase[tableau_phrase.Length - 1] != '.')
+        else
         {
-            Console.WriteLine("Votre phrase doit se terminer par un point.");
-        }
-        else if (true)
-        {
-
-        }
-        {
-            if ()
+            if (tableau_phrase[tableau_phrase.Length - 1] != '.')
             {
+                Console.WriteLine("Votre phrase doit se terminer par un point.");
             }
         }
     }
 } while ((tableau_phrase[tableau_phrase.Length - 1] != '.') || (tableau_phrase.Length < 2));
 
 // On supprime les caractères indésirables.
-foreach (var caractere_indesirable in tableau_caractere_indesirable)
-{
-    phrase = phrase.Replace(caractere_indesirable, string.Empty);
-}
+//foreach (var caractere_indesirable in tableau_caractere_indesirable)
+//{
+//    phrase = phrase.Replace(caractere_indesirable, string.Empty);
+//}
 
 // On converti les majuscules en minuscules dans la phrase.
-phrase = phrase.ToLower();
-tableau_phrase = phrase.ToCharArray();
+phrase_comparaison = phrase.ToUpper();
+tableau_phrase = phrase_comparaison.ToCharArray();
 
-// On compare la première et la dernière lettre pour voir si elles sont identiques.
-// Puis la deuxième et l'avant dernière et ainsi de suite jusqu'à arriver au milieu de la phrase.
+// On compare la première et l'avant dernière lettre pour voir si elles sont identiques.
+// Puis la deuxième et l'avant-avant dernière et ainsi de suite jusqu'à arriver au milieu de la phrase.
 do
 {
-    if (tableau_phrase[compteur] == tableau_phrase[tableau_phrase.Length - 1 - compteur])
+    if (tableau_phrase[compteur] == tableau_phrase[tableau_phrase.Length - 2 - compteur])
     {
-        end = "La phrase est un palindrome.";
+        est_palindrome = true;
+        compteur++;
     }
     else
     {
-        end = "La phrase n'est pas un palindrome.";
+        est_palindrome = false;
     }
-    compteur++;
-} while (tableau_phrase[compteur] < tableau_phrase[tableau_phrase.Length - 1 - compteur]);
+} while ((tableau_phrase[compteur] < tableau_phrase[tableau_phrase.Length - 2 - compteur]) && (est_palindrome == true));
 
-Console.WriteLine(end);
+// On affiche le résultat.
+if (est_palindrome == true)
+{
+    Console.WriteLine("La phrase est un palindrome.");
+}
+else
+{
+    Console.WriteLine("La phrase n'est pas un palindrome.");
+}

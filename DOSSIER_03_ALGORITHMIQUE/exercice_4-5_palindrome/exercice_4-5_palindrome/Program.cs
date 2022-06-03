@@ -1,17 +1,11 @@
 ﻿// VARIABLES
 
-string end;
-string phrase;
+string phrase; 
+string phrase_comparaison;
 int compteur = 0;
 bool est_palindrome = true;
 
-char[] tableau_phrase = new char[] { };
-string[] tableau_caractere_indesirable = new string[] { "@", ",", ".", ";", "'", " " };
-
-
-// ASSIGNATIONS
-end = "Traitement terminé";
-compteur = 0;
+char[] tableau_phrase;
 
 // DEBUT PROGRAMME
 
@@ -43,30 +37,41 @@ do
     }
 } while ((tableau_phrase[tableau_phrase.Length - 1] != '.') || (tableau_phrase.Length < 2));
 
-// On supprime les caractères indésirables.
-//foreach (var caractere_indesirable in tableau_caractere_indesirable)
-//{
-//    phrase = phrase.Replace(caractere_indesirable, string.Empty);
-//}
+// On converti les minuscules en majuscules dans la phrase.
+// Sinon il faut partir du postulat que l'utilisateur na saisi que des majuscules.
+phrase_comparaison = phrase.ToUpper();
+tableau_phrase = phrase_comparaison.ToCharArray();
 
-// On converti les majuscules en minuscules dans la phrase.
-phrase = phrase.ToLower();
-tableau_phrase = phrase.ToCharArray();
-
-// On compare la première et la dernière lettre pour voir si elles sont identiques.
-// Puis la deuxième et l'avant dernière et ainsi de suite jusqu'à arriver au milieu de la phrase.
-while ((tableau_phrase[compteur] < tableau_phrase[tableau_phrase.Length - 2 - compteur]) || (est_palindrome == true))
+do
 {
-    if (tableau_phrase[compteur] == tableau_phrase[tableau_phrase.Length - 2 - compteur])
+    // On part du postulat que l'utilisateur ne saisi pas de caractères spéciaux.
+    // Si le caractère rencontré est un espace on passe au caractère suivant.
+    if (tableau_phrase[compteur] == ' ')
     {
-        est_palindrome = true;
+        tableau_phrase[compteur] = tableau_phrase[compteur + 1];
+    }
+    else if (tableau_phrase[tableau_phrase.Length - 2 - compteur] == ' ')
+    {
+        tableau_phrase[tableau_phrase.Length - 2 - compteur] = tableau_phrase[tableau_phrase.Length - 2 - compteur - 1];
     }
     else
     {
-        est_palindrome = false;
+        // On compare la première et l'avant dernière lettre pour voir si elles sont identiques.
+        // Puis la deuxième et l'avant-avant dernière et ainsi de suite jusqu'à arriver au milieu de la phrase.
+        if (tableau_phrase[compteur] == tableau_phrase[tableau_phrase.Length - 2 - compteur])
+        {
+            est_palindrome = true;
+            compteur++;
+        }
+        else
+        {
+            est_palindrome = false;
+            // Si les deux premiers caractères rencontrés ne sont pas identique
+            // Alors il n'est pas nécessaire d'incrémenter le compteur.
+        }
     }
-    compteur++;
-}
+    
+} while ((tableau_phrase[compteur] < tableau_phrase[tableau_phrase.Length - 2 - compteur]) && (est_palindrome == true));
 
 // On affiche le résultat.
 if (est_palindrome == true)
