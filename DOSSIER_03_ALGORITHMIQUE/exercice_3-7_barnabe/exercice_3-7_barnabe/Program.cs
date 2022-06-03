@@ -17,7 +17,7 @@ namespace exercice_3_7_barnabe
 
             Console.Write("Veuillez entrer la somme de départ : ");
             argent = float.Parse(Console.ReadLine());
-            while (argent > 1)
+            while (argent > 2)
             {
                 argent = argent - (argent/2 + 1);
                 magasins_visites++;
