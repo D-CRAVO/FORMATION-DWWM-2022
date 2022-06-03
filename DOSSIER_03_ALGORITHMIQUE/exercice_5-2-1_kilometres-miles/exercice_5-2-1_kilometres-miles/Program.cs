@@ -9,7 +9,7 @@ bool ok;
 string end = "Aurevoir !";
 
 double valeur_saisie;
-double valeur_kilometres = 0;
+double valeur_kilometres;
 double valeur_miles;
 double valeur_minimale = 0.01;
 double valeur_maximale = 1000000;
@@ -22,7 +22,7 @@ do
     {
         // On demande à l'utilisateur de saisir une valeur de kilomètres à convertir en miles.
         Console.Write("Veuillez saisir une valeur en kimomètres comprise entre " + valeur_minimale + " et " + valeur_maximale + " : ");
-        ok = double.TryParse(Console.ReadLine().ToLower().Replace(".", ",").Replace("q","-1,000009"), out valeur_saisie);
+        ok = double.TryParse(Console.ReadLine().ToLower().Replace("q","-1,000009"), out valeur_saisie);
     } while (!ok);
     // On vérifie si l'utilisateur veut sortir du programme.
     if (valeur_saisie == -1.000009)
