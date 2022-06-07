@@ -26,7 +26,7 @@ double moyenne_chiffres;
 // On boucle tant que ce n'est pas le cas.
 do
 {
-    Console.WriteLine("Veuillez saisir votre phrase (100 caractères minimum) : ");
+    Console.WriteLine("Veuillez saisir votre phrase (" + longueur_phrase + " caractères minimum) : ");
     phrase = Console.ReadLine().ToLower();
 } while (phrase.Length < longueur_phrase);
 tableau_phrase = phrase.ToCharArray();
@@ -66,7 +66,7 @@ for (compteur_1 = 0; compteur_1 < phrase.Length; compteur_1++)
             are represented by consecutive numbers, so finding the difference between the characters '0' and '2' 
             results in the number 2.*/
             valeur_numerique = tableau_chiffres[compteur_2] - '0';
-            somme_chiffres = somme_chiffres + valeur_numerique;
+            somme_chiffres += valeur_numerique;
         }
     }
 }
