@@ -6,12 +6,12 @@ string unite;
 string affichage = "quit";
 double valeur_min;
 double valeur_max;
-double temp_farenheit = 0;
 double temp_farenheit_min = 0;
 double temp_farenheit_max = 0;
-double temp_celsius = 0;
 double temp_celsius_min = 0;
 double temp_celsius_max = 0;
+double temp_min = -459.67;
+double temp_max = 5000000;
 
 // DEBUT PROGRAMME
 
@@ -28,16 +28,22 @@ do
     {
         Console.Write("Veuillez saisir la valeur minimum : ");
         valeur_min = double.Parse(Console.ReadLine());
+        Intervalle(valeur_min);
         Console.Write("Veuillez saisir la valeur maximum : ");
         valeur_max = double.Parse(Console.ReadLine());
+        Intervalle(valeur_max);
 
         if (unite == "c")
         {
+           
+            
             ConversionCF(valeur_min, valeur_max);
             affichage = "celsius";
         }
         else
         {
+            Intervalle(valeur_min);
+            Intervalle(valeur_max);
             ConversionFC(valeur_min, valeur_max);
             affichage = "farenheit";
         }
@@ -67,22 +73,45 @@ void Affichage(string valeur_entree)
             Console.WriteLine("°C.");
             Console.WriteLine();
             break;
+        case "min":
+            Console.WriteLine("Vous êtes en dessous de la valeur minimale");
+            Console.WriteLine();
+            break;
+        case "max":
+            Console.WriteLine("Vous êtes au dessus de la valeur maximale");
+            Console.WriteLine();
+            break;
         default:
             Console.WriteLine("Aurevoir !");
             break;
     }
 }
 
-void ConversionCF(double valeur_min, double valeur_max)
+void ConversionCF (double valeur_min, double valeur_max)
 {
     temp_farenheit_min = (valeur_min * 9 / 5) + 32;
     temp_farenheit_max = (valeur_max * 9 / 5) + 32;
 }
 
-void ConversionFC(double valeur_min, double valeur_max)
+void ConversionFC (double valeur_min, double valeur_max)
 {
     temp_celsius_min = (valeur_min - 32) * 5 / 9;
     temp_celsius_max = (valeur_max - 32) * 5 / 9;
 }
 
+void Intervalle (double valeur_entree)
+{
+    if (valeur_entree < temp_min)
+    {
+        affichage = "min";
+    }
+    else if (valeur_entree > temp_max)
+    {
+        affichage = "max";
+    }
+    else
+    {
+        affichage = "poursuite";
+    }
+}
 // FIN FONCTIONS
