@@ -1,21 +1,18 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\CRAVO David\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\exercice_6-3-2_nombre-categorie-age\\exercice_6-3-2_nombre-categorie-age\\exercice_6-3-2_nombre-categorie-age.csproj": {}
+    "C:\\Users\\CRAVO David\\OneDrive\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\exercice_6-3-2_nombre-categorie-age\\exercice_6-3-2_nombre-categorie-age\\exercice_6-3-2_nombre-categorie-age.csproj": {}
   },
   "projects": {
-    "C:\\Users\\CRAVO David\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\exercice_6-3-2_nombre-categorie-age\\exercice_6-3-2_nombre-categorie-age\\exercice_6-3-2_nombre-categorie-age.csproj": {
+    "C:\\Users\\CRAVO David\\OneDrive\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\exercice_6-3-2_nombre-categorie-age\\exercice_6-3-2_nombre-categorie-age\\exercice_6-3-2_nombre-categorie-age.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CRAVO David\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\exercice_6-3-2_nombre-categorie-age\\exercice_6-3-2_nombre-categorie-age\\exercice_6-3-2_nombre-categorie-age.csproj",
+        "projectUniqueName": "C:\\Users\\CRAVO David\\OneDrive\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\exercice_6-3-2_nombre-categorie-age\\exercice_6-3-2_nombre-categorie-age\\exercice_6-3-2_nombre-categorie-age.csproj",
         "projectName": "exercice_6-3-2_nombre-categorie-age",
-        "projectPath": "C:\\Users\\CRAVO David\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\exercice_6-3-2_nombre-categorie-age\\exercice_6-3-2_nombre-categorie-age\\exercice_6-3-2_nombre-categorie-age.csproj",
+        "projectPath": "C:\\Users\\CRAVO David\\OneDrive\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\exercice_6-3-2_nombre-categorie-age\\exercice_6-3-2_nombre-categorie-age\\exercice_6-3-2_nombre-categorie-age.csproj",
         "packagesPath": "C:\\Users\\CRAVO David\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CRAVO David\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\exercice_6-3-2_nombre-categorie-age\\exercice_6-3-2_nombre-categorie-age\\obj\\",
+        "outputPath": "C:\\Users\\CRAVO David\\OneDrive\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\exercice_6-3-2_nombre-categorie-age\\exercice_6-3-2_nombre-categorie-age\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\CRAVO David\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
