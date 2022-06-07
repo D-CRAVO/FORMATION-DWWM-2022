@@ -15,7 +15,7 @@ POUR
    i ALLANT DE 0 A longueur(tableau)
 FAIRE
    POUR 
-       j ALLANT DE 1 A longueur(tableau) 
+       j ALLANT DE i A longueur(tableau) 
    FAIRE   
       SI tableau[j] < tableau[i] 
       ALORS
