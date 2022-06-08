@@ -4,7 +4,10 @@ REMONTER D'UN NIVEAU
     cd..
 CREER UN REPERTOIRE
     mkdir github.demo
+    
 
+CREER UN DEPOT GIT VIDE
+    git init
 VOIR LE STATUS DES FICHIERS
     git status
 METTRE L'ATTENTION SUR UN FICHIER
@@ -15,15 +18,16 @@ METTRE L'ATTENTION SUR TOUTE LA BRANCHE
     git add -A
 ENVOYER SUR LE SERVEUR EN MENTIONNANT LE COMMENTAIRE OBLIGATOIRE
     git commit -m "Initial commit"
-MODIFIER LE COMPTE GIT
+MODIFIER L'IDENTIFICATION SUR LA MACHINE POUR GIT
     config global.user.name "David"
     config global.user.email "toto@arfp.asso.fr"
 
-CREER UNE BRANCHE
-    git branch (develop)
+CREER UNE BRANCHE (crée la branche develop)
+    git branch "develop"
 VOIR LES BRANCHES
     git branch
 SUPPRIMER UNE BRANCHE
     git branch -d
 SWTICHER ENTRE DEUX BRANCHES
     git checkout (develop)
+
