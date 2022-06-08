@@ -1,0 +1,29 @@
+RENTRER DANS UN REPERTOIRE
+    cd (change directory)
+REMONTER D'UN NIVEAU
+    cd..
+CREER UN REPERTOIRE
+    mkdir github.demo
+
+VOIR LE STATUS DES FICHIERS
+    git status
+METTRE L'ATTENTION SUR UN FICHIER
+    git add README.md
+METTRE L'ATTENTION SUR TOUS LES DOSSIERS D'UN REPERTOIRE
+    git add .
+METTRE L'ATTENTION SUR TOUTE LA BRANCHE
+    git add -A
+ENVOYER SUR LE SERVEUR EN MENTIONNANT LE COMMENTAIRE OBLIGATOIRE
+    git commit -m "Initial commit"
+MODIFIER LE COMPTE GIT
+    config global.user.name "David"
+    config global.user.email "toto@arfp.asso.fr"
+
+CREER UNE BRANCHE
+    git branch (develop)
+VOIR LES BRANCHES
+    git branch
+SUPPRIMER UNE BRANCHE
+    git branch -d
+SWTICHER ENTRE DEUX BRANCHES
+    git checkout (develop)
