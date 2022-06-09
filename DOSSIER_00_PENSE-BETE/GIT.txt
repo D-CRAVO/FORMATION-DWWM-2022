@@ -27,7 +27,7 @@ CREER UNE BRANCHE (crée la branche develop)
 VOIR LES BRANCHES
     git branch
 SUPPRIMER UNE BRANCHE
-    git branch -d
+    git branch -d essai
 SWTICHER ENTRE DEUX BRANCHES
     git checkout (develop)
 
