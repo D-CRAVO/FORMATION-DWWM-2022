@@ -49,6 +49,8 @@ REVENIR DE 4 COMMITS EN ARRIERE
     git checkout HEAT~4
 BOUGER DE FORCE LA BRANCHE MAIN A 3 PARENTS DERRIERE HEAD
     git branch -f main HEAD~3
+DECENDRE JUSQU'A UN COMMIT PRECIS
+    git branch -f main C6
 
 ANNULER DES CHANGEMENTS SUR LA MACHINE
     git reset HEAD~1
@@ -59,3 +61,7 @@ COPIER UNE SERIE DE COMMITS
     git cherry-pick C2 C4
 REBASE ITERATIF
     git rebase -i HEAD~4
+FAIRE UN TAG SUR C1
+    git tag v1 c1
+DECRIRE UN TAG
+    git describe main
