@@ -1,0 +1,5 @@
+Le NoSQL est un type de bases de données, dont la spécificité est d’être non relationnelles. Ces systèmes permettent le stockage et l’analyse du Big Data.
+À l’heure du Big Data, les bases de données relationnelles ne sont plus adaptées. Pour prendre en charge les immenses volumes de données, les stocker et les analyser, il est impératif de s’en remettre à de nouvelles solutions.
+Une base de données NoSQL est une base de données “non relationnelle”. Il est possible d’y stocker des données sous une forme non structurée, sans suivre de schéma fixe. Les jointures ne sont plus nécessaires, et le scaling est facilité.
+On utilise notamment les bases de données NoSQL pour les Data Stores distribués aux besoins élevés en capacité de stockage. Ainsi, NoSQL est utilisé pour le Big Data et les applications web en temps réel. Les géants de la technologie comme Twitter, Facebook ou Google collectent chaque jour plusieurs terabytes de données sur leurs utilisateurs.
+Le terme ” NoSQL ” signifie en fait ” Not Only SQL “ (pas seulement SQL). En effet, les bases de données relationnelles utilisent la syntaxe SQL pour le stockage et l’analyse de données.
