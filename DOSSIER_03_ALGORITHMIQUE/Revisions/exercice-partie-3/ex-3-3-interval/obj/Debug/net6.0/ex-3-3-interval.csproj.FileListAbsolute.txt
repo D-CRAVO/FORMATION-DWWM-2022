@@ -1,0 +1,15 @@
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-3\ex-3-3-interval\bin\Debug\net6.0\ex-3-3-interval.exe
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-3\ex-3-3-interval\bin\Debug\net6.0\ex-3-3-interval.deps.json
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-3\ex-3-3-interval\bin\Debug\net6.0\ex-3-3-interval.runtimeconfig.json
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-3\ex-3-3-interval\bin\Debug\net6.0\ex-3-3-interval.dll
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-3\ex-3-3-interval\bin\Debug\net6.0\ex-3-3-interval.pdb
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-3\ex-3-3-interval\obj\Debug\net6.0\ex-3-3-interval.csproj.AssemblyReference.cache
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-3\ex-3-3-interval\obj\Debug\net6.0\ex-3-3-interval.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-3\ex-3-3-interval\obj\Debug\net6.0\ex-3-3-interval.AssemblyInfoInputs.cache
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-3\ex-3-3-interval\obj\Debug\net6.0\ex-3-3-interval.AssemblyInfo.cs
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-3\ex-3-3-interval\obj\Debug\net6.0\ex-3-3-interval.csproj.CoreCompileInputs.cache
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-3\ex-3-3-interval\obj\Debug\net6.0\ex-3-3-interval.dll
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-3\ex-3-3-interval\obj\Debug\net6.0\refint\ex-3-3-interval.dll
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-3\ex-3-3-interval\obj\Debug\net6.0\ex-3-3-interval.pdb
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-3\ex-3-3-interval\obj\Debug\net6.0\ex-3-3-interval.genruntimeconfig.cache
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-3\ex-3-3-interval\obj\Debug\net6.0\ref\ex-3-3-interval.dll
