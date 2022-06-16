@@ -13,9 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ex-3-3-interval", "ex-3-3-i
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ex-3-4-diviseur", "ex-3-4-diviseur\ex-3-4-diviseur.csproj", "{0040FC63-BCC3-4C2E-ACC6-913642D62ACB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ex-3-1-saisie", "ex-3-1-saisie\ex-3-1-saisie.csproj", "{9F8F4DEA-A4A9-4F7D-9577-48496AF48F88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ex-3-1-saisie", "ex-3-1-saisie\ex-3-1-saisie.csproj", "{9F8F4DEA-A4A9-4F7D-9577-48496AF48F88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ex-3-2-limite", "ex-3-2-limite\ex-3-2-limite.csproj", "{D33182AD-A54E-4419-8E10-FA539988FC66}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ex-3-2-limite", "ex-3-2-limite\ex-3-2-limite.csproj", "{D33182AD-A54E-4419-8E10-FA539988FC66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ex-3-2-limite-v2", "ex-3-2-limite-v2\ex-3-2-limite-v2.csproj", "{A8F11CB7-96AA-4B53-96C5-960AFD325FC1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{D33182AD-A54E-4419-8E10-FA539988FC66}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D33182AD-A54E-4419-8E10-FA539988FC66}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D33182AD-A54E-4419-8E10-FA539988FC66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8F11CB7-96AA-4B53-96C5-960AFD325FC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8F11CB7-96AA-4B53-96C5-960AFD325FC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8F11CB7-96AA-4B53-96C5-960AFD325FC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8F11CB7-96AA-4B53-96C5-960AFD325FC1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
