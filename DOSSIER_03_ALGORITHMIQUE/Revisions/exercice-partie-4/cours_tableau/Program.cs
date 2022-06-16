@@ -48,3 +48,6 @@ for (int i = 0; i < pays.Length; i++)
 //{
 //    Console.WriteLine(i + " = " + tableau[i]);
 //}
+
+
+// installer Laragon pour demain version full
