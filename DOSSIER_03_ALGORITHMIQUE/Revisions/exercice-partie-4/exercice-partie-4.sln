@@ -5,9 +5,15 @@ VisualStudioVersion = 17.2.32505.173
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ex4-1-nombre", "ex4-1-nombre\ex4-1-nombre.csproj", "{81B00B3B-5531-41A8-A930-00122E293EBD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ex4-2-lettre", "ex4-2-lettre\ex4-2-lettre.csproj", "{F9E9644F-8127-4157-9AD0-31B41D501F64}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ex4-2-lettre", "ex4-2-lettre\ex4-2-lettre.csproj", "{F9E9644F-8127-4157-9AD0-31B41D501F64}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ex4-3-alphabet", "ex4-3-alphabet\ex4-3-alphabet.csproj", "{BEAA1738-95FD-4A3A-9F1B-DFE2D8A57A2E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ex4-3-alphabet", "ex4-3-alphabet\ex4-3-alphabet.csproj", "{BEAA1738-95FD-4A3A-9F1B-DFE2D8A57A2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ex4-4-tri-tableau", "ex4-4-tri-tableau\ex4-4-tri-tableau.csproj", "{6E8C1933-CB19-453E-9A80-C086720F26FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ex4-5-palindrome", "ex4-5-palindrome\ex4-5-palindrome.csproj", "{F6D88F1B-2E86-4A91-82FD-2523A4C7D1D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cours_tableau", "cours_tableau\cours_tableau.csproj", "{68F661F3-9BDC-4FE3-909B-B17716727D3A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +33,18 @@ Global
 		{BEAA1738-95FD-4A3A-9F1B-DFE2D8A57A2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BEAA1738-95FD-4A3A-9F1B-DFE2D8A57A2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BEAA1738-95FD-4A3A-9F1B-DFE2D8A57A2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E8C1933-CB19-453E-9A80-C086720F26FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E8C1933-CB19-453E-9A80-C086720F26FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E8C1933-CB19-453E-9A80-C086720F26FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E8C1933-CB19-453E-9A80-C086720F26FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6D88F1B-2E86-4A91-82FD-2523A4C7D1D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6D88F1B-2E86-4A91-82FD-2523A4C7D1D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6D88F1B-2E86-4A91-82FD-2523A4C7D1D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6D88F1B-2E86-4A91-82FD-2523A4C7D1D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68F661F3-9BDC-4FE3-909B-B17716727D3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68F661F3-9BDC-4FE3-909B-B17716727D3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68F661F3-9BDC-4FE3-909B-B17716727D3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68F661F3-9BDC-4FE3-909B-B17716727D3A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
