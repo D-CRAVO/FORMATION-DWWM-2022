@@ -1,6 +1,7 @@
 <!-- MA BICYCLETTE -->
 
 <?php
+    echo ("Les réponses seront 0 pour non et 1 pour oui.");
     $il_fait_beau = (boolean)readline("Fait-il beau temps ? ");
     if($il_fait_beau)
     {
