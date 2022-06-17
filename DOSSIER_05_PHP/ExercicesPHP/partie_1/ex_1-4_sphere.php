@@ -1,3 +1,5 @@
+<!-- CALCUL DE L'AIRE ET DU VOLUME D'UNE SPHERE -->
+
 <?php
     $rayon = (float)readline('Veuillez saisir le rayon de la sphère : ');
     $aire = 4 * pi() * pow($rayon, 2);
