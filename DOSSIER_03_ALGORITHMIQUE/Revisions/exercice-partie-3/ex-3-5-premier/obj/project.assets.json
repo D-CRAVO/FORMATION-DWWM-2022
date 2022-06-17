@@ -8,21 +8,17 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\CRAVO David\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\CRAVO David\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\CRAVO David\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\Revisions\\exercice-partie-3\\ex-3-5-premier\\ex-3-5-premier.csproj",
+      "projectUniqueName": "C:\\Users\\CRAVO David\\OneDrive\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\Revisions\\exercice-partie-3\\ex-3-5-premier\\ex-3-5-premier.csproj",
       "projectName": "ex-3-5-premier",
-      "projectPath": "C:\\Users\\CRAVO David\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\Revisions\\exercice-partie-3\\ex-3-5-premier\\ex-3-5-premier.csproj",
+      "projectPath": "C:\\Users\\CRAVO David\\OneDrive\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\Revisions\\exercice-partie-3\\ex-3-5-premier\\ex-3-5-premier.csproj",
       "packagesPath": "C:\\Users\\CRAVO David\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\CRAVO David\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\Revisions\\exercice-partie-3\\ex-3-5-premier\\obj\\",
+      "outputPath": "C:\\Users\\CRAVO David\\OneDrive\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\Revisions\\exercice-partie-3\\ex-3-5-premier\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
         "C:\\Users\\CRAVO David\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -64,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }
