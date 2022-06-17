@@ -1,3 +1,5 @@
+<!-- CALCUL DE LA MOYENNE DE DEUX NOMBRES -->
+
 <?php
     $nb1 = readline('Veuillez saisir votre premier nombre entier : ');
     $nb2 = readline('Veuillez saisir votre second nombre entier : ');
