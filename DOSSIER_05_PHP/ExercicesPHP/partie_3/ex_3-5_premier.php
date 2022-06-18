@@ -20,7 +20,7 @@
             {
                 $resultat = " 3 Le nombre est premier";
             }
-        }while ($modulo !== 0 && $i > $nb -1);
+        }while ($modulo !== 0 && $i > $nb - 1);
 
     }
     echo $resultat;
