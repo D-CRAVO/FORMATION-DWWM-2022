@@ -24,12 +24,11 @@
     
     $lettre = readline("Veuillez saisir votre caractère : ");
     for ($i = 0; $i < $lg; $i++)
-            {
-                if($lettre === $phrase[$i])
-                {
-                    $occurrences++;
-                }
-            }
-
+    {
+        if($lettre === $phrase[$i])
+        {
+            $occurrences++;
+        }
+    }
     echo "La lettre $lettre apparaît $occurrences fois dans la phrase."
 ?>
