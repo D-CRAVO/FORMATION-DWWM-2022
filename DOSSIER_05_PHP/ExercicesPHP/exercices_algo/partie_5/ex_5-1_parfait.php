@@ -20,5 +20,4 @@
         }
         $nb++;
     }while($compteur <4);
-    
 ?>
