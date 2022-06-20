@@ -1,0 +1,15 @@
+
+adresse ip + port -> end point
+
+pare feu gère l'ouverture des ports
+
+GENERAL
+request url
+request method
+status code
+remote adress 
+RESPONSE HEADERS
+content-length
+content-type
+date
+----------> à savoir par coeur !
