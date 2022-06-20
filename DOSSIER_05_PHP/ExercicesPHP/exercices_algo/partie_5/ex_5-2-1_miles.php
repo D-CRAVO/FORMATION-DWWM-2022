@@ -11,13 +11,10 @@
         else 
         {
             $km = $kilometres;
-            //$km = number_format((double)$km, 2);
+            $km = number_format($km, 2);
             $mi = 1.609 * $km;
-            $result = "$km kms donnent $mi miles.";
+            $result = "$km kms donnent $mi miles.\n";
         }
         echo $result;
     } while ($kilometres != 'q')
-
-    
-
 ?>
