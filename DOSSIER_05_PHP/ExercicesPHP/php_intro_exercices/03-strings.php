@@ -3,6 +3,9 @@
 // *******************************************************************************
 echo PHP_EOL . 'Exercice 3.A Retourner le nom de l\'inventeur de E=MC²' . PHP_EOL;
 
+echo 'Créer une fonction « getMC2() ».' . PHP_EOL; 
+echo 'Cette fonction doit retourner Le nom de l’inventeur de la formule « E = MC² ».' . PHP_EOL;
+
 /** 
  * 
  * Retourner le nom de l'inventeur de E=MC²
@@ -28,6 +31,9 @@ echo  $result . PHP_EOL;
 
 // ********************************************************************************
 echo PHP_EOL . 'Exercice 3.B Retourner la concaténation de deux valeurs' . PHP_EOL;
+
+echo 'Créer une fonction « getUserName() » qui accepte deux arguments (prénom et nom) de type string.' . PHP_EOL; 
+echo 'Cette fonction doit retourner la concaténation des deux valeurs.' . PHP_EOL; 
 
 /**
  * 
