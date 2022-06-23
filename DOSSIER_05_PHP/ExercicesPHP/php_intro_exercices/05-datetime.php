@@ -82,6 +82,7 @@ do
 
     $date = new DateTime($date);
     // echo '$date : ' . $date . PHP_EOL;
+    print_r($date);
 
     $day = $date->format('d');
     $month = $date->format('m');
@@ -102,23 +103,69 @@ do
 function getTimeLeft($date) : string
 {
     $today = new DateTime();
-    $interval = $today->diff($date);
+
+    if($date->format('ymd') < $today->format('ymd')) 
+    {
+        $result = 'Evènement passé';
+    }
+    else if (($date->format('Ymd')) === ($today->format('Ymd')))
+    {
+        $result = 'Aujourd\'hui';
+    }
+    else
+    {
+        $interval = $today->diff($date);
+
+        if (($interval->format('%y') === '0') && ($interval->format('%m') === '0'))
+        {
+            $result = 'Dans ' . $interval->format('%d') . ' jours.'; 
+        }
+        else if ($interval->format('%y') === '0')
+        {
+            $result = 'Autre ! Au boulot !';
+            $result = 'Dans ' . $interval->format('%y') . ' années et ' . $interval->format('%m') . ' mois et ' . $interval->format('%d') . ' jours.'; 
+        }
+        else if ($interval->format('%d') === '0')
+        {
+            $result = 'Dans ' . $interval->format('%y') . ' années et ' . $interval->format('%m') . ' mois.'; 
+        }
+        else
+        {
+            $result = 
+        }
+    }
+
+
+    
     //$interval_compare = intval($interval);
     //echo '$interval : ' . $interval . PHP_EOL;
+    // print_r($interval);
+    // echo '**********************' . PHP_EOL;
+    // echo $interval->format('%y');
+    // echo PHP_EOL . '**********************' . PHP_EOL;
 
-    switch($interval)
-    {
-        case ($interval < 0) :
-            $result = 'Evènement passé.';
-            break;
-        case ($interval === 0) :
-            $result = 'Aujourd\'hui.';
-            break;
-        default :
-            $result = 'Dans ' ;
-    }
+
+    // switch($interval)
+    // {
+    //     case ($interval < 0) :
+    //         $result = 'Evènement passé.';
+    //         break;
+    //     case ($interval === 0) :
+    //         $result = 'Aujourd\'hui.';
+    //         break;
+    //     default :
+    //         $result = 'Dans ' ;
+    // }
     //echo $result . PHP_EOL;
+
+    // if ($interval->format('%y') > 0)
+    // {
+    //     $result = 'Aujourd\'hui.';
+    // }
+    
+
     return $result;
+
 }
 
 echo getTimeLeft($date).  PHP_EOL;
