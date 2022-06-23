@@ -87,15 +87,32 @@ do
     $day = $date->format('d');
     $month = $date->format('m');
     $year = $date->format('y');
-    
-    $control = checkdate($month, $day, $year);
-    if (!$control)
+
+    if (($day < 0) || ($day > 31))
     {
-        $result = 'Veuillez saisir une date au bon format' . PHP_EOL;
+        $result = 'Veuillez ressaisir un jour correct';
     }
-    else {
-        $result = 'Vous pouvez continuer' . PHP_EOL;
+    else if (($month < 0) || ($month > 12))
+    {
+        $result = "Veuillez ressaisir un mois correct";
     }
+    else
+    {
+        $control = checkdate($month, $day, $year);
+
+        //$control = checkdate($date->format(y));
+
+        if (!$control)
+        {
+            $result = 'Veuillez saisir une date au bon format' . PHP_EOL;
+        }
+        else 
+        {
+            $result = 'Vous pouvez continuer' . PHP_EOL;
+        }
+    }
+    
+    
     echo $result . PHP_EOL;
 }while(!$control);
 
@@ -104,7 +121,7 @@ function getTimeLeft($date) : string
 {
     $today = new DateTime();
 
-    if($date->format('ymd') < $today->format('ymd')) 
+    if($date->format('Ymd') < $today->format('Ymd')) 
     {
         $result = 'Evènement passé';
     }
@@ -116,54 +133,31 @@ function getTimeLeft($date) : string
     {
         $interval = $today->diff($date);
 
-        if (($interval->format('%y') === '0') && ($interval->format('%m') === '0'))
+        if (($interval->format('%y') === '0') && ($interval->format('%m') === '0') && ($interval->format('%d') !== '0'))
         {
             $result = 'Dans ' . $interval->format('%d') . ' jours.'; 
         }
-        else if ($interval->format('%y') === '0')
+        else if (($interval->format('%y') !== '0') && ($interval->format('%m') === '0') && ($interval->format('%d') === '0'))
         {
-            $result = 'Autre ! Au boulot !';
-            $result = 'Dans ' . $interval->format('%y') . ' années et ' . $interval->format('%m') . ' mois et ' . $interval->format('%d') . ' jours.'; 
+            $result = 'Dans ' . $interval->format('%y') . ' années.'; 
         }
-        else if ($interval->format('%d') === '0')
+        else if (($interval->format('%y') === '0') && ($interval->format('%m') !== '0') && ($interval->format('%d') !== '0'))
+        {
+            $result = 'Dans ' . $interval->format('%m') . ' mois et ' . $interval->format('%d') . ' jours.'; 
+        }
+        else if (($interval->format('%y') !== '0') && ($interval->format('%m') !== '0') && ($interval->format('%d') === '0'))
         {
             $result = 'Dans ' . $interval->format('%y') . ' années et ' . $interval->format('%m') . ' mois.'; 
         }
-        else
+        else if (($interval->format('%y') !== '0') && ($interval->format('%m') === '0') && ($interval->format('%d') !== '0'))
         {
-            $result = 
+            $result = 'Dans ' . $interval->format('%y') . ' années et ' . $interval->format('%d') . ' jours.'; 
+        }
+        else 
+        {
+            $result = 'Dans ' . $interval->format('%y') . ' années, ' . $interval->format('%m') . ' mois et ' . $interval->format('%d') . ' jours.'; 
         }
     }
-
-
-    
-    //$interval_compare = intval($interval);
-    //echo '$interval : ' . $interval . PHP_EOL;
-    // print_r($interval);
-    // echo '**********************' . PHP_EOL;
-    // echo $interval->format('%y');
-    // echo PHP_EOL . '**********************' . PHP_EOL;
-
-
-    // switch($interval)
-    // {
-    //     case ($interval < 0) :
-    //         $result = 'Evènement passé.';
-    //         break;
-    //     case ($interval === 0) :
-    //         $result = 'Aujourd\'hui.';
-    //         break;
-    //     default :
-    //         $result = 'Dans ' ;
-    // }
-    //echo $result . PHP_EOL;
-
-    // if ($interval->format('%y') > 0)
-    // {
-    //     $result = 'Aujourd\'hui.';
-    // }
-    
-
     return $result;
 
 }
