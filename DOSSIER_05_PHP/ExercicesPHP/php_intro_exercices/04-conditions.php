@@ -153,7 +153,7 @@ $nb2 = floatval(readline('Veuillez saisir le nombre 2 : '));
 $nb3 = floatval(readline('Veuillez saisir le nombre 3 : '));
 
 // Recovery of the result.
-$result = getMax($nb1, $nb2, $nb3);
+$result = number_format(getMax($nb1, $nb2, $nb3), 3, ',');
 
 // Display of the result
 echo 'Le plus grand des trois nombres est : ' . $result . PHP_EOL;
