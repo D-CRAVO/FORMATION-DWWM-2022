@@ -74,29 +74,51 @@ echo PHP_EOL . 'Exercice 5.B Contrôle de saisie de la date.' . PHP_EOL;
 // echo date("M") . PHP_EOL;
 // echo date("n") . PHP_EOL;
 
-// Recovery of user data
-$date = (readline('Veuillez saisir votre date au format aaaa-mm-jj : '));
-echo '$date : ' . $date . PHP_EOL;
-
-function getTimeLeft(string $date) : string
+do
 {
+    // Recovery of user data
+    $date = (readline('Veuillez saisir votre date au format aaaa-mm-jj : '));
+    echo '$date : ' . $date . PHP_EOL;
+
     $date = new DateTime($date);
-    $today = new DateTime();
-    $interval = $today->diff($date);
+    // echo '$date : ' . $date . PHP_EOL;
 
     $day = $date->format('d');
     $month = $date->format('m');
     $year = $date->format('y');
-
+    
     $control = checkdate($month, $day, $year);
     if (!$control)
     {
-
+        $result = 'Veuillez saisir une date au bon format' . PHP_EOL;
     }
-    else
+    else {
+        $result = 'Vous pouvez continuer' . PHP_EOL;
+    }
+    echo $result . PHP_EOL;
+}while(!$control);
+
+
+function getTimeLeft($date) : string
+{
+    $today = new DateTime();
+    $interval = $today->diff($date);
+    //$interval_compare = intval($interval);
+    //echo '$interval : ' . $interval . PHP_EOL;
+
+    switch($interval)
     {
-
+        case ($interval < 0) :
+            $result = 'Evènement passé.';
+            break;
+        case ($interval === 0) :
+            $result = 'Aujourd\'hui.';
+            break;
+        default :
+            $result = 'Dans ' ;
     }
-
+    //echo $result . PHP_EOL;
+    return $result;
 }
 
+echo getTimeLeft($date).  PHP_EOL;
