@@ -34,6 +34,7 @@ echo PHP_EOL . 'Exercice 5.B Contrôle de saisie de la date.' . PHP_EOL;
 // Si la date est égale à la date du jour, la fonction retourne « Aujourd'hui ».
 // Si la date est antérieur à la date du jour, la fonction retourne « Évènement passé ».
 
+
 // Recovery of user data
 // $date = (readline('Veuillez saisir votre date au format aaaa-mm-jj : '));
 // echo '$date : ' . $date . PHP_EOL;
@@ -78,45 +79,37 @@ do
 {
     // Recovery of user data
     $date = (readline('Veuillez saisir votre date au format aaaa-mm-jj : '));
-    echo '$date : ' . $date . PHP_EOL;
 
-    $date = new DateTime($date);
-    // echo '$date : ' . $date . PHP_EOL;
-    print_r($date);
+    $dateControl = explode('-', $date);
 
-    $day = $date->format('d');
-    $month = $date->format('m');
-    $year = $date->format('y');
+    $day = $dateControl[2];
+    $month = $dateControl[1];
+    $year = $dateControl[0];
+    $control = checkdate($month, $day, $year);
 
-    if (($day < 0) || ($day > 31))
+    if (!$control)
     {
-        $result = 'Veuillez ressaisir un jour correct';
+        $result = 'Veuillez saisir une date au bon format' . PHP_EOL;
     }
-    else if (($month < 0) || ($month > 12))
+    else 
     {
-        $result = "Veuillez ressaisir un mois correct";
+        $result = 'Vous pouvez continuer' . PHP_EOL;
     }
-    else
-    {
-        $control = checkdate($month, $day, $year);
 
-        //$control = checkdate($date->format(y));
-
-        if (!$control)
-        {
-            $result = 'Veuillez saisir une date au bon format' . PHP_EOL;
-        }
-        else 
-        {
-            $result = 'Vous pouvez continuer' . PHP_EOL;
-        }
-    }
-    
-    
     echo $result . PHP_EOL;
 }while(!$control);
 
+$date = new DateTime($date);
 
+/**
+ * Si la date est ultérieure à la date du jour, la fonction retourne la différence en années/mois/jours.
+ * Si la date est égale à la date du jour, la fonction retourne « Aujourd'hui ».
+ * Si la date est antérieur à la date du jour, la fonction retourne « Évènement passé »
+ *
+ * @param  string $date
+ * @return string
+ * @author David CRAVO <contact@davidcravo.fr>
+ */
 function getTimeLeft($date) : string
 {
     $today = new DateTime();
@@ -159,7 +152,84 @@ function getTimeLeft($date) : string
         }
     }
     return $result;
-
 }
 
 echo getTimeLeft($date).  PHP_EOL;
+
+
+
+
+// **********************************************************************************
+echo PHP_EOL . 'Exercice 5.B Contrôle de saisie de la date *** VERSION 2.' . PHP_EOL;
+
+
+$date = (readline('Veuillez saisir votre date au format aaaa-mm-jj : '));
+
+/**
+ * Si la date est ultérieure à la date du jour, la fonction retourne la différence en années/mois/jours.
+ * Si la date est égale à la date du jour, la fonction retourne « Aujourd'hui ».
+ * Si la date est antérieur à la date du jour, la fonction retourne « Évènement passé »
+ *
+ * @param  string $date
+ * @return string
+ * @author David CRAVO <contact@davidcravo.fr>
+ */
+function getTimeLeft2($date) : string
+{
+    $dateControl = explode('-', $date);
+    $day = $dateControl[2];
+    $month = $dateControl[1];
+    $year = $dateControl[0];
+    $control = checkdate($month, $day, $year);
+
+    if (!$control)
+    {
+        $result = 'Veuillez saisir une date au bon format' . PHP_EOL;
+    }
+    else 
+    {
+        $date = new DateTime($date);
+        $today = new DateTime();
+    
+        if($date->format('Ymd') < $today->format('Ymd')) 
+        {
+            $result = 'Evènement passé';
+        }
+        else if (($date->format('Ymd')) === ($today->format('Ymd')))
+        {
+            $result = 'Aujourd\'hui';
+        }
+        else
+        {
+            $interval = $today->diff($date);
+    
+            if (($interval->format('%y') === '0') && ($interval->format('%m') === '0') && ($interval->format('%d') !== '0'))
+            {
+                $result = 'Dans ' . $interval->format('%d') . ' jours.'; 
+            }
+            else if (($interval->format('%y') !== '0') && ($interval->format('%m') === '0') && ($interval->format('%d') === '0'))
+            {
+                $result = 'Dans ' . $interval->format('%y') . ' années.'; 
+            }
+            else if (($interval->format('%y') === '0') && ($interval->format('%m') !== '0') && ($interval->format('%d') !== '0'))
+            {
+                $result = 'Dans ' . $interval->format('%m') . ' mois et ' . $interval->format('%d') . ' jours.'; 
+            }
+            else if (($interval->format('%y') !== '0') && ($interval->format('%m') !== '0') && ($interval->format('%d') === '0'))
+            {
+                $result = 'Dans ' . $interval->format('%y') . ' années et ' . $interval->format('%m') . ' mois.'; 
+            }
+            else if (($interval->format('%y') !== '0') && ($interval->format('%m') === '0') && ($interval->format('%d') !== '0'))
+            {
+                $result = 'Dans ' . $interval->format('%y') . ' années et ' . $interval->format('%d') . ' jours.'; 
+            }
+            else 
+            {
+                $result = 'Dans ' . $interval->format('%y') . ' années, ' . $interval->format('%m') . ' mois et ' . $interval->format('%d') . ' jours.'; 
+            }
+        }
+    }
+    return $result;
+}
+
+echo getTimeLeft2($date).  PHP_EOL;
