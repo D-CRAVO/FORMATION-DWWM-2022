@@ -62,7 +62,7 @@ echo PHP_EOL . 'Retourner la multiplication de deux valeurs.' . PHP_EOL;
  */
 function getMulti(float $nb1, float $nb2) : float
 {
-    return number_format($nb1 * $nb2, 2);
+    return floatval(number_format($nb1 * $nb2, 2, ',', ''));
 }
 
 // Recovery of user data.
@@ -93,7 +93,7 @@ function getDiv(int $nb1, int $nb2) : float
     }
     else
     {
-        return number_format($nb1 / $nb2 , 2);
+        return floatval(number_format($nb1 / $nb2 , 2));
     }
 }
 
