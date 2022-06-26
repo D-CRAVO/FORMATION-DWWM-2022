@@ -41,6 +41,7 @@ echo 'Exercice 6.B Retourner le dernier élément du tableau' . PHP_EOL;
  *
  * @param array $names
  * @return void
+ * @author David CRAVO <contact@davidcravo.fr>
  */
 /* function lastItem(array $names)
 {
@@ -56,41 +57,80 @@ echo 'Exercice 6.B Retourner le dernier élément du tableau' . PHP_EOL;
 }
 echo lastItem($names); */
 
+
+
+
 // *********************************************************
 echo 'Exercice 6.C Retourner le tableau trié par ordre décroissant' . PHP_EOL;
 
-print_r($names);
-
-function sortItems1(array $names)
+/**
+ * Retourner le tableau trié par ordre décroissant.
+ *
+ * @param array $names
+ * @return void
+ * @author David CRAVO <contact@davidcravo.fr>
+ */
+/* function sortItems1(array $names)
 {
     if (count($names) === 0)
     {
-        echo 'count empty'. PHP_EOL;
         return null;
     }
     else
     {
-        echo 'count not empty'. PHP_EOL;
-        return arsort($names);
+
+        arsort($names);
+        return ($names);
     }
 }
-sortItems1($names);
+print_r(sortItems1($names)); */
 
-print_r($names);
-
-function sortItems2(array $names)
+/**
+ * Retourner le tableau trié par ordre décroissant.
+ *
+ * @param array $names
+ * @return void
+ * @author David CRAVO <contact@davidcravo.fr>
+ */
+/* function sortItems2(array $names)
 {
-    if (empty($names) === 0)
+    if (empty($names))
     {
-        echo 'empty empty'. PHP_EOL;
         return null;
     }
     else
     {
-        echo 'empty not empty'. PHP_EOL;
-        return arsort($names);
+        arsort($names);
+        return $names;
     }
 }
-sortItems2($names);
+print_r(sortItems2($names)); */
 
-print_r($names);
+
+
+
+// *********************************************************************************************************
+echo 'Exercice 6.D retourne une chaine de caractère contenant tous les éléments du tableau triés' . PHP_EOL;
+// Créer une fonction « stringItems() » acceptant un argument de type array. 
+// Cette fonction retourne une chaine de caractère contenant tous les éléments du tableau triés en ordre croissant et séparés par 
+// une virgule et un espace. Si le tableau est vide, il faudra retourner la valeur « Nothing to display ».
+
+function stringItems(array $names) : string
+{
+   if (empty($names)) 
+   {
+        return 'Nothing to display';
+   }
+   else 
+   {
+        asort($names);
+        print_r($names);
+        $result = $names[0];
+        for ($i = 1; $i < count($names); $i++)
+        {
+            $result = $result . ' , ' . $names[$i];
+        }
+        return $result;
+   }
+}
+echo (stringItems($names));
