@@ -290,7 +290,7 @@ function getTimeLeft3($date) : string
 {
     do
     {
-        do
+        /*do
         {
             // Recovery of user data
             $date = (readline('Veuillez saisir votre date au format aaaa-mm-jj : '));
@@ -298,13 +298,23 @@ function getTimeLeft3($date) : string
             {
                 echo 'Veuillez saisir au moins 10 caractères' . PHP_EOL;
             }
-        }while (strlen($date) < 10);
+        }while (strlen($date) < 10);*/
         
         try 
         {
-            $dateControl = new DateTime($date);
-            //echo '$dateControl 303 : ' . $dateControl->format('Y-m-d') . PHP_EOL;
-            $control = true;
+            // Recovery of user data
+            $date = (readline('Veuillez saisir votre date au format aaaa-mm-jj : '));
+            if (strlen($date) < 10)
+            {
+                echo 'Veuillez saisir au moins 10 caractères' . PHP_EOL;
+                $controle = false;
+            }
+            else {
+                //$dateControl = DateTime::createFromFormat('Y-m-d', $date);
+                $date = new DateTime($date);
+                //echo '$dateControl 303 : ' . $dateControl->format('Y-m-d') . PHP_EOL;
+                $control = true;
+            }
         } 
         catch(Exception $ex) 
         {
@@ -316,7 +326,7 @@ function getTimeLeft3($date) : string
 
         //echo '$date avant DateTime 314 : ' . $date . PHP_EOL;
 
-        $date = new DateTime($date);
+        //$date = new DateTime($date);
         $today = new DateTime();
         $today->setTime(0, 0, 0);
 
@@ -340,18 +350,27 @@ function getTimeLeft3($date) : string
             $d = $interval->format('%d');
 
             $result = 'Dans ';
-            if($y > 1) {
+            if($y > 1) 
+            {
                 $result .= $d.' jours ';
-            }else if ($d > 0){
+            }
+            else if ($d > 0)
+            {
                 $result .= $d.' jour ';
             }
-            if($m > 0) {
+            if($m > 0) 
+            {
                 $result .= $m . ' mois ';
             }
-            if($y > 1) {
+           /* if($y > 1) 
+            {
                 $result .= $y . ' années ';
-            }else if ($y > 0) {
-                $result .= $y . ' année ';
+            }
+            else*/ 
+            if ($y > 0) 
+            {
+                $s = ($y > 1) ? 's' : '';
+                $result .= $y . ' année'.$s.' ';
             }
 
             $result .= '.';
@@ -360,3 +379,5 @@ function getTimeLeft3($date) : string
 }
 
 echo getTimeLeft3($date);
+
+
