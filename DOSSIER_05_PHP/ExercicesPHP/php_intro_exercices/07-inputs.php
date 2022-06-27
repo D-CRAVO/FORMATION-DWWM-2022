@@ -1,9 +1,9 @@
 <?php
-
-$texte = readline('Veuillez saisir votre texte : ');
+// ********************************************************
+echo PHP_EOL . 'Exercice 7.A Controler la longueur de chaine' . PHP_EOL;
 
 /**
- * Contrôle de saisie.
+ * Controler la longueur de chaine.
  *
  * @param string $texte
  * @return boolean
@@ -11,14 +11,35 @@ $texte = readline('Veuillez saisir votre texte : ');
  */
 function stringLength(string $texte) : bool
 {
-    if (strlen($texte < 9))
+    if (strlen($texte) < 9)
     {
-        return false;
+        $result = false;
+        return $result;
     }
     else
     {
-        return true;
+        $result = true;
+        return $result;
     }
 }
 
-stringLength($texte);
+/* $texte = readline('Veuillez saisir votre texte : ');
+echo stringLength($texte); */
+
+
+
+// **************************************************************
+echo PHP_EOL . 'Exercice 7.B Contrôler un mot de passe' . PHP_EOL;
+
+function passwordCheck(string $password) : bool
+{
+    if (stringLength($password))
+    {
+        $result_number = preg_match('/[^0-9]/', $password);
+        if ($result_number)
+        {
+            
+        }
+    }
+
+}
