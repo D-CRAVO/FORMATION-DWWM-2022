@@ -123,12 +123,12 @@ function stringItems(array $names) : string
    }
    else 
    {
-        asort($names);
+        sort($names);
         print_r($names);
         $result = $names[0];
         for ($i = 1; $i < count($names); $i++)
         {
-            $result = $result . ' , ' . $names[$i];
+            $result .= ' , ' . $names[$i];
         }
         return $result;
    }
