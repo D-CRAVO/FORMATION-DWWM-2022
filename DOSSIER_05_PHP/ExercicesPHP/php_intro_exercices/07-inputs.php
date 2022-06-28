@@ -143,5 +143,47 @@ function passwordCheck(string $password) : bool
     return $result;        
 }
 
-$password = readline('Mot de passe : ');
-echo passwordCheck($password) . PHP_EOL;
+
+   
+
+/* $password = readline('Mot de passe : ');
+echo passwordCheck($password) . PHP_EOL; */
+
+$users = 
+[
+    'joe' => 'Azer1234!', 
+    'jack' => 'Azer-4321', 
+    'admin' => '1234_Azer',
+];
+
+function userLogin(string $user, string $password, array $users) : string
+{
+    
+    if (array_key_exists($user, $users))
+    {
+        if(passwordCheck($password))
+        {
+            if ($users[$user] === $password)
+            {
+                $result = 'Vous êtes connecté';
+            }
+            else
+            {
+                $result = 'false';
+            }
+        }
+        else
+        {
+            $result = 'false';
+        }
+    }
+    else
+    {
+        $result = 'false';
+    }
+    return $result;
+}
+
+$user = readline('Login : ');
+$password = readline('Password : ');
+echo userLogin($user, $password, $users);
