@@ -119,6 +119,12 @@ function haveNonChar(string $string) : bool
 // **************************************************************
 echo PHP_EOL . 'Exercice 7.B Contrôler un mot de passe' . PHP_EOL;
 
+/**
+ * Undocumented function
+ *
+ * @param string $password
+ * @return boolean
+ */
 function passwordCheck(string $password) : bool
 {
     if (!stringLength($password))
@@ -156,6 +162,14 @@ $users =
     'admin' => '1234_Azer',
 ];
 
+/**
+ * Identifier un utilisateur.
+ *
+ * @param string $user
+ * @param string $password
+ * @param array $users
+ * @return string
+ */
 function userLogin(string $user, string $password, array $users) : string
 {
     
