@@ -14,11 +14,19 @@ class Personnage{
         echo 'LEEROY JENKINS';
     }
 
-    public function regenerer(){
-        $this->vie = 100;
+    public function regenerer($vie = null){
+        if (is_null($vie)){
+            $this->vie = 100;
+        }else{
+            $this->vie += $vie;
+        }
     }
 
     public function mort(){
         return $this->vie <= 0;
+    }
+
+    public function attaque($cible){
+        $cible->vie -= $this->atk;
     }
 }
