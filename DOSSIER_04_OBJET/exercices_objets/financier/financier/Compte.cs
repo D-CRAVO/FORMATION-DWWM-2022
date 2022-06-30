@@ -60,7 +60,6 @@ namespace financier
         public override string ToString()
         {
             return "Le compte a pour numéro : " + this.Numero + " et pour proriétaire : " + this.Nom + " Il a pour solde : " + this.Solde + " et pour découvert autorisé : " + Math.Abs(this.Decouvert);
-
         }
 
         public bool Transferer(int _montant, Compte _compteDestinataire)

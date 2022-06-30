@@ -7,8 +7,8 @@ namespace AppFinancier
     {
         static void Main(string[] args)
         {
-            Compte compteTintin = new Compte(1234, "Tintin", 400, -500);
-            Compte compteHaddock = new Compte(456, "Haddock", 0, -2000);
+            Compte compteTintin = new Compte(1, "Tintin", 400, -500);
+            Compte compteHaddock = new Compte(2, "Haddock", 0, -2000);
             Console.WriteLine("-------------------avant virement ---------------");
             Console.WriteLine(compteTintin.ToString());
             Console.WriteLine(compteHaddock);
@@ -43,8 +43,11 @@ namespace AppFinancier
                 Console.WriteLine("Le solde du compte de Tintin est inférieur au solde du compte de Haddock");
             }
 
+            Banque banqueCMC = new Banque(null, 0, "Credit Mutuel", "Blois" );
+            Console.WriteLine(banqueCMC);
 
-
+            banqueCMC.AjouterCompte(3, "Milou", 0, 0);
+            Console.WriteLine(banqueCMC);
 
             Console.ReadKey();
         }

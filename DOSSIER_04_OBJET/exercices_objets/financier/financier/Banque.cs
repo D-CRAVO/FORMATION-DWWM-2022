@@ -6,22 +6,24 @@ using System.Threading.Tasks;
 
 namespace financier
 {
-   public class Banque
+    public class Banque
     {
         // Champs ou attributs
-        private Compte[] mesComptes;
+        private List<Compte> mesComptes = new List<Compte>();
         private int nbComptes;
         private string nom;
         private string ville;
 
         // Propriétés
 
+        public List<Compte> MesComptes { get => mesComptes; }
+        public int NbComptes { get => nbComptes; }
         public string Nom { get => nom; }
         public string Ville { get => ville; }
 
 
         // Constructeur
-        public Banque(Compte[] _mesComptes, int _nbComptes, string _nom, string _ville)
+        public Banque(List<Compte> _mesComptes, int _nbComptes, string _nom, string _ville)
         {
             this.mesComptes = _mesComptes;
             this.nbComptes = _nbComptes;
@@ -37,14 +39,16 @@ namespace financier
             this.ville = "sans_ville";
         }
 
-        private void AjouteCompte(Compte _unCompte)
+        private void AjouterCompte(Compte _unCompte)
         {
             nbComptes++;
         }
 
-        public void AjouteCompte(int _numero, string _nom, int _solde, int _decouvertAutorise)
+        public void AjouterCompte(uint _numero, string _nom, int _solde, int _decouvertAutorise)
         {
-
+            mesComptes.Add(new Compte(_numero, _nom, _solde, _decouvertAutorise));
         }
+
+
     }
 }

@@ -10,3 +10,15 @@ C:\Users\CRAVO David\OneDrive - CENTRE DE READAPTATION\Documents\GitHub\FORMATIO
 C:\Users\CRAVO David\OneDrive - CENTRE DE READAPTATION\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\00 REVISIONS\financier\financier\obj\Debug\net5.0\refint\financier.dll
 C:\Users\CRAVO David\OneDrive - CENTRE DE READAPTATION\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\00 REVISIONS\financier\financier\obj\Debug\net5.0\financier.pdb
 C:\Users\CRAVO David\OneDrive - CENTRE DE READAPTATION\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\00 REVISIONS\financier\financier\obj\Debug\net5.0\ref\financier.dll
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_04_OBJET\exercices_objets\financier\financier\bin\Debug\net5.0\financier.deps.json
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_04_OBJET\exercices_objets\financier\financier\bin\Debug\net5.0\financier.dll
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_04_OBJET\exercices_objets\financier\financier\bin\Debug\net5.0\financier.pdb
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_04_OBJET\exercices_objets\financier\financier\obj\Debug\net5.0\financier.csproj.AssemblyReference.cache
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_04_OBJET\exercices_objets\financier\financier\obj\Debug\net5.0\financier.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_04_OBJET\exercices_objets\financier\financier\obj\Debug\net5.0\financier.AssemblyInfoInputs.cache
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_04_OBJET\exercices_objets\financier\financier\obj\Debug\net5.0\financier.AssemblyInfo.cs
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_04_OBJET\exercices_objets\financier\financier\obj\Debug\net5.0\financier.csproj.CoreCompileInputs.cache
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_04_OBJET\exercices_objets\financier\financier\obj\Debug\net5.0\financier.dll
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_04_OBJET\exercices_objets\financier\financier\obj\Debug\net5.0\refint\financier.dll
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_04_OBJET\exercices_objets\financier\financier\obj\Debug\net5.0\financier.pdb
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_04_OBJET\exercices_objets\financier\financier\obj\Debug\net5.0\ref\financier.dll
