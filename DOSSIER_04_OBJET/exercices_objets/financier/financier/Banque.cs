@@ -49,6 +49,9 @@ namespace financier
             mesComptes.Add(new Compte(_numero, _nom, _solde, _decouvertAutorise));
         }
 
-
+        public override string ToString()
+        {
+            return "La banque a pour nom : " + this.Nom + " Elle se situe à : " + this.Ville;
+        }
     }
 }

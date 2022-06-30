@@ -47,7 +47,7 @@ namespace AppFinancier
             Console.WriteLine(banqueCMC);
 
             banqueCMC.AjouterCompte(3, "Milou", 0, 0);
-            Console.WriteLine(banqueCMC);
+            Console.WriteLine(banqueCMC.ToString());
 
             Console.ReadKey();
         }
