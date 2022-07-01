@@ -7,3 +7,6 @@ bien laisser une ligne vide à la fin du fichier php
 methode / operation / fonction d'une classe
 
 snake case $unite_de_mesure
+
+les multiplicités
+le rôle est toujours du côté de la flèche
