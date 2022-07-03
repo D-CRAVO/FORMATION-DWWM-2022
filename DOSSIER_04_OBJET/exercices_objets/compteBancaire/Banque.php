@@ -115,7 +115,7 @@ class Banque
     public function compteSup() : void
     {
         //echo(array_search(max($this->mesComptes->solde, $this->mesComptes),$this->mesComptes));
-        //var_dump((array_search(max($this->mesComptes->compte->solde, $this),$this->mesComptes)));
+        var_dump(array_search(max($this->mesComptes->solde, $this),$this->mesComptes));
 
         /* $valeurMax = 0;
         $nbComptes = count($this->mesComptes);
@@ -131,7 +131,7 @@ class Banque
                 //echo($this->mesComptes[$i]);
             }
         }*/
-        var_dump ($this->mesComptes->solde);
+        //var_dump ($this->mesComptes);
     }
 
 // *******************************************************************************************************************
