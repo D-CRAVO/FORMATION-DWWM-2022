@@ -41,10 +41,10 @@ class Compte
      *
      * @param integer $numero
      * @param string $nom
-     * @param integer $solde
+     * @param float $solde
      * @param integer $decouvert
      */
-    public function __construct(int $numero, string $nom, int $solde = 0, int $decouvert = 0)
+    public function __construct(int $numero, string $nom, float $solde = 0, int $decouvert = 0)
     {
         $this->setNumero($numero);
         $this->setNom($nom);
@@ -65,20 +65,19 @@ class Compte
     /**
      * Permet la création du numéro de compte
      *
-     * @param [type] $numero
+     * @param integer $numero
      * @return void
      */
-    public function setNumero($numero) : void
+    private function setNumero(int $numero) : void
     {
         $this->numero = $numero;
-        /* if (file_exists($numero))
+        /* if (!file_exists($numero))
         {
             $this->numero = $numero;
         }
         else
         {
             echo 'Le compte existe déjà.';
-            //$result = 'Le compte existe déjà.';
         } */
     }
 
@@ -95,10 +94,10 @@ class Compte
     /**
      * Permet l'assignation d'un nom à un compte bancaire
      *
-     * @param $nom
+     * @param string $nom
      * @return void
      */
-    public function setNom($nom) : void
+    private function setNom(string $nom) : void
     {
         $this->nom = $nom;
     }
@@ -106,9 +105,9 @@ class Compte
     /**
      * Retourne le solde du compte bancaire
      *
-     * @return integer
+     * @return float
      */
-    public function getSolde() : int
+    public function getSolde() : float
     {
         return $this->solde;
     }
@@ -116,12 +115,12 @@ class Compte
     /**
      * Permet la modification du solde du compte bancaire
      *
-     * @param integer $nouveauSolde
+     * @param float $solde
      * @return void
      */
-    public function setSolde(int $nouveauSolde) : void
+    public function setSolde(float $solde) : void
     {
-        $this->solde = $nouveauSolde;
+        $this->solde = $solde;
     }
 
     /**
@@ -137,17 +136,100 @@ class Compte
     /**
      * Permet la modification du découvert du compte bancaire
      *
-     * @param integer $nouveauDecouvert
+     * @param integer $decouvert
      * @return void
      */
-    public function setDecouvert(int $nouveauDecouvert) : void
+    public function setDecouvert(int $decouvert) : void
     {
-        $this->decouvert = $nouveauDecouvert;
+        $this->decouvert = $decouvert;
     }
 
+    /**
+     * Créditer le solde du compte sélectionné du montant indiqué
+     *
+     * @param float $montant //Montant à créditer
+     * @return void
+     */
+    public function crediter(float $montant) : void
+    {
+        $this->solde += $montant;
+    }
 
     /**
-     * Undocumented function
+     * Débiter le solde du compte sélectionné du montant indiqué
+     *
+     * @param float $montant //Montant à débiter
+     * @return bool
+     */
+    public function debiter(float $montant) : bool
+    {
+        $result = false;
+        $condition = ($this->solde + $this->decouvert >= $montant);
+        if ($condition)
+        {
+            $this->solde -= $montant;
+            $result = true;
+        }
+        else 
+        {
+            echo 'Opération de débit non réalisée.' . PHP_EOL;
+            echo PHP_EOL;
+            $result = false;
+        }
+        return $result;
+        
+    }
+
+    /**
+     * Transfert du montant sélectionné du compte sélectionné vers le compte $compte
+     *
+     * @param compte $compte    //Compte vers lequel le transfert s'effectue
+     * @param float $montant    //Montant du transfert
+     * @return boolean
+     */
+    public function transferer(compte $compte, float $montant) : bool
+    {
+        $result = false;
+        $condition = ($this->solde + $this->decouvert >= $montant);
+        if ($condition)
+        {
+            $this->debiter($montant);
+            $compte->crediter($montant);
+            $result = true;
+        }
+        else
+        {
+            echo 'Opération de transfert non réalisée.' . PHP_EOL;
+            echo PHP_EOL;
+            $result = false;
+        }
+        return $result;
+    }
+
+    public function comparer(compte $compte) : bool
+    {
+        $result = false;
+        $condition = ($this->solde > $compte->solde);
+        if ($condition)
+        {
+            $resultAffichage = ' Le solde du compte ' . $this->numero . ' de ' . $this->nom 
+                . ' est supérieur au solde du compte ' . $compte->numero . ' de ' . $compte->nom . '.' 
+                . PHP_EOL;
+            $result = true;
+        }
+        else
+        {
+            $resultAffichage = ' Le solde du compte ' . $this->numero . ' de ' . $this->nom 
+                . ' est inférieur au solde du compte ' . $compte->numero . ' de ' . $compte->nom . '.' 
+                . PHP_EOL;
+            $result = false;
+        }
+        echo $resultAffichage;
+        return $result;
+    }
+
+    /**
+     * Affichage
      *
      * @return string
      */
@@ -155,8 +237,8 @@ class Compte
     {
         $result = 'Le compte numéro ' . $this->numero . PHP_EOL 
             . ' dont le propriétaire est ' . $this->nom . PHP_EOL
-            . ' a pour solde : '. $this->solde . PHP_EOL
-            . ' et pour découvert autorisé : ' . $this->decouvert . PHP_EOL;
+            . ' a pour solde : '. $this->solde . ' euros' . PHP_EOL
+            . ' et pour découvert autorisé : '  . $this->decouvert . ' euros' . PHP_EOL;
         return $result;
     }
 
