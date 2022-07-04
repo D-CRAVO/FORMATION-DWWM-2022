@@ -10,5 +10,5 @@ echo ('Fraction(0,0)  : ' . $fraction5 = new Fraction(0,0));
 echo ('Fraction(4,7)  : ' . $fraction6 = new Fraction(4,7));
 
 echo ('Opposé de Fraction(4,7)  : ' . $fraction6->oppose());
-echo ('Opposé de Fraction(4,7)  : ' . $fraction6->oppose());
+$fraction6->oppose();
 echo ('Inverse de Fraction(4,7) : ' . $fraction6->inverse());
