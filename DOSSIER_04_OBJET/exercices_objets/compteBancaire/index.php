@@ -1,6 +1,5 @@
 <?php
 
-//require 'Compte.php';
 require 'Banque.php';
 
 /* $compte01 = new Compte(1, 'David CRAVO', 10000, 500);
@@ -53,7 +52,10 @@ $cmBlois->ajouterCompte($compte05);
 
 //echo($cmBlois);
 //var_dump($cmBlois);
-$cmBlois->compteSup();
-//var_dump($cmBlois->mesComptes[1]);
 
-//echo($cmBlois->rendCompte());
+echo(PHP_EOL . 'Le compte ayant le solde maximum est : ' . PHP_EOL . $cmBlois->compteSup());
+
+//if (!empty($cmBlois->rendCompte()))
+echo(PHP_EOL . 'Le compte à afficher est : ' . PHP_EOL . $cmBlois->rendCompte());
+
+//var_dump($cmBlois->mesComptes[1]);
