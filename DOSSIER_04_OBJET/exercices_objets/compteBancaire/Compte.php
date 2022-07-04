@@ -206,7 +206,7 @@ class Compte
         return $result;
     }
 
-    public function comparer(compte $compte) : bool
+    public function comparer(Compte $compte) : bool
     {
         $result = false;
         $condition = ($this->solde > $compte->solde);
