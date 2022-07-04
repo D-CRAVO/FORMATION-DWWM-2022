@@ -91,11 +91,57 @@ class Point
      * @param float $ordonneeY  Nouvelle valeur de l'ordonnée
      * @return string
      */
-    public function deplacer(float $abscisseX, float $ordonneeY) : string
+    public function deplacer(float $abscisseX, float $ordonneeY) : void
     {
         $this->abscisseX = $abscisseX;
         $this->ordonneeY = $ordonneeY;
-        return 'Changement de coordonnées effectuée.' . PHP_EOL;
+    }
+
+    /**
+     * Calcul des coordonnées du point symétrique par rapport à l'axe des abscisses
+     *
+     * @return Point
+     */
+    public function symetrieAxeAbscisse() : Point
+    {
+        $this->ordonneeY = -$this->ordonneeY;
+        return $this;
+    }
+
+    /**
+     * Calcul des coordonnées du point symétrique par rapport à l'axe des ordonnées
+     *
+     * @return Point
+     */
+    public function symetrieAxeOrdonnee() : Point
+    {
+        $this->abscisseX = - $this->abscisseX;
+        return $this;
+    }
+
+    /**
+     * Calcul des coordonnées du point symétrique par rapport à l'origine
+     *
+     * @return Point
+     */
+    public function symetrieOrigine() : Point
+    {
+        $this->symetrieAxeAbscisse();
+        $this->symetrieAxeOrdonnee();
+        return $this;
+    }
+
+    /**
+     * Calcul des coordonnées du point symétrique par rapport à bissectrice
+     *
+     * @return Point
+     */
+    public function symetrieBissectrice() : Point
+    {
+        $temporaire = $this->ordonneeY;
+        $this->ordonneeY = $this->abscisseX;
+        $this->abscisseX = $temporaire;
+        return $this;
     }
 
     /**
@@ -105,8 +151,7 @@ class Point
      */
     public function __toString() : string
     {
-        $result = 'Le point '. $this->nom . ' a pour abscisse X la valeur ' . $this->abscisseX
-         . ' et pour ordnonnée Y la valeur ' . $this->ordonneeY . " soit : ($this->abscisseX , $this->ordonneeY)." . PHP_EOL;
+        $result = 'Le point '. $this->nom . " a pour coordonnées ($this->abscisseX , $this->ordonneeY)." . PHP_EOL;
         return $result;
     }
 }
