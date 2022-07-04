@@ -2,6 +2,7 @@
 
 require 'Compte.php';
 
+
 class Banque
 {
 
@@ -43,6 +44,7 @@ class Banque
     {
         $this->setNom($nom);
         $this->setVille($ville);
+        $this->mesComptes = [];
     }
 
     /**
@@ -109,51 +111,59 @@ class Banque
         array_push($this->mesComptes, $compte);
     }
 
+    // *******************************************************************************************************************
 
 
     //***********************************************************************************************************
-    public function compteSup() : void
+    public function compteSup() : Compte
     {
         //echo(array_search(max($this->mesComptes->solde, $this->mesComptes),$this->mesComptes));
-        var_dump(array_search(max($this->mesComptes->solde, $this),$this->mesComptes));
+        //var_dump(array_search(max($this->solde, $this),$this->mesComptes));
+        //var_dump(max($this->solde), $this->mesComptes);
 
-        /* $valeurMax = 0;
-        $nbComptes = count($this->mesComptes);
-        for ($i = 0; $i < $nbComptes; $i++)
-        {
-            for($j = $i; $j < $nbComptes; $j++)
+        $compteMax = new Compte(0, 'tmp');
+
+        foreach($this->mesComptes as $unCompte) {
+            if($unCompte->getSolde() > $compteMax->getSolde()) 
             {
-                $condition = (($this->mesCompte[$j]->solde) > ($this->mesCompte[$i]->solde));
-                if ($condition)
-                {
-                    $valeurMax = ($this->mesComptes[$j]->numero);
-                }
-                //echo($this->mesComptes[$i]);
+                $compteMax = $unCompte;
+            }
+        }
+
+        /*$count = count($this->mesComptes);
+
+        for($i = 0; $i < $count; $i++) {
+            if($this->mesComptes[$i]->getSolde() > $compteMax->getSolde()) {
+                $compteMax = $unCompte;
             }
         }*/
-        //var_dump ($this->mesComptes);
+
+        return $compteMax;
     }
 
 // *******************************************************************************************************************
 
-public function rendCompte() : string
+public function rendCompte() : ?Compte
 {
-    $nb = readline('Veuillez saisir le numero de compte à afficher : ');
+    $nb = readline(PHP_EOL . 'Veuillez saisir le numero de compte à afficher : ');
 
-    // file_exists(string $filename): bool
-    // property_exists(object|string $object_or_class, string $property): bool
+    $null = new Compte (0, 'tmp');
+    
 
-    $condition = property_exists($this->mesComptes[$nb],"numero");
-    if (!$condition)
+    $count = count($this->mesComptes);
+    $i = 0;
+    do
     {
-        $result = "null";
-        return $result;
-    }
-    else 
-    {
-        $result = ($this->mesComptes[$nb]);
-        return $result;
-    }
+        $condition = ($this->mesComptes[$i]->getNumero() == $nb);
+        if($condition)
+        {
+            $result = $this->mesComptes[$i];
+            return $result;
+        }
+        $i++;
+    } while ($i < $count);
+    return null;
+    
 }
 
 
