@@ -46,7 +46,7 @@ $compte04 = new Compte(4, "Toto MACHIN", 11500, 500);
 $compte05 = new Compte(5, "Titi BIDULE", 500, 0);
 
 $cmBlois = new Banque('Crédit Mutuel', 'Blois');
-$cmBlois->premierCompte($compte03);
+//$cmBlois->premierCompte($compte03);
 $cmBlois->ajouterCompte($compte04);
 $cmBlois->ajouterCompte($compte05);
 
