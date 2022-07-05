@@ -121,7 +121,7 @@ class Banque
         //var_dump(array_search(max($this->solde, $this),$this->mesComptes));
         //var_dump(max($this->solde), $this->mesComptes);
 
-        $compteMax = new Compte(0, 'tmp');
+        $compteMax = $this->mesComptes[0];
 
         foreach($this->mesComptes as $unCompte) {
             if($unCompte->getSolde() > $compteMax->getSolde()) 
@@ -141,34 +141,55 @@ class Banque
         return $compteMax;
     }
 
-// *******************************************************************************************************************
+    // *******************************************************************************************************************
 
-public function rendCompte() : ?Compte
-{
-    $nb = readline(PHP_EOL . 'Veuillez saisir le numero de compte à afficher : ');
+    public function rendCompte(int $_numCompte) : ?Compte
+    {
+        for ($i=0; $i < count($this->mesComptes); $i++) 
+        { 
 
-    $null = new Compte (0, 'tmp');
+            if ($this->mesComptes[$i]->getNumero() == $_numCompte) 
+            {
+                return $this->mesComptes[$i];
+            }
+        }
+    return null;
+
+  
     
 
-    $count = count($this->mesComptes);
-    $i = 0;
-    do
-    {
-        $condition = ($this->mesComptes[$i]->getNumero() == $nb);
-        if($condition)
-        {
-            $result = $this->mesComptes[$i];
-            return $result;
-        }
-        $i++;
-    } while ($i < $count);
-    return null;
+    // $count = count($this->mesComptes);
+    // $i = 0;
+    // do
+    // {
+    //     $condition = ($this->mesComptes[$i]->getNumero() == $nb);
+    //     if($condition)
+    //     {
+    //         $result = $this->mesComptes[$i];
+    //         return $result;
+    //     }
+    //     $i++;
+    // } while ($i < $count);
+    // return null;
     
 }
 
 
 
-// *******************************************************************************************************************
+    // *******************************************************************************************************************
+
+    public function transfererBanque(Banque $banque, array $mesComptes, float $montant)
+    {
+
+        
+        $this->tranferer($banque->$mesComptes)
+
+    }
+
+
+
+
+
 
     /**
      * Affichage
@@ -185,7 +206,7 @@ public function rendCompte() : ?Compte
 
         for($i = 0; $i < $nbComptes; $i++)
         {
-            $resultMesComptes .= $this->mesComptes[$i]->__toString() . PHP_EOL;
+            $resultMesComptes .= $this->mesComptes[$i]->__toString(). PHP_EOL;
         }
 
         return $resultBanque . PHP_EOL .$resultMesComptes;
