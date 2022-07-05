@@ -42,8 +42,8 @@ class Banque
      */
     public function __construct(string $nom, string $ville)
     {
-        $this->setNom($nom);
-        $this->setVille($ville);
+        $this->setNomBanque($nom);
+        $this->setVilleBanque($ville);
         $this->mesComptes = [];
     }
 
@@ -52,7 +52,7 @@ class Banque
      *
      * @return string
      */
-    public function getNom() : string
+    public function getNomBanque() : string
     {
         return $this->nom;
     }
@@ -63,7 +63,7 @@ class Banque
      * @param string $nom
      * @return void
      */
-    private function setNom(string $nom) : void
+    private function setNomBanque(string $nom) : void
     {
         $this->nom = $nom;
     }
@@ -73,7 +73,7 @@ class Banque
      *
      * @return string
      */
-    public function getVille() :string
+    public function getVilleBanque() :string
     {
         return $this->ville;
     }
@@ -84,7 +84,7 @@ class Banque
      * @param string $ville
      * @return void
      */
-    private function setVille(string $ville) : void
+    private function setVilleBanque(string $ville) : void
     {
         $this->ville = $ville;
     }
@@ -92,7 +92,7 @@ class Banque
     /**
      * Permet la création du premier compte bancaire
      *
-     * @param Compte $compte    Premier compte à créer
+     * @param Compte $compte    //Premier compte à créer
      * @return void
      */
     /* public function premierCompte(Compte $compte) :void
@@ -178,11 +178,15 @@ class Banque
 
     // *******************************************************************************************************************
 
-    public function transfererBanque(Banque $banque, array $mesComptes, float $montant)
+    public function transfererBanque(int $numeroEmettrice, Banque $banqueRecepteur , int $numeroRecepteur, float $montant) : void
     {
+        echo($variable1 = $this->rendCompte($numeroEmettrice)); 
 
-        
-        $this->tranferer($banque->$mesComptes)
+        echo($variable2 = $banqueRecepteur->rendCompte($numeroRecepteur));
+
+        $variable1->transferer($variable2, 250);
+
+        echo $variable2;
 
     }
 
