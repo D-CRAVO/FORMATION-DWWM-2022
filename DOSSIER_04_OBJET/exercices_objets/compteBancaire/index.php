@@ -46,16 +46,20 @@ $compte04 = new Compte(4, "Toto MACHIN", 11500, 500);
 $compte05 = new Compte(5, "Titi BIDULE", 500, 0);
 
 $cmBlois = new Banque('Crédit Mutuel', 'Blois');
-//$cmBlois->premierCompte($compte03);
+
 $cmBlois->ajouterCompte($compte04);
 $cmBlois->ajouterCompte($compte05);
+
+$caBlois = new Banque('Crédit Agricole' , 'Blois');
+
+$caBlois->ajouterCompte($compte03);
 
 //echo($cmBlois);
 //var_dump($cmBlois);
 
-echo(PHP_EOL . 'Le compte ayant le solde maximum est : ' . PHP_EOL . $cmBlois->compteSup());
+//echo(PHP_EOL . 'Le compte ayant le solde maximum est : ' . PHP_EOL . $cmBlois->compteSup());
 
 //if (!empty($cmBlois->rendCompte()))
-echo(PHP_EOL . 'Le compte à afficher est : ' . PHP_EOL . $cmBlois->rendCompte());
-
+echo(PHP_EOL . 'Le compte à afficher est : ' . PHP_EOL . $cmBlois->rendCompte(1));
+echo $cmBlois;
 //var_dump($cmBlois->mesComptes[1]);
