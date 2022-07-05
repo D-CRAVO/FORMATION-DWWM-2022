@@ -156,7 +156,7 @@ class Fraction
         if ($a !== 0 && $b !== 0)
         {
             $a = $a < 0 ? -$a : $a;
-            $a = $a < 0 ? -$a : $a;
+            $b = $b < 0 ? -$b : $b;
             while ($a != $b)
             if ($a < $b)
             {
@@ -172,6 +172,28 @@ class Fraction
     }
 
     /**
+     * Détermine le signe de la fraction sélectionnée
+     *
+     * @return Fraction
+     */
+    public function signe() : Fraction
+    {
+        if ($this->numerateur < 0 && $this->denominateur < 0) 
+        {
+            $fraction = new Fraction(-$this->numerateur, -$this->denominateur);
+        }
+        else if ($this->numerateur > 0 && $this->denominateur < 0)
+        {
+            $fraction = new Fraction(-$this->numerateur, -$this->denominateur);
+        }
+        else
+        {
+            $fraction = new Fraction($this->numerateur, $this->denominateur);
+        }
+        return $fraction;
+    }
+
+    /**
      * Réduit la fraction à réduire en fonction 
      * à l'aide de la fonction getPgcd
      *
@@ -179,10 +201,11 @@ class Fraction
      */
     public function reduire() : Fraction
     {
+        
         $pgcd = $this->getPgcd();
         $this->numerateur /= $pgcd;
         $this->denominateur /= $pgcd;
-        return $this; 
+        return $this->signe(); 
     }
 
     /**
@@ -194,10 +217,11 @@ class Fraction
      */
     public function plus(Fraction $fraction) : Fraction
     {
-        $this->numerateur *= $fraction->denominateur;
-        $fraction->numerateur *= $this->denominateur;
-        $numerateur = $this->numerateur + $fraction->numerateur;
-        $denominateur = $this->denominateur * $fraction->denominateur;
+        $fractionOrigine = $this;
+        $fractionOrigine->numerateur *= $fraction->denominateur;
+        $fraction->numerateur *= $fractionOrigine->denominateur;
+        $numerateur = $fractionOrigine->numerateur + $fraction->numerateur;
+        $denominateur = $fractionOrigine->denominateur * $fraction->denominateur;
         $fractionPlus = new Fraction($numerateur, $denominateur);
         $fractionReduite = $fractionPlus->reduire();
         return $fractionReduite;
@@ -212,17 +236,47 @@ class Fraction
      */
     public function moins(Fraction $fraction) : Fraction
     {
-        $this->numerateur *= $fraction->denominateur;
-        $fraction->numerateur *= $this->denominateur;
-        $numerateur = $this->numerateur - $fraction->numerateur;
-        $denominateur = $this->denominateur * $fraction->denominateur;
+        $fractionOrigine = $this;
+        $fractionOrigine->numerateur *= $fraction->denominateur;
+        $fraction->numerateur *= $fractionOrigine->denominateur;
+        $numerateur = $fractionOrigine->numerateur - $fraction->numerateur;
+        $denominateur = $fractionOrigine->denominateur * $fraction->denominateur;
         $fractionMoins = new Fraction($numerateur, $denominateur);
         $fractionReduite = $fractionMoins->reduire();
         return $fractionReduite;
     }
 
-    //public function multiplie()
+    /**
+     * Multiplication de la fraction sélectionnée par la fraction $fraction
+     * et reduit la fraction obtenue
+     *
+     * @param Fraction $fraction
+     * @return Fraction
+     */
+    public function multiplier(Fraction $fraction) : Fraction
+    {
+        $fractionOrigine = $this;
+        $numerateur = $fractionOrigine->numerateur * $fraction->numerateur;
+        $denominateur = $fractionOrigine->denominateur * $fraction->denominateur;
+        $fractionMultiplie = new Fraction($numerateur, $denominateur);
+        $fractionReduite = $fractionMultiplie->reduire();
+        return $fractionReduite->signe();
+    }
 
+    /**
+     * Division de la fraction sélectionnée par la fraction $fraction
+     * et réduit la fraction obtenue
+     *
+     * @param Fraction $fraction
+     * @return Fraction
+     */
+    public function diviser(Fraction $fraction) : Fraction
+    {
+        $fractionOrigine = $this;
+        $fraction = new Fraction($fraction->denominateur, $fraction->numerateur);
+        $fractionDiviser = $fractionOrigine->multiplier($fraction);
+        return $fractionDiviser->signe();
+    }
 
     /**
      * Affichage
