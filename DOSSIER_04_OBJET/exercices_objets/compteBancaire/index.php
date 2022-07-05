@@ -60,6 +60,11 @@ $caBlois->ajouterCompte($compte03);
 //echo(PHP_EOL . 'Le compte ayant le solde maximum est : ' . PHP_EOL . $cmBlois->compteSup());
 
 //if (!empty($cmBlois->rendCompte()))
-echo(PHP_EOL . 'Le compte à afficher est : ' . PHP_EOL . $cmBlois->rendCompte(1));
-echo $cmBlois;
+//echo(PHP_EOL . 'Le compte à afficher est : ' . PHP_EOL . $cmBlois->rendCompte(4));
+//echo $cmBlois;
 //var_dump($cmBlois->mesComptes[1]);
+
+//echo(transferer($caBlois, 3, 1250));
+//echo(get_parent_class($this->getNom()));
+
+$caBlois->transfererBanque(3, $cmBlois, 4, 250);
