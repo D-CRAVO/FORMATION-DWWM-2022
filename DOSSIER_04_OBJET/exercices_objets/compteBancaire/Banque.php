@@ -95,10 +95,10 @@ class Banque
      * @param Compte $compte    Premier compte à créer
      * @return void
      */
-    public function premierCompte(Compte $compte) :void
+    /* public function premierCompte(Compte $compte) :void
     {
-        $this->mesComptes[] = $compte;
-    }
+        $this->mesComptes[0] = $compte;
+    } */
 
     /**
      * Permet l'ajout d'un compte bancaire
