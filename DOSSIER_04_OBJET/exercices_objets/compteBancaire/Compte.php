@@ -4,7 +4,7 @@
 /**
  * La classe représente un compte bancaire
  */
-class Compte
+class Compte extends Banque
 {
 
     /**
@@ -204,6 +204,11 @@ class Compte
             $result = false;
         }
         return $result;
+    }
+
+    public function transfererNo(int $numeroEmmetteur, int $numeroRecepteur, float $montant)
+    {
+        echo ($emmeteur = $this->mesComptes->getNom() == $numeroEmmetteur);
     }
 
     public function comparer(Compte $compte) : bool
