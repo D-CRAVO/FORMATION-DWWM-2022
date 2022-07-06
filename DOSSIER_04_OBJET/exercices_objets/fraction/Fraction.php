@@ -77,6 +77,33 @@ class Fraction
     }
 
     /**
+     * Retourne la valeur littérale de la fraction sélectionnée 
+     * @throws Exception Division par zéro interdite
+     * @return float
+     */
+    public function literal() : float
+    {
+        if ($this->denominateur === 0)
+        {
+            throw new Exception('Division par zéro.');
+        }
+        $literal = $this->numerateur / $this->denominateur;
+        return $literal;
+    }
+
+    
+    // try
+    // {
+    //    $this->denominateur->literal();     
+    // }
+    // catch (Exception $e)
+    // {
+    //     echo 'Exception reçue : ', $e->getMessage(), PHP_EOL;
+    // }
+    
+    
+
+    /**
      * Opposé de fraction
      *
      * @return Fraction
@@ -125,9 +152,9 @@ class Fraction
      * Vérifie si la fraction à comparer est égale à la fraction $fraction 
      *
      * @param Fraction $fraction
-     * @return void
+     * @return string
      */
-    public function egalA(Fraction $fraction)
+    public function egalA(Fraction $fraction) : string
     {
         if ($this->denominateur !== 0 && $fraction->denominateur !== 0)
         {
@@ -298,6 +325,9 @@ class Fraction
             $result = "La fraction ayant pour numérateur $this->numerateur et pour dénominateur $this->denominateur donne $this->numerateur/$this->denominateur." . PHP_EOL;
         }
         return $result;
+
+        
+
     }
 }
 
