@@ -206,11 +206,6 @@ class Compte extends Banque
         return $result;
     }
 
-    public function transfererNo(int $numeroEmmetteur, int $numeroRecepteur, float $montant)
-    {
-        echo ($emmeteur = $this->mesComptes->getNom() == $numeroEmmetteur);
-    }
-
     public function comparer(Compte $compte) : bool
     {
         $result = false;
