@@ -73,8 +73,8 @@ echo PHP_EOL . 'Exercice 3.C Retourner la concaténation de deux valeurs' . PHP_
  */
 function getFullName(string $firstName, string $name) : string
 {
-    $name = strtoupper($name);
-    $firstName = strtolower($firstName);
+    $name = strtoupper($name); // 8 bits mb_strtoupper 16 bits
+    $firstName = strtolower($firstName); // mb_strtolower
     return $firstName . ' ' . $name;
 }
 
