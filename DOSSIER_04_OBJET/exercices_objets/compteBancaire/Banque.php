@@ -184,7 +184,7 @@ class Banque
 
         echo($variable2 = $banqueRecepteur->rendCompte($numeroRecepteur));
 
-        $variable1->transferer($variable2, 250);
+        $variable1->transferer($variable2, $montant);
 
         echo $variable2;
 
