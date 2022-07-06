@@ -5,8 +5,8 @@ require 'Fraction.php';
 // echo ('Fraction(12,7)    : ' . $fraction1 = new Fraction(12,7));
 // echo ('Fraction(9,1)     : ' . $fraction2 = new Fraction(9,1));
 // echo ('Fraction(0,1)     : ' . $fraction3 = new Fraction(0,1));
-// echo ('Fraction(1,0)     : ' . $fraction4 = new Fraction(1,0));
-// echo ('Fraction(0,0)     : ' . $fraction5 = new Fraction(0,0));
+echo ('Fraction(1,0)     : ' . $fraction4 = new Fraction(1,0));
+echo ('Fraction(0,0)     : ' . $fraction5 = new Fraction(0,0));
 echo ("Fraction(4,7)     : " . $fraction6 = new Fraction(4,-7));
 echo ('Fraction(120,40)  : ' . $fraction7 = new Fraction(-120,40));
 echo ('Fraction(135,40)  : ' . $fraction8 = new Fraction(-135,-40));
@@ -53,3 +53,15 @@ echo PHP_EOL;
 echo $fraction12;
 echo $fraction13;
 echo ('Fraction(-20,3) divisé par Fraction(-12,3) : ' . $fraction12->diviser($fraction13));
+
+
+try
+{
+    echo PHP_EOL;
+    echo $fraction4;
+    echo ('Fraction(0,0) literal : ' . $fraction4->literal());
+}
+catch (Exception $ex)
+{
+    echo $ex->getMessage();
+}
