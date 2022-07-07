@@ -4,7 +4,7 @@
 /**
  * La classe représente un compte bancaire
  */
-class Compte extends Banque
+class Compte
 {
 
     /**
