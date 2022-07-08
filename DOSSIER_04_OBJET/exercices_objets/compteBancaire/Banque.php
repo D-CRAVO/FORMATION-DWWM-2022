@@ -187,6 +187,7 @@ class Banque
         $variable1->transferer($variable2, $montant);
 
         echo $variable2;
+        echo $variable1;
 
     }
 
