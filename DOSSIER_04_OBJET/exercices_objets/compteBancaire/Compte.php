@@ -7,26 +7,29 @@
 class Compte
 {
 
+
+
+
     /**
      * Numéro du compte bancaire
      *
      * @var integer
      */
-    private int $numero;
+    private int $numeroCompte;
 
     /**
      * Nom du propriétaire du compte bancaire
      *
      * @var string
      */
-    private string $nom;
+    private string $nomCompte;
 
     /**
-     * Solde : ontant restant sur le compte bancaire
+     * Solde : Montant restant sur le compte bancaire
      *
      * @var float
      */
-    private float $solde;
+    private float $soldeCompte;
 
     /**
      * Montant du découvert autorisé
@@ -34,51 +37,75 @@ class Compte
      *
      * @var integer
      */
-    private int $decouvert; 
+    private int $decouvertCompte; 
 
-    /**
-     * Constructeur
-     *
-     * @param integer $numero
-     * @param string $nom
-     * @param float $solde
-     * @param integer $decouvert
-     */
-    public function __construct(int $numero, string $nom, float $solde = 0, int $decouvert = 0)
-    {
-        $this->setNumero($numero);
-        $this->setNom($nom);
-        $this->setSolde($solde);
-        $this->setDecouvert($decouvert);
-    }
+    private array $listeComptes;
+
+
+
 
     /**
      * Retourne le numéro du compte bancaire
      *
      * @return integer
      */
-    public function getNumero() : int
+    public function getNumeroCompte() : int
     {
-        return $this->numero;
+        return $this->numeroCompte;
     }
 
     /**
      * Permet la création du numéro de compte
      *
      * @param integer $numero
-     * @return void
+     * @return string
      */
-    private function setNumero(int $numero) : void
+    private function setNumeroCompte(int $_numeroCompte) : void
     {
-        $this->numero = $numero;
-        /* if (!file_exists($numero))
-        {
-            $this->numero = $numero;
-        }
-        else
-        {
-            echo 'Le compte existe déjà.';
-        } */
+
+        $this->numeroCompte = $_numeroCompte;
+        //array_push($listeComptes, $this->_numeroCompte);
+        
+        // $listeComptes = [];
+        // $this->numeroCompte = $_numeroCompte;
+        // $nb = count($listeComptes);
+        // // echo PHP_EOL . $nb . PHP_EOL;
+        // for ($i=0; $i < $nb; $i++) 
+        // { 
+        //     if ($listeComptes[$i]->compte->numeroCompte == $_numeroCompte)
+        //     {
+        //         $this->numeroCompte = $_numeroCompte;
+        //         array_push($listeComptes, $this->_numeroCompte);
+        //         $result = 'Le compte ' . $_numeroCompte . ' a été créé avec succès.';
+        //     }
+        //     else
+        //     {
+        //         $result = 'Le compte ' . $_numeroCompte . ' existe déjà.';
+        //     }
+        //     echo $result;
+        // }
+        // var_dump($listeComptes);
+
+        
+
+
+        // $condition = self::$_numeroCompte == $this->$_numeroCompte;
+        // $condition = isset($this->_numeroCompte);
+        // $condition = method_exists($this->_numeroCompte, Compte);
+        // $condition = property_exists(Compte, $this);
+
+        // echo !$condition;
+        // if (!$condition)
+        // {
+        //     $this->numeroCompte = $_numeroCompte;
+        //     //array_push($listeComptes, $this->_numeroCompte);
+        //     $result = 'Le compte ' . $_numeroCompte . ' a été créé avec succès.';
+        // }
+        // else
+        // {
+        //     $result = 'Le compte ' . $_numeroCompte . ' existe déjà.';
+        // }
+        // echo $result . PHP_EOL;
     }
 
     /**
@@ -86,20 +113,20 @@ class Compte
      *
      * @return string
      */
-    public function getNom() : string
+    public function getNomCompte() : string
     {
-        return $this->nom;
+        return $this->nomCompte;
     }
 
     /**
      * Permet l'assignation d'un nom à un compte bancaire
      *
-     * @param string $nom
+     * @param string $_nomCompte
      * @return void
      */
-    private function setNom(string $nom) : void
+    private function setNomCompte(string $_nomCompte) : void
     {
-        $this->nom = $nom;
+        $this->nomCompte = $_nomCompte;
     }
 
     /**
@@ -107,20 +134,20 @@ class Compte
      *
      * @return float
      */
-    public function getSolde() : float
+    public function getSoldeCompte() : float
     {
-        return $this->solde;
+        return $this->soldeCompte;
     }
 
     /**
      * Permet la modification du solde du compte bancaire
      *
-     * @param float $solde
+     * @param float $_soldeCompte
      * @return void
      */
-    public function setSolde(float $solde) : void
+    public function setSoldeCompte(float $_soldeCompte) : void
     {
-        $this->solde = $solde;
+        $this->soldeCompte = $_soldeCompte;
     }
 
     /**
@@ -128,46 +155,86 @@ class Compte
      *
      * @return integer
      */
-    public function getDecouvert() : int
+    public function getDecouvertCompte() : int
     {
-        return $this->decouvert;
+        return $this->decouvertCompte;
     }
 
     /**
      * Permet la modification du découvert du compte bancaire
      *
-     * @param integer $decouvert
+     * @param integer $_decouvertCompte
      * @return void
      */
-    public function setDecouvert(int $decouvert) : void
+    public function setDecouvertCompte(int $_decouvertCompte) : void
     {
-        $this->decouvert = $decouvert;
+        $this->decouvertCompte = $_decouvertCompte;
+    }
+
+    
+
+    /**
+     * Constructeur
+     *
+     * @param integer $_numeroCompte
+     * @param string $_nomCompte
+     * @param float $_soldeCompte       // S'il n'est pas renseigné, il est initialisé à 0
+     * @param integer $_decouvertCompte // S'il n'est pas renseigné, il est initialisé à 0
+     */
+    public function __construct(int $_numeroCompte, string $_nomCompte, float $_soldeCompte = 0, int $_decouvertCompte = 0)
+    {
+        $this->setNumeroCompte($_numeroCompte);
+        $this->setNomCompte($_nomCompte);
+        $this->setSoldeCompte($_soldeCompte);
+        $this->setDecouvertCompte($_decouvertCompte);
+        $listeComptes = [];
+        array_push($listeComptes, $this);
     }
 
     /**
-     * Créditer le solde du compte sélectionné du montant indiqué
+     * Affichage
      *
-     * @param float $montant //Montant à créditer
-     * @return void
+     * @return string
      */
-    public function crediter(float $montant) : void
+    public function __toString() : string
     {
-        $this->solde += $montant;
+        $result = 'Le compte numéro ' . $this->numeroCompte . PHP_EOL 
+            . ' dont le propriétaire est ' . $this->nomCompte . PHP_EOL
+            . ' a pour solde : '. $this->soldeCompte . ' euros' . PHP_EOL
+            . ' et pour découvert autorisé : '  . $this->decouvertCompte . ' euros' . PHP_EOL;
+        return $result;
     }
 
+
+
+
     /**
-     * Débiter le solde du compte sélectionné du montant indiqué
+     * Créditer le solde du compte $this sélectionné du montant $_montant indiqué
      *
-     * @param float $montant //Montant à débiter
+     * @param float $_montant //Montant à créditer
+     * @return void
+     */
+    public function crediter(float $_montant) : void
+    {
+        $this->soldeCompte += $_montant;
+    }
+
+
+
+
+    /**
+     * Débiter le solde du compte sélectionné $this du montant $_montant indiqué
+     *
+     * @param float $_montant //Montant à débiter
      * @return bool
      */
-    public function debiter(float $montant) : bool
+    public function debiter(float $_montant) : bool
     {
         $result = false;
-        $condition = ($this->solde + $this->decouvert >= $montant);
+        $condition = ($this->soldeCompte + $this->decouvertCompte >= $_montant);
         if ($condition)
         {
-            $this->solde -= $montant;
+            $this->soldeCompte -= $_montant;
             $result = true;
         }
         else 
@@ -180,21 +247,26 @@ class Compte
         
     }
 
+
+
+
     /**
      * Transfert du montant sélectionné du compte sélectionné vers le compte $compte
+     * Après avoir vérifié que le compte est suffisamment approvisionné
+     * Et que le montant du transfert n'est pas négatif
      *
-     * @param compte $compte    //Compte vers lequel le transfert s'effectue
-     * @param float $montant    //Montant du transfert
+     * @param compte $_compte    //Compte vers lequel le transfert s'effectue
+     * @param float $_montant    //Montant du transfert
      * @return boolean
      */
-    public function transferer(compte $compte, float $montant) : bool
+    public function transferer(compte $_compte, float $_montant) : bool
     {
         $result = false;
-        $condition = ($this->solde + $this->decouvert >= $montant);
+        $condition = ($this->soldeCompte + $this->decouvertCompte >= $_montant && $_montant >=0);
         if ($condition)
         {
-            $this->debiter($montant);
-            $compte->crediter($montant);
+            $this->debiter($_montant);
+            $_compte->crediter($_montant);
             $result = true;
         }
         else
@@ -206,39 +278,31 @@ class Compte
         return $result;
     }
 
-    public function comparer(Compte $compte) : bool
+    /**
+     * Compare le solde de deux comptes
+     *
+     * @param Compte $_compte   // Compte auquel le compte sélectionné est comparé
+     * @return boolean
+     */
+    public function comparer(Compte $_compte) : bool
     {
         $result = false;
-        $condition = ($this->solde > $compte->solde);
+        $condition = ($this->soldeCompte > $_compte->soldeCompte);
         if ($condition)
         {
-            $resultAffichage = ' Le solde du compte ' . $this->numero . ' de ' . $this->nom 
-                . ' est supérieur au solde du compte ' . $compte->numero . ' de ' . $compte->nom . '.' 
+            $resultAffichage = ' Le solde du compte ' . $this->numeroCompte . ' de ' . $this->nomCompte 
+                . ' est supérieur au solde du compte ' . $_compte->numeroCompte . ' de ' . $_compte->nomCompte . '.' 
                 . PHP_EOL;
             $result = true;
         }
         else
         {
-            $resultAffichage = ' Le solde du compte ' . $this->numero . ' de ' . $this->nom 
-                . ' est inférieur au solde du compte ' . $compte->numero . ' de ' . $compte->nom . '.' 
+            $resultAffichage = ' Le solde du compte ' . $this->numeroCompte . ' de ' . $this->nomCompte 
+                . ' est inférieur au solde du compte ' . $_compte->numeroCompte . ' de ' . $_compte->nomCompte . '.' 
                 . PHP_EOL;
             $result = false;
         }
         echo $resultAffichage;
-        return $result;
-    }
-
-    /**
-     * Affichage
-     *
-     * @return string
-     */
-    public function __toString() : string
-    {
-        $result = 'Le compte numéro ' . $this->numero . PHP_EOL 
-            . ' dont le propriétaire est ' . $this->nom . PHP_EOL
-            . ' a pour solde : '. $this->solde . ' euros' . PHP_EOL
-            . ' et pour découvert autorisé : '  . $this->decouvert . ' euros' . PHP_EOL;
         return $result;
     }
 
