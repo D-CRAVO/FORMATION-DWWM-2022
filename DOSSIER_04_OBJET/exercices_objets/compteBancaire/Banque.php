@@ -34,18 +34,7 @@ class Banque
      */
     public array $mesComptes;
 
-    /**
-     * Constructeur
-     *
-     * @param string $nom       Nom de la banque
-     * @param string $ville     Ville de la banque
-     */
-    public function __construct(string $nom, string $ville)
-    {
-        $this->setNomBanque($nom);
-        $this->setVilleBanque($ville);
-        $this->mesComptes = [];
-    }
+    
 
     /**
      * Retourne le nom de la banque
@@ -89,16 +78,43 @@ class Banque
         $this->ville = $ville;
     }
 
+
+
     /**
-     * Permet la création du premier compte bancaire
+     * Constructeur
      *
-     * @param Compte $compte    //Premier compte à créer
-     * @return void
+     * @param string $nom       Nom de la banque
+     * @param string $ville     Ville de la banque
      */
-    /* public function premierCompte(Compte $compte) :void
+    public function __construct(string $nom, string $ville)
     {
-        $this->mesComptes[0] = $compte;
-    } */
+        $this->setNomBanque($nom);
+        $this->setVilleBanque($ville);
+        $this->mesComptes = [];
+    }
+
+    /**
+     * Affichage
+     *
+     * @return string
+     */
+    public function __toString() : string
+    {
+        $resultMesComptes = '';
+        $nbComptes = count($this->mesComptes);
+
+        $resultBanque = PHP_EOL . 'La banque ' . $this->nom . ' se situe dans la ville de ' . $this->ville
+         . ' et possède ' . $nbComptes . ' comptes : ' . PHP_EOL;
+
+        for($i = 0; $i < $nbComptes; $i++)
+        {
+            $resultMesComptes .= $this->mesComptes[$i]->__toString(). PHP_EOL;
+        }
+
+        return $resultBanque . PHP_EOL .$resultMesComptes;
+    }
+
+
 
     /**
      * Permet l'ajout d'un compte bancaire
@@ -111,10 +127,13 @@ class Banque
         array_push($this->mesComptes, $compte);
     }
 
-    // *******************************************************************************************************************
 
 
-    //***********************************************************************************************************
+    /**
+     * Détermine le compte ayant le solde le plus important
+     *
+     * @return Compte
+     */
     public function compteSup() : Compte
     {
         //echo(array_search(max($this->mesComptes->solde, $this->mesComptes),$this->mesComptes));
@@ -124,7 +143,7 @@ class Banque
         $compteMax = $this->mesComptes[0];
 
         foreach($this->mesComptes as $unCompte) {
-            if($unCompte->getSolde() > $compteMax->getSolde()) 
+            if($unCompte->getSoldeCompte() > $compteMax->getSoldeCompte()) 
             {
                 $compteMax = $unCompte;
             }
@@ -141,8 +160,14 @@ class Banque
         return $compteMax;
     }
 
-    // *******************************************************************************************************************
 
+    /**
+     * Retourne les informations du compte demandé de la banque $this recherché par son numéro de compte
+     * Elle retourne "null" si le compte n'est pas trouvé 
+     *
+     * @param integer $_numCompte
+     * @return Compte|null
+     */
     public function rendCompte(int $_numCompte) : ?Compte
     {
         for ($i=0; $i < count($this->mesComptes); $i++) 
@@ -172,48 +197,32 @@ class Banque
     // } while ($i < $count);
     // return null;
     
-}
-
-
-
-    // *******************************************************************************************************************
-
-    public function transfererBanque(int $numeroEmettrice, Banque $banqueRecepteur , int $numeroRecepteur, float $montant) : void
-    {
-        echo($variable1 = $this->rendCompte($numeroEmettrice)); 
-
-        echo($variable2 = $banqueRecepteur->rendCompte($numeroRecepteur));
-
-        $variable1->transferer($variable2, $montant);
-
-        echo $variable2;
-        echo $variable1;
-
     }
-
-
-
 
 
 
     /**
-     * Affichage
+     * Effectue le transfert (virement) du montant $_montant de la banque émettrice $this vers la banque 
+     * $_banqueRecepteur via leurs numéros de comptes respectifs 
      *
-     * @return string
+     * @param integer $_numeroEmetteur      // Numéro de compte de la banque émettrice $this
+     * @param Banque $_banqueRecepteur      // Banque réceptrice du virement
+     * @param integer $_numeroRecepteur     // Numéro de compte de la banque réceptrice
+     * @param float $_montant               // Montant du virement
+     * @return void
      */
-    public function __toString() : string
+    public function transfererBanque(int $_numeroEmetteur, Banque $_banqueRecepteur , int $_numeroRecepteur, float $_montant) : void
     {
-        $resultMesComptes = '';
-        $nbComptes = count($this->mesComptes);
+        $variable1 = $this->rendCompte($_numeroEmetteur); 
+        $variable2 = $banqueRecepteur->rendCompte($_numeroRecepteur);
 
-        $resultBanque = PHP_EOL . 'La banque ' . $this->nom . ' se situe dans la ville de ' . $this->ville
-         . ' et possède ' . $nbComptes . ' comptes : ' . PHP_EOL;
+        $variable1->transferer($variable2, $_montant);
 
-        for($i = 0; $i < $nbComptes; $i++)
-        {
-            $resultMesComptes .= $this->mesComptes[$i]->__toString(). PHP_EOL;
-        }
+        // echo $variable2;
+        // echo $variable1;
 
-        return $resultBanque . PHP_EOL .$resultMesComptes;
     }
+
+
+ 
 }
