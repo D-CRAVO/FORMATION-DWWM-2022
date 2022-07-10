@@ -7,9 +7,9 @@ class ReseauBancaire
 
     private string $nom;
 
-    private array $nbBanques;
+    private array $nbReseauxBancaires;
 
-    private array $mesBanques; 
+    private array $mesReseauxBancaires; 
 
     public function setNomReseauBancaire(string $nom) : void
     {
@@ -29,15 +29,17 @@ class ReseauBancaire
 
     public function __toString() : string
     {
-        //$nbBanques = count($this->mesBanques);
-        $result = PHP_EOL . 'Le Réseau bancaire s\'appelle : ' . $this->nom. PHP_EOL;
+        $nbReseauxBancaires = count($this->mesReseauxBancaires);
 
-        // for ($i=0; $i < $nbBanques; $i++) 
-        // { 
-        //     $result .= PHP_EOL . $this->mesBanques[$i]->__toString() .PHP_EOL;
-        // }
+        $resultReseauBancaire = PHP_EOL . 'Le Réseau bancaire ' . $this->nom. ' est composée de : ';
+        $resultMesReseauxBancaires = '';
+
+        for ($i=0; $i < $nbReseauxBancaires; $i++) 
+        { 
+            $resultMesReseauxBancaires .= PHP_EOL . $this->mesReseauxBancaires[$i]->__toString();
+        }
         
-        return $result;
+        return $resultReseauBancaire . $resultMesReseauxBancaires;
     }
 
     public function AjouterBanque(Banque $banque) : void
@@ -45,15 +47,15 @@ class ReseauBancaire
         array_push($this->mesReseauxBancaires, $banque);
     }
 
-    // public function AffichageMesComptes() : string
-    // {
-    //     $result = 'Le compte bancaire ' . $this->nom . 'possède les comptes suivant : ';
-    //     for ($i=0; $i < count($this->mesReseauxBancaires); $i++) 
-    //     { 
-    //         $result .= PHP_EOL . $this->mesReseauxBancaires[$i]->__toString() .PHP_EOL;
-    //     }
-    //     return $result;
-    // }
+    public function AffichageMesComptes(string $banqueNom, string $banqueVille) : string
+    {
+        $result = 'La banque ' . $this->nom . 'possède les comptes suivant : ';
+        for ($i=0; $i < count($this->mesReseauxBancaires); $i++) 
+        { 
+            $result .= PHP_EOL . $this->mesReseauxBancaires[$i]->__toString() .PHP_EOL;
+        }
+        return $result;
+    }
 }
 
 
