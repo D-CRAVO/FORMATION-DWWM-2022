@@ -62,50 +62,7 @@ class Compte
      */
     private function setNumeroCompte(int $_numeroCompte) : void
     {
-
         $this->numeroCompte = $_numeroCompte;
-        //array_push($listeComptes, $this->_numeroCompte);
-        
-        // $listeComptes = [];
-        // $this->numeroCompte = $_numeroCompte;
-        // $nb = count($listeComptes);
-        // // echo PHP_EOL . $nb . PHP_EOL;
-        // for ($i=0; $i < $nb; $i++) 
-        // { 
-        //     if ($listeComptes[$i]->compte->numeroCompte == $_numeroCompte)
-        //     {
-        //         $this->numeroCompte = $_numeroCompte;
-        //         array_push($listeComptes, $this->_numeroCompte);
-        //         $result = 'Le compte ' . $_numeroCompte . ' a été créé avec succès.';
-        //     }
-        //     else
-        //     {
-        //         $result = 'Le compte ' . $_numeroCompte . ' existe déjà.';
-        //     }
-        //     echo $result;
-        // }
-        // var_dump($listeComptes);
-
-        
-
-
-        // $condition = self::$_numeroCompte == $this->$_numeroCompte;
-        // $condition = isset($this->_numeroCompte);
-        // $condition = method_exists($this->_numeroCompte, Compte);
-        // $condition = property_exists(Compte, $this);
-
-        // echo !$condition;
-        // if (!$condition)
-        // {
-        //     $this->numeroCompte = $_numeroCompte;
-        //     //array_push($listeComptes, $this->_numeroCompte);
-        //     $result = 'Le compte ' . $_numeroCompte . ' a été créé avec succès.';
-        // }
-        // else
-        // {
-        //     $result = 'Le compte ' . $_numeroCompte . ' existe déjà.';
-        // }
-        // echo $result . PHP_EOL;
     }
 
     /**
@@ -187,8 +144,6 @@ class Compte
         $this->setNomCompte($_nomCompte);
         $this->setSoldeCompte($_soldeCompte);
         $this->setDecouvertCompte($_decouvertCompte);
-        $listeComptes = [];
-        array_push($listeComptes, $this);
     }
 
     /**
@@ -239,8 +194,6 @@ class Compte
         }
         else 
         {
-            echo 'Opération de débit non réalisée.' . PHP_EOL;
-            echo PHP_EOL;
             $result = false;
         }
         return $result;
