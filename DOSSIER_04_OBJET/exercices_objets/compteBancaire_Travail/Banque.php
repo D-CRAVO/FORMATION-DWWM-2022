@@ -173,7 +173,7 @@ class Banque
         for ($i=0; $i < count($this->mesComptes); $i++) 
         { 
 
-            if ($this->mesComptes[$i]->getNumero() == $_numCompte) 
+            if ($this->mesComptes[$i]->getNumeroCompte() == $_numCompte) 
             {
                 return $this->mesComptes[$i];
             }
@@ -214,7 +214,7 @@ class Banque
     public function transfererBanque(int $_numeroEmetteur, Banque $_banqueRecepteur , int $_numeroRecepteur, float $_montant) : void
     {
         $variable1 = $this->rendCompte($_numeroEmetteur); 
-        $variable2 = $banqueRecepteur->rendCompte($_numeroRecepteur);
+        $variable2 = $_banqueRecepteur->rendCompte($_numeroRecepteur);
 
         $variable1->transferer($variable2, $_montant);
 
