@@ -93,7 +93,7 @@ function getDiv(int $nb1, int $nb2) : float
     }
     else
     {
-        return floatval(number_format($nb1 / $nb2 , 2));
+        return floatval(number_format($nb1 / $nb2 , 2, ',', ' '));
     }
 }
 
