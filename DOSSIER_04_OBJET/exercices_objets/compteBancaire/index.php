@@ -1,6 +1,5 @@
 <?php
-//require 'Banque.php';
-require 'ReseauBancaire.php';
+require 'Banque.php';
 
 $compte01 = new Compte(1, 'David CRAVO', 10000, 500);
 $compte02 = new Compte(2, 'David CRAVO', 1000, 250);
@@ -70,29 +69,8 @@ $caBlois = new Banque('Crédit Agricole' , 'Blois');
 
 $caBlois->ajouterCompte($compte03);
 
-// echo($cmBlois);
-// var_dump($cmBlois);
-
-// echo(PHP_EOL . 'Le compte ayant le solde maximum est : ' . PHP_EOL . $cmBlois->compteSup());
-
-// if (!empty($cmBlois->rendCompte()))
-// echo(PHP_EOL . 'Le compte à afficher est : ' . PHP_EOL . $cmBlois->rendCompte(4));
-// echo $cmBlois;
-// var_dump($cmBlois->mesComptes[1]);
-
-// echo($cmBlois->transferer($caBlois, 3, 1250));
-// echo(get_parent_class($this->getNom()));
-
 $caBlois->transfererBanque(3, $cmBlois, 4, -25000);
-//var_dump($cmBlois->mesComptes);
 
 $creditMutuel = new ReseauBancaire ('Credit Mutuel Du Centre');
 
 $creditMutuel->ajouterBanque($cmBlois);
-
-echo $creditMutuel;
-
-// var_dump($creditMutuel->cmBlois->mesComptes);
-// var_dump($creditMutuel);
-
-//$creditMutuel->AffichageMesComptes();
