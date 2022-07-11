@@ -71,6 +71,3 @@ $caBlois->ajouterCompte($compte03);
 
 $caBlois->transfererBanque(3, $cmBlois, 4, -25000);
 
-$creditMutuel = new ReseauBancaire ('Credit Mutuel Du Centre');
-
-$creditMutuel->ajouterBanque($cmBlois);
