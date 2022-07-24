@@ -9,6 +9,11 @@ Class Animal
     //     return $this->espece;
     // }
 
+    public function __construct(string $_espece)
+    {
+        $this->espece = $_espece;
+    }
+
     public function seDeplacer() : string
     {
         $result = 'L\'animal ' . $this->espece . ' se déplace ';
