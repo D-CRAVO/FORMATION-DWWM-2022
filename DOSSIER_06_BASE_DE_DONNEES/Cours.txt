@@ -1,5 +1,0 @@
-règles de gestion
-données atomiques
-le nom de chq donnée est unique
-code insee
-entité
