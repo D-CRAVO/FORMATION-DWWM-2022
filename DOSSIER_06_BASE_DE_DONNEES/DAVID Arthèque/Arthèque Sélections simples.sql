@@ -1,4 +1,11 @@
-
+SELECT 
+artiste_id,
+artiste_nom,
+artiste_prenom,
+artiste_naissance,
+artiste_deces,
+art_id
+FROM artistes;
 
 SELECT * 
 FROM artistes
@@ -109,4 +116,73 @@ artiste_nom IN ('Monet', 'Picasso') AND
 art_id = 3
 ORDER BY artiste_prenom
 ;
+
+SELECT 
+artiste_prenom,
+artiste_nom,
+art_id
+FROM artistes
+WHERE 
+artiste_nom IN ('Monet', 'Picasso') AND 
+art_id = 3
+ORDER BY artiste_prenom
+;
+
+SELECT 
+art_id
+, SUM (artiste_oeuvres)
+FROM artistes
+GROUP BY art_id
+ORDER BY art_id
+;
+
+SELECT 
+art_id
+, AVG (artiste_oeuvres)
+FROM artistes
+GROUP BY art_id
+ORDER BY art_id
+;
+
+SELECT 
+art_id,
+artiste_prenom,
+artiste_nom
+, AVG (artiste_oeuvres)
+FROM artistes
+GROUP BY art_id, 
+artiste_prenom, 
+artiste_nom
+ORDER BY art_id
+;
+
+SELECT
+art_id,
+artiste_prenom,
+artiste_nom
+, MAX (artiste_oeuvres)
+FROM artistes
+GROUP BY art_id,
+artiste_prenom,
+artiste_nom
+ORDER BY art_id
+;
+
+SELECT
+art_id,
+artiste_prenom,
+artiste_nom
+, MIN (artiste_oeuvres)
+FROM artistes
+GROUP BY art_id,
+artiste_prenom,
+artiste_nom
+ORDER BY art_id
+;
+
+SELECT 
+artiste_prenom,
+artiste_nom
+, 
+
 
