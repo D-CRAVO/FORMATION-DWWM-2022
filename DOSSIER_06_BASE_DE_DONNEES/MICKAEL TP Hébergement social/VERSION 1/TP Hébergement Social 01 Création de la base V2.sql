@@ -64,7 +64,7 @@ INSERT INTO people
 	person_role_id
 )
 VALUES
-(1, 'Brown', 'James', '1933-05-03', 1),
+(1, 'Brown', 'James', '1933-05-03', 7),
 (2, 'Jackson', 'Mickael', '1958-08-29', 2),
 (3, 'Presley', 'Elvis', '1935-01-08', 3),
 (4, 'Jagger', 'Mick', '1943-07-26', 4),
@@ -77,16 +77,16 @@ VALUES
 (11, 'Hayek', 'Salma', '1966-09-02', 6),
 (12, 'Cotillard', 'Marion', '1975-02-28', 6),
 
-(13, 'Duquesnoy', 'François', '1597-01-12', 7),
-(14, 'Gibbons', 'Grinling', '1648-04-04', 7),
-(15, 'De Dominici', 'Maria', '1645-12-06', 7),
-(16, 'Lalanne', 'Claude', '1925-11-28', 7),
-(17, 'Duquesnoy', 'François', '1597-01-12', 7),
-(18, 'Gibbons', 'Grinling', '1648-04-04', 7),
-(19, 'De Dominici', 'Maria', '1645-12-06', 7),
-(20, 'Lalanne', 'Claude', '1925-11-28', 7),
-(21, 'Model', 'Lisette', '1901-11-10', 7),
-(22, 'Alvarez Bravo', 'Lola', '1907-04-03', 7)
+(13, 'Duquesnoy', 'François', '1597-01-12', 1),
+(14, 'Gibbons', 'Grinling', '1648-04-04', 1),
+(15, 'De Dominici', 'Maria', '1645-12-06', 1),
+(16, 'Lalanne', 'Claude', '1925-11-28', 1),
+(17, 'Duquesnoy', 'François', '1597-01-12', 1),
+(18, 'Gibbons', 'Grinling', '1648-04-04', 1),
+(19, 'De Dominici', 'Maria', '1645-12-06', 1),
+(20, 'Lalanne', 'Claude', '1925-11-28', 1),
+(21, 'Model', 'Lisette', '1901-11-10', 1),
+(22, 'Alvarez Bravo', 'Lola', '1907-04-03', 1)
 ;
 
 -- Création de résidents
@@ -110,10 +110,11 @@ VALUES
 (22, '2022-08-20', NULL, NULL)
 ;
 
-CALL create_resident (23, 'Alvarez Bravo', 'Lola', '1907-04-03', 7, '2022-08-22');
+--CALL create_resident (23, 'Alvarez Bravo', 'Lola', '1907-04-03', 1, '2022-08-22');
 
 SELECT * FROM residents
 ;
+
 SELECT * 
 FROM people 
 INNER JOIN residents ON resident_id = person_id
