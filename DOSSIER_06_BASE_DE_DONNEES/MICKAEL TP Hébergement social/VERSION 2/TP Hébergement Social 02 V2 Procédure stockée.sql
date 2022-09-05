@@ -1,3 +1,5 @@
+drop procedure if exists create_resident;
+
 -- procédure stockée
 CREATE OR REPLACE PROCEDURE create_resident 
 (
@@ -6,6 +8,7 @@ CREATE OR REPLACE PROCEDURE create_resident
 	,person_lastname VARCHAR(100)
 	,person_birthdate DATE
 	,date_arrival TIMESTAMP
+	,date_leave TIMESTAMP
 )
 LANGUAGE plpgsql
 AS $$
@@ -25,11 +28,11 @@ VALUES
 
 INSERT INTO residents
 (
-	resident_id
-	,date_arrival
+	person_id
+	,resident_date_arrival
 )
 VALUES
-(person_id, date_arrival)
+(person_id, resident_date_arrival)
 ;
 
 END
