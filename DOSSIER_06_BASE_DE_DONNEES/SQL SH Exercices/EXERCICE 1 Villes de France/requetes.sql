@@ -72,13 +72,17 @@ limit 10
 -- Compter le nombre de villes dont le nom commence par “Saint”
 	
 select
-
-		(
-			select
-				ville_nom_reel
-			from villes_france_free
-			where ville_nom_reel like 'Saint%'
-		)
+	ville_nom_reel
+from villes_france_free
+where ville_nom_reel like 'Saint%'
+	
+select
+(
+	select
+		ville_nom_reel
+	from villes_france_free
+	where ville_nom_reel like 'Saint%'
+)
 as resultat
 ;
 
