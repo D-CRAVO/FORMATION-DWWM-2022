@@ -39,14 +39,26 @@ GROUP BY brand_name
 -- Sélectionner le nom de toutes les marques incluant le nombre de propriétaires de chaque marque
 
 SELECT
-	brand_name						--FAUX
+	brand_name
+	,owner_lastname									-- FAUX
+	,car_owner_id
 	,COUNT (owner_id)
 FROM brands
 	NATURAL JOIN cars
 	INNER JOIN owners ON car_owner_id = owner_id
-GROUP BY brand_name
+WHERE brand_name LIKE 'Audi'
+GROUP BY brand_name, owner_lastname, car_owner_id
 ;
 
+SELECT
+	brand_name										-- FAUX
+	,COUNT (car_owner_id)
+FROM brands
+	NATURAL JOIN cars
+	INNER JOIN owners ON car_owner_id = owner_id
+WHERE brand_name LIKE 'Audi'
+GROUP BY brand_name
+;
 
 -- 5
 -- Sélectionner les prénoms des propriétaires dont le prénom commence par la lettre A
