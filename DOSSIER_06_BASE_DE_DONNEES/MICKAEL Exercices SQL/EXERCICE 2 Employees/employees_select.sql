@@ -103,13 +103,42 @@ ORDER BY moyenne DESC
 -- 7
 -- Créer la requête SELECT correspondant au résultat suivant 
 
+-- Séléction des attributs de la directrice générale
+
 SELECT
-	e1.emp_id
-	,e1.emp_lastname
-	,e1.emp_firstname
-	,e1.emp_salary
-	,e1.emp_hiredate
-FROM employees as e1
-WHERE e1.emp_lastname LIKE 'Holems'
+	emp_id
+	,emp_lastname
+	,emp_firstname
+	,emp_salary
+	,emp_hiredate
+FROM employees
+WHERE emp_lastname LIKE 'Holems'
+;
+
+SELECT
+	emp_id
+	,emp_lastname
+	,emp_firstname
+	,emp_salary
+	,emp_hiredate
+FROM employees
+WHERE emp_manager_id IS null
+;
+
+-- Nombre d'employés
+
+SELECT
+	COUNT (emp_manager_id) AS number_of_employees
+FROM employees
+;
+
+-- Séléction des salaires des employés
+
+SELECT
+	emp_salary
+FROM employees
+WHERE emp_manager_id IS NOT null
+;
+
 
 
