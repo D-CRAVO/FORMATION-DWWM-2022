@@ -80,7 +80,7 @@ SELECT departement_nom, ville_departement, SUM(ville_surface) AS dpt_surface
 FROM villes_france_free
 LEFT JOIN departement ON departement_code = ville_departement
 GROUP BY departement_nom, ville_departement  
-ORDER BY dpt_surface  DESC
+ORDER BY dpt_surface DESC
 LIMIT 10
 ;
 
@@ -89,22 +89,117 @@ LIMIT 10
 -- Compter le nombre de villes dont le nom commence par “Saint”
 	
 select
-	ville_nom_reel
+	COUNT (ville_nom_reel)
 from villes_france_free
 where ville_nom_reel like 'Saint%'
-	
-select
-(
-	select
-		ville_nom_reel
-	from villes_france_free
-	where ville_nom_reel like 'Saint%'
-)
-as resultat
 ;
 
-select
-	count (resultat)
-from villes_france_free
+-- 8
+-- Obtenir la liste des villes qui ont un nom existants plusieurs fois, 
+-- et trier afin d’obtenir en premier celles dont le nom est le plus souvent utilisé par plusieurs communes
+
+SELECT
+	ville_nom_reel
+	,COUNT (ville_nom_reel) AS comptage
+FROM villes_france_free
+GROUP BY ville_nom_reel
+HAVING COUNT (ville_nom_reel) > 1
+ORDER BY comptage DESC
 ;
+
+-- Correction
+SELECT ville_nom, COUNT(*) AS nbt_item 
+FROM villes_france_free 
+GROUP BY ville_nom 
+ORDER BY nbt_item DESC;
+
+
+-- 9 
+-- Obtenir en une seule requête SQL la liste des villes dont la superficie est supérieur à la superficie moyenne
+
+-- Calcul de la superficie moyenne
+SELECT 
+	AVG (ville_surface)
+FROM villes_france_free
+;
+
+-- 17.257374931880097
+SELECT
+	ville_nom
+	,ville_surface
+FROM villes_france_free
+GROUP BY ville_nom, ville_surface
+HAVING ville_surface > 17
+;
+
+-- Requête complète
+SELECT
+	ville_nom
+	,ville_surface
+FROM villes_france_free
+GROUP BY ville_nom, ville_surface
+HAVING ville_surface > AVG (ville_surface)
+;
+
+-- Correction
+SELECT * 
+FROM villes_france_free
+WHERE ville_surface > (SELECT AVG(ville_surface) FROM villes_france_free);
+
+
+-- 10
+-- Obtenir la liste des départements qui possèdent plus de 2 millions d’habitants
+
+-- Calcul de la population par département
+SELECT
+	departement_nom
+	,SUM (ville_population_2012) AS departement_population
+FROM departement
+	RIGHT JOIN villes_france_free ON departement_code = ville_departement
+GROUP BY departement_nom
+ORDER BY departement_population DESC
+;
+
+-- Requête demandée
+SELECT
+	departement_nom
+	,SUM (ville_population_2012)
+FROM departement
+	RIGHT JOIN villes_france_free ON departement_code = ville_departement
+GROUP BY departement_nom
+HAVING SUM (ville_population_2012) > 2000000
+;
+
+-- Correction
+SELECT ville_departement, SUM(ville_population_2012) AS population_2012
+FROM villes_france_free 
+GROUP BY ville_departement
+HAVING SUM(ville_population_2012) > 2000000
+ORDER BY population_2012 DESC;
+
+
+-- 11
+-- Remplacez les tirets par un espace vide, 
+-- pour toutes les villes commençant par “SAINT-” (dans la colonne qui contient les noms en majuscule)
+
+-- Séléction des villes commençant par 'SAINT-'
+SELECT 
+	ville_nom
+FROM villes_france_free
+WHERE ville_nom LIKE 'SAINT-%'
+;
+
+-- Requête demandée
+UPDATE villes_france_free
+SET ville_nom = REPLACE(ville_nom, '-', ' ')
+WHERE ville_nom LIKE 'SAINT-%'
+;
+
+-- Contrôle de la requête
+SELECT 
+	ville_nom
+FROM villes_france_free
+WHERE ville_nom LIKE 'SAINT %'
+;
+
 
