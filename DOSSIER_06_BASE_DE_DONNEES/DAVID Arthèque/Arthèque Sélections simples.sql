@@ -180,9 +180,7 @@ artiste_nom
 ORDER BY art_id
 ;
 
-SELECT 
-artiste_prenom,
-artiste_nom
-, 
+
+
 
 
