@@ -88,3 +88,73 @@ FROM commande
 A partir de la table Produit, afficher "Produit non disponible" 
 lorsque l'attribut Indisponible vaut 1, et "Produit disponible" sinon.
 */
+
+SELECT 
+    Nomprod
+    ,Indisponible
+    ,CASE Indisponible
+            WHEN 0 THEN 'Produit non disponible'
+            ELSE 'Produit disponible'
+        END AS 'Disponiblite'
+FROM produit
+;
+
+--4.2
+/*
+Dans la table DetailCommande, indiquer les infos suivantes en fonction de la remise
+si elle vaut 0 : "aucune remise"
+si elle vaut entre 1 et 5% (inclus) : "petite remise"
+si elle vaut entre 6 et 15% (inclus) : "remise modérée"
+sinon :"remise importante"
+*/
+SELECT 
+   Nocom
+   ,Refprod
+   ,PrixUnit
+   ,Qte
+   ,Remise
+   ,CASE
+            WHEN Remise <= 0 THEN 'Aucune remise'
+            WHEN Remise <= 0.05 THEN 'Petite remise'
+            WHEN Remise <= 0.15 THEN 'Remise modérée'
+            ELSE 'Remise importante'
+        END AS Commentaire
+FROM DetailCommande
+;
+
+--4.3
+/*
+Indiquer pour les commandes envoyées si elles ont été envoyées en retard 
+(date d'envoi DateEnv supérieure (ou égale) à la date butoir ALivAvant) ou à temps
+*/
+SELECT 
+   DateCom
+   ,ALivAvant
+   ,DateEnv
+   ,CASE
+            WHEN DateEnv > ALivAvant THEN 'En Retard'
+            ELSE 'A temps'
+        END AS Commentaire
+FROM Commande
+;
+
+--5 Exercices complémentaires
+--5.1
+/*
+Récupérer l'année de naissance et l'année d'embauche des employés
+*/
+
+
+--5.2
+/*
+Lister les commandes ayant eu lieu un dimanche
+*/
+
+SELECT 
+    NoCom
+    ,DateCom
+    ,STRFTIME('%w', DateCom)
+FROM commande
+
+
+
