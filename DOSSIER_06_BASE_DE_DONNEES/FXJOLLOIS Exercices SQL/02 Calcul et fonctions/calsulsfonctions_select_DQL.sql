@@ -155,6 +155,39 @@ SELECT
     ,DateCom
     ,STRFTIME('%w', DateCom)
 FROM commande
+GROUP BY 
+    NoCom
+    ,DateCom
+HAVING STRFTIME('%w', DateCom) = '0'
+;
+
+--5.3
+/*
+Calculer le délai d'envoi (en jours) pour les commandes dont l'envoi est après la date butoir, ainsi que le nombre de jours de retard
+*/
+SELECT 
+    DateCom
+    ,ALivAvant
+    ,DateEnv
+    ,(STRFTIME('%s', DateEnv) - STRFTIME('%s', DateCom))/86400 AS 'Délais'
+    ,(STRFTIME('%s', DateEnv) - STRFTIME('%s', ALivAvant))/86400 AS 'Retard'
+FROM commande
+WHERE DATE(DateEnv) > DATE(ALivAvant)
+;
+
+--5.4
+/*
+Rechercher les sociétés clientes, dont le nom de la société contient le nom du contact de celle-ci
+*/
+SELECT 
+    Societe
+    ,Contact
+FROM client
+WHERE INSTR(Societe, Contact)
+;
+
+
+
 
 
 
