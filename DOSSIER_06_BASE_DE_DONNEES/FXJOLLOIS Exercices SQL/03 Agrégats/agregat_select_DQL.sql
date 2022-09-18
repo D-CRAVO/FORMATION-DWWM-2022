@@ -191,25 +191,63 @@ Lister les fonctions pour lesquelles la moyenne d'âge des employés dépasse le
 /*
 Donner la quantité totale commandée par les clients, pour chaque produit
 */
+SELECT
+    Refprod
+    ,SUM(PrixUnit)
+FROM DetailCommande
+GROUP BY
+    Refprod
+;
 
 --5.2
 /*
 Donner les cinq clients avec le plus de commandes, triés par ordre décroissant
 */
+SELECT
+    CodeCli
+    ,COUNT(NoCom) AS 'Commandes'
+FROM Commande
+GROUP BY 
+    CodeCli
+ORDER BY Commandes DESC
+LIMIT 5
+;
 
 --5.3
 /*
 Calculer le montant total des lignes d'achats de chaque commande, sans et avec remise sur les produits
 */
+SELECT
+    Nocom
+    ,PrixUnit * Qte AS 'montant_SR'
+    ,PrixUnit * Qte - PrixUnit * Qte * Remise AS 'montant_AR'
+FROM DetailCommande
+;
 
 --5.4
 /*
 Pour chaque catégorie avec au moins 10 produits, calculer le montant moyen des prix
 */
+SELECT
+    CodeCateg
+    ,COUNT(RefProd)
+    ,AVG(PrixUnit)
+FROM Produit
+GROUP BY CodeCateg
+HAVING COUNT(RefProd) > 10
+;
 
 --5.5
 /*
 Donner le numéro de l'employé ayant fait le moins de commandes
 */
-
+SELECT
+    NoEmp
+    ,COUNT(NoCom) AS nb_com
+FROM Commande
+GROUP BY
+    NoEmp
+ORDER BY nb_com
+LIMIT 1
+;
 
