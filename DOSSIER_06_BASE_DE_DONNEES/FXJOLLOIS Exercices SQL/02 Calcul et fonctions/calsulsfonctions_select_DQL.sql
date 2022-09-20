@@ -8,14 +8,16 @@ La table DetailCommande contient l'ensemble des lignes d'achat de chaque command
 - le montant à payer pour ce produit
 */
 
-SELECT
-    prixunit
-    ,remise
-    ,qte
-    ,(qte * prixunit * remise) AS montant_remise
-    ,(qte * prixunit - qte * prixunit * remise) AS montant_paye
-FROM detailcommande
-WHERE nocom = 10251
+SELECT 
+    NoCom
+    ,PrixUnit
+    ,Remise
+    ,Qte
+    ,ROUND(Qte * PrixUnit * Remise, 2) AS MontantRemise
+    ,Qte * PrixUnit AS Montant
+    ,ROUND(Qte * PrixUnit * (1-Remise),2) AS MontantPaye
+FROM DetailCommande
+WHERE NoCom = '10251'
 ;
 
 --2
