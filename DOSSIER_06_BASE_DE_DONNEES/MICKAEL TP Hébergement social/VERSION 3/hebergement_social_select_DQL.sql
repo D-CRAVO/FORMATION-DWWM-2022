@@ -30,6 +30,14 @@ GROUP BY (roles.role_id);
 /* VERSION 3 */
 
 -- 4 Sélectionner les activités en cours.
+SELECT
+	activity_label
+	,event_date
+FROM activities AS AC
+	INNER JOIN events AS EV ON EV.activity_id = AC.activity_id
+WHERE event_date > 'now'
+;
+
 -- 5 Sélectionner les activités dont le nombre d’inscriptions a atteint le maximum.
 SELECT 
 	activity_label
@@ -43,9 +51,14 @@ GROUP BY
 	activity_label
 	,event_cap_max
 HAVING COUNT(ER.person_id) >= event_cap_max
-
 ;
 
 -- 6 Sélectionner les activités dont le nombre d’inscriptions est inférieur au minimum requis.
+SELECT
+	activity_label
+	,even_cap_min
+	
+
+
 -- 7 Sélectionner les activités dont le nombre de places disponibles est inférieur au quart du maximum.
 -- 8 Sélectionner les activités futures avec le nombre d’inscrits par activité.
