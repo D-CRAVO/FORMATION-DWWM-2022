@@ -33,7 +33,14 @@ GROUP BY (roles.role_id);
 -- 5 Sélectionner les activités dont le nombre d’inscriptions a atteint le maximum.
 SELECT 
 	activity_label
-	,event_cap_max
+	,COUNT(ER.person_id)
+FROM activities AS AC
+	INNER JOIN events AS EV ON EV.activity_id = AC.activity_id
+	INNER JOIN events_registration AS ER ON ER.event_id = EV.event_id
+	INNER JOIN 
+GROUP BY
+	activity_label
+;
 
 -- 6 Sélectionner les activités dont le nombre d’inscriptions est inférieur au minimum requis.
 -- 7 Sélectionner les activités dont le nombre de places disponibles est inférieur au quart du maximum.
