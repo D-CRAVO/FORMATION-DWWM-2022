@@ -45,6 +45,61 @@ ORDER BY
 SELECT 
 	emp_lastname
 	,emp_firstname
-FROM 
+FROM employees
+WHERE emp_manager_id IS NULL
+;
+
+--5
+-- Sélectionner le prénom et nom de tous les managers avec, pour chacun, 
+-- le nombre de leur subordonnés. Les managers avec le moins de subordonnés apparaissent en 1er
+SELECT 
+	MA.emp_firstname
+	,MA.emp_lastname
+	,COUNT(EM.emp_manager_id) nb_subordonies
+FROM employees AS MA
+	INNER JOIN employees AS EM ON EM.emp_manager_id = MA.emp_id
+GROUP BY 
+	MA.emp_firstname
+	,MA.emp_lastname
+ORDER BY nb_subordonies ASC
+;
+
+--6
+-- Sélectionner le nom de tous les managers avec, pour chacun, la moyenne des salaires de leur subordonnés. 
+-- Trier le résultat selon la valeur de la moyenne par ordre décroissant.
+SELECT 
+	MA.emp_firstname
+	,AVG(EM.emp_salary) AS average_salary
+FROM employees AS MA
+	INNER JOIN employees AS EM ON EM.emp_manager_id = MA.emp_id
+GROUP BY 
+	MA.emp_firstname
+ORDER BY 
+	average_salary DESC
+;
+	
+--7
+--Créer la requête SELECT correspondant au résultat suivant : 
+SELECT 
+	MA.emp_manager_id
+	,MA.emp_lastname
+	,MA.emp_firstname
+	,MA.emp_salary
+	,COUNT(EM.emp_id)
+	,SUM(EM.emp_salary)
+	,AVG(ROUND(EM.emp_salary))
+FROM employees AS MA
+	INNER JOIN employees AS EM ON EM.emp_manager_id IS NOT NULL
+WHERE MA.emp_manager_id IS NULL
+GROUP BY 
+	MA.emp_manager_id
+	,MA.emp_lastname
+	,MA.emp_firstname
+	,MA.emp_salary
+;
+
+
+
+
 
 
