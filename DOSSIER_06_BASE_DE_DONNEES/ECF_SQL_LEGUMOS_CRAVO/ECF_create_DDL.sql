@@ -5,10 +5,10 @@ CREATE TABLE Vegetables
 (
 	Id INT NOT NULL UNIQUE
 	,Name VARCHAR(50) NOT NULL
-	,Variety VARCHAR(50) NOT NULL
+	,Variety VARCHAR(50) NOT NULL 
 	,PrimaryColor VARCHAR(20) NOT NULL
 	,LifeTime INT NOT NULL
-	,Fresh INT NOT NULL DEFAULT 0
+	,Fresh INT NOT NULL Check (Fresh = 0 OR Fresh = 1) DEFAULT 0
 )
 ;
 
@@ -18,7 +18,7 @@ CREATE TABLE Sales
 	SaleId SERIAL
 	,SaleDate DATE NOT NULL
 	,SaleWeight INT NOT NULL
-	,SaleUnitPrice DECIMAL(5,2) NOT NULL
+	,SaleUnitPrice DECIMAL(5,2) NOT NULL Check (SaleUnitPrice >= 0)
 	,SaleActive INT NOT NULL
 	,Id INT NOT NULL
 )
