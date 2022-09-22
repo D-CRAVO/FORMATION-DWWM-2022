@@ -1,0 +1,34 @@
+DROP TABLE IF EXISTS Sales CASCADE;
+DROP TABLE IF EXISTS Vegetables;
+
+CREATE TABLE Vegetables
+(
+	Id INT NOT NULL UNIQUE
+	,Name VARCHAR(50) NOT NULL
+	,Variety VARCHAR(50) NOT NULL
+	,PrimaryColor VARCHAR(20) NOT NULL
+	,LifeTime INT NOT NULL
+	,Fresh INT NOT NULL DEFAULT 0
+)
+;
+
+
+CREATE TABLE Sales
+(
+	SaleId SERIAL
+	,SaleDate DATE NOT NULL
+	,SaleWeight INT NOT NULL
+	,SaleUnitPrice DECIMAL(5,2) NOT NULL
+	,SaleActive INT NOT NULL
+	,Id INT NOT NULL
+)
+;
+
+ALTER TABLE Vegetables
+	ADD PRIMARY KEY (Id)
+;
+
+ALTER TABLE Sales
+	ADD PRIMARY KEY (SaleId)
+	,ADD CONSTRAINT fkSalesVegetables FOREIGN KEY (Id) REFERENCES Vegetables(Id)
+;
