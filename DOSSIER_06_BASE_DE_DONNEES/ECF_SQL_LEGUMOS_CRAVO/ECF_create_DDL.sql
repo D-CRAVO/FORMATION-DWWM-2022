@@ -8,7 +8,7 @@ CREATE TABLE Vegetables
 	,Variety VARCHAR(50) NOT NULL 
 	,PrimaryColor VARCHAR(20) NOT NULL
 	,LifeTime INT NOT NULL
-	,Fresh INT NOT NULL Check (Fresh = 0 OR Fresh = 1) DEFAULT 0
+	,Fresh INT NOT NULL DEFAULT 0
 )
 ;
 
