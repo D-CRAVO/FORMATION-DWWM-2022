@@ -10,7 +10,12 @@ CREER UN FICHIER
     type null > daoud.txt
 EFFACER L'ECRAN
     cls
-
+    clear (Powershell)
+AFFICHER LE CONTENU D'UN REPERTOIRE
+    dir
+    ls (Powershell / Linux)
+AFFICHER LE CONTENU CACHE D'UN REPERTOIRE
+    
     
 CREER UN DEPOT GIT VIDE
     git init
@@ -73,3 +78,7 @@ FAIRE UN TAG SUR C1
     git tag v1 c1
 DECRIRE UN TAG
     git describe main
+
+
+VERIFIER LA VERSION
+	git --version
