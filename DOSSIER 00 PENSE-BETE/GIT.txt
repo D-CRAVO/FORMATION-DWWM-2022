@@ -82,3 +82,11 @@ DECRIRE UN TAG
 
 VERIFIER LA VERSION
 	git --version
+CLONER UN DEPOT
+	git clone
+VERIFICATION DU SERVEUR DISTANT
+	git fetch origin main
+RECUPERATION DE DEPOT
+	git pull origin main
+ENVOYER LES MODIFICATIONS SUR LE SERVEUR
+	git pull origin
