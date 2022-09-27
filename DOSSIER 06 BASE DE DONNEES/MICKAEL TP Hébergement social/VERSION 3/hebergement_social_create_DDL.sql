@@ -1,3 +1,4 @@
+
 -- DDL : Data Definition Language (Langage de définition des données)
 -- Permet de manipuler : TABLE, VIEW, TRIGGER, PROCEDURE
 
