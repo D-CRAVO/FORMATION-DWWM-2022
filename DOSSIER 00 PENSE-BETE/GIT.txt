@@ -14,6 +14,8 @@ EFFACER L'ECRAN
 AFFICHER LE CONTENU D'UN REPERTOIRE
     dir
     ls (Powershell / Linux)
+AFFICCHER LES DOSSIERS CACHES D'UN REPERTOIRE
+    ls -Force (Powershell)
 AFFICHER LE CONTENU CACHE D'UN REPERTOIRE
     
     
@@ -32,8 +34,8 @@ ARRETER DE TRACKER
 ENVOYER SUR LE SERVEUR EN MENTIONNANT LE COMMENTAIRE OBLIGATOIRE
     git commit -m "Initial commit"
 MODIFIER L'IDENTIFICATION SUR LA MACHINE POUR GIT
-    config global.user.name "David"
-    config global.user.email "toto@arfp.asso.fr"
+    git config --global user.name "David"
+    git config --global user.email "dcravo@arfp.asso.fr"
 
 CREER UNE BRANCHE (crée la branche develop)
     git branch develop
