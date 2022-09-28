@@ -1,0 +1,16 @@
+c
+laragon
+etc
+apache2
+alias
+
+# Alias pour le TP Utilisateurs 2204
+
+Alias "/users" "C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_99_FilRouge\Utilisateurs\www"
+
+<Directory "C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_99_FilRouge\Utilisateurs\www">
+	# Require all granted
+	Require local
+	AllowOverride all
+	Options Indexes FollowSymLinks
+</Directory>
