@@ -1,0 +1,25 @@
+https://www.zendevs.xyz/les-expressions-regulieres-en-php-regex/
+
+
+
+foo	Correspond à la chaîne “foo”
+^foo	Correspond à la chaîne “foo” en début de chaîne
+foo$	Correspond à la chaîne “foo” en fin de chaîne
+^foo$	Correspond exactement à la chaîne “foo”
+[abc]	Correspond à l’un des caractères a, b ou c.
+[^abc]	Correspond à un caractère autre que a, b ou c.
+[a-z]	Correspond à n’importe quel caractère, de a minuscule à z minuscule.
+[^A-Z]	Correspond à n’importe quel caractère autre qu’une majuscule
+[a-z]+	Correspond à un ou plus caractères minuscules
+[0-9.-]	Correspond à n’importe quel nombre, point ou tiret
+\d	Correspond à n’importe quel chiffre décimal. Équivalent à [0-9].
+\D	Correspond à n’importe quel caractère non numérique. Équivalent à [^0-9]
+\s	Correspond à n’importe quel caractère d’espacement (espace, tabulation, nouvelle ligne ou caractère de retour chariot). Similaire à [\t\n\r]
+\S	Correspond à n’importe quel caractère qui n’est pas un caractère d’espacement
+\w	Correspond à n’importe quel caractère de mot (défini de a à z, de A à Z, de 0 à 9, et le trait de soulignement). Identique à [a-zA-Z_0-9]
+\W	Correspond à n’importe quel caractère qui n’est pas un mot. Identique à [^a-zA-Z_0-9]
+(gif|jpg)	Correspond à “gif” ou “jpg”
+^[a-zA-Z0-9_]{1,}$	Correspond à un mot d’au moins une lettre, un chiffre ou “_”
+([wx])([yz])	Correspond à “wy”, “wz”, “xy” ou “xz”
+[^A-Za-z0-9]	Correspond à un symbole (ni une lettre, ni un nombre)
+([A-Z]{3}|[0-9]{4})	Correspond à 3 lettres ou 4 nombres
