@@ -1,7 +1,0 @@
-ouverte - pleine
-ouverte - vide
-ouverte - en partie remplie
-fermée - pleine
-fermée - vide
-fermée - en partie remplie
-
