@@ -1,6 +1,0 @@
-Une donnée est une valeur
-Une valeur dans un contexte est une information
-
-atomicité
-non redondance
-transitivité
