@@ -1,0 +1,43 @@
+# VERSION 5.3.2 CONVERSION DEGRES FARENHEIT DEGRES CELSIUS
+
+# VARIABLES
+
+CHAINE unite
+DOUBLE valeur_min
+DOUBLE valeur_max
+DOUBLE temp_farenheit_min
+DOUBLE temp_farenheit_max
+DOUBLE temp_celsius_min
+DOUBLE temp_celsius_max
+
+# DEBUT PROGRAMME
+
+FAIRE
+    ECRIRE "Veuillez saisir Votre unité de mesure : "
+    LIRE unite
+
+    SI unite = "quit"
+    ALORS
+        ECRIRE "Aurevoir !"
+    SINON
+        ECRIRE "Veuillez saisir la valeur minimum"
+        LIRE valeur_min
+        ECRIRE "Veuillez saisir la valeur maximum"
+        LIRE valeur_max
+        SI unite = "C"
+        ALORS
+            temp_farenheit_min <-- (valeur_min * 9/5) + 32
+            temp_farenheit_max <-- (valeur_max * 9/5) + 32
+            ECRIRE "La plage de températures est comprise entre ", temp_farenheit_min, "°F et ", temp_farenheit_max, "°F."
+        SINON
+            temp_celsius_min <-- (valeur_min -32) * 5/9
+            temp_celsius_max <-- (valeur_max -32) * 5/9
+            ECRIRE "La plage de températures est comprise entre ", temp_celsius_min, "°C et ", temp_celsius_max, "°C."
+        FIN SI
+    FIN SI
+
+TANT QUE
+    unite <> "quit"
+FIN TANT QUE
+
+# FIN PROGRAMME

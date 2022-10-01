@@ -1,0 +1,15 @@
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-3\ex-3-2-limite\bin\Debug\net6.0\ex-3-2-limite.exe
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-3\ex-3-2-limite\bin\Debug\net6.0\ex-3-2-limite.deps.json
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-3\ex-3-2-limite\bin\Debug\net6.0\ex-3-2-limite.runtimeconfig.json
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-3\ex-3-2-limite\bin\Debug\net6.0\ex-3-2-limite.dll
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-3\ex-3-2-limite\bin\Debug\net6.0\ex-3-2-limite.pdb
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-3\ex-3-2-limite\obj\Debug\net6.0\ex-3-2-limite.csproj.AssemblyReference.cache
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-3\ex-3-2-limite\obj\Debug\net6.0\ex-3-2-limite.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-3\ex-3-2-limite\obj\Debug\net6.0\ex-3-2-limite.AssemblyInfoInputs.cache
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-3\ex-3-2-limite\obj\Debug\net6.0\ex-3-2-limite.AssemblyInfo.cs
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-3\ex-3-2-limite\obj\Debug\net6.0\ex-3-2-limite.csproj.CoreCompileInputs.cache
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-3\ex-3-2-limite\obj\Debug\net6.0\ex-3-2-limite.dll
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-3\ex-3-2-limite\obj\Debug\net6.0\refint\ex-3-2-limite.dll
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-3\ex-3-2-limite\obj\Debug\net6.0\ex-3-2-limite.pdb
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-3\ex-3-2-limite\obj\Debug\net6.0\ex-3-2-limite.genruntimeconfig.cache
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-3\ex-3-2-limite\obj\Debug\net6.0\ref\ex-3-2-limite.dll

@@ -1,0 +1,15 @@
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_5-2-2_kilometres-miles\exercice_5-2-2_km-mi_v4\bin\Debug\net6.0\exercice_5-2-2_km-mi_v4.exe
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_5-2-2_kilometres-miles\exercice_5-2-2_km-mi_v4\bin\Debug\net6.0\exercice_5-2-2_km-mi_v4.deps.json
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_5-2-2_kilometres-miles\exercice_5-2-2_km-mi_v4\bin\Debug\net6.0\exercice_5-2-2_km-mi_v4.runtimeconfig.json
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_5-2-2_kilometres-miles\exercice_5-2-2_km-mi_v4\bin\Debug\net6.0\exercice_5-2-2_km-mi_v4.dll
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_5-2-2_kilometres-miles\exercice_5-2-2_km-mi_v4\bin\Debug\net6.0\exercice_5-2-2_km-mi_v4.pdb
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_5-2-2_kilometres-miles\exercice_5-2-2_km-mi_v4\obj\Debug\net6.0\exercice_5-2-2_km-mi_v4.csproj.AssemblyReference.cache
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_5-2-2_kilometres-miles\exercice_5-2-2_km-mi_v4\obj\Debug\net6.0\exercice_5-2-2_km-mi_v4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_5-2-2_kilometres-miles\exercice_5-2-2_km-mi_v4\obj\Debug\net6.0\exercice_5-2-2_km-mi_v4.AssemblyInfoInputs.cache
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_5-2-2_kilometres-miles\exercice_5-2-2_km-mi_v4\obj\Debug\net6.0\exercice_5-2-2_km-mi_v4.AssemblyInfo.cs
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_5-2-2_kilometres-miles\exercice_5-2-2_km-mi_v4\obj\Debug\net6.0\exercice_5-2-2_km-mi_v4.csproj.CoreCompileInputs.cache
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_5-2-2_kilometres-miles\exercice_5-2-2_km-mi_v4\obj\Debug\net6.0\exercice_5-2-2_km-mi_v4.dll
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_5-2-2_kilometres-miles\exercice_5-2-2_km-mi_v4\obj\Debug\net6.0\refint\exercice_5-2-2_km-mi_v4.dll
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_5-2-2_kilometres-miles\exercice_5-2-2_km-mi_v4\obj\Debug\net6.0\exercice_5-2-2_km-mi_v4.pdb
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_5-2-2_kilometres-miles\exercice_5-2-2_km-mi_v4\obj\Debug\net6.0\exercice_5-2-2_km-mi_v4.genruntimeconfig.cache
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_5-2-2_kilometres-miles\exercice_5-2-2_km-mi_v4\obj\Debug\net6.0\ref\exercice_5-2-2_km-mi_v4.dll

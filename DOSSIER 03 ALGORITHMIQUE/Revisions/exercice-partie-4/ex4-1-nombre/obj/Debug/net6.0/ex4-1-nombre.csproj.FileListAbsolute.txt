@@ -1,0 +1,15 @@
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-4\ex4-1-nombre\bin\Debug\net6.0\ex4-1-nombre.exe
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-4\ex4-1-nombre\bin\Debug\net6.0\ex4-1-nombre.deps.json
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-4\ex4-1-nombre\bin\Debug\net6.0\ex4-1-nombre.runtimeconfig.json
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-4\ex4-1-nombre\bin\Debug\net6.0\ex4-1-nombre.dll
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-4\ex4-1-nombre\bin\Debug\net6.0\ex4-1-nombre.pdb
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-4\ex4-1-nombre\obj\Debug\net6.0\ex4-1-nombre.csproj.AssemblyReference.cache
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-4\ex4-1-nombre\obj\Debug\net6.0\ex4-1-nombre.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-4\ex4-1-nombre\obj\Debug\net6.0\ex4-1-nombre.AssemblyInfoInputs.cache
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-4\ex4-1-nombre\obj\Debug\net6.0\ex4-1-nombre.AssemblyInfo.cs
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-4\ex4-1-nombre\obj\Debug\net6.0\ex4-1-nombre.csproj.CoreCompileInputs.cache
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-4\ex4-1-nombre\obj\Debug\net6.0\ex4-1-nombre.dll
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-4\ex4-1-nombre\obj\Debug\net6.0\refint\ex4-1-nombre.dll
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-4\ex4-1-nombre\obj\Debug\net6.0\ex4-1-nombre.pdb
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-4\ex4-1-nombre\obj\Debug\net6.0\ex4-1-nombre.genruntimeconfig.cache
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-4\ex4-1-nombre\obj\Debug\net6.0\ref\ex4-1-nombre.dll

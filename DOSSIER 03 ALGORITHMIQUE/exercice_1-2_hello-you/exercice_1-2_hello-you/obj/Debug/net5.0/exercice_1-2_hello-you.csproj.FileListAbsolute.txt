@@ -1,0 +1,16 @@
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_1-2_hello-you\exercice_1-2_hello-you\bin\Debug\net5.0\exercice_1-2_hello-you.exe
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_1-2_hello-you\exercice_1-2_hello-you\bin\Debug\net5.0\exercice_1-2_hello-you.deps.json
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_1-2_hello-you\exercice_1-2_hello-you\bin\Debug\net5.0\exercice_1-2_hello-you.runtimeconfig.json
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_1-2_hello-you\exercice_1-2_hello-you\bin\Debug\net5.0\exercice_1-2_hello-you.runtimeconfig.dev.json
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_1-2_hello-you\exercice_1-2_hello-you\bin\Debug\net5.0\exercice_1-2_hello-you.dll
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_1-2_hello-you\exercice_1-2_hello-you\bin\Debug\net5.0\exercice_1-2_hello-you.pdb
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_1-2_hello-you\exercice_1-2_hello-you\obj\Debug\net5.0\exercice_1-2_hello-you.csproj.AssemblyReference.cache
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_1-2_hello-you\exercice_1-2_hello-you\obj\Debug\net5.0\exercice_1-2_hello-you.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_1-2_hello-you\exercice_1-2_hello-you\obj\Debug\net5.0\exercice_1-2_hello-you.AssemblyInfoInputs.cache
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_1-2_hello-you\exercice_1-2_hello-you\obj\Debug\net5.0\exercice_1-2_hello-you.AssemblyInfo.cs
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_1-2_hello-you\exercice_1-2_hello-you\obj\Debug\net5.0\exercice_1-2_hello-you.csproj.CoreCompileInputs.cache
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_1-2_hello-you\exercice_1-2_hello-you\obj\Debug\net5.0\exercice_1-2_hello-you.dll
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_1-2_hello-you\exercice_1-2_hello-you\obj\Debug\net5.0\refint\exercice_1-2_hello-you.dll
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_1-2_hello-you\exercice_1-2_hello-you\obj\Debug\net5.0\exercice_1-2_hello-you.pdb
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_1-2_hello-you\exercice_1-2_hello-you\obj\Debug\net5.0\exercice_1-2_hello-you.genruntimeconfig.cache
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_1-2_hello-you\exercice_1-2_hello-you\obj\Debug\net5.0\ref\exercice_1-2_hello-you.dll

@@ -1,0 +1,63 @@
+# EXERCICE 5.2 CONVERSION KILOMETRES MILES
+
+# VERSION 5.2.1
+
+# VARIABLES
+
+DOUBLE valeur_kilometres
+DOUBLE valeur_miles
+
+# DEBUT PROGRAMME
+
+FAIRE
+     # On demande à l'utilisateur de saisir une valeur de kilomètres à convertir en miles.
+    ECRIRE "Veuillez saisir une valeur en kimomètres comprise entre 0.01 et 1 000 000 : "
+    LIRE valeur_kilometres
+    # On vérifie si l'utilisateur veut sortir du programme.
+    SI valeur_kilometres != "q"
+    ALORS
+        # On effectue la conversion et on affiche le résultat.
+        valeur_miles = valeur_kilometres * 1.609
+        ECRIRE valeur_kilometres, " kilometres équivalent à ", valeur_miles, " miles."
+    FIN SI
+TANT QUE 
+    (valeur_kilometres > 0) ET (valeur_kilometres <= 1 000 000)
+FIN TANT QUE
+
+# FIN PROGRAMME
+
+# VERSION 5.2.2
+
+# VARIABLES
+
+STRING valeur_saisie
+DOUBLE valeur_kilometres
+DOUBLE valeur_miles
+ENTIER longueur_valeur
+
+# DEBUT PROGRAMME
+
+FAIRE
+    # On demande à l'utilisateur de saisir une valeur de kilomètres à convertir en miles.
+    ECRIRE "Veuillez saisir une valeur en kimomètres comprise entre 0.01 et 1 000 000 : "
+    LIRE valeur_saisie
+    # On vérifie si l'utilisateur veut sortir du programme.
+    SI valeur != "q"
+    ALORS
+        longueur_valeur = |valeur_saisie|
+        # On controle quel type de conversion veut l'utilisateur :
+        # kilomètres vers miles ou miles vers kilomètres.
+        SI valeur[longueur_valeur - 2] = "m" ET valeur[longueur_valeur - 1] = "i"
+        ALORS
+            valeur_kilometres = valeur / 1.609
+            ECRIRE valeur, " miles équivalent à ", valeur_kilometres, " kilometres."
+        SINON
+            valeur_miles = valeur * 1.609
+            ECRIRE valeur, " kilometres équivalent à ", valeur_miles, " miles."
+        FIN SI
+    FIN SI
+TANT QUE
+    valeur > 0 ET valeur <= 1 000 000
+FIN TANT QUE
+
+# FIN PROGRAMME

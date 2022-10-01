@@ -1,0 +1,75 @@
+# EXERCICE 5.3.1 CONVERSION DEGRES FARENHEIT DEGRES CELSIUS
+
+# VARIABLES
+
+CHAINE temperature_saisie
+CHAINE unite
+
+DOUBLE valeur_entree
+DOUBLE temperature_celsius
+DOUBLE temperature_farenheit
+
+# DEBUT PROGRAMME
+
+FAIRE 
+    ECRIRE "Veuillez saisir une temperature comprise entre -459.67 et 5 000 000 : "
+    LIRE temperature + unite
+    SI 
+        temperature_saisie >= -459.67
+    ALORS
+        SI temperature_saisie <= 5 000 000
+        ALORS
+            SI (unite = "C")
+            ALORS
+                TemperatureF (temperature_saisie)
+                Affichage (farenheit)
+            SINON
+                TemperatureC (temperature_saisie)
+                Affichage (celsius)
+            FIN SI
+        FIN SI
+    SINON
+        Affichage (ressaisir)
+    FIN SI
+TANT QUE (temperature_saisie < -459.67 OU temperature_saisie > 5 000 000)
+FIN TANT QUE
+
+# FIN PROGRAMME
+
+# DEBUT FONCTION
+
+TemperatureF (valeur_entree)
+    temperature_farenheit = (valeur_entree -32) * 5/9
+
+TemperatureC (valeur_entree)
+    temperature_celsius = (valeur_entree * 9/5) + 32
+
+Affichage (valeur_entree)
+    SI valeur_entree = farenheit
+    ALORS
+        ECRIRE "La température en degrés Farenheit est : ", temperature_farenheit
+    SINON SI valeur_entree = celsius
+        ECRIRE "La température en degrés Celsius est : ", temperature_celsius
+    SINON SI valeur_entree = ressaisir
+        ECRIRE "Veuillez saisir une température correcte."
+    FIN SI
+
+# FIN FONCTION
+
+# JEU D'ESSAI
+
+-460,00 C
+-457,67 C
+-100 C
+0 C
+1000 C
+5000000 C
+5000001 C
+
+-460,00 F
+-457,67 F
+-100 F
+0 F
+1000 F
+5000000 F
+5000001 F

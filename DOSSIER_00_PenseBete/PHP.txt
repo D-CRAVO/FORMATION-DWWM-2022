@@ -1,3 +1,0 @@
-variables d'environnement
-path
-ajouter le chemin d'accès.
