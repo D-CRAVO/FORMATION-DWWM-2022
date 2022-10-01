@@ -1,0 +1,22 @@
+utf8mb4 unicode ci
+
+users and privileges
+add account
+
+schema privileges
+
+base de données
+utilisateur
+liaison bdd utilisateur
+
+schema privileges
+add entry
+tous les object rights
+tous les ddl rights
+grant option --> non
+create tempo --> ok
+lock tables --> ok
+
+db_2204_users
+user2204
+azer
