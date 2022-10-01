@@ -1,0 +1,31 @@
+EXERCICE 2.3 MA RETRAITE
+
+# VARIABLES
+
+REEL age
+REEL age_retraite
+REEL difference
+
+# DEBUT PROGRAMME
+
+age_retraite <-- 60
+ECRIRE "Veuillez saisir votre âge : "
+LIRE age
+SI age < 0 
+ALORS
+    ECRIRE "La valeur fournie n'est pas un âge valide"
+SINON SI age < age_retraite 
+      ALORS
+         difference <-- age_retraite - age
+	   ECRIRE "Il vous reste ", difference, " années avant la retraite"
+      SINON SI age = age_retraite
+            ALORS
+               ECRIRE "C'est le moment de prendre sa retraite"
+            SINON 
+               difference <-- age - age_retraite
+               ECRIRE "Vous êtes à la retraite depuis", difference, " années"      
+            FIN SI
+      FIN SI
+FIN SI
+
+# FIN PROGRAMME

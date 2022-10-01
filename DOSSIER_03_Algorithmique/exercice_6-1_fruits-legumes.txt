@@ -1,0 +1,46 @@
+EXERCICE 6.1 LES FRUITS ET LEGUMES
+
+# VARIABLES
+
+ENTIER compteur
+ENTIER index
+
+CHAINE legume_et_prix_saisi
+CHAINE nouveau_legume_nom
+CHAINE nouveau_legume_prix
+
+# DEBUT PROGRAMME
+
+# On récupère les nom et les prix des légumes que l'on stocke dans deux listes pour un traitement ultérieur.
+FAIRE
+    ECRIRE "Veuillez saisir le nom de votre légume suivi de son prix au kilo séparé par un espace"
+    LIRE legume_et_prix_saisi
+    On coupe la chaine en deux au niveau de l'espace.
+    On ajoute la première partie de la chaine à "nouveau_legume_nom"
+    On ajoute la deuxième partie de la chaine à "nouveau_legume_prix"
+TANT QUE
+    legume_et_prix_saisi <> "go"
+FIN TANT QUE
+
+# On affiche le nom des légumes et leur prix au kilo.
+POUR compteur ALLANT DE 0 A longueur(nouveau_legume_nom)
+FAIRE
+    ECRIRE "1 kilogramme de ", nouveau_legume_nom[compteur], " coute ", nouveau_legume_prix[compteur] + " euros."
+    compteur <-- compteur + 1
+FIN POUR
+
+# On recherche le légume ayant le plus petit prix au kilo.
+POUR compteur ALLANT DE 0 A nouveau_legume_nom
+FAIRE
+    prix_le_moins_cher <-- nouveau_legume_prix[0]
+    SI (nouveau_legume_prix[compteur]) < prix_le_moins_cher)
+    ALORS
+        prix_le_moins_cher <-- nouveau_legume_prix[compteur]
+        index <-- compteur
+    FIN SI
+    compteur <-- compteur + 1
+FIN POUR
+
+ECRIRE "Légume le mons cher au kilo  est  :  ", nouveau_legume_nom[index]
+
+# FIN PROGRAMME

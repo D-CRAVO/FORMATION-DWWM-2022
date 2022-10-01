@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "exercice_6-1_fruits-legumes/1.0.0": {
+        "runtime": {
+          "exercice_6-1_fruits-legumes.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "exercice_6-1_fruits-legumes/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,15 @@
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-4\cours_tableau\bin\Debug\net6.0\cours_tableau.exe
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-4\cours_tableau\bin\Debug\net6.0\cours_tableau.deps.json
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-4\cours_tableau\bin\Debug\net6.0\cours_tableau.runtimeconfig.json
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-4\cours_tableau\bin\Debug\net6.0\cours_tableau.dll
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-4\cours_tableau\bin\Debug\net6.0\cours_tableau.pdb
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-4\cours_tableau\obj\Debug\net6.0\cours_tableau.csproj.AssemblyReference.cache
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-4\cours_tableau\obj\Debug\net6.0\cours_tableau.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-4\cours_tableau\obj\Debug\net6.0\cours_tableau.AssemblyInfoInputs.cache
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-4\cours_tableau\obj\Debug\net6.0\cours_tableau.AssemblyInfo.cs
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-4\cours_tableau\obj\Debug\net6.0\cours_tableau.csproj.CoreCompileInputs.cache
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-4\cours_tableau\obj\Debug\net6.0\cours_tableau.dll
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-4\cours_tableau\obj\Debug\net6.0\refint\cours_tableau.dll
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-4\cours_tableau\obj\Debug\net6.0\cours_tableau.pdb
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-4\cours_tableau\obj\Debug\net6.0\cours_tableau.genruntimeconfig.cache
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\Revisions\exercice-partie-4\cours_tableau\obj\Debug\net6.0\ref\cours_tableau.dll

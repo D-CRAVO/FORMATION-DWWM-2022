@@ -1,0 +1,10 @@
+framework  = boite à outils
+.NET framework obselette
+
+solution .sln
+
+language compilé
+le code source va être compilé puis exécuté
+
+language interprété
+le code source est compilé à chaque fois

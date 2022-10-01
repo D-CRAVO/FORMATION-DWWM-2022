@@ -1,0 +1,44 @@
+EXERCICE 2.4 TRI DE NOMBRES ++
+
+# VARIABLES
+
+ENTIER a
+ENTIER b
+ENTIER c
+
+# DEBUT PROGRAMME
+
+ECRIRE "Veuillez saisir votre premier nombre entier : " 
+LIRE a 
+ECRIRE "Veuillez saisir votre deuxième nombre entier : " 
+LIRE b
+ECRIRE "Veuillez saisir votre troisième nombre entier : " 
+LIRE c
+
+SI a<b
+ALORS
+    SI b<c
+    ALORS 
+        ECRIRE "a, " < ", b, " < ", c"
+    SINON
+        SI c<a
+        ALORS
+            ECRIRE "c, " < ", a, " < ", b"
+        SINON
+            ECRIRE "a, " < ", c, " < ", b"
+        FIN SI
+    FIN SI 
+    SI b<c
+    ALORS
+        SI a<c
+        ALORS
+            ECRIRE "b, " < ", a, " < ", c"
+        SINON
+            ECRIRE "b, " < ", c, " < ", a"
+        FIN SI
+    SINON
+        ECRIRE "c, " < ", b, " < ", a"
+    FIN SI   
+SINON
+
+FIN SI

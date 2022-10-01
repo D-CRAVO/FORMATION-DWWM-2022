@@ -1,0 +1,16 @@
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_3-6_fourchette\exercice_3-6_fourchette\bin\Debug\net5.0\exercice_3-6_fourchette.exe
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_3-6_fourchette\exercice_3-6_fourchette\bin\Debug\net5.0\exercice_3-6_fourchette.deps.json
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_3-6_fourchette\exercice_3-6_fourchette\bin\Debug\net5.0\exercice_3-6_fourchette.runtimeconfig.json
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_3-6_fourchette\exercice_3-6_fourchette\bin\Debug\net5.0\exercice_3-6_fourchette.runtimeconfig.dev.json
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_3-6_fourchette\exercice_3-6_fourchette\bin\Debug\net5.0\exercice_3-6_fourchette.dll
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_3-6_fourchette\exercice_3-6_fourchette\bin\Debug\net5.0\exercice_3-6_fourchette.pdb
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_3-6_fourchette\exercice_3-6_fourchette\obj\Debug\net5.0\exercice_3-6_fourchette.csproj.AssemblyReference.cache
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_3-6_fourchette\exercice_3-6_fourchette\obj\Debug\net5.0\exercice_3-6_fourchette.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_3-6_fourchette\exercice_3-6_fourchette\obj\Debug\net5.0\exercice_3-6_fourchette.AssemblyInfoInputs.cache
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_3-6_fourchette\exercice_3-6_fourchette\obj\Debug\net5.0\exercice_3-6_fourchette.AssemblyInfo.cs
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_3-6_fourchette\exercice_3-6_fourchette\obj\Debug\net5.0\exercice_3-6_fourchette.csproj.CoreCompileInputs.cache
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_3-6_fourchette\exercice_3-6_fourchette\obj\Debug\net5.0\exercice_3-6_fourchette.dll
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_3-6_fourchette\exercice_3-6_fourchette\obj\Debug\net5.0\refint\exercice_3-6_fourchette.dll
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_3-6_fourchette\exercice_3-6_fourchette\obj\Debug\net5.0\exercice_3-6_fourchette.pdb
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_3-6_fourchette\exercice_3-6_fourchette\obj\Debug\net5.0\exercice_3-6_fourchette.genruntimeconfig.cache
+C:\Users\CRAVO David\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_ALGORITHMIQUE\exercice_3-6_fourchette\exercice_3-6_fourchette\obj\Debug\net5.0\ref\exercice_3-6_fourchette.dll
