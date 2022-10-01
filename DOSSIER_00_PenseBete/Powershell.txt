@@ -1,0 +1,15 @@
+lister les répertoires
+dir + entrée
+ls (sous powershell et linux) + entrée
+
+// les serveurs web sont sous linux
+
+la taille des fichiers apparait en octets
+Dans la colonne Mode 
+Si la ligne commence par un d- c'est un dossier
+
+ls -h traduit en français
+
+cd Documents  (change directory)
+
+linux est sensible à la casse
