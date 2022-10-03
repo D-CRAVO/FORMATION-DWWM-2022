@@ -1,0 +1,27 @@
+Composer init
+
+(vendor --> créateur du projet)
+
+vendor name à insérer
+tout en minuscule
+pas d'accent 
+pas d'espace
+ne peut pas commencer par un chiffre ou -
+seul autorisé : -
+--> dcravo
+
+suivi du nom du projet
+--> utilisateurs
+
+soit -->dcravo/utilisateurs
+
+apparait :
+Description [] : (peut rester vide) Application de gestion d'utilisateurs
+Author CRAVO David OFP <contact@davidcravo.fr>
+Minimum Stability [] stable
+--- project
+--- MIT
+--- no
+--- no
+--- no
+Do you confirm generation [yes] : yes

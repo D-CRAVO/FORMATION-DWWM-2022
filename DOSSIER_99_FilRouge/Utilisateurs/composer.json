@@ -1,0 +1,14 @@
+{
+    "name": "dcravo/utilisateurs",
+    "description": "Application",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "CRAVO David OFP",
+            "email": "contact@davidcravo.fr"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}

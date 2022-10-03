@@ -1,0 +1,2 @@
+chrome autorefresh plus
+ctrl F5
