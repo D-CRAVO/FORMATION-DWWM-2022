@@ -1,13 +1,28 @@
 <?php
-phpinfo();
-/* 
-Data source name (connectionString)
-- host = adresse du serveur de base de données
-- port = port (si ce n'est pas le port par défaut)
-- dbname = le nom de la base de données
-- charset = le jeu de caractères (utf-8 par exemple)
+// page : définir la page à afficher.
+
+/*
+$_GET[] = valeurs transmises par l'url
 */
+echo '<pre>' . var_export($_GET, true).'</pre>';
 
-$dsn = 'mysql:host=localhost;port=3306;dbname=db_2204_users;charset=utf8mb4';
+// si le paramètre 'page' dans l'url n'est pas vide
+$page = $_GET['page'] ?? 'home';
 
-$connexion = new PDO($dsn, 'user2204', 'azer');
+switch($page)
+{
+    case 'home':
+            // charger le fichier 'home.php'
+            require '../View/home.php';
+        break;
+    case 'profile':
+            // charger le fichier 'profile.php
+            require '../View/profile.php';
+        break;
+    case 'groups':
+            require '../View/groups.php';
+        break;
+    default:
+            require '../View/erreur404.php';
+        break;
+}
