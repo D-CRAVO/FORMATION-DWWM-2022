@@ -1,0 +1,15 @@
+composer -V
+
+Composer version 2.4.2
+
+https://getcomposer.org/download/
+Composer-Setup.exe
+
+lors de l'istallation insérer la version de php
+
+c
+laragon
+bin
+php
+php-8.1.7
+php.exe
