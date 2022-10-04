@@ -22,7 +22,7 @@ class Compte
         return $this->nomCompte;
     }
 
-    private function setNomCompte(int $_nomCompte) : void
+    private function setNomCompte(string $_nomCompte) : void
     {
         $this->nomCompte = $_nomCompte;
     }
@@ -54,4 +54,30 @@ class Compte
         $this->setSoldeCompte($_soldeCompte);
         $this->setDecouvertCompte($_decouvertCompte);
     }
+
+    public function __toString() : string
+    {
+        $result = 'Le compte numéro ' . $this->numeroCompte . PHP_EOL
+            . ' dont le propriétaire est ' . $this->nomCompte . PHP_EOL
+            . ' a pour solde : ' . $this->soldeCompte . PHP_EOL
+            . ' et pour solde autorisé ' . $this->decouvertCompte . ' euros' . PHP_EOL;
+        return $result;
+    }
+
+    public function crediter(float $_montant) : void
+    {
+        $this->soldeCompte += $_montant; 
+    }
+
+    public function debiter(float $_montant) : void
+    {
+        $this->soldeCompte -= $_montant;
+    }
+
+    public function transferer(Compte $_compte, float $_montant) : void
+    {
+        $this->debiter($_montant);
+        $_compte->crediter($_montant);
+    }
 }
+
