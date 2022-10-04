@@ -1,0 +1,19 @@
+on représente un concept par une classe
+les objets sont des instances des classes
+ensemble d'attributs et de fonctions
+
+règles
+- Une seule classe par fichier
+- Le nom de la classe est strictement identique au nom de fichier
+	commence toujours par une majuscule
+
+CRUD
+
+par modèle vue controller
+
+Commentaires interdits en json
+Namespace 1 majouscule en début suivi de minuscules
+
+composer update
+
+composer.lock à supprimer et recréer avec composer update
