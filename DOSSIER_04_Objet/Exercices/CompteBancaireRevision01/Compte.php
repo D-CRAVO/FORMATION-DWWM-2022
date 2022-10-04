@@ -64,14 +64,36 @@ class Compte
         return $result;
     }
 
-    public function crediter(float $_montant) : void
+    public function crediter(float $_montant) : bool
     {
-        $this->soldeCompte += $_montant; 
+        $condition = $_montant > 0;
+        if ($condition)
+        {
+            $this->soldeCompte += $_montant; 
+            $result = true;
+        }
+        else
+        {
+            echo 'Opération de crédit non réalisée !' . PHP_EOL;
+            $result = false;
+        }
+        return $result;
     }
 
-    public function debiter(float $_montant) : void
+    public function debiter(float $_montant) : bool
     {
-        $this->soldeCompte -= $_montant;
+        $condition = ($this->soldeCompte > $_montant) && ($_montant > 0);
+        if ($condition)
+        {
+            $this->soldeCompte -= $_montant;
+            $result = true;
+        }
+        else 
+        {
+            echo 'Opération de débit non réalisée !' . PHP_EOL;
+            $result = false;
+        }
+        return $result;
     }
 
     public function transferer(Compte $_compte, float $_montant) : void
@@ -79,5 +101,33 @@ class Compte
         $this->debiter($_montant);
         $_compte->crediter($_montant);
     }
+
+    public function comparer(Compte $_compte) : bool
+    {
+        $condition = $this->soldeCompte > $_compte->soldeCompte;
+        if ($condition)
+        {
+            $result = true;
+        }
+        else
+        {
+            $result = false;
+        }
+        return $result;
+    }
+
+    public function traduire(bool $_result) : string
+    {
+        if ($_result = true)
+        {
+            $result = 'true';
+        }
+        else
+        {
+            $result = 'false';
+        }
+        return $result;
+    }
 }
+
 
