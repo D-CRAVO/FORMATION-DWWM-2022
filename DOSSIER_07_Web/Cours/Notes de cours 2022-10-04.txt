@@ -12,7 +12,7 @@ CRUD
 par modèle vue controller
 
 Commentaires interdits en json
-Namespace 1 majouscule en début suivi de minuscules
+Namespace 1 majuscule en début suivi de minuscules
 
 composer update
 
