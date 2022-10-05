@@ -1,0 +1,6 @@
+@charset "utf-8";
+/* CSS Document */
+header, section, aside, nav, footer, figure, figcaption
+{
+    display: block;
+}
