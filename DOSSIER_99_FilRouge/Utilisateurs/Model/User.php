@@ -9,35 +9,35 @@ class User
      *
      * @var integer
      */
-    private int $user_id;
+    public int $user_id;
 
     /**
      * Nom de l'utilisateur.
      *
      * @var string
      */
-    private string $user_name;
+    public string $user_name;
 
     /**
      * Adresse email de l'utilisateur.
      *
      * @var string
      */
-    private string $user_email;
+    public string $user_email;
 
     /**
      * Mot de passe de l'utilisateur.
      *
      * @var string
      */
-    private string $user_pass;
+    public string $user_pass;
 
     /**
      * Identifiant du groupe.
      *
      * @var integer
      */
-    private int $group_id;
+    public int $group_id;
 
     /**
      * Retourne l'identifiant de l'utilisateur.

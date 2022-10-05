@@ -1,11 +1,21 @@
 <?php
 
+namespace Users\Model;
 
+/**
+ * Représents an User Group
+ * @author David CRAVO <contact@davidcravo.fr>
+ * @version 0.0.1
+ */
 class Group
 {
+    /** @var int $group_id The user group identifier */
+    public int $group_id;
 
-    private int $group_id;
-    private string $group_name;
+    
+    /** @var string $group_name The user group name */
+    public string $group_name;
+
 
     public function getGroupId() : int
     {
@@ -36,6 +46,8 @@ class Group
     public function __toString() : string
     {
         $result = 'Le groupe ' . $this->group_id . ' a pour nom ' . $this->group_name . PHP_EOL;
+        return $result;
     }
+
 }
 

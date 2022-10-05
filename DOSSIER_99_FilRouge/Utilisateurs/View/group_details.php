@@ -1,0 +1,1 @@
+<h1> Affichage des détails </h1>
