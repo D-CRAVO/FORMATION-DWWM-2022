@@ -17,3 +17,6 @@ Namespace 1 majuscule en début suivi de minuscules
 composer update
 
 composer.lock à supprimer et recréer avec composer update
+
+1- on prépare les vues
+2- on met en place les controllers
