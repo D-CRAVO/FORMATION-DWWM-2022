@@ -1,0 +1,31 @@
+nav
+{
+    background-color: #f2662a;
+    height: 35px;
+}
+
+nav li
+{
+    float:left;
+    width:140px;
+    height: 35px;
+    background-color: black;
+    text-align: center;
+    border-left: 1px white solid;
+    border-right: 1px white solid;
+    line-height: 35px;
+    list-style: none;
+}
+
+nav li a
+{
+    color:white;
+    text-decoration: none;
+    display: block;
+}
+
+nav li a:hover
+{
+    background-color: #f0462b;
+    color:#ebebea;
+}
