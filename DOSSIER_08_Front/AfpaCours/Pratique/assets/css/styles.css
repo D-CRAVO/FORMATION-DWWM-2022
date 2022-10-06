@@ -1,0 +1,36 @@
+
+div ~ span
+{
+    color: green;
+}
+
+
+a
+{
+    color: blue;
+}
+
+a[lang='en']
+{
+    color: red;
+}
+
+a[lang="es"]
+{
+    color: green;
+}
+
+p[attribut^=foo]
+{
+    color: grey;
+}
+
+p[attribut$=iop]
+{
+    color: red;
+}
+
+p[attribut*=aze]
+{
+    color: red;
+}
