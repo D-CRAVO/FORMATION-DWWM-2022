@@ -78,3 +78,36 @@ footer
     border-top: #e2e2e2 solid 2px;
     border-bottom: #e2e2e2 solid 2px;
 }
+
+/* article */
+
+article header
+{
+    background: none;
+    height: auto;
+    border-bottom: none;
+}
+
+article header h2
+{
+    color: black;
+    margin: 0;
+}
+
+article header p
+{
+    color: gray;
+    margin: 0;
+}
+
+article footer
+{
+    background: none;
+    height: auto;
+    border: none;
+}
+
+article footer p
+{
+    font-size: 10px;
+}
