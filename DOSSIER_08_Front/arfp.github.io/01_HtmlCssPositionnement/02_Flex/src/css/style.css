@@ -26,16 +26,16 @@ body > main
 
 aside
 {
-    width: 15em;
+    width: 15rem;
     background-color: #ffddcc;
     padding: 0.3em;
 }    
-/* 
+ 
 aside:nth-of-type(2)
 {
     font-size: 0.5em;
 }
- */
+
 
 section
 {
@@ -95,7 +95,7 @@ p, article
     background-color: #ccddff;
 }
 
-@media screen and (min-width : 640px) and (max-width: 880px)
+@media (min-width : 640px) and (max-width: 880px)
 {
     section main
     {
@@ -108,7 +108,7 @@ p, article
     }
 }
 
-@media screen and (max-width : 640px)
+@media (max-width : 640px)
 {
 
     body

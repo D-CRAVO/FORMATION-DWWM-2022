@@ -1,6 +1,11 @@
+*
+{
+    box-sizing: border-box;
+}
+
 html
 {
-    font-size: 64.5%
+    font-size: 62.5%
 }
 
 body
@@ -11,102 +16,109 @@ body
     background-color: #bcf;
 }
 
-/* header
+
+
+
+.div1
 {
-    display: flex;
-    height: 5em;
+    border: 3px solid #fff;
 }
 
-header h1
-{
-    width: 80%;
-    border: 2px solid white;
-}
-
-header aside
-{
-    width: 20%;
-    border: 2px solid white;
-} */
-
-header
+.wrapper
 {
     display: grid;
-    grid-template-columns:3fr 1fr;
-    grid-auto-rows: 2em;
-    
+    grid-template-columns: 15rem 1fr 15rem;
+    grid-template-rows: 6rem 1fr 6rem;
+    grid-template-areas:    "H H A" 
+                            "N M M" 
+                            "N F F";
 }
+
 
 .header
 {
-    border: 3px solid #fff;
+    grid-area: H;
 }
 
 .ads
 {
+    grid-area: A;
+}
+
+.nav
+{
+    grid-area: N;
+}
+
+.article
+{
+    grid-area: M;
+}
+
+.footer
+{
+    grid-area: F;
+}
+
+.container
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem;
+    justify-content: center;
+}
+
+section
+{
+    width: 45%;
+    text-align: justify;
+    margin: 0.2rem;
+    padding: 0.4rem;
+    background-color: #fff;
+}
+
+.border
+{
     border: 3px solid #fff;
 }
 
-nav
+@media (min-width: 640px) and (max-width: 960px)
 {
-    display: grid;
-    grid-template-columns: 2fr;
-    grid-auto-rows: 6fr;
-    border: 3px solid #fff;
-}
+    .container
+    {
+        flex-direction: column;
+        margin-left: 5rem;
+    }
 
-article
-{
-    display: grid;
-    grid-template-columns: repeat (2, 1fr);
-    grid-auto-rows: 4fr;
-    
-
-}
-.one
-{
-    grid-column: 1/2;
-    grid-row: 1/3;
-    border: 3px solid #fff;
-}
-
-.two
-{
-    grid-column: 2/2;
-    grid-row: 1/3;
-    border: 3px solid #fff;
+    section
+    {
+        width: 100%;
+    }
 
 }
 
-.three
+@media (max-width: 640px)
 {
-    grid-column: 1/2;
-    grid-row: 2/3;
-    border: 3px solid #fff;
+    .container
+    {
+        flex-direction: column;
+    }
 
+    section 
+    {
+        width: 100%;
+    }
+
+    nav ul li
+    {
+        display: inline-block;
+    }
+
+    .wrapper
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:    "H" "A" "N" "M" "F";
+    }
 }
-
-.four
-{
-    grid-column: 2/2;
-    grid-row: 2/3;
-    border: 3px solid #fff;
-
-}
-
-.five
-{
-    grid-column: 1/2;
-    grid-row: 3/3;
-    border: 3px solid #fff;
-
-}
-
-.six
-{
-    grid-column: 2/2;
-    grid-row: 3/3;
-    border: 3px solid #fff;
-
-}
-

@@ -1,0 +1,136 @@
+*
+{
+    box-sizing: border-box;
+}
+
+html
+{
+    font-size: 62.5%;
+}
+
+body
+{
+    font-size: 1.6em;
+}
+
+.container
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div
+{
+    background-color: #cc3;
+    border: 2px solid #fff;
+    padding: 0.5rem;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.div1, .div10
+{
+    width: 100%;
+}
+
+.div2, .div3, .div4, .div5, .div6, .div7, .div8, .div9
+{
+    width: 50%;
+}
+
+@media (min-width: 540px) and (max-width: 960px)
+{
+
+    .container
+    {
+        width: 100%;
+    }
+
+    .div1
+   {
+        width: 100%;
+   }
+
+   .div2
+   {
+        width: 25%;
+   }
+
+   .div3, .div6, .div7, .div8, .div9
+   {
+        width: 25%;
+   }
+
+   .div10
+   {
+        width: 75%;
+   }
+
+}
+
+@media (min-width: 960px)
+{
+    .container
+    {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas:    "A A A A" 
+                                "B C D D" 
+                                "B E E F"
+                                "B G H I"
+                                "B J J J";
+    }
+
+    .div1
+    {
+        grid-area: A;
+    }
+
+    .div2
+    {
+        grid-area: B;
+    }
+
+    .div3
+    {
+        grid-area: C;
+    }
+
+    .div4
+    {
+        grid-area: D;
+    }
+
+    .div5
+    {
+        grid-area: E;
+    }
+
+    .div6
+    {
+        grid-area: F;
+    }
+
+    .div7
+    {
+        grid-area: G;
+    }
+
+    .div8
+    {
+        grid-area: H;
+    }
+
+    .div9
+    {
+        grid-area: I;
+    }
+
+    .div10
+    {
+        grid-area: J;
+    }
+
+}
