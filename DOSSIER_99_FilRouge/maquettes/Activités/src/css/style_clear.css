@@ -1,0 +1,139 @@
+*
+{
+    box-sizing: border-box;
+}
+
+html
+{
+    font-size: 62.5%;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    font-size: 1.6em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e5edd8;
+    color: #3c3c3c;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 7rem;
+}
+
+.header img
+{
+    height: 10rem;
+}
+
+.header
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    width: 100%;
+}
+
+.header ul
+{
+    display: flex;
+}
+
+.header li
+{
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.header ul li a
+{
+    text-decoration: none;
+    color: #3c3c3c;
+    background-color: #3c3c3c25;
+    font-weight: bold;
+    padding: 2rem 1rem 1rem 1rem;
+}
+
+header ul li:first-child a {
+    border-bottom-left-radius: 1em;
+
+}
+
+.lamp:hover
+{
+    font-size: 2rem;
+}
+
+.header a:hover
+{
+    color: #ffffcc;
+    transition-duration: 1s;
+}
+
+.home
+{
+    width: 75rem;
+    margin: 0 auto;
+}
+
+.home article
+{
+    text-align: justify;
+    padding: 1rem;
+}
+
+.home h1
+{
+    padding: 1rem;
+}
+
+.main
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff15;
+    width: 75rem;
+    margin: 0 auto 1rem auto;
+}
+
+.main h2
+{
+    padding: 1rem;
+}
+
+.main article
+{
+    text-align: justify;
+    padding: 1rem;
+}
+
+.footer
+{
+    background-color: #ffffff75;
+    height: 5rem;
+    text-align: center;
+    margin-top: auto;
+    padding-top: 0.7rem;
+    position: fixed;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    height: 6rem;
+}
+
+.gradient
+{
+    background: linear-gradient(#ffffff22, #00000022, #00000022);
+    border-radius: 0.5em ;
+}
+
+table, td, th
+{
+    border: 1px solid #000;
+}
+
+.center
+{
+    text-align: center;
+}
