@@ -1,0 +1,85 @@
+*
+{
+    box-sizing: border-box;
+}
+
+html
+{
+    font-size: 62.5%;
+}
+
+body
+{
+    font-size: 1.6em;
+}
+
+.header
+{
+    background-color: blue;
+    color: #fff;
+    height: 13rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-section1 div:first-child
+{
+    font-size: 2rem;
+    padding: 1rem 1rem 2rem 1rem;
+}
+
+.header-section1 img
+{
+    width: 4rem;
+    margin: 0.5rem;
+}
+
+.header-section3
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.profil img
+{
+    height: 11rem;
+    margin: 1rem;
+}
+
+main
+{
+    display: flex;
+}
+
+.main-section1
+{
+    width: 55%;
+    display: flex;
+}
+
+.main-section1 div
+{
+    width: 50%;
+}
+
+.main-section2
+{
+    width: 45%
+}
+
+.upper
+{
+    text-transform: uppercase;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.center
+{
+    text-align: center;
+}
