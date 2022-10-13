@@ -76,8 +76,6 @@ body
 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-
 }
 
 table
@@ -110,6 +108,7 @@ td, th
     color: #fff;
     text-shadow: 1px 1px 1px #000;
     background-color: #2927b6;
+    background-color: #0060df;
    
     background-image: linear-gradient(to top left,
                                       rgba(0, 0, 0, .2),
@@ -122,6 +121,8 @@ td, th
 .styled:hover 
 {
     background-color: #4e4cb4;
+    background-color: #5ca2ff;
+
 }
 
 .styled:active {
@@ -177,6 +178,11 @@ table img
         align-items: center;
     }
 
+    .header ul
+    {
+        padding-inline-start: 0;
+    }
+
     .header img
     {
         width: 40%;
@@ -185,7 +191,7 @@ table img
 
     .header a
     {
-        font-size: 1rem;
+        font-size: 1.2rem;
         padding: 0.3rem;
     }
 
