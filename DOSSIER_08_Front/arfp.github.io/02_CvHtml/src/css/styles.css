@@ -21,7 +21,7 @@ body
     color: #fff;
     height: 20rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .header-section1 div:first-child
@@ -63,23 +63,26 @@ main
 
 .main-section1
 {
+    padding-top: 1rem;
     width: 50%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    row-gap: 1rem;
 }
 
 .main-section1 div:nth-child(1),
 .main-section1 div:nth-child(2)
 {
-    width: 50%;
+    flex-basis: 49%;
     padding: 1rem;
     border: 3px solid orange;
+    
 }
 
 .main-section1 div:nth-child(3)
 {
-    width: 100%;
+    flex-basis: 100%;
     padding: 1rem;
     background-color: yellow;
 }
@@ -130,7 +133,7 @@ main
     color: brown;
 }
 
-@media (max-width: 460px)
+@media (max-width: 660px)
 {
     .header
     {
@@ -183,4 +186,26 @@ main
     {
         margin-top: -3rem;
     }
+
+}
+
+@media (min-width: 660px) and (max-width: 960px)
+{
+
+    .header-section1 div:first-child
+    {
+        font-size: 2rem;
+        padding: 1rem 1rem 2rem 1rem;
+    }
+
+    .header-section1 img
+    {
+        margin: 0.5rem 1rem;
+    }
+
+    .header-section1
+    {
+        width: 20rem;
+    }
+
 }
