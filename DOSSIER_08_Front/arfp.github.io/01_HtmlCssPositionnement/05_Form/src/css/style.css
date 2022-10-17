@@ -1,0 +1,37 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6em;
+    background-color: #33aaff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.8rem;
+}
+
+div input, select{
+    width: 25rem;
+    height: 3rem;
+}
+
+fieldset{
+    margin: 0.8rem;
+}
+
+textarea{
+    width: 25rem;
+}
+
+form div:last-child input{
+    width: 100%;
+    margin: 0;
+    background-color: #333333;
+    border: none;
+    height: 4rem;
+    color: #fff;
+}
