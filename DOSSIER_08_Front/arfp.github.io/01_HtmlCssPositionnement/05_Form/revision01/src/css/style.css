@@ -1,9 +1,14 @@
+*{
+    box-sizing: border-box;
+}
+
 html{
     font-size: 62.5%;
 }
 
 body{
-    font-size: 1.6em;
+    font-size: 2em;
+    font-weight: bold;
     background-color: #33aaff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -11,27 +16,24 @@ body{
 div{
     display: flex;
     justify-content: space-between;
-    margin: 0.8rem;
+    margin: 1rem;
 }
 
 div input, select{
-    width: 25rem;
-    height: 3rem;
-}
-
-fieldset{
-    margin: 0.8rem;
+    width: 50%;
+    font-size: 2rem;
+    height: 5rem;
 }
 
 textarea{
-    width: 25rem;
+    width: 50%;
 }
 
-form div:last-child input{
+#submit{
     width: 100%;
-    margin: 0;
     background-color: #333333;
-    border: none;
-    height: 4rem;
     color: #fff;
+    border: none;
+    margin-top: 1rem;
 }
+
