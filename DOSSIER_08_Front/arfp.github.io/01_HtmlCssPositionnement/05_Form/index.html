@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <form action="contact">
+        <div>
+            <label for="nameinput">Lastname</label>
+            <input type="text" name="lastname" id="nameinput" placeholder="Name">
+        </div>
+        <div>
+            <label for="phoneinput">Phone</label>
+            <input type="tel" name="phone" id="phoneinput" placeholder="Phone">
+        </div>
+        <div>
+            <label for="emailinput">Email</label>
+            <input type="email" name="email" id="emailinput" placeholder="contact@toto.fr">
+        </div>
+    
+        <fieldset>
+            <legend>Which service do you require?</legend>
+
+            <input type="radio" name="plumbing" id="plumbing">
+            <label for="plumbing">Plumbing</label>
+
+            <input type="radio" name="electricity" id="electricity">
+            <label for="electricity">Electricity</label>
+
+            <input type="radio" name="painting" id="painting">
+            <label for="painting">Painting</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Which other service do you need?</legend>
+
+            <input type="checkbox" name="architect" id="architect"> 
+            <label for="architect">Architect</label>
+
+            <input type="checkbox" name="disinfection" id="disinfection">
+            <label for="disinfection">Disinfection</label>
+
+            <input type="checkbox" name="extermination" id="extermination">
+            <label for="extermination">Rat extermination</label>
+        </fieldset>
+
+        <div>
+            <label for="datetime">Date/Time</label>
+            <input type="datetime-local" name="datetime" id="datetime">
+        </div>
+
+        <div>
+            <label for="place">Place</label>
+            <select name="place" id="place">
+                <option value="blois">Blois</option>
+                <option value="paris">Paris</option>
+                <option value="mulhouse">Mulhouse</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="otherneeds">Other needs</label>
+            <input type="text" name="otherneeds" id="otherneeds">
+        </div>
+
+        <div>
+            <label for="specialinstructions">Special instructions</label>
+            <textarea name="specialinstructions" id="specialinstructions"></textarea>
+        </div>
+
+        <div>
+            <input type="submit" name="submit" id="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>
