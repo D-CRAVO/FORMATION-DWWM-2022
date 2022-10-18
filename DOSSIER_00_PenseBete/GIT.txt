@@ -30,12 +30,21 @@ TRACKER TOUS LES DOSSIERS D'UN REPERTOIRE
 TRACKER TOUTE LA BRANCHE
     git add -A
 ARRETER DE TRACKER 
-    git rm 
+    git rm cached nomFichier
 ENVOYER SUR LE SERVEUR EN MENTIONNANT LE COMMENTAIRE OBLIGATOIRE
     git commit -m "Initial commit"
 MODIFIER L'IDENTIFICATION SUR LA MACHINE POUR GIT
     git config --global user.name "David"
     git config --global user.email "dcravo@arfp.asso.fr"
+
+UPSTREAM
+	git remote add upstream https://github.com/D-CRAVO/mondossier.git
+VERIFIER
+	git remote -v
+PUBLIER
+	git fetch upstream
+AUTRE VERIFICATION
+	git branch -a
 
 CREER UNE BRANCHE (crée la branche develop)
     git branch develop
