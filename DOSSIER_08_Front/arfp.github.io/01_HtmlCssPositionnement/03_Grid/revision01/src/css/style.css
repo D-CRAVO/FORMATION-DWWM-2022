@@ -1,0 +1,77 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6em;
+    background-color: #bbccff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+.header, .ads, .nav, .article, .footer{
+    border: 2px solid #fff;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 15rem 1fr 10rem;
+    grid-template-rows: 5rem 1fr 5rem;
+    grid-template-areas: "H H D"
+                         "N A A"
+                         "N F F";
+}
+
+.header{
+    grid-area: H;
+}
+
+.ads{
+    grid-area: D;
+}
+
+.nav{
+    grid-area: N;
+}
+
+.article{
+    grid-area: A;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 15%;
+}
+
+.footer{
+    grid-area: F;
+}
+
+section{
+    background-color: #fff;
+    margin: 0.5rem;
+    width: 45%;
+}
+
+p{
+    width: 100%;
+}
+
+@media (max-width: 40rem)
+{
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .article{
+        flex-direction: column;
+        padding-left: 0%;
+    }
+
+    section{
+        width: 100%;
+        padding-left: auto;
+        padding-right: auto;
+    }
+
+}
