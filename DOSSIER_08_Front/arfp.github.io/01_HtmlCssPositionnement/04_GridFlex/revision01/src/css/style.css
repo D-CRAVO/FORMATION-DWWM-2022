@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 1.6em;
+    background-color: #cccc33;
+    color: #fff;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div{
+    border: 2px solid #fff;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.div1, .div10{
+    width: 100%
+}
+
+.div2, .div3, .div4, .div5, .div6, .div7, .div8, .div9{
+    width: 50%;
+} 
+
+@media (min-width: 46rem)
+{
+    .container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: "A A A A"
+                             "B C D D"
+                             "B E E F"
+                             "B G H I"
+                             "B J J J";
+    }
+
+    .div1{
+        grid-area: A;
+        width: 100%
+    }
+
+    .div2{
+        grid-area: B;
+        width: 100%;
+    }
+
+    .div3{
+        grid-area: C;
+        width: 100%;
+    }
+
+    .div4{
+        grid-area: D;
+        width: 100%
+    }
+
+    .div5{
+        grid-area: E;
+        width: 100%;
+    }
+
+    .div6{
+        grid-area: F;
+        width: 100%
+    }
+
+    .div7{
+        grid-area: G;
+        width: 100%
+    }
+
+    .div8{
+        grid-area: H;
+        width: 100%
+    }
+
+    .div9{
+        grid-area: I;
+        width: 100%
+    }
+
+    .div10{
+        grid-area: J;
+        width: 100%
+    }
+}
