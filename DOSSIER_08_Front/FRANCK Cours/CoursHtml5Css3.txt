@@ -1,0 +1,99 @@
+Eléments de type block
+
+div	p
+
+Un élément de type block peut contenir un ou plusieurs autres éléments block
+et/ou inline,
+
+Eléments de type inline
+
+span
+
+Un élément de type inline ne peut contenir qu’un ou plusieurs autres éléments
+inline.
+
+Balises pour mettre en avant du texte
+
+mark	em	strong
+
+Nouvelles balises
+
+time	figure	meter	draggable	hidden
+
+Attributs input
+
+Sélecteur d'adjacence
+
++ proximité directe
+~ proximité générale
+
+Sélécteur d'attribut p84
+
+[attribut^="clafoutis"] caractérise un attribut dont la valeur commence exactement 
+par la chaîne clafoutis,
+[attribut $=clafoutis"] caractérise l’attribut dont la valeur finie exactement par le 
+suffixe clafoutis,
+[attribut *="clafoutis"] désigne un attribut dans la valeur contient au moins une 
+fois la sous-chaîne clafoutis
+
+nth-child p86
+
+even adressera les valeurs paires,
+odd adressera les valeurs impaires,
+3n adressera les valeurs 3, 6, 9 ...,
+6n+1 adressera les valeurs 1, 7, 13 ...,
+0n+7 adressera uniquement la valeur 7,
+-n+2 adressera les valeurs 1 et 2
+
+first-child p90
+last-child
+first-of-type
+last-of-type
+only-child
+only-of-type
+empty
+
+
+Pseudo-classes p93
+:lang
+:empty
+:not 
+
+@font-face p102 
+
+font-size-adjust p109
+font-variant
+text-overflow
+overflow-wrap = word-wrap
+hyphens
+white-space
+text-shadow ---p115
+columns
+
+box-shadow p118
+border-radius
+
+images css p125
+
+background-image
+background-position
+background-repeat
+list-style-image
+border-image
+content
+
+border-box p130
+padding-box
+content-box
+
+transform p135
+	translate
+	scale
+	rotate
+	skew
+transition-property p142
+transition-duration
+transition-timing-function
+transition delay
+
+@keyframes
