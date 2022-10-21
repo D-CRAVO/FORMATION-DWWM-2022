@@ -6,19 +6,27 @@ html{
     font-size: 62.5%;
 }
 
+@font-face{
+    font-family: channel;
+    src: url(../fonts/channel-webfont.woff);
+
+}
+
 body{
     font-size: 1.6em;
+    background-color: #00000088
 }
 
 nav{
     width: 100%;
-    background-color: #000;
+    background-color: #000000;
+    border: 0.1rem solid #fff;
 }
 
 nav ul{
-    display: flex;
-    justify-content: space-evenly;
     list-style: none;
+    display: flex;
+    justify-content: flex-end;
 }
 
 nav ul::after{
@@ -27,10 +35,21 @@ nav ul::after{
     clear: both;
 }
 
+/*
+nav ul li{
+    float: left;
+    width: 20%;
+}
+*/
+
 nav a{
     display: block;
     text-decoration: none;
-    color: #fff
+    color: #fff;
+    padding: 1rem;
+    font-family: channel;
+
+
 }
 
 nav a:hover{
@@ -39,23 +58,66 @@ nav a:hover{
 
 .under{
     display: none;
-    background-color: black;
 }
 
 nav > ul li:hover .under{
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 .under li{
     float: none;
     width: 100%;
     text-align: left;
+    border: 0.1rem solid #fff;
 }
 
+/*
 .under a{
     padding: 10px;
 }
+*/
 
 .under a:hover{
-    background-color: grey;
+    background-color: #ffffff44;
+}
+
+main{
+    width : 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.principal-image img, .principal-image div{
+    background-color: #fff;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+.principal-image div{
+    font-family :'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: red;
+}
+
+.section-article{
+    display: flex;
+    background-image: url(../img/bg_g.png);
+}
+
+.section-article article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-article h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-article p, .section-article button{
+    text-align: center;
 }
