@@ -87,8 +87,8 @@ main{
     margin-right: auto;
     margin-left: auto;
     background-color: #80808044;
-    box-shadow: inset 0.4rem 0 0.4rem #000
-                , inset -0.4rem 0 0.4rem;
+    box-shadow:  0.4rem 0 0.4rem #000
+                ,  -0.4rem 0 0.4rem #000;
 }
 
 .principal-image{
@@ -137,6 +137,8 @@ hr{
     align-items: center;
     justify-content: space-between;
     margin-bottom: 0;
+    animation: comingsoon 2s  1s;  
+
 }
 
 .section-article div{
@@ -149,21 +151,30 @@ hr{
 }
 
 button{
-    background-color: #808080;
+    width: 15rem;
+    height: 5rem;
+    background-color: #cccccc;
     border: none;
-    padding: 1rem 0;
-    width: 10rem;
     text-align: center;
 }
 
 button:hover{
-    background-color: #00000066
+    background-color: #00000066;
+    transform: rotate(-10deg) scale(1.5);
 }
 
 button a{
     font-family :"Comic Sans MS", sans-serif;
     text-decoration: none;
     color: #fff;
+    align-items: center;
+    font-size: large;
+    padding: 1.2rem 2.1rem;
+}
+
+button a:hover{
+    color: red;
+    text-shadow: 0.1rem 0.1rem 0.5rem #fff;
 }
 
 /*
@@ -211,7 +222,6 @@ button a{
     border-top: 1px solid #808080;
     width: 100%;
     padding: 1rem 5rem 0.5rem 5rem;
-    
 }
 
 .selection ul li:last-child{
@@ -222,13 +232,15 @@ button a{
     text-decoration: none;
     color: #000000;
     font-size: 2rem;
-    
 }
 
 .selection ul li a img{
     padding-right: 2rem;
 }
 
+.selection a:hover{
+    color: red;
+}
 
 /*
 .cadeaux{
@@ -243,7 +255,7 @@ button a{
     margin: 2rem;
     padding: 1rem;
     display: grid;
-    grid-template-rows: 15% 1fr% 1fr 15% 15%;
+    grid-template-rows: 20% 8% 1fr 15% 20%;
     grid-template-columns: 30% 70%;
 }
 
@@ -253,7 +265,7 @@ button a{
 
 .cadeaux img{
     border: 5px solid #ffffff;
-    margin: 2rem;
+    margin: 1rem;
     grid-area: 2 / 1 / 5 / 2;
 }
 
@@ -275,5 +287,50 @@ button a{
 
 .cadeaux button{
     grid-area: 4 / 2 / 5 / 3;
-    margin-left: 50%;
+    margin: 0 20rem 0 30rem;
+}
+
+footer{
+    width: 65%;
+    margin: 0 auto;
+    padding: 3rem 1rem 0rem 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(../img/footer-bg.jpg);
+    background-repeat: round;
+    box-shadow:  0.4rem 0.4rem #000
+                ,-0.4rem  0.4rem #000;
+}
+
+footer nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+footer li{
+    margin: 0 4rem;
+}
+
+footer a{
+    font-family: channel, sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer a:hover{
+    color: red;
+}
+
+
+@keyframes comingsoon{
+    from{
+        font-size: small;
+    }
+    to {
+        font-size: large;
+        color: red;
+        text-shadow: 0.1rem 0.1rem 0.5rem #fff;
+    }
 }
