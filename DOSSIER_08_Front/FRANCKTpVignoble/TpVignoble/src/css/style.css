@@ -8,13 +8,13 @@ html{
 
 @font-face{
     font-family: "channel";
-    src: url(../fonts/channel-webfont.woff);
+    src: url(../fonts/channel-webfont.woff) format("woff");
 }
 
 body{
     font-size: 1.6em;
     background-image: url(../img/bg_motif.gif);
-    font-family :"Comic Sans MS", sans-serif;
+    font-family :"Satisfy", "Roboto", "Comic Sans MS", sans-serif;
 }
 
 header{
@@ -99,8 +99,8 @@ main{
 }
 
 .principal-image{
-    margin-top: 4%;
-    padding: 0 3rem;
+    margin-top: 5rem;
+    padding: 5rem 3rem 0 3rem;
 
 }
 
@@ -135,6 +135,7 @@ hr{
     align-items: center;
     padding: 2rem;
 }
+/* réessayer avec float */
 
 .section-article h1{
     font-family: channel;
@@ -154,6 +155,7 @@ hr{
 }
 
 .section-article p{
+    color: #fff;
     text-align: center;
 }
 
@@ -288,6 +290,7 @@ button a:hover{
 }
 
 .cadeaux p{
+    color: #fff;
     margin: 0 0 2rem 0;
     grid-area: 3 / 2 / 4 / 3;
 }
