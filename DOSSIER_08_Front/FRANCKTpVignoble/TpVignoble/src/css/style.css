@@ -161,6 +161,8 @@ button{
 button:hover{
     background-color: #00000066;
     transform: rotate(-10deg) scale(1.5);
+    transition-delay: 1s;
+    transition-duration: 1s;
 }
 
 button a{
@@ -175,6 +177,8 @@ button a{
 button a:hover{
     color: red;
     text-shadow: 0.1rem 0.1rem 0.5rem #fff;
+    transition-delay: 1s;
+    transition-duration: 1s;
 }
 
 /*
