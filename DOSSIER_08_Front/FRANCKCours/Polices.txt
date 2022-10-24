@@ -1,0 +1,2 @@
+sans serif pour les titres
+avec serif pour les contenus longs
