@@ -62,7 +62,6 @@ header nav ul li ul li{
     border-left: 1px solid #fff;
     border-right: 1px solid #fff;
     padding: 5px 20px 5px 20px;
-    
 }
 
 header nav ul li:hover ul{
@@ -70,10 +69,13 @@ header nav ul li:hover ul{
 }
 
 header nav ul li a{
-
     color: #fff;
     text-decoration: none;
     width : 100%;
+}
+
+header nav ul li a:hover{
+    color: #ff0000;
 }
 
 header nav img{
@@ -91,8 +93,8 @@ main{
     margin-right: auto;
     margin-left: auto;
     background-color: #80808044;
-    box-shadow:  0.4rem 0 0.4rem #000
-                ,  -0.4rem 0 0.4rem #000;
+    box-shadow:  0.4rem 0 0.4rem #000,
+                -0.4rem 0 0.4rem #000;
 }
 
 .principal-image{
