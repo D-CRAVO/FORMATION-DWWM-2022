@@ -7,7 +7,7 @@ html{
 }
 
 @font-face{
-    font-family: channel;
+    font-family: "channel";
     src: url(../fonts/channel-webfont.woff);
 }
 
@@ -19,65 +19,72 @@ body{
 
 header{
     position: fixed;
+    border-bottom: 0.1rem solid #fff;
     width: 100%;
+    height: 80px;
     top: 0;
-    right: 0;
+    background-image: url(../img/header.png);
+    background-repeat: repeat;
+    z-index: 1000;
 }
 
-header nav{
-    background-color: #000000;
-    border-bottom: 0.1rem solid #fff;
-    height: 5rem;
-    padding: 1rem 0;
-}
 
 header nav ul{
     list-style: none;
-    list-style-position: inside;
-    display: flex;
-    justify-content: flex-end;
-    margin: 0;
-    padding: 0;
+    float: right;
+    padding-top: 25px;
+    padding-right: 60px;
 }
 
-header nav a{
-    display: block;
-    text-decoration: none;
-    color: #fff;
-    padding: 0 3rem;
-    font-family: channel, sans-serif;
+header nav ul li{
+    font-family: "channel";
+    display: inline;
+    position: relative;
+    padding-left: 55px;
+    padding-bottom: 20px;
+    line-height: 50px;
 }
 
-header nav a:hover{
-    color: red;
-}
-
-header nav img{
-    width: 10rem;
+header nav ul ul{
+    background-image: url(../img/header.png);
+    background-repeat: repeat;
     position: absolute;
-    margin-top: 1rem;
-    margin-left: 10%;
-}
-
-header nav > ul li:hover .under{
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    background-color: #00000066;
-    margin-left: 5rem;
-    margin-top: -0.5rem;
-}
-
-.under{
+    left: -10px;
+    margin: 0px;
+    padding: 0px;
+    top: 38px;
     display: none;
 }
 
-.under li{
-    float: none;
+header nav ul li ul li{
+    display: block;
     width: 100%;
-    text-align: left;
-    border: 0.1rem solid #fff;
+    border-bottom: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    padding: 5px 20px 5px 20px;
+    
 }
+
+header nav ul li:hover ul{
+    display: block;
+}
+
+header nav ul li a{
+
+    color: #fff;
+    text-decoration: none;
+    width : 100%;
+}
+
+header nav img{
+    position: fixed;
+    top: 53px;
+    left: 100px;
+    z-index: 3000;
+}
+
+
 
 main{
     width : 65%;
