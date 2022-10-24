@@ -169,7 +169,7 @@ button a{
     color: #fff;
     align-items: center;
     font-size: large;
-    padding: 1.2rem 2.1rem;
+    padding: 1.2rem 1.9rem;
 }
 
 button a:hover{
@@ -207,7 +207,7 @@ button a:hover{
 */
 
 .selection{
-    width: 100%;
+    width: 200%;
     background-color: #80808044;
     margin: 2rem;
 }
@@ -220,7 +220,7 @@ button a:hover{
 .selection ul li{
     border-top: 1px solid #808080;
     width: 100%;
-    padding: 1rem 5rem 0.5rem 5rem;
+    padding: 1rem 1.5rem 0.5rem 1.5rem;
 }
 
 .selection ul li:last-child{
@@ -230,11 +230,10 @@ button a:hover{
 .selection ul li a{
     text-decoration: none;
     color: #000000;
-    font-size: 2rem;
 }
 
 .selection ul li a img{
-    padding-right: 1.5rem;
+    padding-right: 0.5rem;
 }
 
 .selection a:hover{
@@ -307,10 +306,11 @@ footer nav ul{
 }
 
 footer li{
-    margin: 0 4rem;
+    margin: 0 1.5rem;
 }
 
 footer a{
+    font-size: 1.2rem;
     font-family: channel, sans-serif;
     text-decoration: none;
     color: #ffffff;
@@ -331,27 +331,13 @@ footer a:hover{
     }
 }
 
-@media (min-width: 81rem) and (max-width: 108rem){
+@media (min-width: 600px) and (max-width: 1024px){
     header nav img{
         display: none;
     }
-    
-    main{
-        width: 95%;
-    }
 
-    footer{
-        width: 95%;
-    }
-
-    footer a{
-        font-size: 80%;
-    }
-}
-
-@media (min-width: 42rem) and (max-width: 81rem){
-    header nav img{
-        display: none;
+    header nav ul li{
+        font-size: 80%
     }
     
     main{
@@ -360,23 +346,28 @@ footer a:hover{
 
     .principal-image{
         margin-top: 6%;
+        font-size: small;
+    }
 
+    .section-article h1,
+    .section-article p{
+        font-size: 80%;
     }
 
     button a{
         font-size: small;
     }
 
-    .selection{
-        font-size: 60%;
+    .selection-cadeaux{
+        font-size: 80%;
     }
 
+    .selection h1{
+        font-size: 80%;
+    }
+    
     .selection ul li a{
         font-size: small;
-    }
-
-    .selection img{
-        display: none;
     }
 
     .cadeaux img{
@@ -387,12 +378,13 @@ footer a:hover{
         width: 100%;
     }
 
-    footer li{
+    footer ul li{
         margin: 0 1rem;
     }
 
     footer a{
         font-size: small;
+        font-size: 70%;
     }
 
     footer img{
@@ -400,7 +392,7 @@ footer a:hover{
     }
 }
 
-@media (max-width: 42rem){
+@media (max-width: 600px){
     header img{
         display: none;
         margin-left: 0;
@@ -453,6 +445,7 @@ footer a:hover{
     }
 
     .selection{
+        width: 100%;
         margin: 0;
     }
 
