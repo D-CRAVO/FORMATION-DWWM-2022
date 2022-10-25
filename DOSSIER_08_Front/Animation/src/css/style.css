@@ -1,0 +1,29 @@
+:root {
+    overflow: hidden;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .sun {
+    background-color: yellow;
+    border-radius: 30%;
+    height: 100px;
+    aspect-ratio: 1 / 1;
+    animation: 4s linear 0s infinite alternate animating-multiple-properties; */
+  }
+  
+  /* it is possible to animate multiple properties in a single animation */
+  @keyframes animating-multiple-properties {
+    from {
+      transform: translateY(110vh);
+      background-color: red;
+      filter: brightness(75%);
+    }
+    to {
+      transform: translateY(0);
+      background-color: orange;
+      /* unset properties i.e. 'filter' will revert to default values */
+    }
+  } */
+  
