@@ -49,8 +49,8 @@ header nav ul ul{
     background-repeat: repeat;
     position: absolute;
     left: -10px;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     top: 38px;
     display: none;
 }
@@ -144,7 +144,11 @@ hr{
     align-items: center;
     justify-content: space-between;
     margin-bottom: 0;
-    animation: comingsoon 2s 1s;  
+    animation: comingsoon 5s 2s forwards; 
+}
+
+.section-article h1:hover{
+    animation-play-state: paused; 
 }
 
 .section-article div{
@@ -168,6 +172,7 @@ button{
 button:hover{
     background-color: #00000066;
     transform: rotate(-10deg) scale(1.5);
+    transition: transform cubic-bezier(.11,1.15,1,.1);
     transition-delay: 1s;
     transition-duration: 1s;
 }
@@ -348,8 +353,17 @@ footer a:hover{
         display: none;
     }
 
+    header nav ul{
+        float: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 0;
+    }
+
     header nav ul li{
-        font-size: 80%
+        font-size: 70%;
+        justify-content: center;
     }
     
     main{
