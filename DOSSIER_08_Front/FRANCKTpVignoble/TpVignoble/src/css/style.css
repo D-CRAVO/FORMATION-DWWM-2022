@@ -39,9 +39,9 @@ header nav ul li{
     font-family: "channel";
     display: inline;
     position: relative;
-    padding-left: 55px;
+    padding-left: 30px;
+    padding-right: 30px;
     padding-bottom: 20px;
-    line-height: 50px;
 }
 
 header nav ul ul{
@@ -55,6 +55,11 @@ header nav ul ul{
     display: none;
 }
 
+header nav ul li:hover{
+    background-color: #ddd;
+
+}
+
 header nav ul li ul li{
     display: block;
     width: 100%;
@@ -66,17 +71,31 @@ header nav ul li ul li{
 
 header nav ul li:hover ul{
     display: block;
+    
 }
 
-header nav ul li a{
+header nav ul li a:link{
     color: #fff;
     text-decoration: none;
     width : 100%;
 }
 
-header nav ul li a:hover{
-    color: #ff0000;
+header nav ul li a:visited{
+    color: #aaa;
+    text-decoration: underline;
 }
+
+
+header nav ul li a:hover{
+    color: #000;
+    text-decoration: underline;
+    
+}
+
+header nav ul li a:active { 
+    color: #ff0800;
+}
+
 
 header nav img{
     position: fixed;
@@ -161,36 +180,60 @@ hr{
     text-align: center;
 }
 
-button{
+/* button{
     width: 15rem;
     height: 5rem;
     background-color: #cccccc;
     border: none;
     text-align: center;
 }
-
+ */
 button:hover{
     background-color: #00000066;
-    transform: rotate(-10deg) scale(1.5);
+    /* transform: rotate(-10deg) scale(1.5);
     transition: transform cubic-bezier(.11,1.15,1,.1);
     transition-delay: 1s;
-    transition-duration: 1s;
+    transition-duration: 1s; */
 }
 
-button a{
+article a{
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    background-color: #cccccc;
+    border: none;
+    text-align: center;
     font-family :"Comic Sans MS", sans-serif;
     text-decoration: none;
     color: #fff;
-    align-items: center;
     font-size: large;
-    padding: 1.2rem 1.9rem;
+    padding: 10px;
+    /* transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: linear; */
+    /* transition-delay: 1s; */
+    transition: all 1s cubic-bezier(.17,1.05,.77,.08);
+    -ms-transition: all 1s cubic-bezier(.17,1.05,.77,.08); /*ie*/
+    -o-transition: all 1s cubic-bezier(.17,1.05,.77,.08); /*opera*/
+    -webkit-transition: all 1s cubic-bezier(.17,1.05,.77,.08); /*safari*/
+    -moz-transition: all 1s cubic-bezier(.17,1.05,.77,.08); /*mozilla*/
+    
 }
 
-button a:hover{
+
+article a:hover{
     color: red;
-    text-shadow: 0.1rem 0.1rem 0.5rem #fff;
-    transition-delay: 1s;
-    transition-duration: 1s;
+    text-shadow: 0.1rem 0.1rem 0.5rem #000;
+    transform: rotate(-20deg) scale(1.5);
+    -ms-transform: rotate(-20deg) scale(1.5);
+    -o-transform: rotate(-20deg) scale(1.5);
+    -webkit-transform: rotate(-20deg) scale(1.5);
+    -moz-transform: rotate(-20deg) scale(1.5);
+
+    /* transform: translate(100px, -100px); */
+    transform-origin: 50% 50%;
+    /* transition-delay: 1s;
+    transition-duration: 1s; */
 }
 
 /*
