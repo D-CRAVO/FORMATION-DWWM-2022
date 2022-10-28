@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les conditions</title>
+    <script>
+        const year = 2022
+        const birthyear = prompt('Quel est votre année de naissance ?')
+        const age = year - birthyear
+        if(age < 13)
+        {
+            console.log('Vous pouvez regarder Lilo & Stitch')
+        }
+        else if(age >= 13 && age < 18)
+        {
+            console.log('Vous pouvez regarder Matrix')
+        }
+        else
+        {
+            console.log('Vous pouvez regarder Evil Dead')
+        }
+
+        const a = prompt('nombre a')
+        const b = prompt('nombre b')
+        const result1 = a * b
+        if (result1 > 0){
+            console.log('Positif')
+        }
+        else{
+            console.log('Négatif')
+        }
+
+        const c = prompt('nombre c')
+        const d = prompt('nombre d')
+        const result2 = c * d
+        if (result2 > 0){
+            console.log(`${c} x ${d} = ${result2} est positif`)
+        }
+        else{
+            console.log(`${c} x ${d} = ${result2} est négatif`)
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
