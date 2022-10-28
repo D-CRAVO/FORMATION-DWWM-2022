@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let i = 0;
+        while (i<10)
+        {
+            console.log('Bonjour ' + i)
+            i = i + 1
+        }
+
+        const notes = [12, 13, 14, 15]
+        for(let j = 0; j < notes.length; j++)
+        {
+            console.log(notes[j])
+        }
+
+        for(let note of notes){
+            console.log(note)
+        }
+
+        const person = {
+            firstname: 'John',
+            lastname: 'Doe'
+        }
+        for (let info in person)
+        {
+            console.log(person[info])
+        }
+
+        const greeting = 'Bonjour'
+        for (let letter in greeting) 
+        {
+            console.log(letter)
+        }
+        for (let indice in greeting){
+            console.log(greeting[indice])
+        }
+
+        const number = prompt('Votre nombre entre 0 et 10 inclus:')
+        if (number > 0 && number <=10)
+        {
+            for(let i = number; i >= 0; i--)
+            {
+                console.log(i)
+            }
+        }
+        else
+        {
+            console.log('Veuillez entrer un chiffre valide !')
+        }
+
+        let guess = 8
+        let num
+        do
+        {
+            num = prompt('Saississez votre chiffre :') * 1
+            if (num > guess)
+            {
+                console.log('Vous êtes au dessus')
+            }
+            else if (num < guess)
+            {
+                console.log('Vous êtes en dessous')
+            }
+            else 
+            {
+                console.log('Félicitation !')
+            }
+        } while (num !== guess)
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
