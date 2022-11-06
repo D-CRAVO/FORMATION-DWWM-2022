@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Fonctions</title>
+    <script>
+        function canDrive (age, pays){
+            conditionFR = age >= 18 && pays === "FR"
+            conditionUS = age >= 16 && pays === "US"
+            if(conditionFR || conditionUS){
+                return true
+            }
+            else{
+                return false
+            }
+        }
+
+        console.log(canDrive(13, 'FR'))
+
+        function greeting(name){
+            console.log(`Bonjour ${name}`)
+        }
+
+        greeting('John')
+        greeting(`Jane`)
+
+        let number = getRandomInt(1, 10);
+        let essais = 0;
+        function isRight (n){
+            if (number === n) {
+                result = true;
+                
+            }
+            else{
+                result = false;
+            }
+            return result;
+        }
+
+        function guess(){
+            result = prompt('Saisissez est votre nombre : ')
+        }
+
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
