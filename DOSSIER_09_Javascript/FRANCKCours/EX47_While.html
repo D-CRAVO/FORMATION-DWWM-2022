@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While</title>
+</head>
+<body>
+    <script>
+        var nicks = '', nicks,
+            proceed = true;
+
+        while (proceed) {
+            nick = prompt('Entrez un prénom :');
+            if (nick) {
+                nicks += nick + ' ';
+            } else {
+                proceed = false;
+            }
+        }
+
+        alert(nicks);
+    </script>
+</body>
+</html>
