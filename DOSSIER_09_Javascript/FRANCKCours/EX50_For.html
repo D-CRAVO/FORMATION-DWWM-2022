@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For</title>
+</head>
+<body>
+    <script>
+        /*
+        for (var nicks = '', nick; true;) {
+            nick = prompt('Entrez un prénom :');
+            if(nick) {
+                nicks += nick + ' ';
+            } else {
+                break;
+            }
+        }
+        alert (nicks);
+        */
+
+        for (var i = 0, nicks = '', nick; true; i++) {
+            nick = prompt('Entrez un prénom :');
+            if (nick) {
+                nicks += nick + ' ';
+            } else {
+                break;
+            }
+        }
+        alert('Il y a ' + i + ' prénoms :\n\n' + nicks);
+    </script>
+</body>
+</html>
