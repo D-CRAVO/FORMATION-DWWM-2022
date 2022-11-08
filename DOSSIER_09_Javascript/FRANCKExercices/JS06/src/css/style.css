@@ -1,0 +1,42 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color:blueviolet;
+    font-size: 1.6em;
+}
+
+fieldset{
+    border-color: #fff;
+    border: 3px solid #fff;
+    background-color: rgba(0, 190, 0);
+}
+
+.produit{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0.5rem;
+}
+
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0.5rem;
+}
+
+.produit label{
+    margin: 0.1rem 1rem;
+}
+
+.total input,
+.produit input{
+    border: inset 2px #fff;
+}
+
+hr{
+    margin-right: -10px;
+    margin-top: 2rem;
+    width: 19rem;
+    border-color: #000;
+}
