@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaires</title>
+</head>
+<body>
+    <input id="text" type="text" size="60" value="Vous n'avez pas le focus !">
+
+    <script>
+        var text = document.getElementById('text');
+        text.addEventListener('focus', function(e) {
+            e.target.value = "Vous avez le focus !";
+        }, true);
+        text.addEventListener('blur', function(e) {
+            e.target.value = "Vous n'avez pas le focus !";
+        }, true);
+    </script>
+</body>
+</html>
