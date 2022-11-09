@@ -11,28 +11,33 @@ function verifnombre(_idchampstext){
     if(champtext!="" && !isNaN(champtext)==true){
         verif = true
     } else {
-        alert("Veuillez rentrer un nombre !")
+        //alert("Veuillez rentrer un nombre !");
         document.getElementById(_idchampstext).value="";
         document.getElementById(_idchampstext).focus();
     }
     return verif;
 }
 
-function calculCA(){
-    let ca1 = Number(document.querySelector("#unitaire01")).value * Number(document.querySelector("qte01").value);
-    document.querySelector("#prix01").value = ca1;
-    let ca2 = Number(document.querySelector('#unitaire02')).value * Number(document.querySelector("qte02").value);
-    document.querySelector('#prix02').value = ca2;
-    document.querySelector('#prixTotal').value = ca1 + ca2;
+function calculCA(_idchamps){
+
+    let verif = verifnombre(_idchamps);
+
+    if (verif == true) {
+        let ca1 = Number(document.querySelector("#pu1").value) * Number(document.querySelector("#qte01").value);
+        document.querySelector("#prix01").value = ca1;
+        let ca2 = Number(document.querySelector("#unitaire02").value) * Number(document.querySelector("#qte02").value);
+        document.querySelector("#prix02").value = ca2;
+    }else{
+        console.log("Veuillez saisir un nombre !");
+    }
+    
 }
 
-document.querySelector("#unitaire01").addEventListener("blur", function () {
-    calculCA();
-    verifnombre('unitaire01');
+
+let monbouton = document.querySelector("#pu1");
+monbouton.addEventListener("blur", function () {
+    calculCA("pu1");
 });
 
-document.querySelector('#unitaire02').addEventListener("blur", function() {
-    calculCA();
-    verifnombre('unitaire02');
-});
+
 
