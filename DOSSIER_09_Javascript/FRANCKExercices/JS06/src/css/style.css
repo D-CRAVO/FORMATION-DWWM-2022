@@ -40,3 +40,9 @@ hr{
     width: 19rem;
     border-color: #000;
 }
+
+@media screen and (max-width: 480px) {
+    .produit{
+        flex-direction: column;
+    }
+}
