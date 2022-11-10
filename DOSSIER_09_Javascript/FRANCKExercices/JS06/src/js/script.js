@@ -25,8 +25,23 @@ function calculCA(_idchamps){
     if (verif == true) {
         let ca1 = Number(document.querySelector("#pu1").value) * Number(document.querySelector("#qte01").value);
         document.querySelector("#prix01").value = ca1;
+
+        // let unitaire02 = Number(document.querySelector("#unitaire02").value);
+        // console.log(unitaire02);
+        // let qte02 = Number(document.querySelector("#qte02").value);
+        // console.log(qte02);
+        // let ca2 = unitaire02 * qte02;
+        // console.log(ca2);
+
         let ca2 = Number(document.querySelector("#unitaire02").value) * Number(document.querySelector("#qte02").value);
+        console.log(ca2);
         document.querySelector("#prix02").value = ca2;
+
+        // document.querySelector("#prix02").value = document.querySelector("#qte02").value * document.querySelector("#unitaire02").value;
+
+        // document.querySelector("#prixTotal") = ca1 + document.querySelector("#prix02").value;
+
+        document.querySelector("#prixTotal").value = ca1 + ca2;
     }else{
         console.log("Veuillez saisir un nombre !");
     }

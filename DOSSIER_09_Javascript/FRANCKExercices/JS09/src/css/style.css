@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6em;
+    background-color: blueviolet;
+}
+
+fieldset{
+    background-color: green;
+    display: flex;
+    
+}
+
+legend{
+    color: white;
+}
+
+/* .wrapper{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "ir iv ib"
+                         "br bv bb";
+}
+
+.inRouge{
+    grid-area: ir;
+}
+
+.btnRouge{
+    grid-area: br;
+}
+
+.inVert{
+    grid-area: iv;
+}
+
+.btnVert{
+    grid-area: bv;
+}
+
+.inBleu{
+    grid-area: ib;
+}
+
+.btnBleu{
+    grid-area: bb;
+} */
+
+#btnRouge,
+#btnVert,
+#btnBleu{
+    width: 8rem;
+    background-color: grey;
+    margin: 0.5rem;
+}
+
+@media (max-width: 520px){
+    fieldset{
+        flex-direction: column;
+    }
+
+    .color{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+}
