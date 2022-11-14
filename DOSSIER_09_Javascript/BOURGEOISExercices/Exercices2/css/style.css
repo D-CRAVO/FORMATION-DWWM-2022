@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6em;
+    font-family: "Roboto", sans-serif;
+    color: #FAFBFF;
+}
+
+section{
+    background-color: #9071D6;
+    padding: 0.5rem;
+    margin-bottom: 0.2rem;
+}
+
+.btn{
+    background-color: #5680FD;
+    border: none;
+    border-radius: 5%;
+    color: #FAFBFF;
+    padding: 0.2rem;
+}
+
+.btn:hover{
+    background-color: #5561F5;
+}
+
+.section1 #result1,
+#word21, #word22, #word23, #word24, #word25,
+#minNb, #maxNb,
+#minNb5, #maxNb5
+{
+    background-color: grey;
+    border: grey;
+}
+
+.section1 #result1{
+    width: 25rem;
+}
+
+.section2 form{
+    display: flex;
+}
+
+.section2 .article1,
+.section2 .article3{
+    display: flex;
+    flex-direction : column;
+    align-items: flex-start;
+}
+
+.section2 .article2{
+    margin: 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.section2 .input2{
+    width: 26rem;
+    margin-bottom: 0.5rem;
+}
+
+.section2 .btn2{
+    margin-bottom: 0.5rem;
+}
+
+.section3 .input31{
+    width: 4rem;
+    text-align: center;
+}
+
+.section3 .input32{
+    width: 9rem;
+    text-align: center;
+}
+
+.section4 .input4{
+    width: 10rem;
+    text-align: center;
+}
+
+.section5 .input5{
+    width: 7.5rem;
+    text-align: center;
+}

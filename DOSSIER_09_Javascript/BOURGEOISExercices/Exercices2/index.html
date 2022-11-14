@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX 2</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <section class="section1">
+        <form action="#" method="get">
+            <label for="age">Votre âge :</label>
+            <input type="text" name="age" id="age">
+            <label for="result1">Résultat :</label>
+            <input type="text" name="result1" id="result1" readonly="readonly">
+            <input type="button" class="btn" id="show1" value="Afficher">
+            <input type="reset" class="btn" value="Réinitialiser">
+        </form>
+    </section>
+
+    <section class="section2">
+        <form action="#" method="get">
+            <article class="article1">
+                <label for="word11">Premier mot :</label>
+                <input type="text" class="input2" name="word11" id="word11">
+
+                <label for="word12">Deuxième mot :</label>
+                <input type="text" class="input2" name="word12" id="word12">
+
+                <label for="word13">Troisième mot :</label>
+                <input type="text" class="input2" name="word13" id="word13">
+
+                <label for="word14">Quatrième mot :</label>
+                <input type="text" class="input2" name="word14" id="word14">
+
+                <label for="word15">Cinquième mot :</label>
+                <input type="text" class="input2" name="word15" id="word15">
+            </article>   
+
+            <article class="article2">
+                <input type="button" class="btn btn2" id="show2" value="Déterminer">
+                <input type="reset" class="btn btn2" value="Réinitialiser">
+                <textarea name="text2" id="text2" cols="20" rows="10"></textarea>
+            </article>
+            
+            <article class="article3">
+                <label for="word21">Premier mot :</label>
+                <input type="text" class="input2" name="word21" id="word21" readonly="readonly">
+
+                <label for="word22">Deuxième mot :</label>
+                <input type="text" class="input2" name="word22" id="word22" readonly="readonly">
+
+                <label for="word23">Troisième mot :</label>
+                <input type="text" class="input2" name="word23" id="word23" readonly="readonly">
+
+                <label for="word24">Quatrième mot :</label>
+                <input type="text" class="input2" name="word24" id="word24" readonly="readonly">
+
+                <label for="word25">Cinquième mot :</label>
+                <input type="text" class="input2" name="word25" id="word25" readonly="readonly">
+            </article>
+        </form>
+    </section>
+
+    <section class="section3">
+        <form action="#" method="get">
+            <label for="originalHours">Heure :</label>
+            <input type="number" class="input31" name="originalHours" id="originalHours" min="0" max="23" value="0" required>
+
+            <label for="originalMinutes">Minutes :</label>
+            <input type="number" class="input31" name="originalMinutes" id="originalMinutes" min="0" max="59" value="0" required>
+
+            <label for="originalSeconds">Secondes :</label>
+            <input type="number" class="input31" name="originalSeconds" id="originalSeconds" min="0" max="59" value="0" required>
+
+            <label for="calculatedTime">Heure Calculée :</label>
+            <input type="text" class="input32" name="calculatedTime" id="calculatedTime" readonly="readonly">
+
+            <input type="button" class="btn" id="show3" value="Calculer">
+            <input type="reset" class="btn" value="Réinitialiser">
+        </form>
+    </section>
+
+    <section class="section4">
+        <form action="#" method="get">
+            <label for="minNb">Minimum :</label>
+            <input type="text" class="input4" name="minNb" id="minNb" readonly="readonly">
+
+            <label for="maxNb">Maximum :</label>
+            <input type="text"class="input4" name="maxNb" id="maxNb" readonly="readonly">
+
+            <label for="secretNb">Nombre :</label>
+            <input type="text" class="input4" name="secretNb" id="secretNb">
+
+            <input type="button" value="Proposer" class="btn" id="show4">
+            <input type="reset" value="Réinitialiser" class="btn">
+        </form>
+    </section>
+
+    <section class="section5">
+        <form action="#" method="get">
+            <label for="minNb5">Minimum :</label>
+            <input type="text" class="input5" name="minNb5" id="minNb5" readonly="readonly">
+
+            <label for="maxNb5">Maximum :</label>
+            <input type="text" class="input5" name="maxNb5" id="maxNb5" readonly="readonly">
+
+            <label for="choice5">Nombre :</label>
+            <input type="text" class="input5" name="choice5" id="choice5">
+
+            <input type="button" class="btn" id="show5" value="Proposer">
+            <input type="button" class="btn" id="start5" value="Commencer">
+            <input type="reset" class="btn" value="Réinitialiser">
+
+        </form>
+    </section>
+</body>
+</html>
