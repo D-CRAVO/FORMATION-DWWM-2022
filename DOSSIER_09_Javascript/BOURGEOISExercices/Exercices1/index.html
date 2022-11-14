@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX 1</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <article class="article1">
+        <form action="#" method="get" enctype="multipart/form-data">
+            <div>
+                <label for="va1">Valeur 1</label>
+                <input type="text" name="va1" id="va1">
+
+                <label for="va2">Valeur 2</label>
+                <input type="text" name="va2" id="va2">
+
+                <input type="button" value="Inverser" id="btn11" class="btn1">
+            </div>
+
+            <div hidden="hidden">
+                <label for="va3">Valeur Intermédiaire</label>
+                <input type="text" name="va3" id="va3">
+            </div>
+
+            <div>
+                <label for="va4">Nouvelle valeur 1</label>
+                <input type="text" name="va4" id="va4" readonly="readonly">
+            
+                <label for="va5">Nouvelle valeur 2</label>
+                <input type="text" name="va5" id="va5" readonly="readonly">
+
+                <input type="reset" value="Réinitialiser" id="btn12" class="btn1" >
+            </div>
+        </form>
+    </article>
+
+    <article class="article2">
+        <form action="#" method="get" enctype="multipart/form-data">
+            <label for="lastname">Nom</label>
+            <input type="text" name="lastname" id="lastname" readonly="readonly">
+
+            <label for="firstname">Prénom</label>
+            <input type="text" name="firstname" id="firstname" readonly="readonly">
+
+            <label for="age">Age</label>
+            <input type="text" name="age" id="age" readonly="readonly">
+
+            <input type="button" class="btn1" id="btn21" value="Saisir">
+            <input type="button" class="btn1" id="btn22" value="Afficher">
+            <input type="reset" class="btn1" id="btn23" value="Réinitialiser">
+        </form>
+    </article>
+
+    <article class="article3">
+        <form action="#" method="get" enctype="multipart/form-data">
+            <label for="birthYear">Année de naissance</label>
+            <input type="text" name="birthYear" id="birthYear">
+
+            <label for="age3">Votre âge</label>
+            <input type="text" name="age3" id="age3" readonly="readonly">
+
+            <input type="button" class="btn1" id="btn31" value="Calculer">
+            <input type="reset" class="btn1" id="btn32" value="Réinitialiser">
+        </form>
+    </article>
+
+    <article class="article4">
+        <form action="#" method="get">
+            <label for="nbarticles">Nombre d'articles</label>
+            <input type="number" name="nbarticles" id="nbarticles">
+
+            <label for="prixHT">Prix HT</label>
+            <input type="text" name="prixHT" id="prixHT">
+
+            <label for="prixTTC">Prix TTC</label>
+            <input type="text" name="prixTTC" id="prixTTC" readonly="readonly">
+
+            <input type="button" class="btn1" id="btn41" value="Calculer">
+            <input type="reset" class="btn1" id="btn42" value="Réinitialiser">
+        </form>
+    </article>
+
+    <article class="article5">
+        <form action="#" method="get">
+            <textarea name="texteOrigine" id="texteOrigine" cols="30" rows="10" placeholder="Texte D'origine"></textarea>
+            <textarea name="texteModifie" id="texteModifie" cols="30" rows="10" placeholder="Texte modifié"></textarea>
+
+            <div class="input5">
+                <input type="reset" class="btn1" value="Réinitialiser">
+                <input type="button" class="btn1" id="hello" value="Bonjour!">
+                <input type="button" class="btn1" id="bold" value="Gras">
+                <input type="button" class="btn1" id="italic" value="Italique">
+                <input type="button" class="btn1" id="uppercase" value="Majuscules">
+                <input type="button" class="btn1" id="lowercase" value="Minuscules">
+            </div>
+            
+        </form>
+    </article>
+</body>
+</html>
