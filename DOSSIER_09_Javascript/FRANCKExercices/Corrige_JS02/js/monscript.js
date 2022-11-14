@@ -18,6 +18,7 @@ var monbtndate=document.querySelector("#btndate");
 monbtndate.addEventListener("click", function () { let machaine=afficherDate();
     document.getElementById("txtdate").value=machaine;
 });
+
 function afficherHeure()
 {
     let monheure= new Date();
