@@ -26,10 +26,10 @@ function calculCA(_idchamps){
         let ca1 = Number(document.querySelector("#pu1").value) * Number(document.querySelector("#qte01").value);
         document.querySelector("#prix01").value = ca1;
 
-        // let unitaire02 = Number(document.querySelector("#unitaire02").value);
-        // console.log(unitaire02);
-        // let qte02 = Number(document.querySelector("#qte02").value);
-        // console.log(qte02);
+        let unitaire02 = Number(document.querySelector("#unitaire02").value);
+        console.log(unitaire02);
+        let qte02 = Number(document.querySelector("#qte02").value);
+        console.log(qte02);
         // let ca2 = unitaire02 * qte02;
         // console.log(ca2);
 
