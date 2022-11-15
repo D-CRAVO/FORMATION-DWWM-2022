@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Définir et obtenir des cookies en JavaScript</title>
+</head>
+<body>
+    <script>
+    // Une fonction personnalisée pour définir les cookies
+    function setCookie(nom, value, dateExpiration) {
+        /*Encodez la valeur pour éviter les points-virgules, les virgules et les espaces.*/
+        var cookie = nom + "=" + encodeURIComponent(value);
+    
+        if(typeof dateExpiration === "number") {
+            /* Définit l'attribut max-age de façon à ce que le cookie expire après le nombre de jours spécifié */
+            cookie += "; max-age=" + (dateExpiration*24*60*60);
+    
+            document.cookie = cookie;
+        }
+    }
+    
+    // Une fonction personnalisée pour récupérer les cookies
+    function getCookie(nom) {
+        /* Divise la chaîne de cookies et récupère toutes les paires nom=valeur individuelles dans un tableau.*/
+        var cookieArr = document.cookie.split(";");
+    
+        // Boucle à travers les éléments du tableau
+        for(var i = 0; i < cookieArr.length; i++) {
+            var cookiePair = cookieArr[i].split("=");
+    
+            /* Supprime les espaces au début du nom du cookie et le compare avec la chaîne de caractères donnée */
+            if(nom == cookiePair[0].trim()) {
+                // Decode the cookie value and return
+                return decodeURIComponent(cookiePair[1]);
+            }
+        }
+    
+        // Retourner null si non trouvé
+        return null;
+    }
+    
+    // Une fonction personnalisée pour vérifier et récupérer les cookies
+    function checkCookie() {
+        // Récupérer le cookie en utilisant notre fonction personnalisée
+        var nom = getCookie("nom");
+    
+        if(nom != null) {
+            alert("Bienvenue à nouveau, " + nom+ " merci pour votre retour dans le site");
+        } else {
+            nom = prompt("Veuillez saisir votre prénom:");
+            if(nom != "" && nom != null) {
+                /* Créer un cookie en utilisant notre fonction personnalisée*/ 
+                setCookie("nom", nom, 2);
+            }
+        }
+    }
+    
+    // Vérifier le cookie au chargement de la page
+    window.onload = checkCookie;
+    </script>
+    <p><strong>Note:</strong> Maintenant, si vous appuyez sur le bouton "Voir cookie" ou si vous rafraîchissez la page, vous verrez un message de bienvenue, si vous avez saisi votre prénom dans la boîte de dialogue d'invite.
+Pour éffacer le cookie appuyez sur le bouton "Effacer cookie".
+</p>
+
+	<button onclick="checkCookie();">Voir cookie</button>
+	<button onclick='setCookie("nom", "", 0);'>Effacer cookie</button>
+</body>
+</html>

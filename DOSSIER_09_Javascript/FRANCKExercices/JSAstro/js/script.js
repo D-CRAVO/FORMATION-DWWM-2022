@@ -1,6 +1,3 @@
-
-
-
 // window.onload();
 
 function valNum(maChaine){
@@ -11,9 +8,8 @@ function valNum(maChaine){
     }
     return somme;
 }
-
-essai = "essai"
-valNum(essai);
+// essai = "essai"
+// valNum(essai);
 
 function calculerSigne(moisDeNaissance){
     switch(moisDeNaissance){
@@ -56,19 +52,96 @@ function calculerSigne(moisDeNaissance){
     }
     return result;
 }
+// console.log(calculerSigne("Novembre"));
 
-console.log(calculerSigne("Novembre"));
-
-function formOK(id){
-    document.querySelectorAll(input[type="text"]);
-    console.log(essaiInput);
+function recupererMois(mois){
+    let result;
+    switch(mois){
+        case "Janvier" :
+            result = 0; 
+            break;
+        case "Février" :
+            result = 1;
+            break;
+        case "Mars" :
+            result = 2;
+            break;
+        case "Avril" :
+            result = 3;
+            break;
+        case "Mai" :
+            result = 4;
+            break;
+        case "Juin" :
+            result = 5;
+            break;
+        case "Juillet" :
+            result = 6;
+            break;
+        case "Août" :
+            result = 7;
+            break;
+        case "Septembre" :
+            result = 8;
+            break;
+        case "Octobre" :
+            result = 9;
+            break;
+        case "Novembre" :
+            result = 10;
+            break;
+        case "Décembre" :
+            result = 11;
+            break;
+    }
+    return result;
 }
+
+function recupererDate(){
+    const date = new Date(
+        document.querySelector("#anneeDeNaissance").value
+        ,recupererMois(document.querySelector("#moisDeNaissance").value)
+        ,document.querySelector("#jourDeNaissance").value
+    );
+    //console.log(date);
+    return date;
+}
+recupererDate();
+
+function inputOK(id){
+    const result = (document.querySelector(`${id}`).value != "" && document.querySelector(`${id}`).value != "--") ? true : false;
+    return result;
+}
+// console.log(inputOK("#prenomUtilisateur"));
+
+function formOK(){
+    cond1 = inputOK("#nomUtilisateur");
+    cond2 = inputOK("#prenomUtilisateur");
+    if(cond1 && cond2){
+        result = true;
+    }else{
+        result = false;
+    }
+    return result;
+}
+console.log(formOK());
 
 function calculerPseudo(){
-    document.querySelector("input[type = submit]").removeAttribute("disabled");
-    return calculerSigne(document.querySelector("#moisDeNaissance").value)
+    document.querySelector("#pseudo").value =
+    calculerSigne(document.querySelector("#moisDeNaissance").value)
     + valNum(document.querySelector("#nomUtilisateur").value)
     + valNum(document.querySelector("#prenomUtilisateur").value);
+    document.querySelector("input[type=submit]").removeAttribute("disabled");
 }
+calculerPseudo();
 
-console.log(calculerPseudo());
+document.querySelector("input[type=submit]").addEventListener("click", function(){
+    const cookie = "user=" + document.querySelector("#pseudo").value
+            + "; nomUtilisateur=" + document.querySelector("#nomUtilisateur").value
+            + "; prenomUtilisateur=" + document.querySelector("#prenomUtilisateur").value
+            + "; date=" + recupererDate()
+            + `; SameSite=Lax`;
+    document.cookie = cookie;
+    console.log(document.cookie) ;
+    window.location.href = "../Acceuil.html";
+})

@@ -10,7 +10,7 @@
 </head>
 <body>
     <h1>Astro</h1>
-    <h2>Titre 2</h2>
+    <h2>Inscription</h2>
     <textarea name="texteLibre" id="" cols="30" rows="10"></textarea>
     <form action="#" method="get">
         <label for="nomUtilisateur">Nom de l'utilisateur</label>
@@ -21,6 +21,7 @@
         
         <label for="JourDeNaissance">Date de naisssance</label>
         <select name="jourDeNaissance" id="jourDeNaissance" required>
+            <option value="--">--</option>
             <option value="1">01</option>
             <option value="2">02</option>
             <option value="3">03</option>
@@ -54,6 +55,7 @@
             <option value="31">31</option>
         </select>
         <select name="moisDeNaissance" id="moisDeNaissance" required>
+            <option value="--">--</option>
             <option value="Janvier">Janvier</option>
             <option value="Fevrier">Février</option>
             <option value="Mars">Mars</option>
