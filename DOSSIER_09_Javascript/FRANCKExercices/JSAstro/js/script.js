@@ -1,5 +1,20 @@
 // window.onload();
 
+
+// Création du menu déroulant des années.
+
+
+for(i=2022; i>1899; i--){
+    let option = document.createElement("option");
+    option.setAttribute('value', i);
+    option.innerText = i;
+    document.querySelector("#anneeDeNaissance").appendChild(option);
+}
+
+
+// Renvoie la valeur numérique d'une chaine de caractères.
+
+
 function valNum(maChaine){
     maChaine = maChaine.toUpperCase();
     let somme = 0;
@@ -8,10 +23,15 @@ function valNum(maChaine){
     }
     return somme;
 }
-// essai = "essai"
-// valNum(essai);
+//console.log(valNum("essai"))
+
+
+
+// Renvoie le signe astrologique simplifié de l'utilisateur.
+
 
 function calculerSigne(moisDeNaissance){
+    let result;
     switch(moisDeNaissance){
         case "Janvier" :
             result = "Verseau";
@@ -103,10 +123,14 @@ function recupererDate(){
         ,recupererMois(document.querySelector("#moisDeNaissance").value)
         ,document.querySelector("#jourDeNaissance").value
     );
-    //console.log(date);
     return date;
 }
 recupererDate();
+
+
+
+// vérifie la validité du formulaire.
+
 
 function inputOK(id){
     const result = (document.querySelector(`${id}`).value != "" && document.querySelector(`${id}`).value != "--") ? true : false;
@@ -116,15 +140,27 @@ function inputOK(id){
 
 function formOK(){
     cond1 = inputOK("#nomUtilisateur");
-    cond2 = inputOK("#prenomUtilisateur");
-    if(cond1 && cond2){
-        result = true;
-    }else{
-        result = false;
-    }
-    return result;
+    cond2 = inputOK("#prenomUtilisateur");  console.log(`cond2 ${cond2}`);
+    cond3 = inputOK("#jourDeNaissance");    console.log(`cond3 ${cond3}`);
+    cond4 = inputOK("#moisDeNaissance");
+    cond5 = inputOK("#anneeDeNaissance");
+    return (cond1 && cond2 && cond3 && cond4 && cond5) ? true : false;
 }
 console.log(formOK());
+
+document.querySelector(".form").addEventListener("change", function(){
+    let control = formOK();
+    if (control === true) {
+        calculerPseudo();
+        console.log("test1");
+    };
+    console.log("test2");
+});
+
+
+
+// Calcule le pseudo de l'utilisateur
+
 
 function calculerPseudo(){
     document.querySelector("#pseudo").value =
@@ -133,15 +169,55 @@ function calculerPseudo(){
     + valNum(document.querySelector("#prenomUtilisateur").value);
     document.querySelector("input[type=submit]").removeAttribute("disabled");
 }
-calculerPseudo();
+// calculerPseudo();
 
-document.querySelector("input[type=submit]").addEventListener("click", function(){
+
+
+// Valide le formulaire, crée un cookie et renvoie ver la page d'acceuil.
+
+
+document.querySelector("input[type=submit]").addEventListener("click", valider);
+
+function valider(){
     const cookie = "user=" + document.querySelector("#pseudo").value
             + "; nomUtilisateur=" + document.querySelector("#nomUtilisateur").value
             + "; prenomUtilisateur=" + document.querySelector("#prenomUtilisateur").value
-            + "; date=" + recupererDate()
-            + `; SameSite=Lax`;
+            + "; date=" + recupererDate() 
+            + "; SameSite=Lax";
     document.cookie = cookie;
     console.log(document.cookie) ;
     window.location.href = "../Acceuil.html";
-})
+}
+
+// document.querySelector("input[type=submit]").addEventListener("click", function(){
+//     const cookie = "user=" + document.querySelector("#pseudo").value
+//             + "; nomUtilisateur=" + document.querySelector("#nomUtilisateur").value
+//             + "; prenomUtilisateur=" + document.querySelector("#prenomUtilisateur").value
+//             + "; date=" + recupererDate() 
+//             + "; SameSite=Lax";
+//     document.cookie = cookie;
+//     console.log(document.cookie) ;
+//     window.location.href = "../Acceuil.html";
+// })
+
+
+// Renvoie le nombre de jours restants avant l'anniversaire de l'utilisateur
+
+function nbJoursAnniv(date){
+    //const dateAnniv = recupererDate();
+    
+    const dateCourante = new Date();
+    console.log(dateCourante);
+    let nbMois = dateCourante.getMonth() - date.getMonth();
+    let nbJours = Math.abs(dateCourante.getDate() - date.getDate());
+    let nbTotalJours = nbMois * 30 + nbJours;
+    console.log(nbMois, nbJours, nbTotalJours);
+}
+const dateAnniv = new Date(1975, 03, 26)
+console.log(dateAnniv);
+nbJoursAnniv(dateAnniv);
+
+
+// Permet de récupérer la valeur d'une variable stockée dans un cookie.
+
+
