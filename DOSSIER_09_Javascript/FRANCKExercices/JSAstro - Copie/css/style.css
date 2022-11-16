@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6em;
+}
+
+textarea{
+    width: 34.5rem;
+}
+
+label{
+    display: inline-block;
+    width: 15rem;
+}
+
+input[type=text]{
+    width: 19.1rem;
+}
+
