@@ -4,7 +4,7 @@
 // Création du menu déroulant des années.
 
 
-for(i=2022; i>1899; i--){
+for(let i=2022; i>1899; i--){
     let option = document.createElement("option");
     option.setAttribute('value', i);
     option.innerText = i;
@@ -125,7 +125,7 @@ function recupererDate(){
     );
     return date;
 }
-recupererDate();
+const date = recupererDate();
 
 
 
@@ -148,7 +148,16 @@ function formOK(){
 }
 console.log(formOK());
 
-document.querySelector(".form").addEventListener("change", function(){
+// document.querySelector(".form").addEventListener("change", function(){
+//     let control = formOK();
+//     if (control === true) {
+//         calculerPseudo();
+//         console.log("test1");
+//     };
+//     console.log("test2");
+// });
+
+document.querySelector("#pseudo").addEventListener("click", function(){
     let control = formOK();
     if (control === true) {
         calculerPseudo();
@@ -178,11 +187,13 @@ function calculerPseudo(){
 
 document.querySelector("input[type=submit]").addEventListener("click", valider);
 
+// encodeURIComponent
 function valider(){
     const cookie = "user=" + document.querySelector("#pseudo").value
             + "; nomUtilisateur=" + document.querySelector("#nomUtilisateur").value
             + "; prenomUtilisateur=" + document.querySelector("#prenomUtilisateur").value
             + "; date=" + recupererDate() 
+            + "; max-age=86400"
             + "; SameSite=Lax";
     document.cookie = cookie;
     console.log(document.cookie) ;
@@ -220,4 +231,13 @@ nbJoursAnniv(dateAnniv);
 
 // Permet de récupérer la valeur d'une variable stockée dans un cookie.
 
+function getCookie(){
+    const cookieTab = document.cookie.split(";");
+    for(let i=0; i<cookieTab.length; i++){
+        const cookieVal = cookieTab[i].split("=");
+        console.log(cookieVal);
+    }
+}
+getCookie();
 
+console.log(document.cookie);
