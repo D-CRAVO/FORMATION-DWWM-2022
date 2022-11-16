@@ -48,16 +48,41 @@ document.querySelector("#btnRgb").addEventListener("click", function(){
 
 console.log(document.querySelectorAll("input[type=text]"))
 
-document.querySelectorAll("input[type=text]").addEventListener("blur", function(){
-    rouge = document.querySelector("#inRouge").value;
-    vert = document.querySelector("#inVert").value;
-    bleu = document.querySelector("#inBleu").value;
-    colorierFondRgb(rouge, vert, bleu);
-});
+var elements = document.querySelectorAll("input[type=text]");
+elements.forEach((item) => {item.addEventListener("blur", function(){
+    console.log(item.value)
+    if(verifHexa(item.value) == true){
+        colorierFond();
+    }else{
+        item.value = "";
+        item.focus();
+    }
+})});
+
+
+function verifHexa(_chaine){
+    var regex = /^[a-fA-F0-9]{2,2}$/;
+    if(regex.test(_chaine)){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+
+// addEventListener("blur", function(){
+//     const inputs = document.querySelectorAll("input[type=text]");
+    
+    
+//     rouge = document.querySelector("#inRouge").value;
+//     vert = document.querySelector("#inVert").value;
+//     bleu = document.querySelector("#inBleu").value;
+//     colorierFondRgb(rouge, vert, bleu);
+// });
 
 function colorierFond(){
     let chaine = '#'+ document.getElementById("inRouge").value + document.getElementById("inVert").value + document.getElementById("inBleu").value;
-    console.log(chaine);
+ //   console.log(chaine);
     document.getElementById("body").setAttribute("style", "background-color:" + chaine + ";");
 }
 
