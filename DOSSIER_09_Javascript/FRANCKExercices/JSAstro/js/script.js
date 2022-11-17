@@ -1,5 +1,47 @@
 // window.onload();
 
+
+
+/**
+ * Initialisation du tableau d'objets signes.
+ */
+const signes = {
+    Janvier : "Verseau"
+    ,Février : "Poisson"
+    ,Mars : "Belier"
+    ,Avril : "Taureau"
+    ,Mai : "Gémeaux"
+    ,Juin : "Cancer"
+    ,Juillet : "Lion"
+    ,Août : "Vierge"
+    ,Septembre : "Balance"
+    ,Octobre : "Scorpion"
+    ,Novembre : "Sagittaire"
+    ,Décembre : "Capricorne"
+}
+
+
+
+/**
+ * Initialisation du tableau mois.
+ */
+const mois = [
+    "Janvier"
+    ,"Février"
+    ,"Mars"
+    ,"Avril"
+    ,"Mai"
+    ,"Juin"
+    ,"Juillet"
+    ,"Août"
+    ,"Septembre"
+    ,"Octobre"
+    ,"Novembre"
+    ,"Décembre"
+]
+
+
+
 /**
  * Création du menu déroulant des jours.
  */
@@ -13,10 +55,22 @@ for(let i=1; i<=31; i++){
 
 
 /**
+ * Création du menu déroulant des mois.
+ */
+for(let i of mois){
+    let option = document.createElement("option");
+    option.setAttribute("value", i);
+    option.innerText = i;
+    document.querySelector("#moisDeNaissance").appendChild(option);
+}
+
+
+
+/**
  * Création du menu déroulant des années.
  */
 currentYear = new Date().getFullYear();
-for(let i=currentYear; i>currentYear-80; i--){
+for(let i=currentYear; i>currentYear-100; i--){
     let option = document.createElement("option");
     option.setAttribute('value', i);
     option.innerText = i;
@@ -45,121 +99,24 @@ function valNum(maChaine){
 /**
  * Renvoie le signe astrologique simplifié de l'utilisateur.
  * 
- * @param {string} moisDeNaissance 
  * @returns 
  */
-function calculerSigne(moisDeNaissance){
-    let result;
-    switch(moisDeNaissance){
-        case "Janvier" :
-            result = "Verseau";
-            break;
-        case "Fevrier" :
-            result = "Poisson";
-            break;
-        case "Mars" :
-            result = "Belier";
-            break;
-        case "Avril" :
-            result = "Taureau";
-            break;
-        case "Mai" :
-            result = "Gémeaux";
-            break;
-        case "Juin" :
-            result = "Cancer";
-            break;
-        case "Juillet" :
-            result = "Lion";
-            break;
-        case "Aout" :
-            result = "Vierge";
-            break;
-        case "Septembre" :
-            result = "Balance";
-            break;
-        case "Octobre" :
-            result = "Scorpion";
-            break;
-        case "Novembre" :
-            result = "Sagittaire";
-            break;
-        case "Decembre" :
-            result = "Capricorne";
-            break;
-    }
-    return result;
+function calculerSigne(){
+    return signes[document.querySelector("#moisDeNaissance").value]
 }
 
-signes=[
-    "Verseau"
-    ,"Poisson"
-    ,"Belier"
-    ,"Taureau"
-    ,"Gémeaux"
-    ,"Cancer"
-    ,"Lion"
-    ,"Vierge"
-    ,"Balance"
-    ,"Scorpion"
-    ,"Sagittaire"
-    ,"Capricorne"
-]
+
 
 /**
  * Renvoie la valeur numérique au format Date du mois 
  * qui va être utilisée dans la fonction recupererDate().
  * 
- * @param {string} mois 
  * @returns 
  */
-function recupererMois(mois){
-    let result;
-    switch(mois){
-        case "Janvier" :
-            result = 0; 
-            break;
-        case "Février" :
-            result = 1;
-            break;
-        case "Mars" :
-            result = 2;
-            break;
-        case "Avril" :
-            result = 3;
-            break;
-        case "Mai" :
-            result = 4;
-            break;
-        case "Juin" :
-            result = 5;
-            break;
-        case "Juillet" :
-            result = 6;
-            break;
-        case "Août" :
-            result = 7;
-            break;
-        case "Septembre" :
-            result = 8;
-            break;
-        case "Octobre" :
-            result = 9;
-            break;
-        case "Novembre" :
-            result = 10;
-            break;
-        case "Décembre" :
-            result = 11;
-            break;
-    }
-    return result;
+function recupererMois(){
+    return mois.indexOf(document.querySelector("#moisDeNaissance").value);
 }
-// document.querySelector("#btnValider]").addEventListener("click", function(){
-//     console.log(recupererMois("Décembre"));
-//     console.log((document.querySelector("#moisDeNaissance").value));
-//     console.log(recupererMois(document.querySelector("#moisDeNaissance").value));
-// });
+
 
 
 /**
@@ -172,7 +129,7 @@ function recupererMois(mois){
 function recupererDate(){
     const date = new Date(
         document.querySelector("#anneeDeNaissance").value
-        ,recupererMois(document.querySelector("#moisDeNaissance").value)
+        ,recupererMois()
         ,document.querySelector("#jourDeNaissance").value
     );
     return date;
@@ -320,8 +277,8 @@ function getCookie(nom){
         }
     }
 }
-console.log(getCookie("user"));
-console.log(getCookie("nomUtilisateur"));
-console.log(getCookie("prenomUtilisateur"));
+// console.log(getCookie("user"));
+// console.log(getCookie("nomUtilisateur"));
+// console.log(getCookie("prenomUtilisateur"));
 
-console.log(document.cookie);
+// console.log(document.cookie);
