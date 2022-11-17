@@ -4,6 +4,7 @@
 
 /**
  * Initialisation du tableau d'objets signes.
+ * objet litéral
  */
 const signes = {
     Janvier : "Verseau"
@@ -23,7 +24,8 @@ const signes = {
 
 
 /**
- * Initialisation du tableau mois.
+ * Initialisation du tableau de valeurs mois.
+ * tableau indicé
  */
 const mois = [
     "Janvier"
@@ -108,18 +110,6 @@ function calculerSigne(){
 
 
 /**
- * Renvoie la valeur numérique au format Date du mois 
- * qui va être utilisée dans la fonction recupererDate().
- * 
- * @returns 
- */
-function recupererMois(){
-    return mois.indexOf(document.querySelector("#moisDeNaissance").value);
-}
-
-
-
-/**
  * Récupère les informations des inputs de la sélection de la date de naissance
  * et revoi une date au format Date
  * pour traitement au sein de la fonction nbJoursAnniv(date).
@@ -127,12 +117,15 @@ function recupererMois(){
  * @returns 
  */
 function recupererDate(){
-    const date = new Date(
-        document.querySelector("#anneeDeNaissance").value
-        ,recupererMois()
-        ,document.querySelector("#jourDeNaissance").value
-    );
-    return date;
+    let monMois = mois.indexOf(document.querySelector("#moisDeNaissance").value)+1 
+    monMois= (monMois <10) ?  "0" + monMois : monMois;
+    let monJour = document.querySelector("#jourDeNaissance").value;
+    monJour = (monJour <10) ? "0" + monJour : monJour;
+    let madate = MonJour + "/" 
+                + monMois+ "/"
+                + document.querySelector("#anneeDeNaissance").value;
+    console.log(madate);
+    return madate;
 }
 
 
@@ -162,57 +155,44 @@ function formOK(){
     cond3 = inputOK("#jourDeNaissance");    //console.log(`cond3 ${cond3}`);
     cond4 = inputOK("#moisDeNaissance");
     cond5 = inputOK("#anneeDeNaissance");
-    return (cond1 && cond2 && cond3 && cond4 && cond5) ? true : false;
+  
+    let verifBool = (cond1 && cond2 && cond3 && cond4 && cond5) ? true :  false;
+    if (verifBool == false){
+        console.log("Veuillez remplir tous les champs");
+    }
+    return verifBool;
 }
 
 
 
-// function formOK(){
-//     var elements = document.querySelectorAll("input[type=text"]);
-//     elements.forEach((item) => {item.addEventListener()}
-// }
-
-
-
-/** 
- * Ecoute le champs Pseudo du formulaire 
- * et si on se met dessus, déclenche la fonction formOK 
- * et si le résultat est true 
- * lance la création du pseudo via la fonction calculerPseudo
-*/
-document.querySelector("#pseudo").addEventListener("focus", function(){
-    let control = formOK();
-    if (control === true) {
-        calculerPseudo();
-    };
-});
-
-
+// function formOK2(){
+//     let elementsInput = document.querySelectorAll("input[type=text]");
+//     let condInput = elementsInput.forEach((itemInput) => {itemInput.addEventListener("focus", function(){
+//         (document.querySelector(`${id}`).value != "") ? true : false;
+//     })})
+//     let elementsSelect = document.querySelectorAll("select");
+//     let condSelect = elementsSelect.forEach((itemSelect) => {itemSelect.addEventListener("focus", function(){
+//         (document.querySelector(`${id}`).value != "--") ? true : false;
+//     })})
+//     (condInput && condSelect) ? true : false;
+// };
+// console.log(formOK2());
 
 /**
  * Calcule le pseudo de l'utilisateur
  * et réactive le bouton Valider
  */
 function calculerPseudo(){
-    document.querySelector("#pseudo").value =
-    calculerSigne(document.querySelector("#moisDeNaissance").value)
-    + valNum(document.querySelector("#nomUtilisateur").value)
-    + valNum(document.querySelector("#prenomUtilisateur").value);
-    document.querySelector("#btnValider").removeAttribute("disabled");
+
+    if (formOK()){
+        document.querySelector("#pseudo").value =
+        calculerSigne(document.querySelector("#moisDeNaissance").value)
+        + valNum(document.querySelector("#nomUtilisateur").value)
+        + valNum(document.querySelector("#prenomUtilisateur").value);
+        document.querySelector("#btnValider").disabled = false;
+    }
+    
 }
-
-
-
-/**
- * Valide le formulaire, crée un cookie et renvoie ver la page d'acceuil.
- */
-document.querySelector("#btnValider").addEventListener("click", function(){
-    setCookie("user", document.querySelector("#pseudo").value)
-    setCookie("nomUtilisateur", document.querySelector("#nomUtilisateur").value);
-    setCookie("prenomUtilisateur", document.querySelector("#prenomUtilisateur").value);
-    setCookie("birthDay", recupererDate());
-    //window.location.href = "../Acceuil.html";
-});
 
 
 
@@ -223,12 +203,16 @@ document.querySelector("#btnValider").addEventListener("click", function(){
  * @param {string} valeur 
  */
 function setCookie(nom, valeur){
+    let maDate = new Date();
+    let dateExpire = new Date(maDate.getFullYear(), maDate.getMonth(), maDate.getDate(), maDate.getHours()+2, maDate.getMinutes(), maDate.getSeconds())
+    console.log(maDate.getHours()+1)
+    console.log(dateExpire.toGMTString());
     valeur = encodeURIComponent(valeur)
     const cookie = `${nom}=${valeur}`
-    + "; max-age=86400"
-    + "; SameSite=Lax";
+    + "; expires=" + dateExpire.toGMTString()
+    + "; SameSite=Strict"; 
 document.cookie = cookie;
-console.log(document.cookie) ;
+//console.log(document.cookie) ;
 }
 
 
@@ -238,47 +222,57 @@ console.log(document.cookie) ;
  * 
  * @param {Date} date 
  */
-function nbJoursAnniv(date){
-    const dateCourante = new Date();
-    //console.log(dateCourante);
-    let nbMois = dateCourante.getMonth() - date.getMonth();
-    let nbJours = Math.abs(dateCourante.getDate() - date.getDate());
-    let nbTotalJours = nbMois * 30 + nbJours;
-    //console.log(nbMois, nbJours, nbTotalJours);
-    return nbTotalJours;
-}
+// function nbJoursAnniv(date){
+//     const dateCourante = new Date();
+//     //console.log(dateCourante);
+//     let nbMois = dateCourante.getMonth() - date.getMonth();
+//     let nbJours = Math.abs(dateCourante.getDate() - date.getDate());
+//     let nbTotalJours = nbMois * 30 + nbJours;
+//     //console.log(nbMois, nbJours, nbTotalJours);
+//     return nbTotalJours;
+// }
+
+
+
+
+
+
+
+/** 
+ * Ecoute le champs Pseudo du formulaire 
+ * et si on se met dessus, déclenche la fonction formOK 
+ * et si le résultat est true 
+ * lance la création du pseudo via la fonction calculerPseudo
+*/
+// document.querySelector("#pseudo").addEventListener("focus", function(){
+//     let control = formOK();
+//     if (control === true) {
+//         calculerPseudo();
+//     };
+// });
+
+var elements = document.querySelectorAll(".form");
+elements.forEach((item) => {item.addEventListener("blur", function(){
+    calculerPseudo();})});
+
+ var elements2 = document.querySelectorAll(".form2");
+ elements2.forEach((item) => item.addEventListener("change", calculerPseudo) );
+
 
 
 /**
- * Lance le calcul du nombre de jours avant l'anniversaire de l'utilisateur.
+ * Ecoute le bouton Valider
+ * récupère la date de naissance 
+ * valide le formulaire
+ * crée un cookie 
+ * renvoie ver la page d'acceuil.
  */
-document.querySelector("#btnValider").addEventListener("click", function(){
-    const dateAnniv = recupererDate();
-    nbJoursAnniv(dateAnniv);
-    //console.log(dateAnniv);
+ document.querySelector("#btnValider").addEventListener("click", function(){
+    //const dateAnniv = recupererDate();
+    //nbJoursAnniv(dateAnniv);
+    setCookie("user", document.querySelector("#pseudo").value)
+    setCookie("nomUtilisateur", document.querySelector("#nomUtilisateur").value);
+    setCookie("prenomUtilisateur", document.querySelector("#prenomUtilisateur").value);
+    setCookie("birthDay", recupererDate());
+    //window.location.href = "../Acceuil.html";
 });
-
-
-
-/**
- * Permet de récupérer la valeur d'une variable stockée dans un cookie.
- * 
- * @param {string} nom 
- * @returns 
- */
-function getCookie(nom){
-    const cookieTab = document.cookie.split(";");
-    for(let i=0; i<cookieTab.length; i++){
-        const cookieVal = cookieTab[i].split("=");
-        if(cookieVal[0] == nom){
-            //console.log("test3")
-            //console.log(cookieVal);
-            return decodeURIComponent(cookieVal[1]);
-        }
-    }
-}
-// console.log(getCookie("user"));
-// console.log(getCookie("nomUtilisateur"));
-// console.log(getCookie("prenomUtilisateur"));
-
-// console.log(document.cookie);

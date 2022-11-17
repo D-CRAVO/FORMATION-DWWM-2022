@@ -12,7 +12,7 @@
     <h1>Astro</h1>
     <h2>Inscription</h2>
     <textarea name="texteLibre" id="" cols="30" rows="10"></textarea>
-    <form action="#" method="get">
+    <form action="./Acceuil.html" method="get">
         <label for="nomUtilisateur">Nom de l'utilisateur</label>
         <input type="text" class="form" name="nomUtilisateur" id="nomUtilisateur" required>
         
@@ -20,16 +20,16 @@
         <input type="text" class="form" name="prenomUtilisateur" id="prenomUtilisateur" required>
         
         <label for="JourDeNaissance">Date de naisssance</label>
-        <select class="form" name="jourDeNaissance" id="jourDeNaissance" required>
+        <select class="form2" name="jourDeNaissance" id="jourDeNaissance" required>
             <option value="--">--</option>
         </select>
 
-        <select class="form" name="moisDeNaissance" id="moisDeNaissance" required>
+        <select class="form2" name="moisDeNaissance" id="moisDeNaissance" required>
             <option value="--">--</option>
             
         </select>
 
-        <select class="form" name="anneeDeNaissance" id="anneeDeNaissance" required>
+        <select class="form2" name="anneeDeNaissance" id="anneeDeNaissance" required>
             <option value="--">--</option>
         </select>
         
@@ -37,7 +37,7 @@
         <input type="text" name="pseudo" id="pseudo" readonly="readonly">
 
         <div>
-            <input type="button" id="btnValider" value="Valider" disabled>
+            <input type="submit" id="btnValider" value="Valider" disabled>
             <input type="reset" value="Effacer">
         </div>
     </form>
