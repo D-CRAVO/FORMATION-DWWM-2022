@@ -111,21 +111,44 @@ function calculerSigne(){
 
 /**
  * Récupère les informations des inputs de la sélection de la date de naissance
- * et revoi une date au format Date
- * pour traitement au sein de la fonction nbJoursAnniv(date).
+ * et renvoi une date au format GMT
+ * pour traitement au sein du cookie
  * 
  * @returns 
  */
 function recupererDate(){
-    let monMois = mois.indexOf(document.querySelector("#moisDeNaissance").value)+1 
-    monMois= (monMois <10) ?  "0" + monMois : monMois;
-    let monJour = document.querySelector("#jourDeNaissance").value;
-    monJour = (monJour <10) ? "0" + monJour : monJour;
-    let madate = MonJour + "/" 
-                + monMois+ "/"
-                + document.querySelector("#anneeDeNaissance").value;
-    console.log(madate);
-    return madate;
+    return (new Date (
+        document.querySelector("#anneeDeNaissance").value
+        , mois.indexOf(document.querySelector("#moisDeNaissance").value)
+        , document.querySelector("#jourDeNaissance").value
+    ));
+}
+
+
+
+/**
+ * Récupère les informations des inputs de la sélection de la date de naissance
+ * et renvoi une date au format Local
+ * pour traitement au sein du cookie
+ * 
+ * @returns 
+ */
+function recupererDateLocalString(){
+    // let monMois = mois.indexOf(document.querySelector("#moisDeNaissance").value)+1 
+    // monMois= (monMois <10) ?  "0" + monMois : monMois;
+    // let monJour = document.querySelector("#jourDeNaissance").value;
+    // monJour = (monJour <10) ? "0" + monJour : monJour;
+    // let madate = monJour + "/" 
+    //             + monMois + "/"
+    //             + document.querySelector("#anneeDeNaissance").value;
+    // console.log(madate);
+    // return madate;
+    
+    return (new Date (
+        document.querySelector("#anneeDeNaissance").value
+        , mois.indexOf(document.querySelector("#moisDeNaissance").value)
+        , document.querySelector("#jourDeNaissance").value
+    )).toLocaleDateString();
 }
 
 
@@ -178,6 +201,8 @@ function formOK(){
 // };
 // console.log(formOK2());
 
+
+
 /**
  * Calcule le pseudo de l'utilisateur
  * et réactive le bouton Valider
@@ -205,36 +230,15 @@ function calculerPseudo(){
 function setCookie(nom, valeur){
     let maDate = new Date();
     let dateExpire = new Date(maDate.getFullYear(), maDate.getMonth(), maDate.getDate(), maDate.getHours()+2, maDate.getMinutes(), maDate.getSeconds())
-    console.log(maDate.getHours()+1)
-    console.log(dateExpire.toGMTString());
+    // console.log(maDate.getHours()+1)
+    // console.log(dateExpire.toGMTString());
     valeur = encodeURIComponent(valeur)
     const cookie = `${nom}=${valeur}`
     + "; expires=" + dateExpire.toGMTString()
     + "; SameSite=Strict"; 
-document.cookie = cookie;
-//console.log(document.cookie) ;
+    document.cookie = cookie;
+    //console.log(document.cookie) ;
 }
-
-
-
-/**
- * Renvoie le nombre de jours restants avant l'anniversaire de l'utilisateur.
- * 
- * @param {Date} date 
- */
-// function nbJoursAnniv(date){
-//     const dateCourante = new Date();
-//     //console.log(dateCourante);
-//     let nbMois = dateCourante.getMonth() - date.getMonth();
-//     let nbJours = Math.abs(dateCourante.getDate() - date.getDate());
-//     let nbTotalJours = nbMois * 30 + nbJours;
-//     //console.log(nbMois, nbJours, nbTotalJours);
-//     return nbTotalJours;
-// }
-
-
-
-
 
 
 
@@ -244,35 +248,24 @@ document.cookie = cookie;
  * et si le résultat est true 
  * lance la création du pseudo via la fonction calculerPseudo
 */
-// document.querySelector("#pseudo").addEventListener("focus", function(){
-//     let control = formOK();
-//     if (control === true) {
-//         calculerPseudo();
-//     };
-// });
-
 var elements = document.querySelectorAll(".form");
-elements.forEach((item) => {item.addEventListener("blur", function(){
-    calculerPseudo();})});
-
- var elements2 = document.querySelectorAll(".form2");
- elements2.forEach((item) => item.addEventListener("change", calculerPseudo) );
+elements.forEach((item) => {item.addEventListener("blur", function(){calculerPseudo();})});
+var elements2 = document.querySelectorAll(".form2");
+elements2.forEach((item) => item.addEventListener("change", calculerPseudo));
 
 
 
 /**
  * Ecoute le bouton Valider
- * récupère la date de naissance 
  * valide le formulaire
  * crée un cookie 
- * renvoie ver la page d'acceuil.
+ * renvoie vers la page d'acceuil.
  */
  document.querySelector("#btnValider").addEventListener("click", function(){
-    //const dateAnniv = recupererDate();
-    //nbJoursAnniv(dateAnniv);
     setCookie("user", document.querySelector("#pseudo").value)
     setCookie("nomUtilisateur", document.querySelector("#nomUtilisateur").value);
     setCookie("prenomUtilisateur", document.querySelector("#prenomUtilisateur").value);
     setCookie("birthDay", recupererDate());
+    setCookie("birthDayLocale", recupererDateLocalString());
     //window.location.href = "../Acceuil.html";
 });
