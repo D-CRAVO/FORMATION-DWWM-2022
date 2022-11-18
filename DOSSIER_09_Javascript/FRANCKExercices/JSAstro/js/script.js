@@ -9,7 +9,7 @@
 const signes = {
     Janvier : "Verseau"
     ,Février : "Poisson"
-    ,Mars : "Belier"
+    ,Mars : "Bélier"
     ,Avril : "Taureau"
     ,Mai : "Gémeaux"
     ,Juin : "Cancer"
@@ -188,17 +188,19 @@ function formOK(){
 
 
 
-// function formOK2(){
-//     let elementsInput = document.querySelectorAll("input[type=text]");
-//     let condInput = elementsInput.forEach((itemInput) => {itemInput.addEventListener("focus", function(){
-//         (document.querySelector(`${id}`).value != "") ? true : false;
-//     })})
-//     let elementsSelect = document.querySelectorAll("select");
-//     let condSelect = elementsSelect.forEach((itemSelect) => {itemSelect.addEventListener("focus", function(){
-//         (document.querySelector(`${id}`).value != "--") ? true : false;
-//     })})
-//     (condInput && condSelect) ? true : false;
-// };
+function formOK2(){
+    let elementsInput = document.querySelectorAll(".form");
+    let condInput = elementsInput.forEach((item) => {item.addEventListener("focus", function(){
+        console.log(item)
+        console.log(document.querySelector(item));
+        (document.querySelector(item).value != "") ? true : false;
+    })})
+    let elementsSelect = document.querySelectorAll(".form2");
+    let condSelect = elementsSelect.forEach((itemSelect) => {itemSelect.addEventListener("focus", function(){
+        (document.querySelector(`#itemSelect`).value != "--") ? true : false;
+    })})
+    return (condInput && condSelect) ? true : false;
+};
 // console.log(formOK2());
 
 
@@ -267,5 +269,6 @@ elements2.forEach((item) => item.addEventListener("change", calculerPseudo));
     setCookie("prenomUtilisateur", document.querySelector("#prenomUtilisateur").value);
     setCookie("birthDay", recupererDate());
     setCookie("birthDayLocale", recupererDateLocalString());
+    setCookie("signe", calculerSigne())
     //window.location.href = "../Acceuil.html";
 });

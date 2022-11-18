@@ -1,3 +1,23 @@
+
+/**
+ * Initialisation de l'objet litéral signes.
+ */
+const signes = {
+    Verseau : "../img/Verseau.jpg"
+    , Poisson : "../img/Poissons.jpg"
+    , Bélier : "../img/Bélier.jpg"
+    , Taureau : "../img/Taureau.jpg"
+    , Gémeaux : "../img/Gémeaux.jpg"
+    , Cancer : "../img/Cancer.jpg"
+    , Lion : "../img/Lion.jpg"
+    , Vierge : "../img/Vierge.jpg"
+    , Balance : "../img/Balance.jpg"
+    , Scorpion : "../img/Scorpion.jpg"
+    , Sagittaire : "../img/Sagittaire.jpg"
+    , Capricorne : "../img/Capricorne.jpg"
+}
+
+
 /**
  * Permet de récupérer la valeur d'une variable stockée dans un cookie.
  * 
@@ -42,6 +62,10 @@
 }
 
 
+function background(signe){
+    document.querySelector(".bodyAcceuil").setAttribute("style", `background-image: url(${signes[signe]}); background-repeat :no-repeat; background-size: cover`);
+}
+background(getCookie("signe"))
 
 let nomUtilisateur = document.querySelector("#nomUtilisateur");
 nomUtilisateur.innerText = getCookie('nomUtilisateur');
@@ -54,6 +78,9 @@ birthDate.innerText = getCookie('birthDay');
 
 let birthDateLocaleString = document.querySelector("#birthDateLocaleString");
 birthDateLocaleString.innerText = getCookie("birthDayLocale");
+
+let signe = document.querySelector("#signe");
+signe.innerText= getCookie("signe");
 
 let pseudo = document.querySelector("#pseudo");
 pseudo.innerText = getCookie('user');
