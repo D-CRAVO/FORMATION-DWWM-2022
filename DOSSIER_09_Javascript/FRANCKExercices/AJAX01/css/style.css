@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6em;
+}
+
+table{
+    border: solid 2px #000;
+    padding: 0;
+}
+
+#newRow{
+    background-color: #DDD;
+}
+
+th{
+    border-right: solid 1.5px #3B3B9C;
+}
+
+th, td{
+    padding: 0.5rem 2rem;
+}
+
+tr:nth-child(2n){
+    background-color: #EEE;
+}
+
+td{
+    border-top: solid 1px #A3A3A3;
+}

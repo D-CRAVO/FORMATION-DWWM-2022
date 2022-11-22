@@ -1,15 +1,17 @@
 /**
- * Initialisation à vide du tableau
+ * Création d'une constante Tab
  */
-let arrayCardgame = [];
+const tab = document.querySelector("#table");
 
 
-var tab = document.querySelector("#tableau");
-
+/**
+ * Création du tableau contenant les données exploitables 
+ * du fichier json
+ * 
+ * @param {array} data 
+ */
 function creerBody(data){
-    // var tab = document.querySelector("#tableau");
     let tBody = tab.createTBody();
-    console.log(data.length);
     for (let i=0; i<data.length; i++){
         let newRow = tBody.insertRow(i);
         for (const key in data[i]) {
@@ -19,66 +21,77 @@ function creerBody(data){
     }
 }
 
+
+/**
+ * Création des en-têtes du tableau avec les index
+ * du fichier json
+ * 
+ * @param {Array} data 
+ */
 function creerTHead(data){
-    //var tab = document.querySelector("#tableau");
     let tHead = tab.createTHead();
     let newRow = tHead.insertRow();
+    newRow.setAttribute("id", "newRow");
     for (const key in data[0]){
-        // let newCell = newRow.insertCell();
-        let newCell = newRow.createElement(`th`);
-        newCell.textContent = key
+        let newCell = document.createElement("th");
+        newCell.textContent = key;
+        document.querySelector("#newRow").appendChild(newCell);
     }
 }
 
 /**
+ * 
+ * @param {array} data 
+ * @returns 
+ */
+function maxAttack(data){
+    let valueMax = 0;
+    let keyMax = 0;
+    for(let i=0; i<data.length; i++){
+        if(data[i].attack > valueMax){
+            valueMax = data[i].attack;
+            keyMax = i;
+        }
+    }
+    console.log(data[keyMax]);
+    return keyMax;
+}
+
+
+/**
+ * 
+ * @param {array} data 
+ * @returns 
+ */
+function maxArmor(data){
+    let valueMax = 0;
+    let keyMax = 0;
+    for(let i=0; i<data.length; i++){
+        if(data[i].armor > valueMax){
+            valueMax = data[i].armor;
+            keyMax = i;
+        }
+    }
+    console.log(data[keyMax]);
+    return keyMax;
+}
+
+
+
+/**
  * Récupération du fichier json
  */
-var tabData = [];
+ let maxAttackData
 fetch("https://arfp.github.io/tp/web/frontend/cardgame/cardgame.json")
         .then(response => { 
             return response.json();
         })
         .then(jsondata => {
+            jasonData = jsondata;
             creerBody(jsondata);
             creerTHead(jsondata);
+            maxAttackData = maxAttack(jsondata);
+            maxArmor(jsondata);
+            // console.log(jsondata)
         });
-        // .then(jsondata => {
-        //     for (elements of jsondata){
-        //         arrayCardgame.push(elements);
-        //     }
-            // for (let i=0; i<jsondata.length; i++){
-            //     arrayCardgame.push(jsondata[i])
-            // }
-
-        //});
-
-        //console.log(arrayCardgame);
-
-
-console.log("test0")
-
-// iterator = arrayCardgame.values();
-// console.log(iterator)
-// for (const value of iterator){
-//     console.log("test1")
-//     console.log(value);
-// }
-
-// iterator1 = arrayCardgame.entries();
-// console.log(iterator1.next().value)
-
-
-console.log(arrayCardgame[1])
-
-// for (let i=0; i<arrayCardgame.length; i++){
-//     console.log(arrayCardgame[i]);
-//     console.log("test2")
-//     for (items of arrayCardgame[i]){
-//         console.log(items);
-//         console.log("test3");
-//     }
-// }
-
-console.log(arrayCardgame);
-
-
+        
