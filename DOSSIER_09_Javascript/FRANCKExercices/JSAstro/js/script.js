@@ -188,19 +188,19 @@ function formOK(){
 
 
 
-function formOK2(){
-    let elementsInput = document.querySelectorAll(".form");
-    let condInput = elementsInput.forEach((item) => {item.addEventListener("focus", function(){
-        console.log(item)
-        console.log(document.querySelector(item));
-        (document.querySelector(item).value != "") ? true : false;
-    })})
-    let elementsSelect = document.querySelectorAll(".form2");
-    let condSelect = elementsSelect.forEach((itemSelect) => {itemSelect.addEventListener("focus", function(){
-        (document.querySelector(`#itemSelect`).value != "--") ? true : false;
-    })})
-    return (condInput && condSelect) ? true : false;
-};
+// function formOK2(){
+//     let elementsInput = document.querySelectorAll(".form");
+//     let condInput = elementsInput.forEach((item) => {item.addEventListener("focus", function(){
+//         console.log(item)
+//         console.log(document.querySelector(item));
+//         (document.querySelector(item).value != "") ? true : false;
+//     })})
+//     let elementsSelect = document.querySelectorAll(".form2");
+//     let condSelect = elementsSelect.forEach((itemSelect) => {itemSelect.addEventListener("focus", function(){
+//         (document.querySelector(`#itemSelect`).value != "--") ? true : false;
+//     })})
+//     return (condInput && condSelect) ? true : false;
+// };
 // console.log(formOK2());
 
 
