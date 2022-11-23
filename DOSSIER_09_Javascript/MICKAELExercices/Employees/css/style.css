@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6em;
+}
+
+table{
+    border: solid 1px #E7E7E7;
+    border-collapse: collapse;
+    background-color: #fff9;
+}
+
+thead{
+    color: #5C515C;
+}
+
+/* td, th, tr{
+    border: solid 1px #E7E7E7;
+} */
+
