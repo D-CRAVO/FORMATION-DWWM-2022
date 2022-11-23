@@ -8,6 +8,7 @@ html{
 
 body{
     font-size: 1.6em;
+    font-family: "Comic sans MS", sans-serif;
 }
 
 table{
@@ -33,4 +34,91 @@ tr:nth-child(2n){
 
 td{
     border-top: solid 1px #A3A3A3;
+}
+
+.attackCard{
+    border: solid 1px blue;
+    margin: 1rem;
+}
+
+.headerCard{
+    background-color: #003300;
+    color: #fff9;
+    display: grid;
+    grid-template-columns: 1fr 6rem 8rem 8rem 8rem 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "Id Name Name Name Name empty"
+                        "Id Played PlayedValue Victories VictoriesValue empty";
+}
+
+#attackId{
+    grid-area: Id;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    padding: 0 5rem;
+}
+
+#attackName{
+    grid-area: Name;
+    font-size: 3rem;
+}
+
+#attackPlayed{
+    grid-area: Played;
+    text-decoration: underline blue;
+}
+
+#attackPlayedValue{
+    grid-area: PlayedValue;
+}
+
+#attackVictories{
+    grid-area : Victories;
+}
+
+#attackVictoriesValue{
+    grid-area: VictoriesValue;
+}
+
+#empty{
+    grid-area: empty;
+}
+
+.bodyCard{
+    background-color: #000;
+    display: flex;
+}
+
+.bodyCard img{
+    margin: 1rem 4rem 10rem 4rem;
+}
+
+#attackPower,
+#attackAttack,
+#attackDefense{
+    color: #fff;
+    text-align: center;
+    font-size: 4rem;
+}
+
+#attackPowerValue,
+#attackAttackValue,
+#attackArmorValue{
+    text-align: center;
+    font-size: 4rem;
+    padding-bottom: 2rem;
+}
+
+#attackPowerValue{
+    color: blue;
+}
+
+#attackAttackValue{
+    color: #AA0000
+}
+
+#attackArmorValue{
+    color: #1F4E79
 }
