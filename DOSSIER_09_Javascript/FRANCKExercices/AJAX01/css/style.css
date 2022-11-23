@@ -59,7 +59,8 @@ td{
 
 #attackId,
 #armorId,
-#playedId{
+#playedId,
+#victoriesId{
     grid-area: Id;
     display: flex;
     justify-content: center;
@@ -70,14 +71,16 @@ td{
 
 #attackName,
 #armorName,
-#playedName{
+#playedName,
+#victoriesName{
     grid-area: Name;
     font-size: 3rem;
 }
 
 #attackPlayed,
 #armorPlayed,
-#playedPlayed{
+#playedPlayed,
+#victoriesPlayed{
     grid-area: Played;
     text-decoration: underline blue;
     font-family: Arial, Helvetica, sans-serif;
@@ -85,21 +88,24 @@ td{
 
 #attackPlayedValue,
 #armorPlayedValue,
-#playedPlayedValue{
+#playedPlayedValue,
+#victoriesPlayedValue{
     grid-area: PlayedValue;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 #attackVictories,
 #armorVictories,
-#playedVictories{
+#playedVictories,
+#victoriesVictories{
     grid-area : Victories;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 #attackVictoriesValue,
 #armorVictoriesValue,
-#playedVictoriesValue{
+#playedVictoriesValue,
+#victoriesVictoriesValue{
     grid-area: VictoriesValue;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -120,7 +126,8 @@ td{
 
 #attackPower, #attackAttack, #attackDefense,
 #armorPower, #armorAttack, #armorDefense,
-#playedPower, #playedAttack, #playedDefense{
+#playedPower, #playedAttack, #playedDefense,
+#victoriesPower, #victoriesAttack, #victoriesDefense{
     color: #fff;
     text-align: center;
     font-size: 4rem;
@@ -128,7 +135,8 @@ td{
 
 #attackPowerValue, #attackAttackValue, #attackArmorValue,
 #armorPowerValue, #armorAttackValue, #armorArmorValue,
-#playedPower, #playedAttack, #playedDefense{
+#playedPowerValue, #playedAttackValue, #playedArmorValue,
+#victoriesPowerValue, #victoriesAttackValue, #victoriesArmorValue{
     text-align: center;
     font-size: 4rem;
     padding-bottom: 2rem;
@@ -136,18 +144,21 @@ td{
 
 #attackPowerValue,
 #armorPowerValue,
-#playedPowerValue{
+#playedPowerValue,
+#victoriesPowerValue{
     color: blue;
 }
 
 #attackAttackValue,
 #armorAttackValue,
-#playedAttackValue{
+#playedAttackValue,
+#victoriesAttackValue{
     color: #AA0000
 }
 
 #attackArmorValue,
 #armorArmorValue,
-#playedArmorValue{
+#playedArmorValue,
+#victoriesArmorValue{
     color: #1F4E79
 }

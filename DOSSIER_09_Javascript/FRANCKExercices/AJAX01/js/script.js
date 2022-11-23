@@ -116,7 +116,7 @@ function maxVictories(data){
             maxKey = i
         }
     }
-    console.log("maxPlayed");
+    console.log("maxVictories");
     console.log(data[maxKey]);
     return maxKey;
 }
@@ -132,7 +132,7 @@ function maxVictories(data){
  */
 function maxAttribute(data, attribute){
     let valueMax = data[0][attribute];
-    console.log(valueMax);
+    // console.log(valueMax);
     let keyMax = 0;
     for(let i=1; i<data.length; i++){
         if(data[i].attribute > valueMax){
@@ -140,9 +140,12 @@ function maxAttribute(data, attribute){
             keyMax = i;
         }
     }
+    console.log("maxAttribute")
+    console.log(attribute);
     console.log(data[keyMax]);
     return keyMax;
 }
+
 
 /**
  * Intègre les informations attaque max à la carte d'affichage.
@@ -159,6 +162,7 @@ function showMaxAttack(data, maxKey){
     document.querySelector("#attackAttackValue").innerText = data[maxKey].attack;
     document.querySelector("#attackArmorValue").innerText = data[maxKey].armor;
 }
+
 
 /**
  * Intègre les informations armure max à la carte d'affichage.
@@ -183,15 +187,15 @@ function showMaxArmor(data, maxKey){
  * @param {array} data 
  * @param {integer} maxKey 
  */
-//  function showMaxPlayed(data, maxKey){
-//     document.querySelector("#playedId").innerText = data[maxKey].id;
-//     document.querySelector("#playedName").innerText = data[maxKey].name;
-//     document.querySelector("#playedPlayedValue").innerText = data[maxKey].played;
-//     document.querySelector("#playedVictoriesValue").innerText = data[maxKey].victory;
-//     document.querySelector("#playedPowerValue").innerText = data[maxKey].power;
-//     document.querySelector("#playedAttackValue").innerText = data[maxKey].attack;
-//     document.querySelector("#playedArmorValue").innerText = data[maxKey].armor;
-// }
+function showMaxPlayed(data, maxKey){
+    document.querySelector("#playedId").innerText = data[maxKey].id;
+    document.querySelector("#playedName").innerText = data[maxKey].name;
+    document.querySelector("#playedPlayedValue").innerText = data[maxKey].played;
+    document.querySelector("#playedVictoriesValue").innerText = data[maxKey].victory;
+    document.querySelector("#playedPowerValue").innerText = data[maxKey].power;
+    document.querySelector("#playedAttackValue").innerText = data[maxKey].attack;
+    document.querySelector("#playedArmorValue").innerText = data[maxKey].armor;
+}
 
 
 /**
@@ -200,15 +204,15 @@ function showMaxArmor(data, maxKey){
  * @param {array} data 
  * @param {integer} maxKey 
  */
-//  function showMaxPlayed(data, maxKey){
-//     document.querySelector("#victoriesId").innerText = data[maxKey].id;
-//     document.querySelector("#victoriesName").innerText = data[maxKey].name;
-//     document.querySelector("#victoriesPlayedValue").innerText = data[maxKey].played;
-//     document.querySelector("#victoriesVictoriesValue").innerText = data[maxKey].victory;
-//     document.querySelector("#victoriesPowerValue").innerText = data[maxKey].power;
-//     document.querySelector("#victoriesAttackValue").innerText = data[maxKey].attack;
-//     document.querySelector("#victoriesArmorValue").innerText = data[maxKey].armor;
-// }
+function showMaxVictories(data, maxKey){
+    document.querySelector("#victoriesId").innerText = data[maxKey].id;
+    document.querySelector("#victoriesName").innerText = data[maxKey].name;
+    document.querySelector("#victoriesPlayedValue").innerText = data[maxKey].played;
+    document.querySelector("#victoriesVictoriesValue").innerText = data[maxKey].victory;
+    document.querySelector("#victoriesPowerValue").innerText = data[maxKey].power;
+    document.querySelector("#victoriesAttackValue").innerText = data[maxKey].attack;
+    document.querySelector("#victoriesArmorValue").innerText = data[maxKey].armor;
+}
 
 
 /**
@@ -251,11 +255,10 @@ monXhr.onload = function(){
         maxArmorKey = maxArmor(data);
         showMaxArmor(data, maxArmorKey);
         maxPlayedKey = maxPlayed(data);
-        //showMaxPlayed(data, maxPlayedKey);
+        showMaxPlayed(data, maxPlayedKey);
         maxVictoriesKey = maxVictories(data);
-        //showMaxVictories(data, maxVictoriesKey);
+        showMaxVictories(data, maxVictoriesKey);
         maxAttribute(data, "armor");
-
     }
 }
 
