@@ -6,13 +6,19 @@ html{
     font-size: 62.5%;
 }
 
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
 body{
     font-size: 1.6em;
+    font-family: "Roboto", sans-serif
 }
 
 table{
     border: solid 1px #E7E7E7;
-    border-collapse: collapse;
+    /* border-collapse: collapse; */
     background-color: #fff9;
 }
 
@@ -20,7 +26,35 @@ thead{
     color: #5C515C;
 }
 
-/* td, th, tr{
+td, th, tr{
     border: solid 1px #E7E7E7;
+    padding: 0.5rem 1rem
+}
+
+input[type=button]{
+    margin: 0.2rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.3rem;
+    color: #fff
+}
+
+input[value=Duplicate]{
+    background-color: #3298DC;
+}
+
+input[value=Duplicate]:hover{
+    background-color: #326ddc;
+}
+
+/* input[value=Duplicate]:before{
+    background-image: url(../img/duplicate2.png);
 } */
 
+input[value=Delete]{
+    background-color: #f14679;
+}
+
+input[value=Delete]:hover{
+    background-color: #ff0000;
+}

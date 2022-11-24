@@ -111,7 +111,6 @@ function createTotalSalary(){
         monthlySalary = parseFloat(monthlySalaryTab[0]);
         totalSalary  += monthlySalary;
         console.log(totalSalary);
-      
     }
     return totalSalary;
     // document.querySelector("#totalSalary").textContent = totalSalary + " €"
@@ -129,6 +128,9 @@ function buttonDuplicateDelete(){
         input1.setAttribute("type", "button");
         input1.setAttribute("value", "Duplicate");
         document.querySelector(`#cellButton${i}`).appendChild(input1);
+        // icon1 = document.createElement("i");
+        // icon1.setAttribute("class", "fa-solid fa-trash");
+        // document.querySelector(`#cellButton${i}`).appendChild(icon1);
         let input2 = document.createElement("input");
         input2.setAttribute("type", "button");
         input2.setAttribute("value", "Delete");
@@ -136,9 +138,12 @@ function buttonDuplicateDelete(){
     }
 }
 
-// function buttonDelete(){
-
-// }
+function buttonDelete(element){
+    console.log(document.querySelector(element));
+    // let elementToDelete = document.querySelector(element);
+    // elementToDelete.parentNode.removeChild(element);
+}
+buttonDelete();
 
 fetch("../json/employees.json")
 .then(response =>{
@@ -149,8 +154,9 @@ fetch("../json/employees.json")
     createEID(data);
     createFullName(data);
     createEmail(data);
-    let promesse = createMonthlySalary(data);
-    promesse.then(console.log(createTotalSalary()));
+    createMonthlySalary(data);
+    // let promesse = createMonthlySalary(data);
+    // promesse.then(console.log(createTotalSalary()));
     createYearOfBirth(data);
     createNbEmployees();
     buttonDuplicateDelete();
