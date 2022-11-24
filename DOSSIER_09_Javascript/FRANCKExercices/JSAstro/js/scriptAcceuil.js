@@ -24,7 +24,7 @@ const signes = {
  * @param {string} nom 
  * @returns 
  */
- function getCookie(nom){
+function getCookie(nom){
     const cookieTab = document.cookie.split("; ");
     for(let i=0; i<cookieTab.length; i++){
         const cookieVal = cookieTab[i].split("=");
