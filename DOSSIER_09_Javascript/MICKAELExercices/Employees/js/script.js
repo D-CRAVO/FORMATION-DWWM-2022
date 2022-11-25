@@ -127,6 +127,7 @@ function buttonDuplicateDelete(){
         let input1 = document.createElement("input");
         input1.setAttribute("type", "button");
         input1.setAttribute("value", "Duplicate");
+        input1.setAttribute("onclick", "buttonDuplicate(this); createNbEmployees()")
         document.querySelector(`#cellButton${i}`).appendChild(input1);
         // icon1 = document.createElement("i");
         // icon1.setAttribute("class", "fa-solid fa-trash");
@@ -134,16 +135,35 @@ function buttonDuplicateDelete(){
         let input2 = document.createElement("input");
         input2.setAttribute("type", "button");
         input2.setAttribute("value", "Delete");
+        input2.setAttribute("onclick", "buttonDelete(this); createNbEmployees()")
         document.querySelector(`#cellButton${i}`).appendChild(input2);
     }
 }
 
 function buttonDelete(element){
-    console.log(document.querySelector(element));
-    // let elementToDelete = document.querySelector(element);
-    // elementToDelete.parentNode.removeChild(element);
+    element.parentNode.parentNode.remove();
 }
-buttonDelete();
+
+function buttonDuplicate(element){
+    console.log('test');
+    // element.parentNode.parentNode.assign(element);
+    let row = element.parentNode.parentNode;
+    console.log(row); // ok
+
+    let copieRow = row.cloneNode();
+    console.log(copieRow); // ok
+
+    row.parentNode.appendChild(copieRow); // ok
+
+    let cell = element.parentNode;
+    console.log(cell);
+
+    let copieCell = cell.cloneNode();
+
+    row.appendChild(cell)
+
+}
+
 
 fetch("../json/employees.json")
 .then(response =>{
@@ -160,6 +180,8 @@ fetch("../json/employees.json")
     createYearOfBirth(data);
     createNbEmployees();
     buttonDuplicateDelete();
+    buttonDelete(this)
+    buttonDuplicate(this)
 })
 // .then(totalSalary => {
 //     totalSalary = createTotalSalary();
