@@ -181,13 +181,13 @@ function buttonDuplicate(element){
 function rowSort(){
     const tbody = document.querySelector('tbody');
     const trxb = tbody.querySelectorAll('tr');
-    let classe = Array.from(trxb).sort(compare(3, this.asc = !this.asc));
+    let classe = Array.from(trxb).sort(compareSalary(3, this.asc = !this.asc));
     classe.forEach(tr => tbody.appendChild(tr));
 }
 
 
 
-function compare(ids, asc){
+function compareSalary(ids, asc){
     return function (row1, row2){
         const tdValue = function(row, ids){
             let tab = row.children[ids].innerText;
@@ -199,24 +199,44 @@ function compare(ids, asc){
         };
         return tri(tdValue(asc ? row1 : row2, ids), tdValue(asc ? row2 : row1 , ids));
     };
-    
-
 }
 
 
 
-// function rowValue (row, ids){
-//     let vTab = (row.children[ids].textContent).split(" ");
-//     console.log(vTab[0]);
-//     return Number(vTab[0]);
-// }
+function nameSort(){
+    const tbody = document.querySelector("#tbody");
+    const trx = tbody.querySelectorAll(tr);
+    let classe = Array.from(trx).sort(compareName(1, this.asc = !this.asc));
+    classe.forEach(tr => tbody.appendChild(tr));
+}
 
 
+function compareName(ids, asc){
+}
 
 
+function rows(row1, row2, ids){
+    const v1 = tdValue(asc ? row1 : row2, ids);
+    const v2 = tdValue(asc ? row2 : row1, ids);
+    const triValue = tri(v1, v2);
+    return triValue;
+}
+
+function tdValue(row, ids){
+    const v = selectContent(row, ids);
+    return v;
+}
 
 
+function selectContent(row, ids){
+    const content = row.children[1].textContent;
+    return content;
+}
 
+
+function tri(v1, v2) {
+    return v1-v2;
+}
 
 
 fetch("../json/employees.json")
@@ -228,8 +248,6 @@ fetch("../json/employees.json")
     createFullName(data);
     createEmail(data);
     createMonthlySalary(data);
-    // let promesse = createMonthlySalary(data);
-    // promesse.then(console.log(createTotalSalary()));
     createYearOfBirth(data);
     createNbEmployees();
     buttonDuplicateDelete();
