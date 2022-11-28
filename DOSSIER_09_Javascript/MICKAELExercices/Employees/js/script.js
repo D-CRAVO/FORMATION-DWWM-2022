@@ -10,7 +10,7 @@ function createEID(data){
         let newRow = tBody.insertRow();
         newRow.setAttribute("id", `row${i+1}`)
         let newCell = newRow.insertCell();
-        newCell.textContent = data[i].id;
+        newCell.innerText = data[i].id;
     }
 }
 
@@ -25,7 +25,7 @@ function createFullName(data){
     for(i=0; i<data.length; i++){
         let row = document.querySelector(`#row${i+1}`);
         let cell = row.insertCell();
-        cell.textContent = data[i].employee_name;
+        cell.innerText = data[i].employee_name;
     }
 }
 
@@ -41,7 +41,7 @@ function createEmail(data){
         let cell = row.insertCell();
         let tabFullName = data[i].employee_name.split(" ");
         let firstname = tabFullName[0].toLowerCase()
-        cell.textContent = firstname.substring(0,1) + "." + tabFullName[1].toLowerCase() + "@email.com"
+        cell.innerText = firstname.substring(0,1) + "." + tabFullName[1].toLowerCase() + "@email.com"
     }
 }
 
@@ -57,7 +57,7 @@ async function createMonthlySalary(data){
         let row = document.querySelector(`#row${i+1}`);
         let cell = row.insertCell();
         cell.setAttribute("id", `cell${i}`);
-        cell.textContent = (data[i].employee_salary / 12).toFixed(2) + " €"
+        cell.innerText = (data[i].employee_salary / 12).toFixed(2) + " €"
     }
 }
 
@@ -73,7 +73,7 @@ function createYearOfBirth(data){
     for(i=0; i<data.length; i++){
         let row = document.querySelector(`#row${i+1}`);
         let cell = row.insertCell();
-        cell.textContent = new Date().getFullYear() - data[i].employee_age;
+        cell.innerText = new Date().getFullYear() - data[i].employee_age;
     }
 }
 
@@ -103,17 +103,16 @@ function createNbEmployees(){
 
 function createTotalSalary(){
     let totalSalary = 0;
-    let tBody = document.querySelector("tBody");
+    let tBody = document.querySelector("#tBody");
     let nbEmployees = tBody.querySelectorAll("tr").length;
-    for(i=1; i<nbEmployees+1; i++){
-        let monthlySalaryString = document.querySelector(`#cell${i}`).innerHTML;
+    for(i=0; i<nbEmployees; i++){
+        let tr = tBody.children[i];
+        let monthlySalaryString = tr.querySelector(`td:nth-Child(4)`).innerHTML;
         monthlySalaryTab = monthlySalaryString.split(" ");
         monthlySalary = parseFloat(monthlySalaryTab[0]);
         totalSalary  += monthlySalary;
-        console.log(totalSalary);
+        document.querySelector("#totalSalary").textContent = totalSalary.toFixed(2) + " €"
     }
-    return totalSalary;
-    // document.querySelector("#totalSalary").textContent = totalSalary + " €"
 }
 
 
@@ -124,18 +123,17 @@ function buttonDuplicateDelete(){
         let row = document.querySelector(`#row${i}`);
         let cell = row.insertCell();
         cell.setAttribute("id", `cellButton${i}`)
-        let input1 = document.createElement("input");
-        input1.setAttribute("type", "button");
-        input1.setAttribute("value", "Duplicate");
-        input1.setAttribute("onclick", "buttonDuplicate(this); createNbEmployees()")
+        let input1 = document.createElement("button");
+        //input1.setAttribute("type", "button");
+        input1.setAttribute("class", "btn btn-primary");
+        input1.setAttribute("onclick", "buttonDuplicate(this); createNbEmployees(); createTotalSalary()")
+        input1.innerHTML = '<i class="fas fa-copy"></i> Duplicate'
         document.querySelector(`#cellButton${i}`).appendChild(input1);
-        // icon1 = document.createElement("i");
-        // icon1.setAttribute("class", "fa-solid fa-trash");
-        // document.querySelector(`#cellButton${i}`).appendChild(icon1);
-        let input2 = document.createElement("input");
-        input2.setAttribute("type", "button");
-        input2.setAttribute("value", "Delete");
-        input2.setAttribute("onclick", "buttonDelete(this); createNbEmployees()")
+        let input2 = document.createElement("button");
+        //input2.setAttribute("type", "button");
+        input2.setAttribute("class", "btn btn-danger");
+        input2.setAttribute("onclick", "buttonDelete(this); createNbEmployees(); createTotalSalary()")
+        input2.innerHTML = '<i class="fas fa-trash"></i> Delete'
         document.querySelector(`#cellButton${i}`).appendChild(input2);
     }
 }
@@ -145,24 +143,37 @@ function buttonDelete(element){
 }
 
 function buttonDuplicate(element){
-    console.log('test');
-    // element.parentNode.parentNode.assign(element);
     let row = element.parentNode.parentNode;
-    console.log(row); // ok
-
-    let copieRow = row.cloneNode();
-    console.log(copieRow); // ok
-
-    row.parentNode.appendChild(copieRow); // ok
-
-    let cell = element.parentNode;
-    console.log(cell);
-
-    let copieCell = cell.cloneNode();
-
-    row.appendChild(cell)
-
+    const id = Number(row.parentNode.lastChild.firstChild.innerHTML)
+    let copieRow = row.cloneNode(true);
+    row.parentNode.appendChild(copieRow);
+    copieRow.firstChild.innerHTML = id + 1;
 }
+
+
+// function buttonSort(){
+//     let tBody = document.querySelector("#tBody");
+//     let rowLength = tBody.childElementCount;
+//     for(i=0; i<rowLength; i++){
+//         let salaryString1 = tBody.children[i].children[3].innerText.split(" ");
+//         let salary1 = Number(salaryString1[0]);
+//         for(j=0; j<rowLength; i++){
+//             let salaryString2 = tBody.children[i].children[3].innerText.split(" ");
+//             let salary2 = Number(salaryString2[0]);
+//             if(salary2>salary1){
+//                 //tBody.append(tBody.children[j]);
+//             }
+//         }
+//     }
+// }
+
+// function sortDesc(){
+//     $(document).ready(function(){
+//         $('#table').DataTable({
+//             order:[[2, 'desc']]
+//         });
+//     });
+// }
 
 
 fetch("../json/employees.json")
@@ -170,7 +181,6 @@ fetch("../json/employees.json")
     return response.json();
 })
 .then(data => {
-    console.log(data)
     createEID(data);
     createFullName(data);
     createEmail(data);
@@ -180,13 +190,9 @@ fetch("../json/employees.json")
     createYearOfBirth(data);
     createNbEmployees();
     buttonDuplicateDelete();
-    buttonDelete(this)
-    buttonDuplicate(this)
+    createTotalSalary();
+    buttonDelete(this);
+    buttonDuplicate(this);
+    sortDesc();
+    
 })
-// .then(totalSalary => {
-//     totalSalary = createTotalSalary();
-//     document.querySelector("#totalSalary").textContent = totalSalary + " €"
-// }
-//     // let totalSalary = createTotalSalary();
-//     // document.querySelector("#totalSalary").textContent = totalSalary + " €"
-// )

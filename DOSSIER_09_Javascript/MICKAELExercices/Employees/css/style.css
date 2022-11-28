@@ -23,38 +23,39 @@ table{
 }
 
 thead{
-    color: #5C515C;
+    color: #5C5C5C;
 }
 
-td, th, tr{
+td, th{
     border: solid 1px #E7E7E7;
-    padding: 0.5rem 1rem
+    padding: 0.5rem 2rem;
 }
 
-input[type=button]{
-    margin: 0.2rem;
+tbody td:first-child{
+    text-align: center;
+}
+
+tbody td:nth-child(5){
+    text-align: center;
+}
+
+tfoot td{
+    padding: 1rem 2rem;
+    font-weight: bold;
+}
+
+tfoot td:first-child{
+    text-align: center;
+}
+
+button{
+    margin: 0.1rem;
     padding: 1rem 2rem;
     border: none;
     border-radius: 0.3rem;
-    color: #fff
+    color: #fff;
 }
 
-input[value=Duplicate]{
-    background-color: #3298DC;
-}
-
-input[value=Duplicate]:hover{
-    background-color: #326ddc;
-}
-
-/* input[value=Duplicate]:before{
-    background-image: url(../img/duplicate2.png);
-} */
-
-input[value=Delete]{
-    background-color: #f14679;
-}
-
-input[value=Delete]:hover{
-    background-color: #ff0000;
+button #sort{
+    border : 1px solid #5C5C5C
 }
