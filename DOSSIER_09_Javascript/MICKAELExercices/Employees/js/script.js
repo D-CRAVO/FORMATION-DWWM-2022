@@ -113,6 +113,7 @@ function createTotalSalary(){
         totalSalary  += monthlySalary;
         document.querySelector("#totalSalary").textContent = totalSalary.toFixed(2) + " €"
     }
+
 }
 
 
@@ -175,6 +176,48 @@ function buttonDuplicate(element){
 //     });
 // }
 
+/************************************************************************** */
+
+function rowSort(){
+    const tbody = document.querySelector('tbody');
+    const trxb = tbody.querySelectorAll('tr');
+    let classe = Array.from(trxb).sort(compare(3, this.asc = !this.asc));
+    classe.forEach(tr => tbody.appendChild(tr));
+}
+
+
+
+function compare(ids, asc){
+    return function (row1, row2){
+        const tdValue = function(row, ids){
+            let tab = row.children[ids].innerText;
+            let vTab = tab.split(" ");
+            return Number(vTab[0]);
+        }
+        const tri = function(v1,v2){
+            return v1 - v2
+        };
+        return tri(tdValue(asc ? row1 : row2, ids), tdValue(asc ? row2 : row1 , ids));
+    };
+    
+
+}
+
+
+
+// function rowValue (row, ids){
+//     let vTab = (row.children[ids].textContent).split(" ");
+//     console.log(vTab[0]);
+//     return Number(vTab[0]);
+// }
+
+
+
+
+
+
+
+
 
 fetch("../json/employees.json")
 .then(response =>{
@@ -191,8 +234,7 @@ fetch("../json/employees.json")
     createNbEmployees();
     buttonDuplicateDelete();
     createTotalSalary();
-    buttonDelete(this);
-    buttonDuplicate(this);
-    sortDesc();
+    // buttonDelete(this);
+    // buttonDuplicate(this);
     
 })
