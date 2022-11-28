@@ -91,16 +91,7 @@ function createNbEmployees(){
  * Intègre le salaire total des employés
  * 
  * @param {array} data 
-//  */
-// function createTotalSalary(data){
-//     let totalSalary = 0
-//     for(i=0; i<data.length; i++){
-//         totalSalary = totalSalary + (data[i].employee_salary / 12)
-//     }
-//     document.querySelector("#totalSalary").textContent = totalSalary.toFixed(2) + " €";
-// }
-
-
+ */
 function createTotalSalary(){
     let totalSalary = 0;
     let tBody = document.querySelector("#tBody");
@@ -125,13 +116,11 @@ function buttonDuplicateDelete(){
         let cell = row.insertCell();
         cell.setAttribute("id", `cellButton${i}`)
         let input1 = document.createElement("button");
-        //input1.setAttribute("type", "button");
         input1.setAttribute("class", "btn btn-primary");
         input1.setAttribute("onclick", "buttonDuplicate(this); createNbEmployees(); createTotalSalary()")
         input1.innerHTML = '<i class="fas fa-copy"></i> Duplicate'
         document.querySelector(`#cellButton${i}`).appendChild(input1);
         let input2 = document.createElement("button");
-        //input2.setAttribute("type", "button");
         input2.setAttribute("class", "btn btn-danger");
         input2.setAttribute("onclick", "buttonDelete(this); createNbEmployees(); createTotalSalary()")
         input2.innerHTML = '<i class="fas fa-trash"></i> Delete'
@@ -204,39 +193,58 @@ function compareSalary(ids, asc){
 
 
 function nameSort(){
-    const tbody = document.querySelector("#tbody");
-    const trx = tbody.querySelectorAll(tr);
+    const tbody = document.querySelector("#tBody");
+    const trx = tbody.querySelectorAll('tr');
     let classe = Array.from(trx).sort(compareName(1, this.asc = !this.asc));
     classe.forEach(tr => tbody.appendChild(tr));
 }
 
 
 function compareName(ids, asc){
+    return function (row1, row2){
+        const tdValue = function(row, ids){
+            let tab = row.children[ids].innerText;
+            console.log(tab);
+            return tab;
+        }
+        const tri = function(v1,v2){
+            return v1.localeCompare(v2)
+        };
+        return tri(tdValue(asc ? row1 : row2, ids), tdValue(asc ? row2 : row1 , ids));
+    };
 }
 
 
-function rows(row1, row2, ids){
-    const v1 = tdValue(asc ? row1 : row2, ids);
-    const v2 = tdValue(asc ? row2 : row1, ids);
-    const triValue = tri(v1, v2);
-    return triValue;
-}
+// function compareName(ids, asc, arrayLength, tbody){
+//     return function (row1, row2){
+//         const value = rows(row1, row2, ids, asc);
 
-function tdValue(row, ids){
-    const v = selectContent(row, ids);
-    return v;
-}
+//     }
+// }
 
 
-function selectContent(row, ids){
-    const content = row.children[1].textContent;
-    return content;
-}
+// function rows(row1, row2, ids, asc){
+//     const v1 = selectContent(asc ? row1 : row2, ids);
+//     const v2 = selectContent(asc ? row2 : row1, ids);
+//     const triValue = tri(v1, v2);
+//     return triValue;
+// }
+
+// function tdValue(row, ids){
+//     const v = selectContent(row, ids);
+//     return v;
+// }
 
 
-function tri(v1, v2) {
-    return v1-v2;
-}
+// function selectContent(row, ids){
+//     const content = row.children[ids].textContent;
+//     return content;
+// }
+
+
+// function tri(v1, v2) {
+//     return v1-v2;
+// }
 
 
 fetch("../json/employees.json")
