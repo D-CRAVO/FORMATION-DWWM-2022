@@ -29,7 +29,6 @@ namespace exercice_3_6_fourchette
                 {
                     limite_superieure = nombre_saisi;
                     compteur++;
-                    
                 }
                 else
                 {
