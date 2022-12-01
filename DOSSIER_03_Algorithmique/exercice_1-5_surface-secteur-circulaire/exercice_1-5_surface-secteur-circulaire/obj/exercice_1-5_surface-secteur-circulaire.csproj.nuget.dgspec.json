@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\CRAVO David\\OneDrive\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\exercice_1-5_surface-secteur-circulaire\\exercice_1-5_surface-secteur-circulaire\\exercice_1-5_surface-secteur-circulaire.csproj": {}
+    "C:\\Users\\CRAVO David\\OneDrive\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_Algorithmique\\exercice_1-5_surface-secteur-circulaire\\exercice_1-5_surface-secteur-circulaire\\exercice_1-5_surface-secteur-circulaire.csproj": {}
   },
   "projects": {
-    "C:\\Users\\CRAVO David\\OneDrive\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\exercice_1-5_surface-secteur-circulaire\\exercice_1-5_surface-secteur-circulaire\\exercice_1-5_surface-secteur-circulaire.csproj": {
+    "C:\\Users\\CRAVO David\\OneDrive\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_Algorithmique\\exercice_1-5_surface-secteur-circulaire\\exercice_1-5_surface-secteur-circulaire\\exercice_1-5_surface-secteur-circulaire.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CRAVO David\\OneDrive\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\exercice_1-5_surface-secteur-circulaire\\exercice_1-5_surface-secteur-circulaire\\exercice_1-5_surface-secteur-circulaire.csproj",
+        "projectUniqueName": "C:\\Users\\CRAVO David\\OneDrive\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_Algorithmique\\exercice_1-5_surface-secteur-circulaire\\exercice_1-5_surface-secteur-circulaire\\exercice_1-5_surface-secteur-circulaire.csproj",
         "projectName": "exercice_1-5_surface-secteur-circulaire",
-        "projectPath": "C:\\Users\\CRAVO David\\OneDrive\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\exercice_1-5_surface-secteur-circulaire\\exercice_1-5_surface-secteur-circulaire\\exercice_1-5_surface-secteur-circulaire.csproj",
+        "projectPath": "C:\\Users\\CRAVO David\\OneDrive\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_Algorithmique\\exercice_1-5_surface-secteur-circulaire\\exercice_1-5_surface-secteur-circulaire\\exercice_1-5_surface-secteur-circulaire.csproj",
         "packagesPath": "C:\\Users\\CRAVO David\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CRAVO David\\OneDrive\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\exercice_1-5_surface-secteur-circulaire\\exercice_1-5_surface-secteur-circulaire\\obj\\",
+        "outputPath": "C:\\Users\\CRAVO David\\OneDrive\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_Algorithmique\\exercice_1-5_surface-secteur-circulaire\\exercice_1-5_surface-secteur-circulaire\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\CRAVO David\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }
