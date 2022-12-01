@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6em;
+}
+
+table{
+    border-collapse: collapse;
+    border: solid 2px #000;
+    padding: 0;
+}
+
+#newRow{
+    background-color: #DDD;
+}
+
+tbody{
+    border: none;
+}
+
+th{
+    border-right: solid 1.5px #3B3B9C;
+}
+
+th, td{
+    padding: 0.5rem 2rem;
+}
+
+tr:nth-child(2n){
+    background-color: #EEE;
+}
+
+td{
+    border-top: solid 1px #A3A3A3;
+}
+
+.card{
+    border: solid 1px blue;
+    margin: 1rem;
+    font-family: "Comic sans MS", sans-serif;
+    width: 60rem;
+}
+
+.headerCard{
+    background-color: #003300;
+    color: #fff9;
+    display: grid;
+    grid-template-columns: 1fr 8rem 8rem 8rem 8rem 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "Id Name Name Name Name empty"
+                        "Id Played PlayedValue Victories VictoriesValue empty";
+}
+
+#attackId,
+#armorId,
+#playedId,
+#victoriesId{
+    grid-area: Id;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    padding: 0 5rem;
+}
+
+#attackName,
+#armorName,
+#playedName,
+#victoriesName{
+    grid-area: Name;
+    font-size: 3rem;
+}
+
+#attackPlayed,
+#armorPlayed,
+#playedPlayed,
+#victoriesPlayed{
+    grid-area: Played;
+    text-decoration: underline blue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#attackPlayedValue,
+#armorPlayedValue,
+#playedPlayedValue,
+#victoriesPlayedValue{
+    grid-area: PlayedValue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#attackVictories,
+#armorVictories,
+#playedVictories,
+#victoriesVictories{
+    grid-area : Victories;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#attackVictoriesValue,
+#armorVictoriesValue,
+#playedVictoriesValue,
+#victoriesVictoriesValue{
+    grid-area: VictoriesValue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.empty{
+    grid-area: empty;
+    font-size: 3rem;
+}
+
+.bodyCard{
+    background-color: #000;
+    display: flex;
+}
+
+.bodyCard img{
+    margin: 1rem 4rem 10rem 4rem;
+}
+
+#attackPower, #attackAttack, #attackDefense,
+#armorPower, #armorAttack, #armorDefense,
+#playedPower, #playedAttack, #playedDefense,
+#victoriesPower, #victoriesAttack, #victoriesDefense{
+    color: #fff;
+    text-align: center;
+    font-size: 4rem;
+}
+
+#attackPowerValue, #attackAttackValue, #attackArmorValue,
+#armorPowerValue, #armorAttackValue, #armorArmorValue,
+#playedPowerValue, #playedAttackValue, #playedArmorValue,
+#victoriesPowerValue, #victoriesAttackValue, #victoriesArmorValue{
+    text-align: center;
+    font-size: 4rem;
+    padding-bottom: 2rem;
+}
+
+#attackPowerValue,
+#armorPowerValue,
+#playedPowerValue,
+#victoriesPowerValue{
+    color: blue;
+}
+
+#attackAttackValue,
+#armorAttackValue,
+#playedAttackValue,
+#victoriesAttackValue{
+    color: #AA0000
+}
+
+#attackArmorValue,
+#armorArmorValue,
+#playedArmorValue,
+#victoriesArmorValue{
+    color: #1F4E79
+}
