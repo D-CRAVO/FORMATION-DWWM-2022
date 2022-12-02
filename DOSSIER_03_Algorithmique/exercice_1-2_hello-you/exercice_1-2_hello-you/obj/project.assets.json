@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\CRAVO David\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\exercice_1-2_hello-you\\exercice_1-2_hello-you\\exercice_1-2_hello-you.csproj",
+      "projectUniqueName": "C:\\Users\\CRAVO David\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_Algorithmique\\exercice_1-2_hello-you\\exercice_1-2_hello-you\\exercice_1-2_hello-you.csproj",
       "projectName": "exercice_1-2_hello-you",
-      "projectPath": "C:\\Users\\CRAVO David\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\exercice_1-2_hello-you\\exercice_1-2_hello-you\\exercice_1-2_hello-you.csproj",
+      "projectPath": "C:\\Users\\CRAVO David\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_Algorithmique\\exercice_1-2_hello-you\\exercice_1-2_hello-you\\exercice_1-2_hello-you.csproj",
       "packagesPath": "C:\\Users\\CRAVO David\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\CRAVO David\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\exercice_1-2_hello-you\\exercice_1-2_hello-you\\obj\\",
+      "outputPath": "C:\\Users\\CRAVO David\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_Algorithmique\\exercice_1-2_hello-you\\exercice_1-2_hello-you\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -64,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.306\\RuntimeIdentifierGraph.json"
       }
     }
   }

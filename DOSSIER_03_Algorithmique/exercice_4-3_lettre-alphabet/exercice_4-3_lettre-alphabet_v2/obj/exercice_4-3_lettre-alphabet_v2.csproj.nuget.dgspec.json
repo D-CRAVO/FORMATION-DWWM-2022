@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\CRAVO David\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\exercice_4-3_lettre-alphabet\\exercice_4-3_lettre-alphabet_v2\\exercice_4-3_lettre-alphabet_v2.csproj": {}
+    "C:\\Users\\CRAVO David\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_Algorithmique\\exercice_4-3_lettre-alphabet\\exercice_4-3_lettre-alphabet_v2\\exercice_4-3_lettre-alphabet_v2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\CRAVO David\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\exercice_4-3_lettre-alphabet\\exercice_4-3_lettre-alphabet_v2\\exercice_4-3_lettre-alphabet_v2.csproj": {
+    "C:\\Users\\CRAVO David\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_Algorithmique\\exercice_4-3_lettre-alphabet\\exercice_4-3_lettre-alphabet_v2\\exercice_4-3_lettre-alphabet_v2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CRAVO David\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\exercice_4-3_lettre-alphabet\\exercice_4-3_lettre-alphabet_v2\\exercice_4-3_lettre-alphabet_v2.csproj",
+        "projectUniqueName": "C:\\Users\\CRAVO David\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_Algorithmique\\exercice_4-3_lettre-alphabet\\exercice_4-3_lettre-alphabet_v2\\exercice_4-3_lettre-alphabet_v2.csproj",
         "projectName": "exercice_4-3_lettre-alphabet_v2",
-        "projectPath": "C:\\Users\\CRAVO David\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\exercice_4-3_lettre-alphabet\\exercice_4-3_lettre-alphabet_v2\\exercice_4-3_lettre-alphabet_v2.csproj",
+        "projectPath": "C:\\Users\\CRAVO David\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_Algorithmique\\exercice_4-3_lettre-alphabet\\exercice_4-3_lettre-alphabet_v2\\exercice_4-3_lettre-alphabet_v2.csproj",
         "packagesPath": "C:\\Users\\CRAVO David\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CRAVO David\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_ALGORITHMIQUE\\exercice_4-3_lettre-alphabet\\exercice_4-3_lettre-alphabet_v2\\obj\\",
+        "outputPath": "C:\\Users\\CRAVO David\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_Algorithmique\\exercice_4-3_lettre-alphabet\\exercice_4-3_lettre-alphabet_v2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -57,7 +57,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }

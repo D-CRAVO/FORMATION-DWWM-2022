@@ -8,17 +8,21 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\CRAVO David\\.nuget\\packages\\": {}
+    "C:\\Users\\CRAVO David\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\CRAVO David\\OneDrive\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_Algorithmique\\exercice_3-6_fourchette_CORRIGE\\exercice_3-6_fourchette\\exercice_3-6_fourchette.csproj",
+      "projectUniqueName": "C:\\Users\\CRAVO David\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_Algorithmique\\exercice_3-6_fourchette_CORRIGE\\exercice_3-6_fourchette\\exercice_3-6_fourchette.csproj",
       "projectName": "exercice_3-6_fourchette",
-      "projectPath": "C:\\Users\\CRAVO David\\OneDrive\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_Algorithmique\\exercice_3-6_fourchette_CORRIGE\\exercice_3-6_fourchette\\exercice_3-6_fourchette.csproj",
+      "projectPath": "C:\\Users\\CRAVO David\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_Algorithmique\\exercice_3-6_fourchette_CORRIGE\\exercice_3-6_fourchette\\exercice_3-6_fourchette.csproj",
       "packagesPath": "C:\\Users\\CRAVO David\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\CRAVO David\\OneDrive\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_Algorithmique\\exercice_3-6_fourchette_CORRIGE\\exercice_3-6_fourchette\\obj\\",
+      "outputPath": "C:\\Users\\CRAVO David\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_Algorithmique\\exercice_3-6_fourchette_CORRIGE\\exercice_3-6_fourchette\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
         "C:\\Users\\CRAVO David\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
