@@ -1,0 +1,16 @@
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_Algorithmique\Exercices\ex13_moyenne\exercice_1-3_calcul-de-la-moyenne\bin\Debug\net5.0\ex13_moyenne.exe
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_Algorithmique\Exercices\ex13_moyenne\exercice_1-3_calcul-de-la-moyenne\bin\Debug\net5.0\ex13_moyenne.deps.json
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_Algorithmique\Exercices\ex13_moyenne\exercice_1-3_calcul-de-la-moyenne\bin\Debug\net5.0\ex13_moyenne.runtimeconfig.json
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_Algorithmique\Exercices\ex13_moyenne\exercice_1-3_calcul-de-la-moyenne\bin\Debug\net5.0\ex13_moyenne.runtimeconfig.dev.json
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_Algorithmique\Exercices\ex13_moyenne\exercice_1-3_calcul-de-la-moyenne\bin\Debug\net5.0\ex13_moyenne.dll
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_Algorithmique\Exercices\ex13_moyenne\exercice_1-3_calcul-de-la-moyenne\bin\Debug\net5.0\ex13_moyenne.pdb
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_Algorithmique\Exercices\ex13_moyenne\exercice_1-3_calcul-de-la-moyenne\obj\Debug\net5.0\ex13_moyenne.csproj.AssemblyReference.cache
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_Algorithmique\Exercices\ex13_moyenne\exercice_1-3_calcul-de-la-moyenne\obj\Debug\net5.0\ex13_moyenne.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_Algorithmique\Exercices\ex13_moyenne\exercice_1-3_calcul-de-la-moyenne\obj\Debug\net5.0\ex13_moyenne.AssemblyInfoInputs.cache
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_Algorithmique\Exercices\ex13_moyenne\exercice_1-3_calcul-de-la-moyenne\obj\Debug\net5.0\ex13_moyenne.AssemblyInfo.cs
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_Algorithmique\Exercices\ex13_moyenne\exercice_1-3_calcul-de-la-moyenne\obj\Debug\net5.0\ex13_moyenne.csproj.CoreCompileInputs.cache
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_Algorithmique\Exercices\ex13_moyenne\exercice_1-3_calcul-de-la-moyenne\obj\Debug\net5.0\ex13_moyenne.dll
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_Algorithmique\Exercices\ex13_moyenne\exercice_1-3_calcul-de-la-moyenne\obj\Debug\net5.0\refint\ex13_moyenne.dll
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_Algorithmique\Exercices\ex13_moyenne\exercice_1-3_calcul-de-la-moyenne\obj\Debug\net5.0\ex13_moyenne.pdb
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_Algorithmique\Exercices\ex13_moyenne\exercice_1-3_calcul-de-la-moyenne\obj\Debug\net5.0\ex13_moyenne.genruntimeconfig.cache
+C:\Users\CRAVO David\OneDrive\Documents\GitHub\FORMATION-DWWM-2022\DOSSIER_03_Algorithmique\Exercices\ex13_moyenne\exercice_1-3_calcul-de-la-moyenne\obj\Debug\net5.0\ref\ex13_moyenne.dll
