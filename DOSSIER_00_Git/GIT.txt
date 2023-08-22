@@ -1,0 +1,105 @@
+git checkout bugFix
+RENTRER DANS UN REPERTOIRE
+    cd (change directory)
+REMONTER D'UN NIVEAU
+    cd../
+CREER UN REPERTOIRE
+    md modulo
+    mkdir github.demo
+CREER UN FICHIER
+    type null > daoud.txt
+EFFACER L'ECRAN
+    cls
+    clear (Powershell)
+AFFICHER LE CONTENU D'UN REPERTOIRE
+    dir
+    ls (Powershell / Linux)
+AFFICCHER LES DOSSIERS CACHES D'UN REPERTOIRE
+    ls -Force (Powershell)
+AFFICHER LE CONTENU CACHE D'UN REPERTOIRE
+    
+    
+CREER UN DEPOT GIT VIDE
+    git init
+VOIR LE STATUS DES FICHIERS
+    git status
+TRACKER UN FICHIER
+    git add README.md
+TRACKER TOUS LES DOSSIERS D'UN REPERTOIRE
+    git add .
+TRACKER TOUTE LA BRANCHE
+    git add -A
+ARRETER DE TRACKER 
+    git rm cached nomFichier
+ENVOYER SUR LE SERVEUR EN MENTIONNANT LE COMMENTAIRE OBLIGATOIRE
+    git commit -m "Initial commit"
+MODIFIER L'IDENTIFICATION SUR LA MACHINE POUR GIT
+    git config --global user.name "David"
+    git config --global user.email "dcravo@arfp.asso.fr"
+
+UPSTREAM
+	git remote add upstream https://github.com/D-CRAVO/mondossier.git
+VERIFIER
+	git remote -v
+PUBLIER
+	git fetch upstream
+AUTRE VERIFICATION
+	git branch -a
+
+CREER UNE BRANCHE (crée la branche develop)
+    git branch develop
+VOIR LES BRANCHES
+    git branch
+SUPPRIMER UNE BRANCHE
+    git branch -d essai
+SWTICHER ENTRE DEUX BRANCHES
+    git checkout develop
+CREER ET SWITCHER SUR UNE BRANCHE
+    git checkout -b develop
+FUSIONNER DEUX BRANCHES
+    git checkout main
+    git merge develop
+FUSIONNER DEUX BRANCHES
+    git rebase main
+CONNAITRE LES IDENTIFIANTS
+    git log
+
+REVENIR SUR UN COMMIT C3
+    git checkout C3
+REVENIR D'UN COMMIT EN ARRIERE
+    git checkout main^
+    git checkout HEAD^
+REVENIR DE 4 COMMITS EN ARRIERE
+    git checkout HEAT~4
+BOUGER DE FORCE LA BRANCHE MAIN A 3 PARENTS DERRIERE HEAD
+    git branch -f main HEAD~3
+DECENDRE JUSQU'A UN COMMIT PRECIS
+    git branch -f main C6
+
+ANNULER DES CHANGEMENTS SUR LA MACHINE
+    git reset HEAD~1
+ANNULER DES CHANGEMENTS SUR UNE BRANCHE DISTANTE
+    git revert HEAD
+
+COPIER UNE SERIE DE COMMITS
+    git cherry-pick C2 C4
+REBASE ITERATIF
+    git rebase -i HEAD~4
+FAIRE UN TAG SUR C1
+    git tag v1 c1
+DECRIRE UN TAG
+    git describe main
+
+
+VERIFIER LA VERSION
+	git --version
+CLONER UN DEPOT
+	git clone
+VERIFICATION DU SERVEUR DISTANT
+	git fetch origin main
+RECUPERATION DE DEPOT
+	git pull origin main
+ENVOYER LES MODIFICATIONS SUR LE SERVEUR
+	git pull origin
+
+git push --set-upstream origin PersonModele
