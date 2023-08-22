@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "FwvjnAyI0DWKvIwSDsEnWbrLoxxF26BGZk43V1zR44FbgHD8Jez3FuSkpb4uJfg1TX/srd7iUC88NRQdDsGI8g==",
+  "dgSpecHash": "zm9cG5nPBT5EM6Jx80kkEDHch3jKwjqYKaGtxhc34DrmTgninqJ7MEfokceUmYyEZ9rP5fOl6cNNavsssD1z3Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\CRAVO David\\OneDrive\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_Algorithmique\\Exercices\\ex13_moyenne\\exercice_1-3_calcul-de-la-moyenne\\ex13_moyenne.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\dcravo\\Documents\\GitHub\\FORMATION-DWWM-2022\\DOSSIER_03_Algorithmique\\Exercices\\ex13_moyenne\\exercice_1-3_calcul-de-la-moyenne\\ex13_moyenne.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dcravo\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512",
+    "C:\\Users\\dcravo\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\dcravo\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\dcravo\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
