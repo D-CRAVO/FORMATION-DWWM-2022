@@ -103,3 +103,7 @@ ENVOYER LES MODIFICATIONS SUR LE SERVEUR
 	git pull origin
 
 git push --set-upstream origin PersonModele
+
+git commit -am "description"
+
+git push -u origin Branche
