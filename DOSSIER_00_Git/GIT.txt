@@ -102,8 +102,18 @@ RECUPERATION DE DEPOT
 ENVOYER LES MODIFICATIONS SUR LE SERVEUR
 	git pull origin
 
-git push --set-upstream origin PersonModele
+git push --set-upstream origin Branche
 
 git commit -am "description"
 
 git push -u origin Branche
+
+dotnet run
+
+git rm -f src/bin/*
+
+git add src/Car.csproj
+
+git branch -a
+
+git checkout -b AddUsing origin/AddUsing
