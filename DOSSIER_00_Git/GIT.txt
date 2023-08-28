@@ -109,6 +109,7 @@ git commit -am "description"
 git push -u origin Branche
 
 dotnet run
+dotnet new console
 
 git rm -f src/bin/*
 
